@@ -1,0 +1,41 @@
+PÁGINAS PARA CRIAR NO BLOGGER — R&N GRÁFICA RÁPIDA
+
+Crie ou edite as seis páginas em Blogger > Páginas. Para cada uma, use o título indicado, alterne o editor para a visualização HTML e cole o conteúdo do arquivo .txt correspondente. Publique a página. Os arquivos .html têm o mesmo conteúdo para consulta.
+
+Não cole estes arquivos na área Tema. Eles contêm somente o corpo de cada página. O tema é o XML da raiz do ZIP.
+
+Se já existir uma página com o mesmo assunto, edite-a em vez de criar uma cópia. Confira a URL final: ela precisa coincidir com o endereço indicado. Se o Blogger acrescentar um sufixo ao endereço, os links do tema precisarão ser ajustados.
+
+Título: Sobre
+Endereço esperado: https://rngraficarapida.blogspot.com/p/sobre.html
+Arquivo para copiar: 01-sobre.txt
+Descrição sugerida: Conheça os produtos, os serviços e o atendimento da R&N Gráfica Rápida.
+
+Título: Contato
+Endereço esperado: https://rngraficarapida.blogspot.com/p/contato.html
+Arquivo para copiar: 02-contato.txt
+Descrição sugerida: Peça um orçamento ou esclareça dúvidas com a R&N Gráfica Rápida pelo WhatsApp.
+
+Título: Privacidade
+Endereço esperado: https://rngraficarapida.blogspot.com/p/privacidade.html
+Arquivo para copiar: 03-privacidade.txt
+Descrição sugerida: Saiba como o formulário, o WhatsApp, o Blogger e serviços do Google podem tratar informações neste site.
+
+Título: Como escolher o papel
+Endereço esperado: https://rngraficarapida.blogspot.com/p/como-escolher-o-papel.html
+Arquivo para copiar: 04-como-escolher-o-papel.txt
+Descrição sugerida: Entenda quando considerar papel ofício, fotográfico, adesivo e papel-cartão antes de pedir sua impressão.
+
+Título: Como preparar sua arte
+Endereço esperado: https://rngraficarapida.blogspot.com/p/como-preparar-sua-arte.html
+Arquivo para copiar: 05-como-preparar-sua-arte.txt
+Descrição sugerida: Confira tamanho, legibilidade, qualidade de imagens e quantidades antes de enviar um arquivo para impressão.
+
+Título: Sublimação e DTF
+Endereço esperado: https://rngraficarapida.blogspot.com/p/sublimacao-e-dtf.html
+Arquivo para copiar: 06-sublimacao-e-dtf.txt
+Descrição sugerida: Conheça diferenças entre sublimação e DTF e saiba quais informações ajudam a escolher a personalização.
+
+Antes de publicar a política de privacidade, confira se o texto corresponde ao atendimento e às ferramentas realmente usadas pela gráfica. O contato divulgado é somente o WhatsApp (81) 99609-0928. Não foram inventados endereço, e-mail ou CNPJ.
+
+Preparar conteúdo e posições de publicidade não garante aprovação do Google AdSense. Os novos blocos do tema permanecem desativados porque a conta ainda não foi aprovada e os IDs públicos não foram informados.

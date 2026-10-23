@@ -1,4 +1,4 @@
-# R&N Gráfica Rápida — tema 2.0
+# R&N Gráfica Rápida — tema 2.1
 
 Site responsivo em português com 20 produtos e serviços organizados em seis categorias, busca, artes exclusivas da R&N e orçamento pelo WhatsApp **(81) 99609-0928**.
 
@@ -48,3 +48,23 @@ python3 tests/smoke.py --theme blogger/downloads/RN-Grafica-Rapida-Blogger.xml
 ```
 
 O segundo comando simula localmente a resposta HTML do Blogger e fornece as artes locais às URLs configuradas. Os testes cobrem catálogo, busca, todos os filtros e botões de serviço, orçamento, quantidades, talões, WhatsApp, cópia, edição, perguntas frequentes, menu móvel e margens de 320 a 1440 pixels. As navegações ao WhatsApp são interceptadas: nenhuma mensagem é enviada. Verifique também as URLs públicas das artes após enviá-las ao GitHub e a instalação final no Blogger.
+
+## Páginas e preparação para publicidade — versão 2.1
+
+O tema preserva os 20 serviços e acrescenta uma área editorial, Sobre, Contato, Privacidade e três guias originais. Os contatos publicados continuam limitados ao nome da gráfica e ao WhatsApp, conforme solicitado.
+
+- Conteúdo: `src/page-content.js`; rotas e navegação: `src/pages.js`.
+- Páginas exportadas: `blogger/paginas`, incluídas no ZIP em `PAGINAS`.
+- Publicação nativa: criar/editar as seis páginas no painel do Blogger usando os títulos, os códigos HTML e as URLs esperadas em `PAGINAS/COMECE-AQUI.txt`. O tema renderiza `post.title` e `post.body` nas páginas estáticas por meio de um widget Blog1 dedicado. O conteúdo editado no Blogger tem prioridade sobre o conteúdo de prévia.
+- A prévia do ZIP permite navegar pelos guias e pelas páginas com links internos, sem publicá-los. As URLs nativas só passam a existir depois de criar as páginas na conta do Blogger.
+- Publicidade: `src/ads.config.js` mantém `enabled: false`, sem IDs. Não foi reutilizado o código de anunciante eventualmente injetado pelo Blogger. Há duas posições editoriais ocultas, fora do formulário e dos botões de serviço. Sobre, Contato e Privacidade não recebem o bloco de artigo.
+- Antes de ativar os blocos: confirmar a aprovação, configurar os IDs públicos reais e os requisitos de privacidade/consentimento indicados pelo Google. Não existe garantia de aprovação nem de receita. Os blocos manuais do tema são independentes dos anúncios automáticos administrados no Blogger.
+
+Validação adicional:
+
+```sh
+node --test tests/ads.test.mjs
+python3 tests/content.py
+```
+
+O teste de conteúdo confere as seis páginas, navegação, orçamento nas páginas informativas, prévia e suporte ao conteúdo nativo do Blogger por uma resposta renderizada simulada. A aceitação final do tema e a publicação das páginas na conta continuam dependendo da instalação pelo usuário. As páginas de privacidade devem ser revisadas pelo responsável para corresponder ao atendimento e às ferramentas efetivamente utilizados.

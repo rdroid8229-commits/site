@@ -1,0 +1,26 @@
+R&N Gráfica Rápida — publicidade preparada, ainda não ativada
+
+A conta ainda não foi aprovada e não há IDs de blocos fornecidos. Por isso, src/ads.config.js mantém enabled: false e os dois espaços ficam ocultos, sem caixas vazias para os clientes.
+
+POSIÇÕES
+- Página inicial: após a área editorial de guias, fora do catálogo e dos botões de orçamento.
+- Guias: ao final do conteúdo, separado dos links de atendimento.
+- Sobre, Contato e Privacidade não recebem o bloco editorial.
+- Não há anúncios flutuantes nem anúncios dentro do formulário.
+
+QUANDO A CONTA ESTIVER APROVADA
+1. Confira o estado da conta em Blogger > Ganhos e no painel do Google AdSense.
+2. Crie os blocos responsivos e obtenha o ID público ca-pub-… e os IDs dos blocos.
+3. Confira os requisitos atuais de privacidade e consentimento aplicáveis aos visitantes. Use as ferramentas de Privacidade e mensagens do Google quando necessário; este tema não fornece uma plataforma de consentimento.
+4. Informe os IDs para configurar o tema. Não envie senhas. No código-fonte, as opções estão em src/ads.config.js: client, slots.home e slots.article. Somente depois da aprovação e configuração deve ser definido enabled: true.
+5. Gere novamente o tema com npm run build:blogger e instale o XML atualizado.
+6. Verifique a exibição no site sem clicar nos próprios anúncios.
+
+Os blocos manuais deste tema são independentes dos anúncios automáticos e dos códigos que o Blogger possa inserir. O tema não altera a conta AdSense, não verifica aprovação automaticamente e não ativa nem desativa as opções do painel do Blogger. Não copie um ID encontrado no código como prova de aprovação: confirme-o na conta.
+
+As páginas e os guias não garantem aprovação nem receita. Publique o conteúdo e confirme que as URLs funcionam antes de solicitar análise. A decisão é do Google.
+
+Referências oficiais para consulta:
+https://support.google.com/blogger/answer/165955?hl=pt-BR
+https://support.google.com/adsense/answer/1348695?hl=pt-BR
+https://support.google.com/adsense/answer/13554116?hl=pt-BR

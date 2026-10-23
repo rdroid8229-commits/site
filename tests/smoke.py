@@ -158,6 +158,8 @@ with sync_playwright() as p:
     for href in links:
         if href.startswith('#'):
             assert page.locator('[id="'+href[1:]+'"]').count(),href
+        elif href.startswith('/p/'):
+            assert href in {'/p/sobre.html','/p/contato.html','/p/privacidade.html','/p/como-escolher-o-papel.html','/p/como-preparar-sua-arte.html','/p/sublimacao-e-dtf.html'},href
         else:
             assert href.startswith('https://wa.me/5581996090928'),href
     for width,label in [(1440,'desktop'),(390,'celular')]:
