@@ -1,15 +1,23 @@
-R&N Gráfica Rápida — instalação no Blogger
+R&N Gráfica Rápida — Tema 2.0 para Blogger
 
-1. Extraia este ZIP.
-2. Acesse blogger.com e selecione o seu blog.
-3. Em Tema, faça backup do tema atual.
-4. Abra o menu ao lado de Personalizar e escolha Restaurar.
+INSTALAÇÃO
+1. Extraia o ZIP.
+2. Entre no Blogger e selecione seu blog.
+3. Abra Tema e faça backup do tema atual.
+4. No menu ao lado de Personalizar, escolha Restaurar.
 5. Envie RN-Grafica-Rapida-Blogger.xml e aguarde a confirmação.
-6. Se a restauração não estiver disponível, abra Tema > Editar HTML e substitua o código pelo conteúdo completo do XML. Salve.
-7. Confira o site em Ver blog.
+6. Clique em Ver blog e atualize a página para conferir a nova versão.
 
-O tema inclui catálogo, filtros e orçamento para o WhatsApp (81) 99609-0928.
-O pedido só é enviado quando o cliente toca em Enviar no WhatsApp.
+Se Restaurar não estiver disponível, use Tema > Editar HTML e substitua o código pelo XML completo. Salve.
 
-A versão foi validada localmente como XML e em navegador: visual, seis produtos, filtros, formulário, link de WhatsApp, cópia, edição e telas de 320 a 1440 pixels.
-A aceitação e a instalação final precisam ser confirmadas no Blogger.
+PRÉVIA
+Abra PREVIA.html mantendo a pasta images ao lado. As seis artes estão incluídas para essa prévia. No Blogger, o tema usa as imagens publicadas no repositório rdroid8229-commits/site; não é necessário enviá-las separadamente.
+
+CATÁLOGO
+20 serviços em 6 categorias: Impressões e cópias; Plastificação; Papelaria e documentos; Comunicação visual; Agendamentos; Personalizados e estampas.
+Talões de recibos de aluguel: 50 a 100 folhas por talão.
+WhatsApp: (81) 99609-0928.
+
+O pedido só é enviado quando o cliente toca em Enviar no WhatsApp. Valores, prazos e disponibilidade são confirmados no atendimento. Agendamentos dependem da disponibilidade do órgão responsável.
+
+As imagens são artes ilustrativas da R&N, não fotografias de trabalhos realizados. O tema apresenta uma página de serviços e não lista postagens ou comentários do blog. As fontes são incluídas no XML. O tema foi validado localmente; instalar o arquivo é uma ação feita na sua conta do Blogger.
