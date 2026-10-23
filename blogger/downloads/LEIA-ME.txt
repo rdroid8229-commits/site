@@ -1,0 +1,15 @@
+R&N Gráfica Rápida — instalação no Blogger
+
+1. Extraia este ZIP.
+2. Acesse blogger.com e selecione o seu blog.
+3. Em Tema, faça backup do tema atual.
+4. Abra o menu ao lado de Personalizar e escolha Restaurar.
+5. Envie RN-Grafica-Rapida-Blogger.xml e aguarde a confirmação.
+6. Se a restauração não estiver disponível, abra Tema > Editar HTML e substitua o código pelo conteúdo completo do XML. Salve.
+7. Confira o site em Ver blog.
+
+O tema inclui catálogo, filtros e orçamento para o WhatsApp (81) 99609-0928.
+O pedido só é enviado quando o cliente toca em Enviar no WhatsApp.
+
+A versão foi validada localmente como XML e em navegador: visual, seis produtos, filtros, formulário, link de WhatsApp, cópia, edição e telas de 320 a 1440 pixels.
+A aceitação e a instalação final precisam ser confirmadas no Blogger.
