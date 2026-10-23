@@ -31,3 +31,13 @@ test('não reinterpreta código salvo como texto nem aceita endereços fora de p
   assert.equal((await loadPublishedPage('/p/privacidade.html', async () => response([entry('privacidade', 'Privacidade', body)]))).body, body);
   await assert.rejects(loadPublishedPage('/search', async () => { throw new Error('Não deve consultar.'); }));
 });
+
+test('consulta uma única página quando o Blogger informa seu ID, evitando baixar a calculadora nas outras páginas', async () => {
+  const published = entry('sobre', 'Sobre publicada', '<p>Texto.</p>');
+  const result = await loadPublishedPage('/p/sobre.html', async url => {
+    assert.equal(url, '/feeds/pages/default/123456789?alt=json');
+    return { ok: true, json: async () => ({ entry: published }) };
+  }, '123456789');
+  assert.equal(result.title, 'Sobre publicada');
+  await assert.rejects(loadPublishedPage('/p/contato.html', async () => ({ ok: true, json: async () => ({ entry: published }) }), '123456789'));
+});

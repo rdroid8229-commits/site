@@ -1,4 +1,4 @@
-# R&N Gráfica Rápida — tema 2.1.1
+# R&N Gráfica Rápida — tema 2.2
 
 Site responsivo em português com 20 produtos e serviços organizados em seis categorias, busca, artes exclusivas da R&N e orçamento pelo WhatsApp **(81) 99609-0928**.
 
@@ -77,3 +77,22 @@ O backup exportado pelo Blogger confirma que Blog1 estava visível, mas o HTML p
 Se a seção vier vazia, `src/published-pages.js` consulta o feed público de páginas na própria origem, sem cookies. Título e corpo publicados passam a ser a fonte do conteúdo; o tema não usa os textos de demonstração para esconder uma página ausente ou uma falha. A demonstração permanece disponível apenas na prévia e no desenvolvimento. Nenhum arquivo de backup enviado pelo usuário é distribuído no repositório ou ZIP.
 
 Os arquivos de colagem começam diretamente com a tag `div`, sem comentários de instrução. O manual orienta corrigir as páginas antes de instalar a atualização, para evitar que código salvo como texto passe a aparecer no site. Preserve as edições próprias que desejar manter e confira a política de privacidade. Os blocos manuais de anúncios continuam desativados, independentemente do código associado à conta pelo Blogger.
+
+## Calculadora completa — versão 2.2
+
+`calculator/source.html` é o arquivo correto enviado pelo proprietário, com encaixe de peças, preço por m² e custos/preços/lucros. `scripts/export-calculator.mjs` gera a versão pública independente em `public/calculadora.html` e o corpo da página Blogger em `blogger/paginas/07-calculadora.txt`. A calculadora não depende de servidor nem de login; os dados são locais de cada navegador. A cópia pública mantém as fórmulas e os quatro preços originais por m².
+
+A página usa um iframe com `srcdoc`, que executa o aplicativo completo mesmo quando o corpo da página é inserido pelo leitor de páginas do tema. Os estilos ficam dentro do quadro. A altura acompanha as três áreas, inclusive o quadro interno de custos. A prévia do ZIP aponta para `CALCULADORA/RN-Calculadora-Publica.html`; a página pública leva o próprio aplicativo no seu HTML e não depende de hospedagem externa. O conteúdo não contém cadastros reais de materiais ou clientes do proprietário.
+
+O menu, o rodapé e a chamada abaixo dos guias apontam para `/p/calculadora.html`. Essa página precisa ser publicada na conta; instalar o XML não a cria. Instruções para atualização sem duplicar as seis páginas existentes: `blogger/CALCULADORA-INSTALAR.txt`. Um parágrafo adicional de privacidade acompanha o pacote. Faça backup JSON no endereço antigo para transferir os cadastros ao novo domínio.
+
+Para evitar baixar a página maior em todas as outras páginas, o XML inclui o ID da página fornecido pelo Blogger. O leitor consulta uma única entrada pública quando há um ID válido, com retorno à listagem apenas quando esse ID não está disponível. O caminho individual foi conferido com uma página pública existente do blog; a presença desse ID no modelo atualizado depende da instalação no Blogger.
+
+Validação da calculadora, depois de gerar o pacote:
+
+```sh
+node --test tests/calculator.test.mjs tests/published-pages.test.mjs tests/ads.test.mjs
+python3 tests/calculator.py
+```
+
+Os testes conferem fórmulas conhecidas, entradas inválidas, funcionamento dos três módulos dentro de uma página com HTML de feed, controles, cópia, acionamento de impressão, cadastro e atualização de insumos, backup JSON, persistência e separação entre visitantes. Também conferem as larguras de 320 a 1440 px, a altura dos dois quadros e os caminhos do ZIP extraído. O navegador do ambiente bloqueia `file://`; os bytes locais da versão independente e do ZIP são executados por respostas HTTPS simuladas, sem autenticação nem serviço externo da calculadora. A publicação e a aceitação final pelo editor do Blogger precisam ser conferidas após instalar na conta.

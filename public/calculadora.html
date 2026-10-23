@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Calculadora de produção da R&N Gráfica Rápida. Planeje o encaixe e calcule valores por metro quadrado de lona, adesivo, perfurado e lambe-lambe.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#18243a">
+  <title>Calculadora de produção · R&N Gráfica Rápida</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxODI0M2EiLz48cGF0aCBkPSJNMTYgMTZoMTlxMTQgMCAxNCAxMiAwIDktOSAxMWwxMSAxM0gzOUwyNyAzOHYxNEgxNnptMTEgOXY1aDhxNCAwIDQtM3QtNC0zaC04IiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iNTAiIGN5PSIxMyIgcj0iNSIgZmlsbD0iI2ZmZTI3NCIvPjwvc3ZnPgo=">
+  <style>
+:root{--navy:#18243a;--blue:#225ce5;--blue-dark:#1746b2;--ink:#202b40;--muted:#7a8393;--line:#e6e9ef;--surface:#f5f6f8;--yellow:#ffe274;--radius:14px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--surface);font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;font-size:14px}button,input,select{font:inherit}a{color:inherit;text-decoration:none}button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button,summary{cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #8cafff;outline-offset:4px}svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}button svg{width:16px;height:16px}h1,h2,p{margin:0}[hidden]{display:none!important}.app-shell{display:flex;min-height:100vh}.sidebar{width:218px;background:var(--navy);color:#fff;padding:37px 22px 26px;position:fixed;inset:0 auto 0 0;display:flex;flex-direction:column}.brand{display:block;padding-left:8px;align-self:flex-start}.brand-name{display:block;font-size:43px;font-weight:850;letter-spacing:-3px;line-height:1}.amp{font-size:31px;margin:0 1px;letter-spacing:-2px}.brand-dot{color:var(--yellow)}.brand-sub{display:block;font-size:9.5px;font-weight:600;letter-spacing:2.2px;margin-top:10px}.ink-dots{display:flex;gap:5px;margin-top:15px}.ink-dots i{width:6px;height:6px;border-radius:50%;background:#45c3ef}.ink-dots i:nth-child(2){background:#f56292}.ink-dots i:nth-child(3){background:var(--yellow)}.ink-dots i:nth-child(4){background:#6e7c93}.sidebar-label{color:#8190a8;font-size:9px;letter-spacing:1.5px;font-weight:600;margin:62px 0 15px 8px}.nav-item{display:flex;align-items:center;gap:10px;padding:13px 10px;border-radius:8px;font-size:12px;color:#a8b3c6;margin-bottom:8px;white-space:nowrap}.nav-item.active{background:#2a374e;color:#fff}.nav-item:hover{background:#2a374e;color:#fff}.nav-item svg{width:18px;height:18px}.nav-dot{width:5px;height:5px;background:var(--yellow);border-radius:50%;margin-left:auto}.sidebar-bottom{margin-top:auto;padding:25px 8px 0}.private-label{display:flex;align-items:center;gap:7px;font-size:11px;color:#bdc8d8}.private-label svg{width:14px;height:14px}.sidebar-bottom p{font-size:11px;line-height:1.8;color:#8190a8;margin:18px 0 31px}.edition{font-size:8px;letter-spacing:1.2px;color:#65748d}main{margin-left:218px;padding:0 36px;width:calc(100% - 218px);max-width:1650px}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);font-size:11px;font-weight:500}.breadcrumb{color:var(--muted)}.slash{color:#c0c6d0;margin:0 12px}.private-badge{display:flex;align-items:center;gap:6px;padding:6px 11px;border:1px solid #dedfe5;background:#fff;border-radius:6px;color:#5a6372;font-size:10px}.private-badge svg{width:12px;height:12px}.page-header{display:flex;gap:15px;justify-content:space-between;align-items:center;padding:32px 0}.eyebrow{font-size:9px;letter-spacing:1.35px;color:#818997;font-weight:650;display:flex;align-items:center;gap:7px}.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--blue)}h1{font-size:clamp(25px,2.5vw,35px);letter-spacing:-1.35px;font-weight:750;margin:10px 0 9px;line-height:1.2}h1>span{color:var(--blue)}.page-header p{color:#7b8491;font-size:12px;line-height:1.6}.button{border:none;border-radius:7px;padding:11px 14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:11px;font-weight:600;line-height:1.25;transition:background .15s,transform .15s;white-space:nowrap}.button:active{transform:translateY(1px)}.button.secondary{background:#fff;border:1px solid #dde2e9;color:#5d687b}.button.secondary:hover{background:#f0f3f8;border-color:#a7b6d2}.button.blue{color:#fff;background:var(--blue)}.button.blue:hover{background:var(--blue-dark)}.button:disabled{cursor:default;opacity:.45;transform:none}.reset{margin-top:20px}.workspace{display:grid;grid-template-columns:328px minmax(0,1fr);gap:24px;align-items:start}.card{border:1px solid var(--line);background:#fff;border-radius:var(--radius);box-shadow:0 2px 2px #172a4602}.card h2{font-size:13px;font-weight:650;letter-spacing:-.2px}.settings{overflow:hidden}.card-heading{padding:20px 22px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #edf0f4}.live-tag{font-size:9px;font-weight:600;color:#70809b;background:#f2f5fa;border-radius:4px;padding:4px 6px}fieldset{margin:0;padding:21px 22px 19px;border:0;border-bottom:1px solid #edf0f4;min-width:0}legend{float:left;width:100%;font-size:12px;font-weight:650;margin:0 0 17px;padding:0;display:flex;gap:8px;align-items:center}legend+*{clear:both}legend span{font-size:9px;padding:3px 5px;border-radius:3px;color:var(--blue);background:#edf3ff;font-weight:650}label{display:block;color:#636f82;font-size:10px;font-weight:550;margin:13px 0 7px}label span{float:right;color:#99a2b1;font-size:9px;font-weight:400}fieldset>label:first-of-type{margin-top:0}input:not([type=checkbox]),select{width:100%;border:1px solid #dfe4ec;border-radius:6px;background:#fff;padding:10px 11px;font-size:12px;color:#29364c;height:38px;outline:none;transition:border-color .15s,box-shadow .15s}select{padding-right:26px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23778395' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center;background-size:13px;appearance:none}input:focus,select:focus{border-color:#6792f3;box-shadow:0 0 0 3px #225ce511}input[aria-invalid=true],select[aria-invalid=true]{border-color:#d84f59;background:#fff9fa}input:disabled,select:disabled{background:#f5f6f8;color:#99a2b1}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field-help{font-size:9px;line-height:1.65;color:#9099a7;margin-top:9px}.check-label{display:flex;align-items:center;gap:7px;font-size:10px;margin:13px 0 16px;line-height:1.5}.check-label input{accent-color:var(--blue);margin:0;width:13px;height:13px}.quantity-input{font-weight:650!important}.saved-state{font-size:9px;color:#8d97a5;padding:17px 22px;display:flex;align-items:center;gap:6px}.saved-state span{width:5px;height:5px;background:#79ae94;border-radius:50%}.results-column{min-width:0}.results-heading{display:flex;justify-content:space-between;align-items:center;padding:2px 0 14px;gap:8px}.results-heading h2{font-size:12px;font-weight:650}.results-heading>span{font-size:9px;color:#929aaa;display:flex;align-items:center;gap:5px}.results-heading i{background:#6fa686;width:5px;height:5px;border-radius:50%}.stat-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:19px}.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;position:relative;overflow:hidden;min-height:143px}.stat.primary{background:var(--blue);border-color:var(--blue);color:#fff}.stat-label{display:block;font-size:8px;letter-spacing:.85px;font-weight:650;color:#8c97a8;position:relative;z-index:1}.primary .stat-label{color:#c5d8ff}.stat strong{display:block;font-size:37px;font-weight:700;letter-spacing:-1.7px;margin:12px 0 7px;line-height:1.1;position:relative;z-index:1;overflow-wrap:anywhere}.stat strong>span{font-size:19px;letter-spacing:0;margin-left:1px;color:#8995aa}.stat>span:last-of-type{font-size:9px;color:#929dae;display:block;position:relative;z-index:1;line-height:1.5}.stat.primary>span:last-of-type{color:#c5d8ff}.stat svg{position:absolute;width:68px;height:68px;right:-6px;bottom:12px;stroke:#fff;stroke-width:1;opacity:.13;transform:rotate(-10deg)}.preview-card{overflow:hidden}.preview-header{display:flex;align-items:center;justify-content:space-between;padding:21px 22px;gap:12px}.preview-header p{margin-top:6px;font-size:10px;color:#929bad;line-height:1.4}.size-chip{font-size:10px;font-weight:500;background:#f2f5fa;padding:7px 9px;border-radius:5px;white-space:nowrap;color:#7c889b}.preview-stage{height:404px;background-color:#f6f8fb;background-image:radial-gradient(#ced6e3 .7px,transparent .7px);background-size:12px 12px;border-block:1px solid #edf0f5;display:flex;align-items:center;justify-content:center;position:relative;padding:17px 20px}.preview-stage svg{height:100%;max-width:100%;width:auto;overflow:visible;filter:drop-shadow(0 4px 9px #1b2c4b10);stroke-linecap:butt;stroke-linejoin:miter}.preview-empty{padding:30px;text-align:center;max-width:370px;color:#8a96a9;line-height:1.8;font-size:12px}.preview-empty .empty-icon{font-size:30px;display:block;color:#aab7cd;margin-bottom:10px}.legend{padding:16px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:9px;color:#8a96a9}.legend>span{display:flex;align-items:center;gap:6px}.legend i{width:10px;height:10px;border-radius:2px;display:inline-block}.legend i.trim{background:#deebff;border:1px solid #557ee0}.legend i.bleed{background:#dfeafa;border:1px dashed #8ba8db}.legend i.margin{background:#f0f2f6;border:1px solid #ccd3df}.legend .scale-note{margin-left:auto;font-size:8px;color:#a0a8b6}.preview-footer{background:#fafbfd;border-top:1px solid #edf0f5;padding:13px 22px;display:flex;justify-content:space-between;font-size:9px;color:#8490a4;gap:10px}.production-summary{margin-top:18px;padding:21px 22px}.summary-title{display:flex;align-items:center;gap:11px}.mini-sheet{width:35px;height:35px;display:flex;align-items:center;justify-content:center;background:#f0f4fc;border-radius:7px;color:#6984b5}.mini-sheet svg{width:19px;height:19px}.summary-title p{margin-top:5px;font-size:10px;line-height:1.5;color:#8d98aa}.summary-details{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px;border-block:1px solid #edf0f5;padding:18px 0;margin-top:20px}.summary-details>div{display:flex;flex-direction:column;gap:6px;font-size:10px;color:#8c97a7}.summary-details strong{color:#53647e;font-size:12px;font-weight:600}.summary-actions{display:flex;align-items:center;gap:9px;margin-top:17px;flex-wrap:wrap}#action-status{font-size:10px;color:#6d8193}.method-card{display:flex;gap:11px;margin:22px 0 0;padding:3px 4px;scroll-margin-top:20px}.method-mark{font-family:Georgia,serif;color:#8b99ae;border:1px solid #a0adbf;border-radius:50%;width:15px;height:15px;font-size:11px;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px}.method-card h2{font-size:10px;font-weight:600;color:#71819a;margin-bottom:7px}.method-card p{font-size:10px;color:#939fb0;line-height:1.8}details{margin-top:9px}summary{font-size:10px;color:#6882ad;line-height:1.6}details p{margin-top:10px}.error-box{border:1px solid #f0c6cc;background:#fff3f4;border-radius:8px;padding:14px 16px;font-size:11px;line-height:1.8;color:#ad3643;margin-bottom:14px}.error-box p+p{margin-top:4px}.error-box.warning{background:#fff9eb;border-color:#f0dfb4;color:#93712c}.page-footer{display:flex;justify-content:space-between;gap:12px;color:#a2aab8;font-size:8px;padding:29px 0 25px}.page-footer span:first-child{letter-spacing:1.2px;font-weight:600}.noscript{position:fixed;inset:0;background:#fff;padding:40px;color:#202b40}
+.field-row.single{grid-template-columns:1fr}label span.measure-label{float:none;font-size:10px;font-weight:550;color:#636f82}.legend i.reserved{background:#fff;border:1px dashed #8ba8db}
+.calculator-tabs{display:flex;gap:5px;border:1px solid #e1e6ed;background:#eceff4;border-radius:9px;padding:4px;width:max-content;margin:0 0 25px;max-width:100%}.calculator-tabs button{border:0;border-radius:6px;padding:10px 18px;background:transparent;font-size:11px;font-weight:600;color:#778399}.calculator-tabs button[aria-selected=true]{background:#fff;color:var(--blue);box-shadow:0 1px 3px #15244012}.calculator-tabs button:hover{color:var(--blue)}.area-form-actions{margin-top:18px}.saved-state .saved-message{width:auto;height:auto;background:none;border-radius:0}.area-stats .stat strong{font-size:27px;letter-spacing:-1px;line-height:1.3}.stat.price{background:var(--navy);color:#fff;border-color:var(--navy)}.stat.price .stat-label,.stat.price>span:last-of-type{color:#b9c8e2}.area-quote{margin-top:0}.area-calculation{background:#f1f6ff;border:1px solid #e1eafd;border-radius:7px;color:#335a9b;padding:15px;margin-top:18px;font-size:14px;font-weight:650;line-height:1.6;overflow-wrap:anywhere}.area-note{color:#8d98aa;font-size:10px;line-height:1.7;margin-top:10px}.area-rates{margin-top:19px;overflow:hidden}.area-rates table{border-collapse:collapse;width:100%;font-size:11px}.area-rates th,.area-rates td{text-align:left;padding:13px 22px;border-bottom:1px solid #edf0f5}.area-rates th{font-size:9px;color:#8d98aa;font-weight:600;background:#fafbfd}.area-rates th:last-child,.area-rates td:last-child{text-align:right}.area-rates td:last-child{font-weight:600;color:#56667d}.area-rates tr:last-child td{border-bottom:0}.area-rates tr.selected td{background:#f1f6ff;color:#225ce5}#area-action-status{font-size:10px;color:#6d8193}.area-settings fieldset{border-right:0!important}
+@media(max-width:980px){.area-stats .stat strong{font-size:22px;letter-spacing:-.6px}.area-calculation{font-size:12px}}
+@media(max-width:460px){.calculator-tabs{width:100%;margin-bottom:21px}.calculator-tabs button{flex:1;padding:10px 7px;font-size:10px}.area-stats .stat strong{font-size:21px}.area-stats .stat.price strong{font-size:20px}.area-rates th,.area-rates td{padding:13px 17px}}
+@media(min-width:1550px){main{padding:0 48px}.workspace{grid-template-columns:355px minmax(0,1fr);gap:28px}.preview-stage{height:440px}.stat{min-height:151px}.stat strong{font-size:40px}}
+@media(max-width:1190px){.sidebar{width:184px;padding-inline:16px}main{margin-left:184px;width:calc(100% - 184px);padding:0 24px}.workspace{grid-template-columns:300px minmax(0,1fr);gap:18px}.stat{padding:15px 12px}.stat strong{font-size:32px}.stat-label{font-size:7px;letter-spacing:.4px}.stat-grid{gap:8px}.stat>span:last-of-type{font-size:8px}.preview-header{padding:18px}.preview-stage{height:371px}.legend{padding:14px 18px;gap:10px}.legend .scale-note{display:none}.results-heading>span{font-size:8px}.settings fieldset{padding-inline:19px}.page-header .eyebrow{font-size:8px}.size-chip{font-size:8px}}
+@media(max-width:980px){.sidebar{width:74px;padding:29px 13px}.brand{padding:0}.brand-name{font-size:26px;letter-spacing:-2px}.amp{font-size:18px}.brand-sub,.ink-dots,.sidebar-label,.sidebar-bottom,.nav-dot{display:none}.sidebar nav{margin-top:55px}.nav-item{width:46px;height:46px;overflow:hidden;gap:30px;padding:13px}.nav-item svg{min-width:20px}.nav-item:hover{width:46px}main{margin-left:74px;width:calc(100% - 74px)}.workspace{grid-template-columns:290px minmax(0,1fr);gap:16px}.page-header{padding:27px 0}.stat strong{font-size:27px}.stat-label{line-height:1.5}.stat{min-height:133px;padding:13px 10px}.results-heading>span{display:none}.preview-header{flex-wrap:wrap}.preview-stage{height:345px}.size-chip{padding:5px 7px}.summary-actions .button{font-size:10px;padding:10px 11px}.preview-footer{padding:11px 15px}.summary-details{gap:15px}.summary-details>div{font-size:9px}.production-summary{padding:18px}.stat-grid{gap:7px}.page-header p{font-size:11px}h1{font-size:27px}}
+@media(max-width:760px){.app-shell{display:block}.sidebar{position:relative;width:100%;height:69px;padding:0 20px;flex-direction:row;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:14px}.brand-name{font-size:31px}.amp{font-size:23px}.brand-sub{display:block;font-size:8px;margin:0;letter-spacing:1.7px}.sidebar nav{display:flex;margin:0;gap:7px}.nav-item{margin:0;height:34px;width:34px;padding:8px;gap:20px;border-radius:5px}.nav-item:hover{width:34px}.nav-item svg{min-width:18px;height:18px}main{margin-left:0;width:100%;padding:0 20px}.topbar{height:50px}.page-header{padding:25px 0;align-items:flex-start}.eyebrow{font-size:7px!important;letter-spacing:.8px}.page-header .reset{font-size:0;padding:10px;margin-top:21px;gap:0}.page-header .reset svg{width:17px;height:17px}h1{font-size:27px;margin-top:11px}.page-header p{font-size:11px}.workspace{grid-template-columns:1fr;gap:24px}.settings{width:100%}#production-form{display:grid;grid-template-columns:1fr 1fr}.settings fieldset{padding:20px}.settings fieldset:first-child{border-right:1px solid var(--line)}.settings fieldset:nth-child(3){grid-column:1/-1}.saved-state{grid-column:1/-1}.results-heading>span{display:flex;font-size:8px}.stat{padding:18px;min-height:139px}.stat strong{font-size:37px}.stat-label{font-size:8px}.stat>span:last-of-type{font-size:9px}.stat-grid{gap:10px}.preview-stage{height:420px}.preview-header{flex-wrap:nowrap;padding:20px}.size-chip{font-size:9px}.legend .scale-note{display:flex}.preview-footer{padding:13px 20px}.summary-details>div{font-size:10px}.summary-actions .button{font-size:11px}.page-footer{padding-bottom:20px}.method-card p{font-size:11px}}
+@media(max-width:460px){main{padding:0 15px}.sidebar{padding:0 16px}.brand-sub{font-size:7px;letter-spacing:1.1px}h1{font-size:24px;letter-spacing:-1px}.page-header p{max-width:280px;font-size:10px}#production-form{display:block}.settings fieldset:first-child{border-right:none}.settings fieldset{padding:21px}.stat{padding:15px 11px;min-height:129px}.stat strong{font-size:31px;letter-spacing:-1px}.stat strong>span{font-size:16px}.stat-label{font-size:7px;letter-spacing:.5px}.stat>span:last-of-type{font-size:8px}.stat-grid{gap:7px}.preview-header{padding:18px 16px}.preview-header h2{font-size:12px}.preview-header p{font-size:9px}.size-chip{font-size:8px;padding:5px}.preview-stage{height:370px;padding:17px 12px}.legend{padding:15px 16px;gap:12px;font-size:8px}.legend .scale-note{display:none}.preview-footer{font-size:8px;padding:12px 16px}.summary-details{gap:18px}.summary-details>div{font-size:9px}.results-heading>span{font-size:7px}.page-footer{font-size:7px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media print{@page{size:A4;margin:12mm}body{background:#fff;color:#000;font-size:10pt}.sidebar,.topbar,.settings,.reset,.summary-actions,.saved-state,.method-card,.page-footer{display:none!important}main{margin:0;width:100%;max-width:none;padding:0}.page-header{padding:0 0 18px}.page-header:before{content:'R&N GRÁFICA RÁPIDA';font-size:10pt;font-weight:bold;display:block;margin-bottom:10px}.page-header{display:block}.page-header .eyebrow{display:none}h1{font-size:24pt}.page-header p{font-size:9pt;color:#333}.workspace{display:block}.results-heading>span{display:none}.stat-grid{gap:10px}.stat,.stat.primary{background:#fff;color:#000;border:1px solid #999;min-height:100px}.stat-label,.primary .stat-label,.stat>span:last-of-type,.stat.primary>span:last-of-type{color:#333}.stat strong{font-size:27pt}.stat svg{display:none}.preview-stage{height:335px;background:#fff;print-color-adjust:exact;-webkit-print-color-adjust:exact}.preview-stage svg{filter:none}.card{box-shadow:none;break-inside:avoid}.production-summary{margin-top:12px;padding:15px}.summary-details{padding:13px 0;border-bottom:none;margin-top:12px;gap:12px}.legend .scale-note{display:flex}.preview-footer,.summary-title p,.summary-details>div,.summary-details strong{color:#333}.preview-card{break-inside:avoid}.preview-footer:after{content:'Planejamento · sem escala de corte'}.preview-footer #orientation-result{display:none}.mini-sheet{display:none}.error-box{color:#000;background:#fff;border:1px solid #000}}
+@media print{.calculator-tabs,.area-rates{display:none!important}.area-stats .stat.price{background:#fff;color:#000;border-color:#999}.area-stats .stat.price .stat-label,.area-stats .stat.price>span:last-of-type{color:#333}.area-calculation{background:#fff;color:#000;border-color:#999;font-size:13pt}.area-note{color:#333}.area-quote .summary-actions{display:none}.area-stats .stat strong{font-size:21pt}}
+.costs-frame{display:block;border:0;width:100%;height:1050px;min-height:700px;background:transparent}.calculator-tabs{flex-wrap:wrap}.calculator-tabs button{min-width:0}@media(max-width:380px){.sidebar .brand-sub{display:none}}@media print{.costs-frame{height:auto;min-height:1200px}}
+
+
+.rn-public-contact{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;border-top:1px solid #e6e9ef;padding:23px 0;margin-top:22px}.rn-public-contact p{font-size:12px;line-height:1.8;color:#6b778d;max-width:640px}.rn-public-contact .button{white-space:normal}.rn-embedded .app-shell{min-height:0}.rn-embedded body{min-height:0}.rn-embedded .sidebar{position:absolute}.rn-embedded .sidebar-bottom{padding-bottom:20px}@media(max-width:760px){.rn-embedded .sidebar{position:relative}}@media print{.rn-public-contact{display:none!important}}
+</style>
+
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#calculadora" aria-label="R&N Gráfica Rápida, início"><span class="brand-name">R<span class="amp">&</span>N<span class="brand-dot">.</span></span><span class="brand-sub">GRÁFICA RÁPIDA</span><span class="ink-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span></a>
+    <div class="sidebar-label">SEU ATELIÊ DIGITAL</div>
+    <nav aria-label="Navegação"><a id="nav-production" class="nav-item active" href="#calculadora" aria-label="Encaixe de peças"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2m4 0h2M8 15h2m4 0h2M8 18h2m4 0h2"/></svg>Encaixe de peças<span class="nav-dot"></span></a><a id="nav-area" class="nav-item" href="#metro-quadrado" aria-label="Preço por metro quadrado"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8v4m4-4v2m4-2v4m-8 4h10"/></svg>Preço por m²</a><a id="nav-costs" class="nav-item" href="#custos-precos-lucros" aria-label="Custos, Preços e Lucros"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M6 16v-5m6 5V6m6 10V3"/></svg>Custos e lucros</a><a id="nav-method" class="nav-item" href="#como-calculamos" aria-label="Como calculamos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg>Como calculamos</a></nav>
+    <div class="sidebar-bottom"><div class="private-label"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Seus dados neste navegador</div><p>Um bom trabalho começa<br>com um bom planejamento.</p><span class="edition">R&N · PRODUÇÃO GRÁFICA</span></div>
+  </aside>
+  <main id="calculadora">
+    <header class="topbar"><div><span class="breadcrumb">Ferramentas</span><span class="slash">/</span><span>Produção gráfica</span></div><span class="private-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Calculadora on-line</span></header>
+    <div class="page-header"><div><span class="eyebrow"><i></i> DO PRIMEIRO CORTE À ÚLTIMA FOLHA</span><h1>Calculadora de produção<span>.</span></h1><p>Planeje as peças, calcule valores por m² e acompanhe custos e lucros.</p></div><button class="button secondary reset" id="reset" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2 7M3 4v7h7"/></svg>Recomeçar</button></div>
+    <div class="calculator-tabs" role="tablist" aria-label="Tipo de cálculo"><button id="tab-production" type="button" role="tab" aria-selected="true" aria-controls="production-panel">Encaixe de peças</button><button id="tab-area" type="button" role="tab" aria-selected="false" aria-controls="area-panel" tabindex="-1">Preço por m²</button><button id="tab-costs" type="button" role="tab" aria-selected="false" aria-controls="costs-panel" tabindex="-1">Custos, Preços e Lucros</button></div>
+    <section id="production-panel" role="tabpanel" aria-labelledby="tab-production">
+    <div class="workspace">
+      <section class="settings card" aria-labelledby="settings-heading"><div class="card-heading"><h2 id="settings-heading">Configure seu pedido</h2><span class="live-tag">Ao vivo</span></div>
+        <form id="production-form" novalidate>
+          <fieldset><legend><span>01</span> A folha</legend><label for="paper">Formato do papel</label><select id="paper" name="paper"><option value="a4">A4 · 21 × 29,7 cm</option><option value="a5">A5 · 14,8 × 21 cm</option><option value="a3">A3 · 29,7 × 42 cm</option><option value="letter">Carta · 21,59 × 27,94 cm</option><option value="custom">Medida personalizada</option></select>
+            <div class="field-row"><div><label for="sheetW">Largura <span>cm</span></label><input id="sheetW" name="sheetW" type="text" inputmode="decimal" autocomplete="off" aria-describedby="dimension-help"></div><div><label for="sheetH">Altura <span>cm</span></label><input id="sheetH" name="sheetH" type="text" inputmode="decimal" autocomplete="off" aria-describedby="dimension-help"></div></div>
+            <label for="sheetOrientation">Orientação da folha</label><select id="sheetOrientation" name="sheetOrientation"><option value="portrait">Retrato · lado menor na largura</option><option value="landscape">Paisagem · lado maior na largura</option></select>
+          </fieldset>
+          <fieldset><legend><span>02</span> A peça</legend><label for="shape">Forma da peça</label><select id="shape" name="shape" aria-describedby="shape-help"><option value="rectangle">▭ Retângulo</option><option value="circle">○ Círculo</option><option value="triangle">△ Triângulo isósceles</option><option value="square">□ Quadrado</option></select><p class="field-help" id="shape-help">Informe a largura e a altura finais, depois do corte.</p>
+            <div id="rectangle-presets"><label for="piece">Formato final, após o corte</label><select id="piece" name="piece"><option value="card">Cartão de visita · 9 × 5 cm</option><option value="a5">A5 · 14,8 × 21 cm</option><option value="a6">A6 · 10,5 × 14,8 cm</option><option value="sticker">Adesivo · 3 × 3 cm</option><option value="custom">Medida personalizada</option></select></div>
+            <div class="field-row" id="piece-dimensions"><div><label for="pieceW"><span id="piece-width-label" class="measure-label">Largura</span><span>cm</span></label><input id="pieceW" name="pieceW" type="text" inputmode="decimal" autocomplete="off" aria-describedby="shape-help dimension-help"></div><div id="piece-height-field"><label for="pieceH">Altura <span>cm</span></label><input id="pieceH" name="pieceH" type="text" inputmode="decimal" autocomplete="off" aria-describedby="shape-help dimension-help"></div></div>
+            <div id="piece-orientation-field"><label for="pieceOrientation">Orientação das peças</label><select id="pieceOrientation" name="pieceOrientation"><option value="auto">Automática · melhor grade</option><option value="original">Como informada · sem girar</option><option value="rotate">Girar todas em 90°</option></select></div>
+            <div class="field-row"><div><label for="bleed">Sangria por lado <span>mm</span></label><input id="bleed" name="bleed" type="text" inputmode="decimal" autocomplete="off"></div><div><label for="gap">Intervalo extra <span>mm</span></label><input id="gap" name="gap" type="text" inputmode="decimal" autocomplete="off"></div></div>
+            <p class="field-help">A sangria é adicionada aos quatro lados. O intervalo fica entre as áreas com sangria.</p>
+          </fieldset>
+          <fieldset><legend><span>03</span> Margens e tiragem</legend><div id="uniform-margin"><label for="margin">Margem em cada lado da folha <span>mm</span></label><input id="margin" name="margin" type="text" inputmode="decimal" autocomplete="off"></div><label class="check-label"><input type="checkbox" id="individual" name="individual">Usar margens diferentes por lado</label>
+            <div id="individual-margins" hidden><div class="field-row"><div><label for="top">Superior <span>mm</span></label><input id="top" name="top" type="text" inputmode="decimal" autocomplete="off"></div><div><label for="bottom">Inferior <span>mm</span></label><input id="bottom" name="bottom" type="text" inputmode="decimal" autocomplete="off"></div></div><div class="field-row"><div><label for="left">Esquerda <span>mm</span></label><input id="left" name="left" type="text" inputmode="decimal" autocomplete="off"></div><div><label for="right">Direita <span>mm</span></label><input id="right" name="right" type="text" inputmode="decimal" autocomplete="off"></div></div></div>
+            <label for="quantity">Quantidade desejada <span>peças</span></label><input class="quantity-input" id="quantity" name="quantity" type="text" inputmode="numeric" autocomplete="off"><p class="field-help" id="dimension-help">Aceita vírgula ou ponto decimal. As medidas da folha e da peça estão em centímetros.</p>
+          </fieldset>
+          <div class="saved-state" id="saved-state"><span></span>Configuração salva neste navegador</div>
+        </form>
+      </section>
+      <div class="results-column">
+        <div class="results-heading"><h2>Seu plano de impressão</h2><span id="result-status"><i></i>Atualizado automaticamente</span></div>
+        <div id="errors" class="error-box" role="status" aria-live="polite" hidden></div>
+        <div class="stat-grid" aria-live="polite" aria-atomic="true"><article class="stat primary"><span class="stat-label">PEÇAS POR FOLHA</span><strong id="capacity">10</strong><span id="grid-description">2 colunas × 5 linhas</span><svg viewBox="0 0 80 80" aria-hidden="true"><rect x="4" y="4" width="30" height="20" rx="3"/><rect x="42" y="4" width="30" height="20" rx="3"/><rect x="4" y="32" width="30" height="20" rx="3"/><rect x="42" y="32" width="30" height="20" rx="3"/><rect x="4" y="60" width="30" height="20" rx="3"/><rect x="42" y="60" width="30" height="20" rx="3"/></svg></article><article class="stat"><span class="stat-label">FOLHAS NECESSÁRIAS</span><strong id="sheet-count">100</strong><span id="production-description">Para produzir 1.000 peças</span></article><article class="stat"><span class="stat-label">ÁREA ÚTIL RESERVADA</span><strong id="coverage">93,7<span>%</span></strong><span>Área reservada para o encaixe</span></article></div>
+        <section class="preview-card card" aria-labelledby="preview-title"><div class="preview-header"><div><h2 id="preview-title">Prévia do encaixe</h2><p id="preview-subtitle">A4 em retrato · peças sem rotação</p></div><span class="size-chip" id="size-chip">21 × 29,7 cm</span></div><div class="preview-stage" id="preview-stage"></div><div class="legend"><span><i class="trim"></i>Peça final</span><span><i class="bleed"></i>Sangria</span><span><i class="margin"></i>Margem da folha</span><span><i class="reserved"></i>Área reservada</span><span class="scale-note">Visualização proporcional</span></div><div class="preview-footer"><span id="tile-dimensions">Com sangria: 9,6 × 5,6 cm</span><span id="orientation-result">Grade regular</span></div></section>
+        <section class="production-summary card" aria-labelledby="summary-heading"><div class="summary-title"><span class="mini-sheet" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7m-7 4h7"/></svg></span><div><h2 id="summary-heading">Pronto para planejar a tiragem</h2><p id="summary-line">100 folhas para 1.000 peças.</p></div></div><div class="summary-details"><div><span>Capacidade da tiragem</span><strong id="total-pieces">1.000 peças</strong></div><div><span>Vagas extras na última folha</span><strong id="extra-pieces">0 vagas</strong></div><div><span>Peças na última folha</span><strong id="last-sheet">10 peças</strong></div><div><span>Área útil da folha</span><strong id="usable-size">20 × 28,7 cm</strong></div><div><span>Forma da peça</span><strong id="shape-summary">Retângulo</strong></div><div><span>Área da peça, sem sangria</span><strong id="piece-area">45 cm²</strong></div></div><div class="summary-actions"><button class="button blue" id="copy" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></svg>Copiar resumo</button><button class="button secondary" id="print" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7zM16 11h1"/></svg>Imprimir plano</button><span id="action-status" role="status" aria-live="polite"></span></div></section>
+        <section class="method-card" id="como-calculamos" aria-labelledby="method-title"><div class="method-mark" aria-hidden="true">i</div><div><h2 id="method-title">O que entra na conta?</h2><p>Descontamos as margens e reservamos uma área retangular para cada peça, incluindo a sangria. Círculos usam o diâmetro, quadrados usam o lado e triângulos isósceles usam a base e a altura. O encaixe é feito em grade regular, sem intercalar círculos nem alternar triângulos. A orientação automática compara a grade a 0° e a 90°.</p><details><summary>Ver a fórmula e os cuidados de produção</summary><p>Colunas = parte inteira de (largura útil + intervalo) ÷ (largura da peça com sangria + intervalo). Linhas usam a mesma fórmula para a altura. Peças por folha = colunas × linhas. Folhas = quantidade ÷ peças por folha, arredondada para cima.</p><p>O plano mostra uma folha completa. Na última folha, imprima somente as peças necessárias. O percentual mede a área retangular reservada para as peças e a sangria em relação à área útil. Para círculos e triângulos, inclui os espaços dentro dessa área. O intervalo extra entre áreas é contado somente entre peças e fica fora do percentual. A área da peça sem sangria usa π × (diâmetro ÷ 2)² para círculos, base × altura ÷ 2 para triângulos e largura × altura para retângulos e quadrados.</p><p>Informe a margem mínima exigida pela sua impressora. Marcas de corte precisam de espaço adicional. Esta prévia é para planejamento: o botão de impressão gera um resumo, sem escala de corte e sem arquivo de imposição.</p></details></div></section>
+      </div>
+    </div></section>
+    <section id="area-panel" role="tabpanel" aria-labelledby="tab-area" hidden>
+      <div class="workspace area-workspace">
+        <section class="settings card area-settings" aria-labelledby="area-settings-heading"><div class="card-heading"><h2 id="area-settings-heading">Calcule seu orçamento</h2><span class="live-tag">Por m²</span></div>
+          <form id="area-form" novalidate>
+            <fieldset><legend><span>01</span> Produto e medidas</legend>
+              <label for="area-product">Produto</label><select id="area-product" name="product"><option value="banner">Banner em lona · R$ 35,00/m²</option><option value="adhesive">Adesivo · R$ 35,00/m²</option><option value="perforated">Perfurado · R$ 45,00/m²</option><option value="poster">Papel lambe-lambe · R$ 30,00/m²</option></select>
+              <label for="area-unit">Unidade das medidas</label><select id="area-unit" name="unit"><option value="cm">Centímetros (cm)</option><option value="m">Metros (m)</option></select>
+              <div class="field-row"><div><label for="area-width">Largura <span id="area-width-unit">cm</span></label><input id="area-width" name="width" type="text" inputmode="decimal" autocomplete="off" aria-describedby="area-dimension-help"></div><div><label for="area-height">Altura <span id="area-height-unit">cm</span></label><input id="area-height" name="height" type="text" inputmode="decimal" autocomplete="off" aria-describedby="area-dimension-help"></div></div>
+              <p class="field-help" id="area-dimension-help">Aceita vírgula ou ponto decimal. Trocar a unidade converte as medidas automaticamente.</p>
+            </fieldset>
+            <fieldset><legend><span>02</span> Quantidade e cobrança</legend>
+              <label for="area-quantity">Quantidade <span>peças iguais</span></label><input id="area-quantity" name="quantity" type="text" inputmode="numeric" autocomplete="off">
+              <label class="check-label"><input id="area-minimum" name="minimum" type="checkbox" aria-describedby="area-minimum-help">Cobrar no mínimo 1 m² por peça</label>
+              <p class="field-help" id="area-minimum-help">Desmarcado: valor proporcional à área. Marcado: cada peça menor que 1 m² é cobrada como 1 m².</p>
+              <div class="area-form-actions"><button class="button secondary" id="area-reset" type="button">Recomeçar orçamento</button></div>
+            </fieldset>
+            <div class="saved-state"><span></span><span id="area-saved" class="saved-message">Configuração salva neste navegador</span></div>
+          </form>
+        </section>
+        <div class="results-column">
+          <div class="results-heading"><h2>Seu cálculo por metro quadrado</h2><span>Atualizado automaticamente</span></div>
+          <div id="area-errors" class="error-box" role="status" aria-live="polite" hidden></div>
+          <div class="stat-grid area-stats" aria-live="polite" aria-atomic="true"><article class="stat"><span class="stat-label">ÁREA POR PEÇA</span><strong id="area-unit-result">1 m²</strong><span>Largura × altura</span></article><article class="stat"><span class="stat-label">ÁREA TOTAL REAL</span><strong id="area-total-result">1 m²</strong><span>Área da peça × quantidade</span></article><article class="stat price"><span class="stat-label">VALOR TOTAL</span><strong id="area-price-result">R$ 35,00</strong><span id="area-rate">R$ 35,00/m²</span></article></div>
+          <section class="production-summary card area-quote" aria-labelledby="area-quote-title"><div class="summary-title"><span class="mini-sheet" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7m-7 4h7"/></svg></span><div><h2 id="area-quote-title">Resumo do orçamento</h2><p id="area-selected-product">Banner em lona</p></div></div>
+            <div class="summary-details"><div><span>Medidas da peça</span><strong id="area-dimensions-summary">100 × 100 cm</strong></div><div><span>Quantidade</span><strong id="area-quantity-summary">1 peça</strong></div><div><span>Área total cobrada</span><strong id="area-billed-result">1 m²</strong></div><div><span>Regra de cobrança</span><strong id="area-pricing-rule">Proporcional à área</strong></div></div>
+            <div class="area-calculation" id="area-calculation">1 m² × R$ 35,00/m² = R$ 35,00</div><p class="area-note" id="area-minimum-note">O total é arredondado em centavos após calcular toda a área cobrada. Confirme materiais, acabamento, disponibilidade e prazo no atendimento.</p>
+            <div class="summary-actions"><button class="button blue" id="area-copy" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></svg>Copiar orçamento</button><button class="button secondary" id="area-print" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7zM16 11h1"/></svg>Imprimir orçamento</button><span id="area-action-status" role="status" aria-live="polite"></span></div>
+          </section>
+          <section class="card area-rates" aria-labelledby="area-rates-title"><div class="card-heading"><h2 id="area-rates-title">Tabela de referência da R&N</h2><span class="live-tag">R$/m²</span></div><table><thead><tr><th scope="col">Produto</th><th scope="col">Valor por m²</th></tr></thead><tbody><tr id="rate-banner"><td>Banner em lona</td><td>R$ 35,00</td></tr><tr id="rate-adhesive"><td>Adesivo</td><td>R$ 35,00</td></tr><tr id="rate-perforated"><td>Perfurado</td><td>R$ 45,00</td></tr><tr id="rate-poster"><td>Papel lambe-lambe</td><td>R$ 30,00</td></tr></tbody></table></section>
+          <div class="method-card"><div class="method-mark" aria-hidden="true">i</div><div><h2>Como calcular o valor?</h2><p>Convertemos as medidas para metros. Área por peça = largura × altura. Área total = área por peça × quantidade. Valor total = área cobrada × preço por m². O cálculo considera as medidas informadas da peça; opções de sangria e margem do encaixe não alteram este orçamento.</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="costs-panel" role="tabpanel" aria-labelledby="tab-costs" hidden><iframe class="costs-frame" id="costs-frame" srcdoc="&lt;!doctype html&gt;&lt;html lang=&quot;pt-BR&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;title&gt;R&amp;N Gráfica Rápida | Custos e Lucros&lt;/title&gt;&lt;style&gt;:root{font-family:Arial,sans-serif;color:#17243b;background:#f3f6fb}*{box-sizing:border-box}body{margin:0}header{background:#153c83;color:white;padding:24px max(20px,calc((100% - 1150px)/2))}h1{margin:0;font-size:24px}header p{margin:7px 0 0;color:#d8e7ff}main{max-width:1150px;margin:auto;padding:20px}nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}button{border:0;border-radius:8px;padding:11px 15px;cursor:pointer;background:#e5eaf3;color:#142a50;font-weight:bold}button.active,button.primary{background:#19458f;color:white}.danger{background:#fce4e4;color:#922}section{display:none}section.active{display:block}.panel{background:white;border:1px solid #e0e6ef;border-radius:12px;padding:18px;margin-bottom:15px;box-shadow:0 2px 8px #1c33530c}h2{margin:0 0 14px;font-size:20px}h3{font-size:16px;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}label{font-size:13px;font-weight:700}input,select{width:100%;padding:10px;border:1px solid #c8d3e1;border-radius:7px;font-size:15px;background:white}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:14px 0}.stat{background:#f0f5fd;border-radius:9px;padding:15px}.stat small{display:block;color:#52647c}.stat strong{display:block;font-size:22px;margin-top:5px}.warn{color:#b34c00;font-weight:700}.good{color:#11754a;font-weight:700}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px;border-bottom:1px solid #e5eaf2;text-align:left}th{background:#f4f7fc}.scroll{overflow-x:auto}.muted{color:#596b82;font-size:13px}.inline{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.inline input{width:95px}.pill{display:inline-block;background:#e7eefb;border-radius:20px;padding:5px 9px;font-size:12px}.check{display:flex;align-items:center;gap:8px}.check input{width:auto}@media(max-width:550px){header{padding:20px}main{padding:12px}td,th{padding:7px}}[hidden]{display:none!important}:root{background:transparent;font-family:Inter,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif}main{max-width:none;padding:0 2px}.cost-heading{margin:0 0 22px}.cost-heading h1{font-size:22px;letter-spacing:-.6px}.cost-heading p{font-size:12px;color:#7a879b;line-height:1.7;margin:8px 0}.cost-heading #cost-state{color:#587c6c;min-height:20px}.panel{box-shadow:none;border-color:#e6e9ef;border-radius:14px;padding:22px}.panel h2{font-size:16px}button.active,button.primary{background:#225ce5}nav{gap:7px}nav button{font-size:11px;padding:11px 13px}h3{font-size:13px;line-height:1.6;margin-top:22px}label{font-size:11px;color:#64718a}input,select{font-size:13px;border-color:#dfe4ec}.stat strong{font-size:23px}.stat small{font-size:10px}.muted{font-size:11px;line-height:1.7}th,td{font-size:12px}.inline input{min-width:90px}input[aria-invalid=true]{border-color:#c34b57;background:#fff5f5}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #8cafff;outline-offset:2px}@media(max-width:550px){main{padding:0}.panel{padding:17px}.grid{grid-template-columns:1fr}.cost-heading h1{font-size:20px}nav button{font-size:10px;padding:10px}.stats{grid-template-columns:1fr 1fr}.stat{padding:12px}.stat strong{font-size:20px}}
+&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;main&gt;&lt;div class=&quot;cost-heading&quot;&gt;&lt;h1&gt;Custos, Preços e Lucros&lt;/h1&gt;&lt;p&gt;Cadastre seus custos para encontrar o preço de venda e acompanhar a margem. Para trazer os cadastros do site, use Backup de dados → Importar backup JSON.&lt;/p&gt;&lt;p id=&quot;cost-state&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;&gt;&lt;/p&gt;&lt;/div&gt;&lt;nav&gt;&lt;button class=&quot;active&quot; data-tab=&quot;produtos&quot;&gt;Produtos e serviços&lt;/button&gt;&lt;button data-tab=&quot;materiais&quot;&gt;Materiais e insumos&lt;/button&gt;&lt;button data-tab=&quot;config&quot;&gt;Configurações&lt;/button&gt;&lt;button data-tab=&quot;dados&quot;&gt;Backup de dados&lt;/button&gt;&lt;/nav&gt;&lt;section id=&quot;produtos&quot; class=&quot;active&quot;&gt;&lt;div class=&quot;panel&quot;&gt;&lt;h2&gt;Calculadora de produtos e serviços&lt;/h2&gt;&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;category&quot;&gt;Categoria&lt;/label&gt;&lt;select id=&quot;category&quot;&gt;&lt;/select&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;product&quot;&gt;Produto ou serviço&lt;/label&gt;&lt;select id=&quot;product&quot;&gt;&lt;/select&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label id=&quot;qtyLabel&quot; for=&quot;qty&quot;&gt;Quantidade do pedido&lt;/label&gt;&lt;input id=&quot;qty&quot; type=&quot;number&quot; min=&quot;1&quot; max=&quot;1000000&quot; step=&quot;1&quot; value=&quot;1&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;margin&quot;&gt;Margem desejada (%)&lt;/label&gt;&lt;input id=&quot;margin&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;99&quot; step=&quot;0.1&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;extra&quot;&gt;Outros custos por unidade (R$) — mão de obra, taxas etc.&lt;/label&gt;&lt;input id=&quot;extra&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;manual&quot;&gt;Preço de venda manual por unidade (R$)&lt;/label&gt;&lt;input id=&quot;manual&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;waste&quot;&gt;Desperdício de materiais (%)&lt;/label&gt;&lt;input id=&quot;waste&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;0.1&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;unit&quot;&gt;Forma de cobrança&lt;/label&gt;&lt;select id=&quot;unit&quot;&gt;&lt;option value=&quot;unidade&quot;&gt;Por unidade&lt;/option&gt;&lt;option value=&quot;folha&quot;&gt;Por folha&lt;/option&gt;&lt;option value=&quot;m²&quot;&gt;Por m²&lt;/option&gt;&lt;option value=&quot;serviço&quot;&gt;Por serviço&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/div&gt;&lt;h3&gt;Tinta por unidade de venda&lt;/h3&gt;&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;inkMode&quot;&gt;Cálculo da tinta&lt;/label&gt;&lt;select id=&quot;inkMode&quot;&gt;&lt;option value=&quot;none&quot;&gt;Sem custo adicional de tinta&lt;/option&gt;&lt;option value=&quot;manual&quot;&gt;Manual · custo por unidade&lt;/option&gt;&lt;option value=&quot;auto&quot;&gt;Automático · consumo em ml&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;div class=&quot;field&quot; id=&quot;inkManualField&quot;&gt;&lt;label for=&quot;inkManual&quot;&gt;Custo manual da tinta (R$)&lt;/label&gt;&lt;input id=&quot;inkManual&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;any&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot; id=&quot;inkBottlePriceField&quot;&gt;&lt;label for=&quot;inkBottlePrice&quot;&gt;Valor do frasco de tinta (R$)&lt;/label&gt;&lt;input id=&quot;inkBottlePrice&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot; id=&quot;inkBottleMlField&quot;&gt;&lt;label for=&quot;inkBottleMl&quot;&gt;Volume do frasco (ml)&lt;/label&gt;&lt;input id=&quot;inkBottleMl&quot; type=&quot;number&quot; min=&quot;0.000001&quot; step=&quot;any&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot; id=&quot;inkUsageMlField&quot;&gt;&lt;label for=&quot;inkUsageMl&quot;&gt;Consumo por unidade de venda (ml)&lt;/label&gt;&lt;input id=&quot;inkUsageMl&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;any&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;p class=&quot;muted&quot;&gt;No modo automático: valor do frasco ÷ volume × consumo informado. O consumo é uma estimativa sua. Use este bloco ou cadastre a tinta como material, evitando contar o mesmo custo duas vezes.&lt;/p&gt;&lt;h3&gt;Materiais usados neste produto (quantidade por unidade de venda)&lt;/h3&gt;&lt;div class=&quot;scroll&quot;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Material&lt;/th&gt;&lt;th&gt;Quantidade&lt;/th&gt;&lt;th&gt;Custo calculado&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;recipe&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=&quot;inline&quot; style=&quot;margin:12px 0&quot;&gt;&lt;select id=&quot;addMaterial&quot; style=&quot;max-width:280px&quot;&gt;&lt;/select&gt;&lt;button id=&quot;addRecipe&quot;&gt;+ Vincular material&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;stats&quot; aria-live=&quot;polite&quot;&gt;&lt;div class=&quot;stat&quot;&gt;&lt;small&gt;Tinta por unidade&lt;/small&gt;&lt;strong id=&quot;inkOut&quot;&gt;—&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;&lt;small&gt;Custo por unidade&lt;/small&gt;&lt;strong id=&quot;costOut&quot;&gt;—&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;&lt;small&gt;Preço sugerido por unidade&lt;/small&gt;&lt;strong id=&quot;suggestOut&quot;&gt;—&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;&lt;small&gt;Lucro total no preço manual&lt;/small&gt;&lt;strong id=&quot;profitOut&quot;&gt;—&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;&lt;small&gt;Margem real&lt;/small&gt;&lt;strong id=&quot;actualOut&quot;&gt;—&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;&lt;small&gt;Custo total do pedido&lt;/small&gt;&lt;strong id=&quot;totalCostOut&quot;&gt;—&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;&lt;small&gt;Venda total manual&lt;/small&gt;&lt;strong id=&quot;totalSaleOut&quot;&gt;—&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;&lt;small&gt;Venda total sugerida&lt;/small&gt;&lt;strong id=&quot;totalSuggestOut&quot;&gt;—&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;&lt;p id=&quot;alert&quot; role=&quot;status&quot; aria-live=&quot;polite&quot;&gt;&lt;/p&gt;&lt;button class=&quot;primary&quot; id=&quot;saveProduct&quot;&gt;Salvar alterações do produto&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;panel&quot;&gt;&lt;h2&gt;Adicionar novo produto ou serviço&lt;/h2&gt;&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;newProduct&quot;&gt;Nome&lt;/label&gt;&lt;input id=&quot;newProduct&quot; placeholder=&quot;Ex.: Foto 10×15&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;newCategory&quot;&gt;Categoria&lt;/label&gt;&lt;select id=&quot;newCategory&quot;&gt;&lt;/select&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;newCategoryText&quot;&gt;Ou nova categoria&lt;/label&gt;&lt;input id=&quot;newCategoryText&quot; placeholder=&quot;Opcional&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;button class=&quot;primary&quot; id=&quot;createProduct&quot;&gt;+ Adicionar produto&lt;/button&gt; &lt;button class=&quot;danger&quot; id=&quot;deleteProduct&quot;&gt;Excluir produto selecionado&lt;/button&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;materiais&quot;&gt;&lt;div class=&quot;panel&quot;&gt;&lt;h2&gt;Materiais e insumos&lt;/h2&gt;&lt;p class=&quot;muted&quot;&gt;Altere um custo e os preços sugeridos de todos os produtos vinculados serão recalculados. O preço manual não muda.&lt;/p&gt;&lt;div class=&quot;scroll&quot;&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Material&lt;/th&gt;&lt;th&gt;Modo&lt;/th&gt;&lt;th&gt;Valor pago (R$)&lt;/th&gt;&lt;th&gt;Qtd. na embalagem&lt;/th&gt;&lt;th&gt;Custo unitário&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;materialsTable&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;panel&quot;&gt;&lt;h2&gt;Adicionar material&lt;/h2&gt;&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;newMaterial&quot;&gt;Nome&lt;/label&gt;&lt;input id=&quot;newMaterial&quot; placeholder=&quot;Ex.: Papel A4 75g&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;newMode&quot;&gt;Tipo de custo&lt;/label&gt;&lt;select id=&quot;newMode&quot;&gt;&lt;option value=&quot;pack&quot;&gt;Por embalagem&lt;/option&gt;&lt;option value=&quot;unit&quot;&gt;Por unidade&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;newValue&quot;&gt;Valor pago (R$)&lt;/label&gt;&lt;input id=&quot;newValue&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot; value=&quot;0&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;newCount&quot;&gt;Quantidade na embalagem&lt;/label&gt;&lt;input id=&quot;newCount&quot; type=&quot;number&quot; min=&quot;0.0001&quot; step=&quot;any&quot; value=&quot;1&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;button class=&quot;primary&quot; id=&quot;createMaterial&quot;&gt;+ Adicionar material&lt;/button&gt;&lt;/div&gt;&lt;div class=&quot;panel&quot;&gt;&lt;h2&gt;Tinta de impressão&lt;/h2&gt;&lt;p class=&quot;muted&quot;&gt;Cadastre um material para cada tinta. No modo automático, use o valor do frasco e o volume em ml; vincule ao produto o consumo estimado em ml por impressão. No modo manual, cadastre o custo médio da tinta por página como custo unitário e vincule 1 unidade ao produto. O consumo depende da cobertura e não é medido diretamente pela calculadora.&lt;/p&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;config&quot;&gt;&lt;div class=&quot;panel&quot;&gt;&lt;h2&gt;Configurações gerais&lt;/h2&gt;&lt;div class=&quot;grid&quot;&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;defaultMargin&quot;&gt;Margem padrão (%)&lt;/label&gt;&lt;input id=&quot;defaultMargin&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;99&quot; step=&quot;0.1&quot;&gt;&lt;/div&gt;&lt;div class=&quot;field&quot;&gt;&lt;label for=&quot;warningMargin&quot;&gt;Alerta quando margem ficar abaixo de (%)&lt;/label&gt;&lt;input id=&quot;warningMargin&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;99&quot; step=&quot;0.1&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;button class=&quot;primary&quot; id=&quot;saveConfig&quot;&gt;Salvar configurações&lt;/button&gt;&lt;p class=&quot;muted&quot;&gt;Margem sobre venda = (preço − custo) ÷ preço. O preço sugerido por unidade é arredondado para cima em centavos para preservar a margem desejada. Taxas incidentes sobre a venda devem ser contabilizadas nos custos para refletir a margem efetiva.&lt;/p&gt;&lt;/div&gt;&lt;/section&gt;&lt;section id=&quot;dados&quot;&gt;&lt;div class=&quot;panel&quot;&gt;&lt;h2&gt;Dados e cópia de segurança&lt;/h2&gt;&lt;p&gt;Os dados são salvos automaticamente neste navegador, neste dispositivo. Eles não são sincronizados com outros computadores e podem desaparecer se os dados do navegador forem apagados. Exporte backups regularmente.&lt;/p&gt;&lt;button class=&quot;primary&quot; id=&quot;export&quot;&gt;Exportar backup JSON&lt;/button&gt;&lt;div class=&quot;field&quot; style=&quot;margin-top:15px&quot;&gt;&lt;label for=&quot;import&quot;&gt;Importar backup JSON&lt;/label&gt;&lt;input id=&quot;import&quot; type=&quot;file&quot; accept=&quot;.json,application/json&quot;&gt;&lt;/div&gt;&lt;p class=&quot;muted&quot;&gt;A visibilidade do site não sincroniza os cadastros. Para levar seus dados a outro navegador, exporte e importe o backup.&lt;/p&gt;&lt;/div&gt;&lt;/section&gt;&lt;/main&gt;&lt;script&gt;
+(function(){
+&quot;use strict&quot;;
+function __uuid(){if(globalThis.crypto?.randomUUID)return globalThis.crypto.randomUUID();const bytes=new Uint8Array(16);if(globalThis.crypto?.getRandomValues)globalThis.crypto.getRandomValues(bytes);else for(let i=0;i&lt;16;i++)bytes[i]=Math.floor(Math.random()*256);bytes[6]=(bytes[6]&amp;15)|64;bytes[8]=(bytes[8]&amp;63)|128;const s=Array.from(bytes,b=&gt;b.toString(16).padStart(2,&#x27;0&#x27;)).join(&#x27;&#x27;);return s.slice(0,8)+&#x27;-&#x27;+s.slice(8,12)+&#x27;-&#x27;+s.slice(12,16)+&#x27;-&#x27;+s.slice(16,20)+&#x27;-&#x27;+s.slice(20)}
+const __offlineStorage={getItem(key){return (parent!==window?parent.localStorage:window.localStorage).getItem(key)},setItem(key,value){return (parent!==window?parent.localStorage:window.localStorage).setItem(key,value)}};
+const __modules={
+&quot;costs-app.js&quot;:function(__require){
+const {createCostDefaults,newCostProduct,normalizeCostsData,materialUnitCost,calculateCost}=__require(&quot;cost-engine.js&quot;);
+const {parseNumeric}=__require(&quot;calculator.js&quot;);
+const $=id=&gt;document.getElementById(id),key=&#x27;rn-grafica-custos-v1&#x27;;
+const money=(n,precise=false)=&gt;n.toLocaleString(&#x27;pt-BR&#x27;,{style:&#x27;currency&#x27;,currency:&#x27;BRL&#x27;,maximumFractionDigits:precise?6:2});
+let data,selected=null,loadError=false;
+try{const raw=__offlineStorage.getItem(key);data=raw?normalizeCostsData(JSON.parse(raw)):createCostDefaults()}catch{data=createCostDefaults();loadError=true}
+const status=message=&gt;{$(&#x27;cost-state&#x27;).textContent=message};
+function save(message=&#x27;Alterações salvas neste navegador.&#x27;){
+  try{__offlineStorage.setItem(key,JSON.stringify(data));status(message)}catch{status(&#x27;Não foi possível salvar neste navegador. Exporte um backup para guardar as alterações.&#x27;)}
+}
+function opts(el,items,prefer){el.replaceChildren();for(const [value,text]of items){const o=document.createElement(&#x27;option&#x27;);o.value=value;o.textContent=text;el.append(o)}el.value=items.some(([value])=&gt;value===prefer)?prefer:items[0]?.[0]??&#x27;&#x27;}
+const product=()=&gt;data.products.find(p=&gt;p.id===selected);
+const numeric=(id,min=0,max=1e9)=&gt;{const n=parseNumeric($(id).value);if(!Number.isFinite(n)||n&lt;min||n&gt;max){$(id).setAttribute(&#x27;aria-invalid&#x27;,&#x27;true&#x27;);throw Error(`Confira o valor de ${$(id).getAttribute(&#x27;aria-label&#x27;)||document.querySelector(&#x27;label[for=&quot;&#x27;+id+&#x27;&quot;]&#x27;)?.textContent||id}.`)}$(id).removeAttribute(&#x27;aria-invalid&#x27;);return n};
+function inkFields(){const mode=product()?.inkMode;for(const k of [&#x27;inkManual&#x27;,&#x27;inkBottlePrice&#x27;,&#x27;inkBottleMl&#x27;,&#x27;inkUsageMl&#x27;]){$(k+&#x27;Field&#x27;).hidden=k===&#x27;inkManual&#x27;?mode!==&#x27;manual&#x27;:mode!==&#x27;auto&#x27;;$(k).disabled=k===&#x27;inkManual&#x27;?mode!==&#x27;manual&#x27;:mode!==&#x27;auto&#x27;}}
+function fillCats(prefer){const cats=[...new Set(data.products.map(p=&gt;p.category))].sort();opts($(&#x27;category&#x27;),cats.map(c=&gt;[c,c]),prefer||$(&#x27;category&#x27;).value||data.products[0]?.category);opts($(&#x27;newCategory&#x27;),cats.map(c=&gt;[c,c]));fillProducts()}
+function fillProducts(prefer){const products=data.products.filter(p=&gt;p.category===$(&#x27;category&#x27;).value);opts($(&#x27;product&#x27;),products.map(p=&gt;[p.id,p.name]),prefer||selected);selected=$(&#x27;product&#x27;).value;loadProduct()}
+function loadProduct(){const p=product();if(!p)return;for(const k of [&#x27;margin&#x27;,&#x27;extra&#x27;,&#x27;manual&#x27;,&#x27;waste&#x27;,&#x27;unit&#x27;,&#x27;inkMode&#x27;,&#x27;inkManual&#x27;,&#x27;inkBottlePrice&#x27;,&#x27;inkBottleMl&#x27;,&#x27;inkUsageMl&#x27;]){$(k).value=p[k];$(k).removeAttribute(&#x27;aria-invalid&#x27;)}$(&#x27;qtyLabel&#x27;).textContent=p.unit===&#x27;m²&#x27;?&#x27;Área do pedido (m²)&#x27;:&#x27;Quantidade do pedido&#x27;;$(&#x27;qty&#x27;).min=p.unit===&#x27;m²&#x27;?&#x27;0.000001&#x27;:&#x27;1&#x27;;$(&#x27;qty&#x27;).step=p.unit===&#x27;m²&#x27;?&#x27;any&#x27;:&#x27;1&#x27;;if(p.unit!==&#x27;m²&#x27;&amp;&amp;!Number.isInteger(parseNumeric($(&#x27;qty&#x27;).value)))$(&#x27;qty&#x27;).value=&#x27;1&#x27;;inkFields();renderRecipe();calculate()}
+function td(value){const el=document.createElement(&#x27;td&#x27;);el.textContent=value;return el}
+function button(text,action,danger=false){const b=document.createElement(&#x27;button&#x27;);b.type=&#x27;button&#x27;;b.textContent=text;if(danger)b.className=&#x27;danger&#x27;;b.onclick=action;return b}
+function numberInput(value,label,min,change){const i=document.createElement(&#x27;input&#x27;);i.type=&#x27;number&#x27;;i.min=String(min);i.step=&#x27;any&#x27;;i.value=value;i.style.width=&#x27;115px&#x27;;i.setAttribute(&#x27;aria-label&#x27;,label);i.onchange=()=&gt;{const n=parseNumeric(i.value);if(!Number.isFinite(n)||n&lt;min||n&gt;1e9){alert(&#x27;Informe um valor válido&#x27;+(min&gt;0?&#x27;, maior que zero.&#x27;:&#x27;.&#x27;));i.value=value;return}change(n)};return i}
+function renderRecipe(){const p=product();if(!p)return;const body=$(&#x27;recipe&#x27;);body.replaceChildren();for(const [index,r]of p.recipe.entries()){
+  const m=data.materials.find(x=&gt;x.id===r.materialId),tr=document.createElement(&#x27;tr&#x27;);tr.append(td(m?.name||&#x27;Material indisponível&#x27;));const q=td(&#x27;&#x27;);q.append(numberInput(r.qty,&#x27;Consumo de &#x27;+(m?.name||&#x27;material&#x27;),0,n=&gt;{r.qty=n;save();renderRecipe();calculate()}));tr.append(q,td(money(m?materialUnitCost(m)*r.qty:0,true)));const action=td(&#x27;&#x27;);action.append(button(&#x27;Remover&#x27;,()=&gt;{p.recipe.splice(index,1);save();renderRecipe();calculate()}));tr.append(action);body.append(tr)
+  }opts($(&#x27;addMaterial&#x27;),data.materials.map(m=&gt;[m.id,m.name]),$(&#x27;addMaterial&#x27;).value);
+}
+function calculate(){const p=product();if(!p)return;try{
+  const r=calculateCost(p,data.materials,parseNumeric($(&#x27;qty&#x27;).value));$(&#x27;qty&#x27;).removeAttribute(&#x27;aria-invalid&#x27;);
+  for(const [id,value]of [[&#x27;inkOut&#x27;,money(r.inkCost,true)],[&#x27;costOut&#x27;,r.configured?money(r.cost):&#x27;—&#x27;],[&#x27;suggestOut&#x27;,r.configured?money(r.suggested):&#x27;—&#x27;],[&#x27;profitOut&#x27;,r.configured&amp;&amp;p.manual&gt;0?money(r.profit):&#x27;—&#x27;],[&#x27;actualOut&#x27;,r.configured&amp;&amp;r.actualMargin!==null?r.actualMargin.toFixed(1).replace(&#x27;.&#x27;,&#x27;,&#x27;)+&#x27;%&#x27;:&#x27;—&#x27;],[&#x27;totalCostOut&#x27;,r.configured?money(r.totalCost):&#x27;—&#x27;],[&#x27;totalSaleOut&#x27;,p.manual&gt;0?money(r.totalSale):&#x27;—&#x27;],[&#x27;totalSuggestOut&#x27;,r.configured?money(r.totalSuggested):&#x27;—&#x27;]])$(id).textContent=value;
+  const warning=!r.configured||r.actualMargin===null||r.actualMargin&lt;data.settings.warning;$(&#x27;alert&#x27;).className=warning?&#x27;warn&#x27;:&#x27;good&#x27;;
+  $(&#x27;alert&#x27;).textContent=!r.configured?&#x27;Cadastre os materiais, a tinta ou outros custos para calcular o preço sugerido e o lucro.&#x27;:r.actualMargin===null?&#x27;Informe o preço manual para avaliar sua margem.&#x27;:r.actualMargin&lt;data.settings.warning?&#x27;Atenção: margem atual abaixo do limite configurado.&#x27;:&#x27;Margem manual dentro do limite configurado.&#x27;;
+  }catch(error){for(const id of [&#x27;inkOut&#x27;,&#x27;costOut&#x27;,&#x27;suggestOut&#x27;,&#x27;profitOut&#x27;,&#x27;actualOut&#x27;,&#x27;totalCostOut&#x27;,&#x27;totalSaleOut&#x27;,&#x27;totalSuggestOut&#x27;])$(id).textContent=&#x27;—&#x27;;$(&#x27;qty&#x27;).setAttribute(&#x27;aria-invalid&#x27;,&#x27;true&#x27;);$(&#x27;alert&#x27;).className=&#x27;warn&#x27;;$(&#x27;alert&#x27;).textContent=error.message}
+}
+function renderMaterials(){const body=$(&#x27;materialsTable&#x27;);body.replaceChildren();for(const m of data.materials){
+  const tr=document.createElement(&#x27;tr&#x27;);tr.append(td(m.name));const modeCell=td(&#x27;&#x27;),mode=document.createElement(&#x27;select&#x27;);mode.setAttribute(&#x27;aria-label&#x27;,&#x27;Modo de custo de &#x27;+m.name);opts(mode,[[&#x27;unit&#x27;,&#x27;Unidade&#x27;],[&#x27;pack&#x27;,&#x27;Embalagem&#x27;]],m.mode);mode.onchange=()=&gt;{m.mode=mode.value;materialChanged()};modeCell.append(mode);tr.append(modeCell);
+  for(const field of [&#x27;value&#x27;,&#x27;count&#x27;]){const cell=td(&#x27;&#x27;),input=numberInput(m[field],(field===&#x27;value&#x27;?&#x27;Valor pago por &#x27;:&#x27;Quantidade na embalagem de &#x27;)+m.name,field===&#x27;count&#x27;?0.000001:0,n=&gt;{m[field]=n;materialChanged()});input.disabled=field===&#x27;count&#x27;&amp;&amp;m.mode===&#x27;unit&#x27;;cell.append(input);tr.append(cell)}
+  tr.append(td(money(materialUnitCost(m),true)));const action=td(&#x27;&#x27;);action.append(button(&#x27;Excluir&#x27;,()=&gt;{if(!confirm(&#x27;Excluir &#x27;+m.name+&#x27; e remover o vínculo dos produtos?&#x27;))return;data.materials=data.materials.filter(x=&gt;x.id!==m.id);for(const p of data.products)p.recipe=p.recipe.filter(r=&gt;r.materialId!==m.id);materialChanged()},true));tr.append(action);body.append(tr)
+  }
+}
+function materialChanged(){save(&#x27;Custo atualizado. Os produtos vinculados usam o novo valor; preços manuais foram mantidos.&#x27;);renderMaterials();renderRecipe();calculate()}
+for(const b of document.querySelectorAll(&#x27;nav button&#x27;))b.onclick=()=&gt;{for(const x of document.querySelectorAll(&#x27;nav button, main&gt;section&#x27;))x.classList.remove(&#x27;active&#x27;);b.classList.add(&#x27;active&#x27;);$(b.dataset.tab).classList.add(&#x27;active&#x27;);calculate()};
+$(&#x27;category&#x27;).onchange=()=&gt;fillProducts();$(&#x27;product&#x27;).onchange=()=&gt;{selected=$(&#x27;product&#x27;).value;loadProduct()};$(&#x27;qty&#x27;).oninput=calculate;
+for(const k of [&#x27;margin&#x27;,&#x27;extra&#x27;,&#x27;manual&#x27;,&#x27;waste&#x27;,&#x27;inkManual&#x27;,&#x27;inkBottlePrice&#x27;,&#x27;inkBottleMl&#x27;,&#x27;inkUsageMl&#x27;])$(k).oninput=()=&gt;{const p=product();if(!p)return;try{p[k]=numeric(k,k===&#x27;inkBottleMl&#x27;?0.000001:0,k===&#x27;margin&#x27;?99:k===&#x27;waste&#x27;?100:1e9);save();calculate()}catch(error){$(&#x27;alert&#x27;).textContent=error.message;$(&#x27;alert&#x27;).className=&#x27;warn&#x27;;for(const id of [&#x27;suggestOut&#x27;,&#x27;profitOut&#x27;,&#x27;actualOut&#x27;,&#x27;totalCostOut&#x27;,&#x27;totalSaleOut&#x27;,&#x27;totalSuggestOut&#x27;])$(id).textContent=&#x27;—&#x27;}};
+for(const k of [&#x27;unit&#x27;,&#x27;inkMode&#x27;])$(k).onchange=()=&gt;{const p=product();if(!p)return;p[k]=$(k).value;save();loadProduct()};
+$(&#x27;saveProduct&#x27;).onclick=()=&gt;{if(document.querySelector(&#x27;[aria-invalid=&quot;true&quot;]&#x27;))return status(&#x27;Confira os campos marcados antes de salvar.&#x27;);save(&#x27;Produto salvo.&#x27;);calculate()};
+$(&#x27;addRecipe&#x27;).onclick=()=&gt;{const p=product(),id=$(&#x27;addMaterial&#x27;).value;if(!p||!id)return status(&#x27;Cadastre um material na aba Materiais e insumos.&#x27;);const r=p.recipe.find(r=&gt;r.materialId===id);if(r)r.qty+=1;else p.recipe.push({materialId:id,qty:1});save();renderRecipe();calculate()};
+$(&#x27;createProduct&#x27;).onclick=()=&gt;{const name=$(&#x27;newProduct&#x27;).value.trim(),category=$(&#x27;newCategoryText&#x27;).value.trim()||$(&#x27;newCategory&#x27;).value;if(!name||!category||name.length&gt;180||category.length&gt;180)return alert(&#x27;Informe nome e categoria, com até 180 caracteres.&#x27;);const p=newCostProduct(name,category,data.settings.margin);data.products.push(p);save();fillCats(category);fillProducts(p.id);$(&#x27;newProduct&#x27;).value=&#x27;&#x27;;$(&#x27;newCategoryText&#x27;).value=&#x27;&#x27;};
+$(&#x27;deleteProduct&#x27;).onclick=()=&gt;{const p=product();if(!p)return;if(data.products.length===1)return alert(&#x27;Mantenha pelo menos um produto cadastrado. Adicione outro antes de excluir este.&#x27;);if(!confirm(&#x27;Excluir &#x27;+p.name+&#x27;?&#x27;))return;data.products=data.products.filter(x=&gt;x.id!==p.id);selected=null;save();fillCats()};
+$(&#x27;newMode&#x27;).onchange=()=&gt;{$(&#x27;newCount&#x27;).disabled=$(&#x27;newMode&#x27;).value===&#x27;unit&#x27;;if($(&#x27;newCount&#x27;).disabled)$(&#x27;newCount&#x27;).value=&#x27;1&#x27;};
+$(&#x27;createMaterial&#x27;).onclick=()=&gt;{const name=$(&#x27;newMaterial&#x27;).value.trim();if(!name||name.length&gt;180)return alert(&#x27;Informe um nome de material com até 180 caracteres.&#x27;);try{const value=numeric(&#x27;newValue&#x27;),count=$(&#x27;newMode&#x27;).value===&#x27;unit&#x27;?1:numeric(&#x27;newCount&#x27;,0.000001);data.materials.push({id:__uuid(),name,mode:$(&#x27;newMode&#x27;).value,value,count});save();renderMaterials();renderRecipe();calculate();$(&#x27;newMaterial&#x27;).value=&#x27;&#x27;}catch(error){alert(error.message)}};
+$(&#x27;defaultMargin&#x27;).value=data.settings.margin;$(&#x27;warningMargin&#x27;).value=data.settings.warning;
+$(&#x27;saveConfig&#x27;).onclick=()=&gt;{try{const margin=numeric(&#x27;defaultMargin&#x27;,0,99),warning=numeric(&#x27;warningMargin&#x27;,0,99);data.settings={margin,warning};save(&#x27;Configurações salvas. A margem padrão vale para novos produtos; margens já cadastradas foram mantidas.&#x27;);calculate()}catch(error){alert(error.message)}};
+$(&#x27;export&#x27;).onclick=()=&gt;{const blob=new Blob([JSON.stringify(data,null,2)],{type:&#x27;application/json&#x27;}),a=document.createElement(&#x27;a&#x27;);a.href=URL.createObjectURL(blob);a.download=&#x27;rn-grafica-custos-backup.json&#x27;;a.click();setTimeout(()=&gt;URL.revokeObjectURL(a.href),1000);status(&#x27;Backup exportado. Guarde o arquivo para restaurar seus cadastros.&#x27;)};
+$(&#x27;import&#x27;).onchange=async e=&gt;{const f=e.target.files[0];if(!f)return;try{if(f.size&gt;5000000)throw Error(&#x27;O backup deve ter até 5 MB.&#x27;);const candidate=normalizeCostsData(JSON.parse(await f.text()));if(!confirm(&#x27;Substituir os cadastros atuais por este backup? Exporte antes se quiser guardar os dados atuais.&#x27;))return;data=candidate;selected=null;save(&#x27;Backup importado.&#x27;);$(&#x27;defaultMargin&#x27;).value=data.settings.margin;$(&#x27;warningMargin&#x27;).value=data.settings.warning;fillCats();renderMaterials()}catch(error){alert(&#x27;Backup não importado: &#x27;+error.message)}finally{e.target.value=&#x27;&#x27;}};
+fillCats();renderMaterials();status(loadError?&#x27;Não foi possível carregar os dados salvos. Importe um backup válido para recuperar seus cadastros.&#x27;:&#x27;Cadastros salvos neste navegador. Faça uma cópia na aba Backup de dados.&#x27;);
+function resize(){if(parent!==window)parent.postMessage({type:&#x27;rn-costs-height&#x27;,height:Math.ceil(document.querySelector(&#x27;main&#x27;).getBoundingClientRect().height+4)},parent.location.origin===&#x27;null&#x27;?&#x27;*&#x27;:parent.location.origin)}
+if(typeof ResizeObserver!==&#x27;undefined&#x27;)new ResizeObserver(resize).observe(document.body);window.addEventListener(&#x27;load&#x27;,resize);resize();
+
+return {};
+},
+&quot;cost-engine.js&quot;:function(__require){
+const COST_CATEGORIES={
+  &#x27;Impressões e xerox&#x27;:[&#x27;Impressão A4 preto e branco&#x27;,&#x27;Impressão A4 colorida&#x27;,&#x27;Xerox preto e branco&#x27;,&#x27;Xerox colorida&#x27;,&#x27;Impressão em papel fotográfico&#x27;,&#x27;Fotos e Polaroids&#x27;],
+  &#x27;Adesivos e etiquetas&#x27;:[&#x27;Adesivo vinil por folha&#x27;,&#x27;Adesivo personalizado por unidade&#x27;,&#x27;Etiquetas adesivas&#x27;,&#x27;Adesivo por metro quadrado&#x27;],
+  &#x27;Comunicação visual&#x27;:[&#x27;Banner em lona&#x27;,&#x27;Adesivo perfurado&#x27;,&#x27;Papel lambe-lambe&#x27;,&#x27;Cartazes&#x27;],
+  &#x27;Encadernação&#x27;:[&#x27;Apostilas&#x27;,&#x27;Encadernação espiral&#x27;,&#x27;Capas plásticas&#x27;,&#x27;Cadernos e agendas&#x27;],
+  &#x27;Papelaria&#x27;:[&#x27;Cartões de visita&#x27;,&#x27;Convites&#x27;,&#x27;Rifas&#x27;,&#x27;Envelopes personalizados&#x27;],
+  &#x27;Sublimação&#x27;:[&#x27;Canecas personalizadas&#x27;,&#x27;Azulejos personalizados&#x27;,&#x27;Mousepads personalizados&#x27;],
+  &#x27;Festas&#x27;:[&#x27;Topos de bolo&#x27;,&#x27;Caixinhas personalizadas&#x27;,&#x27;Lembrancinhas&#x27;,&#x27;Painéis de festa&#x27;],
+  &#x27;Serviços gráficos&#x27;:[&#x27;Criação de artes&#x27;,&#x27;Restauração de fotos&#x27;,&#x27;Plastificação&#x27;,&#x27;Preparação de arquivos&#x27;]
+};
+const allowedUnits=[&#x27;unidade&#x27;,&#x27;folha&#x27;,&#x27;m²&#x27;,&#x27;serviço&#x27;];
+const number=(n,name,min=0,max=1e9)=&gt;{if(typeof n!==&#x27;number&#x27;||!Number.isFinite(n)||n&lt;min||n&gt;max)throw Error(`${name}: valor inválido.`);return n};
+const label=(s,name)=&gt;{if(typeof s!==&#x27;string&#x27;||!s.trim()||s.length&gt;180)throw Error(`${name}: texto inválido.`);return s.trim()};
+function newCostProduct(name,category,margin=50,id=__uuid()){
+  return {id,name,category,margin,extra:0,manual:0,waste:0,unit:&#x27;unidade&#x27;,recipe:[],inkMode:&#x27;none&#x27;,inkManual:0,inkBottlePrice:0,inkBottleMl:100,inkUsageMl:0};
+}
+function createCostDefaults(){
+  const prices={&#x27;Banner em lona&#x27;:35,&#x27;Adesivo por metro quadrado&#x27;:35,&#x27;Adesivo perfurado&#x27;:45,&#x27;Papel lambe-lambe&#x27;:30};
+  return {settings:{margin:50,warning:50},materials:[],products:Object.entries(COST_CATEGORIES).flatMap(([category,names])=&gt;names.map(name=&gt;{
+    const p=newCostProduct(name,category);if(Object.hasOwn(prices,name)){p.unit=&#x27;m²&#x27;;p.manual=prices[name]}return p;
+  }))};
+}
+function normalizeCostsData(raw){
+  if(!raw||!raw.settings||!Array.isArray(raw.materials)||!Array.isArray(raw.products)||!raw.products.length||raw.materials.length&gt;5000||raw.products.length&gt;5000)throw Error(&#x27;Estrutura do backup inválida.&#x27;);
+  const settings={margin:number(raw.settings.margin,&#x27;Margem padrão&#x27;,0,99),warning:number(raw.settings.warning,&#x27;Alerta de margem&#x27;,0,99)},ids=new Set();
+  const materials=raw.materials.map(m=&gt;{
+    const id=label(m.id,&#x27;Identificação do material&#x27;);if(ids.has(id))throw Error(&#x27;Material repetido.&#x27;);ids.add(id);
+    if(![&#x27;unit&#x27;,&#x27;pack&#x27;].includes(m.mode))throw Error(&#x27;Modo do material inválido.&#x27;);
+    return {id,name:label(m.name,&#x27;Material&#x27;),mode:m.mode,value:number(m.value,&#x27;Valor do material&#x27;),count:number(m.count,&#x27;Quantidade na embalagem&#x27;,0.000001)};
+  });
+  const productIds=new Set();
+  const products=raw.products.map(p=&gt;{
+    const id=label(p.id,&#x27;Identificação do produto&#x27;);if(productIds.has(id))throw Error(&#x27;Produto repetido.&#x27;);productIds.add(id);
+    if(!allowedUnits.includes(p.unit)||!Array.isArray(p.recipe)||p.recipe.length&gt;5000)throw Error(&#x27;Produto inválido.&#x27;);
+    const inkMode=p.inkMode??&#x27;none&#x27;;if(![&#x27;none&#x27;,&#x27;manual&#x27;,&#x27;auto&#x27;].includes(inkMode))throw Error(&#x27;Modo de tinta inválido.&#x27;);
+    return {id,name:label(p.name,&#x27;Produto&#x27;),category:label(p.category,&#x27;Categoria&#x27;),margin:number(p.margin,&#x27;Margem&#x27;,0,99),extra:number(p.extra,&#x27;Outros custos&#x27;),manual:number(p.manual,&#x27;Preço manual&#x27;),waste:number(p.waste,&#x27;Desperdício&#x27;,0,100),unit:p.unit,recipe:p.recipe.map(r=&gt;{
+      if(!ids.has(r.materialId))throw Error(&#x27;Receita com material inexistente.&#x27;);return {materialId:r.materialId,qty:number(r.qty,&#x27;Consumo do material&#x27;)};
+    }),inkMode,inkManual:number(p.inkManual??0,&#x27;Tinta manual&#x27;),inkBottlePrice:number(p.inkBottlePrice??0,&#x27;Preço do frasco&#x27;),inkBottleMl:number(p.inkBottleMl??100,&#x27;Volume do frasco&#x27;,0.000001),inkUsageMl:number(p.inkUsageMl??0,&#x27;Consumo de tinta&#x27;)};
+  });
+  return {settings,materials,products};
+}
+function materialUnitCost(m){return m.mode===&#x27;pack&#x27;?m.value/m.count:m.value;}
+function calculateCost(p,materials,quantity=1){
+  if(!Number.isFinite(quantity)||quantity&lt;=0||quantity&gt;1e6||(p.unit!==&#x27;m²&#x27;&amp;&amp;!Number.isInteger(quantity)))throw Error(p.unit===&#x27;m²&#x27;?&#x27;Informe uma área maior que zero, até 1.000.000 m².&#x27;:&#x27;Informe uma quantidade inteira entre 1 e 1.000.000.&#x27;);
+  const map=new Map(materials.map(m=&gt;[m.id,m]));
+  const materialCost=p.recipe.reduce((sum,r)=&gt;{const m=map.get(r.materialId);if(!m)throw Error(&#x27;Material vinculado não encontrado.&#x27;);return sum+materialUnitCost(m)*r.qty},0);
+  const inkCost=p.inkMode===&#x27;manual&#x27;?p.inkManual:p.inkMode===&#x27;auto&#x27;?p.inkBottlePrice/p.inkBottleMl*p.inkUsageMl:0;
+  const cost=(materialCost+inkCost)*(1+p.waste/100)+p.extra;
+  // Round the suggested unit price up to cents to preserve the target margin.
+  const suggested=Math.ceil(cost/(1-p.margin/100)*100-1e-8)/100,manual=p.manual;
+  return {cost,materialCost,inkCost,suggested,totalSuggested:suggested*quantity,manual,totalCost:cost*quantity,totalSale:manual*quantity,profit:(manual-cost)*quantity,actualMargin:manual&gt;0?(manual-cost)/manual*100:null,configured:cost&gt;0,quantity};
+}
+
+return {COST_CATEGORIES,newCostProduct,createCostDefaults,normalizeCostsData,materialUnitCost,calculateCost};
+},
+&quot;calculator.js&quot;:function(__require){
+// All packing arithmetic uses integer micrometres to avoid decimal boundary errors.
+const DEFAULTS = Object.freeze({paper:&#x27;a4&#x27;,sheetW:&#x27;21&#x27;,sheetH:&#x27;29.7&#x27;,sheetOrientation:&#x27;portrait&#x27;,shape:&#x27;rectangle&#x27;,piece:&#x27;card&#x27;,pieceW:&#x27;9&#x27;,pieceH:&#x27;5&#x27;,pieceOrientation:&#x27;auto&#x27;,margin:&#x27;5&#x27;,individual:false,top:&#x27;5&#x27;,right:&#x27;5&#x27;,bottom:&#x27;5&#x27;,left:&#x27;5&#x27;,bleed:&#x27;3&#x27;,gap:&#x27;0&#x27;,quantity:&#x27;1000&#x27;});
+const PAPERS = Object.freeze({a4:[21,29.7],a5:[14.8,21],a3:[29.7,42],letter:[21.59,27.94]});
+const PIECES = Object.freeze({card:[9,5],a5:[14.8,21],a6:[10.5,14.8],sticker:[3,3]});
+const SHAPES = Object.freeze({rectangle:&#x27;Retângulo&#x27;,circle:&#x27;Círculo&#x27;,triangle:&#x27;Triângulo isósceles&#x27;,square:&#x27;Quadrado&#x27;});
+const SHAPE_DEFAULTS = Object.freeze({circle:[5,5],triangle:[6,5],square:[5,5]});
+
+function parseNumeric(value) {
+  const str=String(value ?? &#x27;&#x27;).trim().replace(&#x27;,&#x27;,&#x27;.&#x27;);
+  if (!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(str)) return NaN;
+  return Number(str);
+}
+const dim=(v,scale)=&gt;Math.round(parseNumeric(v)*scale);
+function calculate(input) {
+  const errors=[];
+  const field=(key,label,min,max,scale=1)=&gt;{
+    const n=parseNumeric(input[key]);
+    if (!Number.isFinite(n)||n&lt;min||n&gt;max) errors.push({field:key,message:`${label}: informe um valor entre ${min.toLocaleString(&#x27;pt-BR&#x27;)} e ${max.toLocaleString(&#x27;pt-BR&#x27;)}.`});
+    return dim(input[key],scale);
+  };
+  let sw=field(&#x27;sheetW&#x27;,&#x27;Largura da folha&#x27;,0.1,500,10000);
+  let sh=field(&#x27;sheetH&#x27;,&#x27;Altura da folha&#x27;,0.1,500,10000);
+  const shape=input.shape ?? &#x27;rectangle&#x27;;
+  if(!Object.hasOwn(SHAPES,shape)) errors.push({field:&#x27;shape&#x27;,message:&#x27;Selecione uma forma válida para a peça.&#x27;});
+  const pw=field(&#x27;pieceW&#x27;,shape===&#x27;circle&#x27;?&#x27;Diâmetro&#x27;:shape===&#x27;square&#x27;?&#x27;Lado do quadrado&#x27;:shape===&#x27;triangle&#x27;?&#x27;Base do triângulo&#x27;:&#x27;Largura da peça&#x27;,0.1,500,10000);
+  const ph=[&#x27;circle&#x27;,&#x27;square&#x27;].includes(shape)?pw:field(&#x27;pieceH&#x27;,&#x27;Altura da peça&#x27;,0.1,500,10000);
+  const bleed=field(&#x27;bleed&#x27;,&#x27;Sangria&#x27;,0,5000,1000);
+  const gap=field(&#x27;gap&#x27;,&#x27;Espaço entre peças&#x27;,0,5000,1000);
+  const quantity=field(&#x27;quantity&#x27;,&#x27;Quantidade&#x27;,1,10000000);
+  if(Number.isFinite(quantity)&amp;&amp;!Number.isInteger(parseNumeric(input.quantity))) errors.push({field:&#x27;quantity&#x27;,message:&#x27;A quantidade deve ser um número inteiro.&#x27;});
+  const margins={};
+  if(input.individual) {
+    for(const [key,label] of [[&#x27;top&#x27;,&#x27;Margem superior&#x27;],[&#x27;right&#x27;,&#x27;Margem direita&#x27;],[&#x27;bottom&#x27;,&#x27;Margem inferior&#x27;],[&#x27;left&#x27;,&#x27;Margem esquerda&#x27;]]) margins[key]=field(key,label,0,5000,1000);
+  } else {
+    const m=field(&#x27;margin&#x27;,&#x27;Margem&#x27;,0,5000,1000);
+    for(const key of [&#x27;top&#x27;,&#x27;right&#x27;,&#x27;bottom&#x27;,&#x27;left&#x27;]) margins[key]=m;
+  }
+  if(![&#x27;portrait&#x27;,&#x27;landscape&#x27;].includes(input.sheetOrientation)) errors.push({field:&#x27;sheetOrientation&#x27;,message:&#x27;Selecione a orientação da folha.&#x27;});
+  if(![&#x27;auto&#x27;,&#x27;original&#x27;,&#x27;rotate&#x27;].includes(input.pieceOrientation)) errors.push({field:&#x27;pieceOrientation&#x27;,message:&#x27;Selecione a orientação da peça.&#x27;});
+  if(errors.length) return {ok:false,errors};
+  [sw,sh]=input.sheetOrientation===&#x27;landscape&#x27;?[Math.max(sw,sh),Math.min(sw,sh)]:[Math.min(sw,sh),Math.max(sw,sh)];
+  const usableW=sw-margins.left-margins.right, usableH=sh-margins.top-margins.bottom;
+  if(usableW&lt;=0 || usableH&lt;=0) return {ok:false,errors:[{field:input.individual?(usableW&lt;=0?&#x27;left&#x27;:&#x27;top&#x27;):&#x27;margin&#x27;,message:&#x27;As margens devem deixar uma área útil maior que zero na folha.&#x27;}]};
+  const option=(rotated)=&gt;{
+    const trimW=rotated?ph:pw,trimH=rotated?pw:ph;
+    const tileW=trimW+2*bleed,tileH=trimH+2*bleed;
+    const cols=Math.floor((usableW+gap)/(tileW+gap));
+    const rows=Math.floor((usableH+gap)/(tileH+gap));
+    return {rotated,trimW,trimH,tileW,tileH,cols,rows,count:cols*rows};
+  };
+  const original=option(false),rotated=option(true);
+  const layout=input.pieceOrientation===&#x27;rotate&#x27;?rotated:input.pieceOrientation===&#x27;original&#x27;?original:rotated.count&gt;original.count?rotated:original;
+  const sheets=layout.count?Math.ceil(quantity/layout.count):0;
+  const gridW=layout.cols?layout.cols*layout.tileW+(layout.cols-1)*gap:0;
+  const gridH=layout.rows?layout.rows*layout.tileH+(layout.rows-1)*gap:0;
+  const pieceArea=shape===&#x27;circle&#x27;?Math.PI*pw*pw/4:shape===&#x27;triangle&#x27;?pw*ph/2:pw*ph;
+  return {ok:true,shape,pw,ph,pieceArea,sw,sh,usableW,usableH,margins,bleed,gap,quantity,original,rotated,layout,sheets,total:layout.count*sheets,extra:layout.count?sheets*layout.count-quantity:0,lastSheet:layout.count?quantity-(sheets-1)*layout.count:0,gridW,gridH,startX:margins.left+(usableW-gridW)/2,startY:margins.top+(usableH-gridH)/2,coverage:100*layout.count*layout.tileW*layout.tileH/(usableW*usableH),fits:layout.count&gt;0};
+}
+
+function validateStored(value) {
+  if(!value || typeof value!==&#x27;object&#x27;||Array.isArray(value)) return {...DEFAULTS};
+  const result={...DEFAULTS};
+  for(const key of Object.keys(DEFAULTS)) {
+    if(key===&#x27;individual&#x27;) result[key]=value[key]===true;
+    else if(typeof value[key]===&#x27;string&#x27;||typeof value[key]===&#x27;number&#x27;) result[key]=String(value[key]).slice(0,24);
+  }
+  if(!Object.hasOwn(PAPERS,result.paper)&amp;&amp;result.paper!==&#x27;custom&#x27;) result.paper=&#x27;custom&#x27;;
+  if(!Object.hasOwn(PIECES,result.piece)&amp;&amp;result.piece!==&#x27;custom&#x27;) result.piece=&#x27;custom&#x27;;
+  if(!Object.hasOwn(SHAPES,result.shape)) result.shape=&#x27;rectangle&#x27;;
+  if([&#x27;circle&#x27;,&#x27;square&#x27;].includes(result.shape)) {result.pieceH=result.pieceW;result.pieceOrientation=&#x27;auto&#x27;;}
+  if(![&#x27;portrait&#x27;,&#x27;landscape&#x27;].includes(result.sheetOrientation)) result.sheetOrientation=&#x27;portrait&#x27;;
+  if(![&#x27;auto&#x27;,&#x27;original&#x27;,&#x27;rotate&#x27;].includes(result.pieceOrientation)) result.pieceOrientation=&#x27;auto&#x27;;
+  return result;
+}
+
+return {DEFAULTS,PAPERS,PIECES,SHAPES,SHAPE_DEFAULTS,parseNumeric,calculate,validateStored};
+}
+},__cache={};
+function __require(name){if(Object.hasOwn(__cache,name))return __cache[name];if(!__modules[name])throw new Error(&quot;Módulo ausente: &quot;+name);return __cache[name]=__modules[name](__require)}
+__require(&quot;costs-app.js&quot;);
+})();
+&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+" title="Custos, Preços e Lucros da R&N Gráfica Rápida" loading="lazy"></iframe></section>
+    <section class="rn-public-contact" aria-label="Atendimento da R&N"><div><h2>Precisa produzir seu material?</h2><p>Peça um orçamento informando a quantidade de peças ou o serviço desejado. Tire suas dúvidas pelo nosso WhatsApp. As configurações e os cadastros desta calculadora ficam no navegador de quem a utiliza.</p></div><a class="button blue" href="https://wa.me/5581996090928" target="_blank" rel="noopener noreferrer">Falar com a R&amp;N no WhatsApp</a><a class="button secondary" href="https://rngraficarapida.blogspot.com/" target="_top">Ver produtos e serviços</a></section><footer class="page-footer"><span>R&N GRÁFICA RÁPIDA</span><span>Feito para aproveitar cada folha.</span></footer>
+  </main>
+</div><noscript><div class="noscript">Ative o JavaScript do navegador para usar a calculadora.</div></noscript>
+<script>
+(function(){
+"use strict";
+function __uuid(){if(globalThis.crypto?.randomUUID)return globalThis.crypto.randomUUID();const bytes=new Uint8Array(16);if(globalThis.crypto?.getRandomValues)globalThis.crypto.getRandomValues(bytes);else for(let i=0;i<16;i++)bytes[i]=Math.floor(Math.random()*256);bytes[6]=(bytes[6]&15)|64;bytes[8]=(bytes[8]&63)|128;const s=Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');return s.slice(0,8)+'-'+s.slice(8,12)+'-'+s.slice(12,16)+'-'+s.slice(16,20)+'-'+s.slice(20)}
+
+const __modules={
+"app.js":function(__require){
+const {DEFAULTS,PAPERS,PIECES,SHAPES,SHAPE_DEFAULTS,calculate,parseNumeric,validateStored}=__require("calculator.js");
+const {shapeMarkup}=__require("geometry.js");
+__require("area-app.js");
+__require("navigation.js");
+__require("costs-shell.js");
+const $=id=>document.getElementById(id);
+const number=(v,d=0)=>v.toLocaleString('pt-BR',{maximumFractionDigits:d});
+const cm=v=>number(v/10000,3);
+const mm=v=>number(v/1000,2);
+const storageKey='rn-producao-v1';
+let state={...DEFAULTS},result,storageOK=true;
+try{state=validateStored(JSON.parse(localStorage.getItem(storageKey)))}catch{storageOK=false}
+for(const key of Object.keys(DEFAULTS)){if(key==='individual')$(key).checked=state[key];else $(key).value=state[key]}
+const text=(id,v)=>{$(id).textContent=v};
+function showMargins(){$('individual-margins').hidden=!state.individual;$('uniform-margin').hidden=state.individual;for(const key of ['top','right','bottom','left'])$(key).disabled=!state.individual;$('margin').disabled=state.individual}
+function showShape(){
+  const single=['circle','square'].includes(state.shape);
+  $('rectangle-presets').hidden=state.shape!=='rectangle';$('piece').disabled=state.shape!=='rectangle';
+  $('piece-height-field').hidden=single;$('pieceH').disabled=single;
+  $('piece-dimensions').classList.toggle('single',single);
+  $('piece-orientation-field').hidden=single;$('pieceOrientation').disabled=single;
+  text('piece-width-label',state.shape==='circle'?'Diâmetro':state.shape==='square'?'Lado':state.shape==='triangle'?'Base':'Largura');
+  text('shape-help',{
+    rectangle:'Informe a largura e a altura finais, depois do corte.',
+    circle:'Informe o diâmetro final. A grade reserva um quadrado para cada círculo, incluindo a sangria.',
+    square:'Informe o lado final. A largura e a altura serão iguais.',
+    triangle:'Triângulo isósceles: base horizontal e vértice central. Informe a base e a altura finais. A grade reserva um retângulo para cada peça.'
+  }[state.shape]);
+}
+function save(){try{localStorage.setItem(storageKey,JSON.stringify(state));storageOK=true}catch{storageOK=false}$('saved-state').innerHTML=storageOK?'<span></span>Configuração salva neste navegador':'<span></span>Configuração ativa nesta sessão'}
+function preview(r){
+  if(!r.ok||!r.fits){$('preview-stage').innerHTML='<div class="preview-empty"><span class="empty-icon" aria-hidden="true">▧</span><strong>'+(!r.ok?'Revise as medidas do pedido':'A peça não cabe nesta folha')+'</strong><br>'+(!r.ok?'A prévia aparece quando os campos estiverem válidos.':'Experimente girar a peça, reduzir as margens ou usar uma folha maior.')+'</div>';return}
+  const u=v=>v/1000,sw=u(r.sw),sh=u(r.sh),a=r.layout;
+  const padding=Math.max(sw,sh)*.12,font=Math.max(sw,sh)*.024,line=Math.max(sw,sh)*.002;
+  const sx=u(r.startX),sy=u(r.startY),tw=u(a.tileW),th=u(a.tileH),b=u(r.bleed),gap=u(r.gap);
+  const draw=(x,y)=>shapeMarkup({shape:r.shape,x,y,width:u(a.trimW),height:u(a.trimH),bleed:b,rotated:a.rotated,line});
+  let tiles='';
+  if(a.count<=160){
+    for(let row=0;row<a.rows;row++)for(let col=0;col<a.cols;col++){
+      const x=sx+col*(tw+gap),y=sy+row*(th+gap);
+      tiles+=draw(x,y);
+      const labelFont=Math.min(font,Math.min(tw,th)*.25);
+      tiles+=`<text x="${x+tw/2}" y="${y+th/2}" font-size="${labelFont}" fill="#829cce" text-anchor="middle" dominant-baseline="central" stroke="none" font-family="system-ui,sans-serif">${row*a.cols+col+1}</text>`;
+    }
+  }else{
+    tiles=`<defs><pattern id="tiles" x="${sx}" y="${sy}" width="${tw+gap}" height="${th+gap}" patternUnits="userSpaceOnUse">${draw(0,0)}</pattern></defs><rect x="${sx}" y="${sy}" width="${u(r.gridW)}" height="${u(r.gridH)}" fill="url(#tiles)" stroke="none"/>`;
+  }
+  $('preview-stage').innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${-padding} ${-padding} ${sw+2*padding} ${sh+2*padding}" role="img" aria-labelledby="sheet-svg-title sheet-svg-desc"><title id="sheet-svg-title">Encaixe de ${number(a.count)} peças: ${SHAPES[r.shape]}</title><desc id="sheet-svg-desc">${a.cols} colunas e ${a.rows} linhas. Peça final em azul, sangria ao redor e margem externa cinza.</desc><rect width="${sw}" height="${sh}" fill="#f0f2f6" stroke="#c6cedb" stroke-width="${line}"/><rect x="${u(r.margins.left)}" y="${u(r.margins.top)}" width="${u(r.usableW)}" height="${u(r.usableH)}" fill="#fff" stroke="#c6cedb" stroke-width="${line*.6}" stroke-dasharray="${line*3} ${line*3}"/>${tiles}<g stroke="#b0bbcd" stroke-width="${line*.7}"><path d="M0 ${-padding*.39}H${sw}M0 ${-padding*.52}V${-padding*.26}M${sw} ${-padding*.52}V${-padding*.26}"/><path d="M${-padding*.39} 0V${sh}M${-padding*.52} 0H${-padding*.26}M${-padding*.52} ${sh}H${-padding*.26}"/></g><g fill="#8998ae" stroke="none" font-family="system-ui,sans-serif" font-size="${font}"><text x="${sw/2}" y="${-padding*.57}" text-anchor="middle">${cm(r.sw)} cm</text><text x="${-padding*.57}" y="${sh/2}" text-anchor="middle" transform="rotate(-90 ${-padding*.57} ${sh/2})">${cm(r.sh)} cm</text></g></svg>`;
+}
+function render(){
+  showMargins();showShape();result=calculate(state);
+  for(const key of Object.keys(DEFAULTS))$(key).removeAttribute('aria-invalid');
+  const errors=$('errors');errors.replaceChildren();errors.classList.remove('warning');
+  errors.hidden=result.ok&&result.fits;
+  if(!result.ok){for(const error of result.errors){const p=document.createElement('p');p.textContent=error.message;errors.append(p);$(error.field)?.setAttribute('aria-invalid','true')}}
+  else if(!result.fits){errors.classList.add('warning');const p=document.createElement('p');p.textContent='Nenhuma peça cabe com estas medidas, margens e sangria. Ajuste a configuração para calcular a tiragem.';errors.append(p)}
+  const valid=result.ok&&result.fits,r=result;
+  text('capacity',r.ok?number(r.layout.count):'—');text('sheet-count',valid?number(r.sheets):'—');text('grid-description',r.ok?`${number(r.layout.cols)} colunas × ${number(r.layout.rows)} linhas`:'Revise os campos');
+  text('production-description',r.ok?`Para produzir ${number(r.quantity)} peças`:'Aguardando medidas válidas');
+  $('coverage').innerHTML=r.ok?`${number(r.coverage,1)}<span>%</span>`:'—';
+  text('result-status',valid?'● Atualizado automaticamente':'Revise a configuração');
+  text('size-chip',r.ok?`${cm(r.sw)} × ${cm(r.sh)} cm`:'Medidas inválidas');
+  const paperName={a4:'A4',a5:'A5',a3:'A3',letter:'Carta',custom:'Folha personalizada'}[state.paper];
+  text('preview-subtitle',r.ok?`${paperName} em ${state.sheetOrientation==='portrait'?'retrato':'paisagem'} · ${SHAPES[r.shape]}${['circle','square'].includes(r.shape)?'':r.layout.rotated?' a 90°':' sem rotação'}`:'Aguardando configuração');
+  text('tile-dimensions',r.ok?`Reserva com sangria: ${cm(r.layout.tileW)} × ${cm(r.layout.tileH)} cm`:'Sangria por lado');
+  text('orientation-result','Grade regular');
+  text('summary-heading',valid?'Pronto para planejar a tiragem':'Vamos ajustar o pedido');
+  text('summary-line',valid?`${number(r.sheets)} ${r.sheets===1?'folha':'folhas'} para ${number(r.quantity)} ${r.quantity===1?'peça':'peças'}.`:'O plano fica disponível quando a peça couber na folha.');
+  text('total-pieces',valid?`${number(r.total)} peças`:'—');text('extra-pieces',valid?`${number(r.extra)} ${r.extra===1?'vaga':'vagas'}`:'—');text('last-sheet',valid?`${number(r.lastSheet)} ${r.lastSheet===1?'peça':'peças'}`:'—');text('usable-size',r.ok?`${cm(r.usableW)} × ${cm(r.usableH)} cm`:'—');
+  text('shape-summary',SHAPES[state.shape]);text('piece-area',r.ok?`${number(r.pieceArea/100000000,3)} cm²`:'—');
+  $('copy').disabled=!valid;$('print').disabled=!valid;preview(r);
+}
+function setDimensions(prefix,dimensions){let [w,h]=dimensions;if(prefix==='sheet'&&state.sheetOrientation==='landscape')[w,h]=[h,w];for(const [suffix,v]of [['W',w],['H',h]]){state[prefix+suffix]=String(v);$(prefix+suffix).value=String(v)}}
+$('production-form').addEventListener('submit',e=>e.preventDefault());
+$('production-form').addEventListener('input',e=>{
+  const key=e.target.name;if(!Object.hasOwn(DEFAULTS,key))return;
+  state[key]=key==='individual'?e.target.checked:e.target.value;
+  if(key==='shape'){
+    state.piece='custom';$('piece').value='custom';
+    if(SHAPE_DEFAULTS[state.shape])setDimensions('piece',SHAPE_DEFAULTS[state.shape]);
+    if(['circle','square'].includes(state.shape)){state.pieceOrientation='auto';$('pieceOrientation').value='auto'}
+  }
+  if(key==='pieceW'&&['circle','square'].includes(state.shape)){state.pieceH=state.pieceW;$('pieceH').value=state.pieceW}
+  if(key==='paper'&&PAPERS[state.paper])setDimensions('sheet',PAPERS[state.paper]);
+  if(key==='piece'&&PIECES[state.piece])setDimensions('piece',PIECES[state.piece]);
+  if(key==='sheetW'||key==='sheetH'){state.paper='custom';$('paper').value='custom';const w=parseNumeric(state.sheetW),h=parseNumeric(state.sheetH);if(w>0&&h>0){state.sheetOrientation=w>h?'landscape':'portrait';$('sheetOrientation').value=state.sheetOrientation}}
+  if(key==='pieceW'||key==='pieceH'){state.piece='custom';$('piece').value='custom'}
+  if(key==='sheetOrientation'){const w=parseNumeric(state.sheetW),h=parseNumeric(state.sheetH);if(Number.isFinite(w)&&Number.isFinite(h))setDimensions('sheet',[Math.min(w,h),Math.max(w,h)])}
+  if(key==='individual'&&state.individual){for(const k of ['top','right','bottom','left']){state[k]=state.margin;$(k).value=state.margin}}
+  text('action-status','');save();render();
+});
+$('reset').addEventListener('click',()=>{state={...DEFAULTS};for(const key of Object.keys(DEFAULTS)){if(key==='individual')$(key).checked=false;else $(key).value=state[key]}save();render();text('action-status','Configuração inicial restaurada.')});
+function summary(){const r=result,a=r.layout;return `R&N GRÁFICA RÁPIDA — PLANO DE PRODUÇÃO\nFolha: ${cm(r.sw)} × ${cm(r.sh)} cm (${state.sheetOrientation==='portrait'?'retrato':'paisagem'})\nForma: ${SHAPES[r.shape]}\nPeça final: ${r.shape==='circle'?`diâmetro ${cm(r.pw)} cm`:r.shape==='square'?`lado ${cm(r.pw)} cm`:r.shape==='triangle'?`base ${cm(r.pw)} cm × altura ${cm(r.ph)} cm`:`${cm(r.pw)} × ${cm(r.ph)} cm`}\nÁrea final por peça: ${number(r.pieceArea/100000000,3)} cm²\nPeças na grade: ${a.rotated?'giradas em 90°':'sem rotação'}\nSangria: ${mm(r.bleed)} mm por lado\nÁrea reservada por peça com sangria: ${cm(a.tileW)} × ${cm(a.tileH)} cm\nMargens (superior / direita / inferior / esquerda): ${['top','right','bottom','left'].map(k=>mm(r.margins[k])).join(' / ')} mm\nIntervalo extra entre sangrias: ${mm(r.gap)} mm\nÁrea útil: ${cm(r.usableW)} × ${cm(r.usableH)} cm\nGrade: ${a.cols} colunas × ${a.rows} linhas\nPeças por folha: ${number(a.count)}\nQuantidade desejada: ${number(r.quantity)}\nFolhas necessárias: ${number(r.sheets)}\nCapacidade da tiragem: ${number(r.total)} peças\nPeças na última folha: ${number(r.lastSheet)}\nVagas extras na última folha: ${number(r.extra)}\nÁrea útil reservada, incluindo sangria: ${number(r.coverage,1)}%\nEncaixe em grade regular, com área retangular reservada para cada forma; sem intercalar círculos nem alternar triângulos. Sem folhas extras para testes ou perdas de produção. Prévia sem escala de corte.`}
+$('copy').addEventListener('click',async()=>{if(!result.ok||!result.fits)return;const content=summary();try{await navigator.clipboard.writeText(content);text('action-status','Resumo copiado!')}catch{const area=document.createElement('textarea');area.value=content;area.style.cssText='position:fixed;left:-9999px';document.body.append(area);area.select();let copied=false;try{copied=document.execCommand('copy')}catch{}area.remove();text('action-status',copied?'Resumo copiado!':'A cópia foi bloqueada. Use “Imprimir plano” para salvar o resumo.')}});
+$('print').addEventListener('click',()=>{if(result.ok&&result.fits)window.print()});
+save();render();
+
+return {};
+},
+"calculator.js":function(__require){
+// All packing arithmetic uses integer micrometres to avoid decimal boundary errors.
+const DEFAULTS = Object.freeze({paper:'a4',sheetW:'21',sheetH:'29.7',sheetOrientation:'portrait',shape:'rectangle',piece:'card',pieceW:'9',pieceH:'5',pieceOrientation:'auto',margin:'5',individual:false,top:'5',right:'5',bottom:'5',left:'5',bleed:'3',gap:'0',quantity:'1000'});
+const PAPERS = Object.freeze({a4:[21,29.7],a5:[14.8,21],a3:[29.7,42],letter:[21.59,27.94]});
+const PIECES = Object.freeze({card:[9,5],a5:[14.8,21],a6:[10.5,14.8],sticker:[3,3]});
+const SHAPES = Object.freeze({rectangle:'Retângulo',circle:'Círculo',triangle:'Triângulo isósceles',square:'Quadrado'});
+const SHAPE_DEFAULTS = Object.freeze({circle:[5,5],triangle:[6,5],square:[5,5]});
+
+function parseNumeric(value) {
+  const str=String(value ?? '').trim().replace(',','.');
+  if (!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(str)) return NaN;
+  return Number(str);
+}
+const dim=(v,scale)=>Math.round(parseNumeric(v)*scale);
+function calculate(input) {
+  const errors=[];
+  const field=(key,label,min,max,scale=1)=>{
+    const n=parseNumeric(input[key]);
+    if (!Number.isFinite(n)||n<min||n>max) errors.push({field:key,message:`${label}: informe um valor entre ${min.toLocaleString('pt-BR')} e ${max.toLocaleString('pt-BR')}.`});
+    return dim(input[key],scale);
+  };
+  let sw=field('sheetW','Largura da folha',0.1,500,10000);
+  let sh=field('sheetH','Altura da folha',0.1,500,10000);
+  const shape=input.shape ?? 'rectangle';
+  if(!Object.hasOwn(SHAPES,shape)) errors.push({field:'shape',message:'Selecione uma forma válida para a peça.'});
+  const pw=field('pieceW',shape==='circle'?'Diâmetro':shape==='square'?'Lado do quadrado':shape==='triangle'?'Base do triângulo':'Largura da peça',0.1,500,10000);
+  const ph=['circle','square'].includes(shape)?pw:field('pieceH','Altura da peça',0.1,500,10000);
+  const bleed=field('bleed','Sangria',0,5000,1000);
+  const gap=field('gap','Espaço entre peças',0,5000,1000);
+  const quantity=field('quantity','Quantidade',1,10000000);
+  if(Number.isFinite(quantity)&&!Number.isInteger(parseNumeric(input.quantity))) errors.push({field:'quantity',message:'A quantidade deve ser um número inteiro.'});
+  const margins={};
+  if(input.individual) {
+    for(const [key,label] of [['top','Margem superior'],['right','Margem direita'],['bottom','Margem inferior'],['left','Margem esquerda']]) margins[key]=field(key,label,0,5000,1000);
+  } else {
+    const m=field('margin','Margem',0,5000,1000);
+    for(const key of ['top','right','bottom','left']) margins[key]=m;
+  }
+  if(!['portrait','landscape'].includes(input.sheetOrientation)) errors.push({field:'sheetOrientation',message:'Selecione a orientação da folha.'});
+  if(!['auto','original','rotate'].includes(input.pieceOrientation)) errors.push({field:'pieceOrientation',message:'Selecione a orientação da peça.'});
+  if(errors.length) return {ok:false,errors};
+  [sw,sh]=input.sheetOrientation==='landscape'?[Math.max(sw,sh),Math.min(sw,sh)]:[Math.min(sw,sh),Math.max(sw,sh)];
+  const usableW=sw-margins.left-margins.right, usableH=sh-margins.top-margins.bottom;
+  if(usableW<=0 || usableH<=0) return {ok:false,errors:[{field:input.individual?(usableW<=0?'left':'top'):'margin',message:'As margens devem deixar uma área útil maior que zero na folha.'}]};
+  const option=(rotated)=>{
+    const trimW=rotated?ph:pw,trimH=rotated?pw:ph;
+    const tileW=trimW+2*bleed,tileH=trimH+2*bleed;
+    const cols=Math.floor((usableW+gap)/(tileW+gap));
+    const rows=Math.floor((usableH+gap)/(tileH+gap));
+    return {rotated,trimW,trimH,tileW,tileH,cols,rows,count:cols*rows};
+  };
+  const original=option(false),rotated=option(true);
+  const layout=input.pieceOrientation==='rotate'?rotated:input.pieceOrientation==='original'?original:rotated.count>original.count?rotated:original;
+  const sheets=layout.count?Math.ceil(quantity/layout.count):0;
+  const gridW=layout.cols?layout.cols*layout.tileW+(layout.cols-1)*gap:0;
+  const gridH=layout.rows?layout.rows*layout.tileH+(layout.rows-1)*gap:0;
+  const pieceArea=shape==='circle'?Math.PI*pw*pw/4:shape==='triangle'?pw*ph/2:pw*ph;
+  return {ok:true,shape,pw,ph,pieceArea,sw,sh,usableW,usableH,margins,bleed,gap,quantity,original,rotated,layout,sheets,total:layout.count*sheets,extra:layout.count?sheets*layout.count-quantity:0,lastSheet:layout.count?quantity-(sheets-1)*layout.count:0,gridW,gridH,startX:margins.left+(usableW-gridW)/2,startY:margins.top+(usableH-gridH)/2,coverage:100*layout.count*layout.tileW*layout.tileH/(usableW*usableH),fits:layout.count>0};
+}
+
+function validateStored(value) {
+  if(!value || typeof value!=='object'||Array.isArray(value)) return {...DEFAULTS};
+  const result={...DEFAULTS};
+  for(const key of Object.keys(DEFAULTS)) {
+    if(key==='individual') result[key]=value[key]===true;
+    else if(typeof value[key]==='string'||typeof value[key]==='number') result[key]=String(value[key]).slice(0,24);
+  }
+  if(!Object.hasOwn(PAPERS,result.paper)&&result.paper!=='custom') result.paper='custom';
+  if(!Object.hasOwn(PIECES,result.piece)&&result.piece!=='custom') result.piece='custom';
+  if(!Object.hasOwn(SHAPES,result.shape)) result.shape='rectangle';
+  if(['circle','square'].includes(result.shape)) {result.pieceH=result.pieceW;result.pieceOrientation='auto';}
+  if(!['portrait','landscape'].includes(result.sheetOrientation)) result.sheetOrientation='portrait';
+  if(!['auto','original','rotate'].includes(result.pieceOrientation)) result.pieceOrientation='auto';
+  return result;
+}
+
+return {DEFAULTS,PAPERS,PIECES,SHAPES,SHAPE_DEFAULTS,parseNumeric,calculate,validateStored};
+},
+"geometry.js":function(__require){
+// SVG uses the same footprint and orientation as the packing calculation.
+function shapeMarkup({shape,x=0,y=0,width,height,bleed,rotated=false,line=0.5}) {
+  const tw=width+2*bleed,th=height+2*bleed;
+  const stroke=Math.min(line,tw*.05,th*.05);
+  const frame=`<rect x="${x}" y="${y}" width="${tw}" height="${th}" fill="${shape==='rectangle'||shape==='square'?'#dfeafa':'#fff'}" stroke="#8fa9d6" stroke-width="${stroke*.6}" stroke-dasharray="${stroke*3} ${stroke*2}"/>`;
+  const trim='fill="#e9f1ff" stroke="#4c79d6" stroke-width="'+stroke*.8+'"';
+  if(shape==='circle') {
+    const cx=x+tw/2,cy=y+th/2,radius=width/2;
+    return frame+`<circle cx="${cx}" cy="${cy}" r="${radius+bleed}" fill="#dfeafa" stroke="#8fa9d6" stroke-width="${stroke*.6}" stroke-dasharray="${stroke*3} ${stroke*2}"/><circle cx="${cx}" cy="${cy}" r="${radius}" ${trim}/>`;
+  }
+  if(shape==='triangle') {
+    const points=(rotated?[[width,height/2],[0,height],[0,0]]:[[width/2,0],[width,height],[0,height]]).map(([px,py])=>`${x+bleed+px},${y+bleed+py}`).join(' ');
+    // A round offset of each edge provides bleed without sharp mitre overhangs.
+    return frame+`<polygon points="${points}" fill="#dfeafa" stroke="#dfeafa" stroke-width="${bleed*2}" stroke-linejoin="round"/><polygon points="${points}" ${trim}/>`;
+  }
+  return frame+`<rect x="${x+bleed}" y="${y+bleed}" width="${width}" height="${height}" ${trim}/>`;
+}
+
+return {shapeMarkup};
+},
+"area-app.js":function(__require){
+const {AREA_DEFAULTS,PRODUCTS,calculateArea,convertAreaUnit,validateAreaStored}=__require("area-calculator.js");
+const $=id=>document.getElementById(id),num=(v)=>v.toLocaleString('pt-BR',{maximumFractionDigits:6}),money=cents=>(cents/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const storageKey='rn-preco-m2-v1';let state={...AREA_DEFAULTS},result;
+try{state=validateAreaStored(JSON.parse(localStorage.getItem(storageKey)))}catch{}
+const text=(id,value)=>{$(id).textContent=value};
+function fill(){for(const key of Object.keys(AREA_DEFAULTS)){const element=$('area-'+key);if(key==='minimum')element.checked=state.minimum;else element.value=state[key]}}
+function save(){try{localStorage.setItem(storageKey,JSON.stringify(state));text('area-saved','Configuração salva neste navegador')}catch{text('area-saved','Configuração ativa nesta sessão')}}
+function render(){
+  result=calculateArea(state);const r=result;
+  text('area-width-unit',state.unit);text('area-height-unit',state.unit);
+  text('area-rate',money(PRODUCTS[state.product].rateCents)+'/m²');
+  for(const key of Object.keys(PRODUCTS))$('rate-'+key).classList.toggle('selected',key===state.product);
+  for(const key of Object.keys(AREA_DEFAULTS))$('area-'+key).removeAttribute('aria-invalid');
+  const errors=$('area-errors');errors.replaceChildren();errors.hidden=r.ok;
+  if(!r.ok)for(const error of r.errors){const p=document.createElement('p');p.textContent=error.message;errors.append(p);$('area-'+error.field).setAttribute('aria-invalid','true')}
+  text('area-unit-result',r.ok?num(r.unitArea)+' m²':'—');text('area-total-result',r.ok?num(r.totalArea)+' m²':'—');text('area-price-result',r.ok?money(r.totalCents):'—');
+  text('area-selected-product',PRODUCTS[state.product].label);text('area-quantity-summary',r.ok?num(r.quantity)+' '+(r.quantity===1?'peça':'peças'):'—');
+  text('area-dimensions-summary',r.ok?num(r.widthUm/(state.unit==='m'?1000000:10000))+' × '+num(r.heightUm/(state.unit==='m'?1000000:10000))+' '+state.unit:'—');
+  text('area-billed-result',r.ok?num(r.billedArea)+' m²':'—');text('area-pricing-rule',state.minimum?'Mínimo de 1 m² por peça':'Proporcional à área');
+  text('area-calculation',r.ok?`${num(r.billedArea)} m² × ${money(r.rateCents)}/m² = ${money(r.totalCents)}`:'Preencha as medidas para calcular.');
+  text('area-minimum-note',r.ok&&r.minimum&&r.unitArea<1?`${num(r.quantity)} ${r.quantity===1?'peça de':'peças de'} ${num(r.unitArea)} m²: cobrança de 1 m² por peça.`:'O total é arredondado em centavos somente após calcular toda a área cobrada.');
+  $('area-copy').disabled=!r.ok;$('area-print').disabled=!r.ok;
+}
+fill();save();render();
+$('area-form').addEventListener('submit',e=>e.preventDefault());
+$('area-form').addEventListener('input',e=>{
+  const key=e.target.name;if(!Object.hasOwn(AREA_DEFAULTS,key))return;
+  if(key==='unit'){state=convertAreaUnit(state,e.target.value);fill()}
+  else state[key]=key==='minimum'?e.target.checked:e.target.value;
+  text('area-action-status','');save();render();
+});
+$('area-reset').addEventListener('click',()=>{state={...AREA_DEFAULTS};fill();save();render();text('area-action-status','Configuração inicial restaurada.')});
+function summary(){const r=result;return `R&N GRÁFICA RÁPIDA — CÁLCULO POR M²\nProduto: ${r.productLabel}\nMedidas: ${num(r.widthUm/(r.unit==='m'?1000000:10000))} × ${num(r.heightUm/(r.unit==='m'?1000000:10000))} ${r.unit}\nQuantidade: ${num(r.quantity)}\nÁrea por peça: ${num(r.unitArea)} m²\nÁrea total real: ${num(r.totalArea)} m²\nCobrança: ${r.minimum?'mínimo de 1 m² por peça':'proporcional à área'}\nÁrea total cobrada: ${num(r.billedArea)} m²\nValor por m²: ${money(r.rateCents)}\nTOTAL: ${money(r.totalCents)}\nTotal arredondado em centavos após calcular a área total cobrada.`}
+$('area-copy').addEventListener('click',async()=>{
+  if(!result.ok)return;const content=summary();
+  try{await navigator.clipboard.writeText(content);text('area-action-status','Orçamento copiado!')}
+  catch{const area=document.createElement('textarea');area.value=content;area.style.cssText='position:fixed;left:-9999px';document.body.append(area);area.select();let copied=false;try{copied=document.execCommand('copy')}catch{}area.remove();text('area-action-status',copied?'Orçamento copiado!':'A cópia foi bloqueada. Use “Imprimir orçamento”.')}
+});
+$('area-print').addEventListener('click',()=>{if(result.ok)window.print()});
+
+return {};
+},
+"area-calculator.js":function(__require){
+const {parseNumeric}=__require("calculator.js");
+const PRODUCTS=Object.freeze({
+  banner:Object.freeze({label:'Banner em lona',rateCents:3500}),
+  adhesive:Object.freeze({label:'Adesivo',rateCents:3500}),
+  perforated:Object.freeze({label:'Perfurado',rateCents:4500}),
+  poster:Object.freeze({label:'Papel lambe-lambe',rateCents:3000})
+});
+const AREA_DEFAULTS=Object.freeze({product:'banner',unit:'cm',width:'100',height:'100',quantity:'1',minimum:false});
+function validateAreaStored(value){
+  const result={...AREA_DEFAULTS};
+  if(!value||typeof value!=='object'||Array.isArray(value))return result;
+  for(const key of ['width','height','quantity'])if(typeof value[key]==='string'||typeof value[key]==='number')result[key]=String(value[key]).slice(0,24);
+  if(Object.hasOwn(PRODUCTS,value.product))result.product=value.product;
+  if(['cm','m'].includes(value.unit))result.unit=value.unit;
+  result.minimum=value.minimum===true;return result;
+}
+function convertAreaUnit(state,next){
+  if(!['cm','m'].includes(next)||!['cm','m'].includes(state.unit))return {...state};
+  if(state.unit===next)return {...state};
+  const factor=next==='m'?0.01:100,result={...state,unit:next};
+  for(const key of ['width','height']){const n=parseNumeric(state[key]);if(Number.isFinite(n))result[key]=String(Number((n*factor).toFixed(next==='m'?6:4)))}
+  return result;
+}
+function calculateArea(input){
+  const errors=[],product=Object.hasOwn(PRODUCTS,input.product)?PRODUCTS[input.product]:undefined;
+  if(!product)errors.push({field:'product',message:'Selecione um produto válido.'});
+  if(!['cm','m'].includes(input.unit))errors.push({field:'unit',message:'Selecione centímetros ou metros.'});
+  const scale=input.unit==='m'?1000000:10000,max=input.unit==='m'?100:10000,min=input.unit==='m'?0.0001:0.01;
+  const dimension=(key,label)=>{const n=parseNumeric(input[key]);if(!Number.isFinite(n)||n<min||n>max)errors.push({field:key,message:`${label}: informe entre ${min.toLocaleString('pt-BR',{maximumFractionDigits:4})} e ${max.toLocaleString('pt-BR')} ${input.unit==='m'?'m':'cm'}.`});return Math.round(n*scale)};
+  const widthUm=dimension('width','Largura'),heightUm=dimension('height','Altura'),quantity=parseNumeric(input.quantity);
+  if(!Number.isSafeInteger(quantity)||quantity<1||quantity>100000)errors.push({field:'quantity',message:'A quantidade deve ser um número inteiro entre 1 e 100.000.'});
+  if(errors.length)return {ok:false,errors};
+  const squareMetre=1000000000000n,unitAreaUm2=BigInt(widthUm)*BigInt(heightUm);
+  const billedUnitUm2=input.minimum===true&&unitAreaUm2<squareMetre?squareMetre:unitAreaUm2;
+  const totalUm2=unitAreaUm2*BigInt(quantity),billedUm2=billedUnitUm2*BigInt(quantity);
+  // Calculate the full order before rounding to cents, using exact integers.
+  const totalCents=Number((billedUm2*BigInt(product.rateCents)+squareMetre/2n)/squareMetre);
+  return {ok:true,product:input.product,productLabel:product.label,unit:input.unit,widthUm,heightUm,quantity,minimum:input.minimum===true,unitArea:Number(unitAreaUm2)/1e12,totalArea:Number(totalUm2)/1e12,billedUnitArea:Number(billedUnitUm2)/1e12,billedArea:Number(billedUm2)/1e12,rateCents:product.rateCents,totalCents};
+}
+
+return {PRODUCTS,AREA_DEFAULTS,validateAreaStored,convertAreaUnit,calculateArea};
+},
+"navigation.js":function(__require){
+const $=id=>document.getElementById(id),modes=['production','area','costs'];
+const hashes={production:'#calculadora',area:'#metro-quadrado',costs:'#custos-precos-lucros'};
+function select(mode,updateHash=false){
+  for(const item of modes){const active=item===mode;$(item+'-panel').hidden=!active;$('tab-'+item).setAttribute('aria-selected',String(active));$('tab-'+item).setAttribute('tabindex',active?'0':'-1');$('nav-'+item).classList.toggle('active',active)}
+  $('reset').hidden=mode!=='production';
+  if(updateHash&&window.history?.replaceState){try{window.history.replaceState(null,'',hashes[mode])}catch{window.location.hash=hashes[mode]}}
+}
+for(const mode of modes){$('tab-'+mode).addEventListener('click',()=>select(mode,true));$('nav-'+mode).addEventListener('click',()=>select(mode));$('tab-'+mode).addEventListener('keydown',e=>{
+  if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();
+  const index=modes.indexOf(mode),target=e.key==='Home'?0:e.key==='End'?modes.length-1:(index+(e.key==='ArrowRight'?1:-1)+modes.length)%modes.length;
+  select(modes[target],true);$('tab-'+modes[target]).focus();
+})}
+$('nav-method').addEventListener('click',()=>select('production'));
+const currentMode=()=>Object.keys(hashes).find(k=>hashes[k]===window.location?.hash)||'production';
+window.addEventListener?.('hashchange',()=>select(currentMode()));select(currentMode());
+
+return {};
+},
+"costs-shell.js":function(__require){
+const frame=document.getElementById('costs-frame');
+window.addEventListener?.('message',event=>{
+  let origin=window.location.origin;try{if(origin==='null'&&parent!==window)origin=parent.location.origin}catch{}
+  if(event.origin!==origin||event.source!==frame.contentWindow||event.data?.type!=='rn-costs-height')return;
+  const height=Number(event.data.height);if(Number.isFinite(height))frame.style.height=Math.min(30000,Math.max(700,height))+'px';
+});
+
+return {};
+}
+},__cache={};
+function __require(name){if(Object.hasOwn(__cache,name))return __cache[name];if(!__modules[name])throw new Error("Módulo ausente: "+name);return __cache[name]=__modules[name](__require)}
+__require("app.js");
+})();
+</script>
+<script>
+(function(){
+  if(!window.frameElement)return;
+  document.documentElement.classList.add('rn-embedded');
+  let queued=false;
+  const resize=()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;const h=Math.min(40000,Math.max(760,Math.ceil(document.body.scrollHeight+12)));if(Math.abs(window.frameElement.getBoundingClientRect().height-h)>2)window.frameElement.style.height=h+'px'})};
+  new ResizeObserver(resize).observe(document.body);
+  new MutationObserver(resize).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden','class','style']});
+  window.addEventListener('load',resize);resize();
+})();
+</script></body>
+</html>

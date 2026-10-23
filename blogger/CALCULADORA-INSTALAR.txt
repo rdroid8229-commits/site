@@ -1,0 +1,25 @@
+R&N GRÁFICA RÁPIDA — CALCULADORA PÚBLICA / TEMA 2.2
+
+O arquivo correto usado como base é rn_calculadora_completa.html, com três áreas: Encaixe de peças; Preço por m²; Custos, Preços e Lucros. A cópia funciona no navegador sem o login do ChatGPT.
+
+PARA QUEM JÁ INSTALOU O TEMA 2.1.1 E PUBLICOU AS SEIS PÁGINAS
+1. Extraia o ZIP. Para experimentar antes de instalar, abra CALCULADORA/RN-Calculadora-Publica.html. Para visualizar o site completo, abra PREVIA.html mantendo as pastas images e CALCULADORA ao lado.
+2. Entre no Blogger > Páginas > Nova página. Use exatamente o título Calculadora. Não use Calculadora gráfica na primeira publicação, pois o endereço seria diferente do esperado.
+3. Abra PAGINAS/07-calculadora.txt em um editor de texto e copie todo o conteúdo. No editor da página, selecione Visualização HTML antes de colar e permaneça nesse modo até publicar. Confira depois usando Ver página. O código completo do quadro precisa ser preservado.
+4. Confira se o endereço é https://rngraficarapida.blogspot.com/p/calculadora.html. Se já existe uma página Calculadora nesse endereço, edite-a em vez de criar outra. Se o endereço publicado for diferente, os links do tema precisarão ser ajustados.
+5. Atualize Páginas > Privacidade com o arquivo completo PAGINAS/03-privacidade.txt no modo HTML: ele já inclui a explicação sobre a calculadora. Revise o texto para corresponder ao atendimento real e preserve a URL. Se personalizou sua política e deseja manter essas alterações, insira somente CALCULADORA/PRIVACIDADE-ADICIONAL.txt na seção de informações tratadas, antes do título 2. Finalidades do atendimento.
+6. Em Tema, faça backup do tema atual. Depois escolha Restaurar e envie RN-Grafica-Rapida-Blogger.xml, da raiz do ZIP. O arquivo termina com FIM DO TEMA R&N 2.2.
+7. Confira os acessos Calculadora no menu, no rodapé e na página inicial. Abra a página em aba anônima e teste as três áreas. Não é necessário publicar novamente Sobre, Contato ou os guias que já estão corretos.
+
+COMO OS DADOS FUNCIONAM
+- Configurações e cadastros ficam no armazenamento local do navegador de quem usa a calculadora. Eles não são enviados automaticamente à gráfica, não são compartilhados com outros visitantes e não são sincronizados entre dispositivos.
+- Quem usa o mesmo perfil de navegador pode acessar os cadastros locais. Limpar os dados do site pode apagá-los. Use Backup de dados > Exportar backup JSON regularmente.
+- Para levar os cadastros do endereço antigo para o Blogger, exporte o backup no aplicativo antigo e importe no novo. O login de convidado não transfere dados entre endereços. A importação substitui os cadastros após confirmação.
+
+PREÇOS E FÓRMULAS
+Foram mantidos os valores do arquivo: banner em lona R$ 35,00/m²; adesivo R$ 35,00/m²; perfurado R$ 45,00/m²; papel lambe-lambe R$ 30,00/m². Revise essa tabela se seus preços mudarem. A página explica que é uma estimativa e que materiais, acabamento, disponibilidade e prazo precisam ser confirmados.
+O encaixe usa grade regular e compara peças a 0° e 90°. Não é um programa de aproveitamento industrial com intercalamento de círculos ou triângulos, nem gera arquivo de corte em escala. Os próprios avisos da calculadora explicam o método.
+A margem é calculada sobre o preço de venda: preço sugerido = custo / (1 - margem). Não é o mesmo que acrescentar a porcentagem ao custo. A tinta e os materiais entram no cálculo conforme o consumo informado.
+
+PUBLICAÇÃO
+Gerar os arquivos ou colocá-los no GitHub não publica a página na sua conta do Blogger. Publique a página e instale o XML conforme os passos acima. Esta cópia não usa autenticação do ChatGPT. Os novos blocos manuais de anúncios do tema continuam desativados; a aprovação no AdSense é administrada pelo Google.

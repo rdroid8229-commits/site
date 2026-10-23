@@ -1,5 +1,6 @@
 import './fonts.css';
 import './style.css';
+import './calculator.css';
 import { business } from './site.config.js';
 import { categories, services, contactText } from './catalog.js';
 import { guides, pageHref, currentPage, isPreview, isBloggerPage } from './pages.js';
@@ -33,7 +34,7 @@ const contactLink = (label = 'Conversar no WhatsApp', className = 'button button
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 <header class="header"><div class="wrap header-inner">
   <a href="#inicio" class="brand" aria-label="R&N Gráfica Rápida — início">${brand()}</a>
-  <nav class="nav" id="main-nav" aria-label="Navegação principal"><a href="#servicos">Produtos e serviços</a><a href="#como-pedir">Como pedir</a><a href="#guias">Guias úteis</a><a href="#duvidas">Dúvidas frequentes</a></nav>
+  <nav class="nav" id="main-nav" aria-label="Navegação principal"><a href="#servicos">Produtos e serviços</a><a href="#como-pedir">Como pedir</a><a href="#guias">Guias úteis</a><a href="${pageHref('calculadora')}">Calculadora</a><a href="#duvidas">Dúvidas frequentes</a></nav>
   <button class="button button-dark header-quote" data-quote>${icon('chat')}Pedir orçamento</button>
   <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">${icon('menu')}</button>
 </div></header>
@@ -52,11 +53,11 @@ const contactLink = (label = 'Conversar no WhatsApp', className = 'button button
  <div class="catalog-bottom"><p>Tem uma ideia diferente ou ainda está com dúvidas?</p>${contactLink('Conte para a gente', 'text-link')}</div>
 </section>
 <section class="process-section" id="como-pedir"><div class="wrap section"><div class="section-heading"><div><div class="eyebrow">DO PEDIDO AO ATENDIMENTO</div><h2>Simples do <em>início ao fim.</em></h2></div><p>Uma boa conversa é o primeiro passo.</p></div><div class="steps"><article><div class="step-label">01 ${icon('search')}</div><h3>Escolha o que precisa</h3><p>Explore as categorias ou busque pelo nome do produto ou serviço.</p></article><article><div class="step-label">02 ${icon('document')}</div><h3>Informe os detalhes</h3><p>Diga a quantidade de peças, folhas ou atendimentos e conte sua ideia.</p></article><article><div class="step-label">03 ${icon('chat')}</div><h3>Converse pelo WhatsApp</h3><p>Envie o resumo do pedido. Confirmaremos valor, prazo e próximos passos.</p></article></div></div></section>
-<section class="wrap section editorial-section" id="guias"><div class="about-teaser"><div><div class="eyebrow">SOBRE A R&N</div><h2>Soluções para sua rotina.<br><em>Cuidado com sua ideia.</em></h2></div><div><p>Da cópia de um documento à personalização de uma peça, encontre nossos serviços e converse com a gente sobre o que precisa. Quantidade, material, valor e prazo são alinhados no atendimento.</p><a class="text-link" href="${pageHref('sobre')}">Conheça a gráfica ${icon('arrow')}</a></div></div><div class="section-heading guide-heading"><div><div class="eyebrow">INFORMAÇÃO QUE AJUDA A ESCOLHER</div><h2>Antes de imprimir, <em>entenda.</em></h2></div><p>Guias práticos para preparar seu pedido<br class="desktop-only"> e esclarecer as dúvidas mais comuns.</p></div><div class="guide-grid">${guides.map((guide, index) => `<article class="guide-card"><a href="${pageHref(guide.slug)}" class="guide-image-link" aria-label="Ler: ${guide.title}"><img src="${guide.image}" alt="Arte ilustrativa R&N Gráfica para o guia ${guide.title}." width="1080" height="720" loading="lazy"></a><div class="guide-card-content"><span class="eyebrow">GUIA ${String(index+1).padStart(2,'0')}</span><h3><a href="${pageHref(guide.slug)}">${guide.title}</a></h3><p>${guide.description}</p><a class="text-link" href="${pageHref(guide.slug)}">Ler o guia ${icon('arrow')}</a></div></article>`).join('')}</div><aside class="ad-region" data-ad-position="home" aria-label="Publicidade" hidden><span>Publicidade</span></aside></section>
+<section class="wrap section editorial-section" id="guias"><div class="about-teaser"><div><div class="eyebrow">SOBRE A R&N</div><h2>Soluções para sua rotina.<br><em>Cuidado com sua ideia.</em></h2></div><div><p>Da cópia de um documento à personalização de uma peça, encontre nossos serviços e converse com a gente sobre o que precisa. Quantidade, material, valor e prazo são alinhados no atendimento.</p><a class="text-link" href="${pageHref('sobre')}">Conheça a gráfica ${icon('arrow')}</a></div></div><div class="section-heading guide-heading"><div><div class="eyebrow">INFORMAÇÃO QUE AJUDA A ESCOLHER</div><h2>Antes de imprimir, <em>entenda.</em></h2></div><p>Guias práticos para preparar seu pedido<br class="desktop-only"> e esclarecer as dúvidas mais comuns.</p></div><div class="guide-grid">${guides.map((guide, index) => `<article class="guide-card"><a href="${pageHref(guide.slug)}" class="guide-image-link" aria-label="Ler: ${guide.title}"><img src="${guide.image}" alt="Arte ilustrativa R&N Gráfica para o guia ${guide.title}." width="1080" height="720" loading="lazy"></a><div class="guide-card-content"><span class="eyebrow">GUIA ${String(index+1).padStart(2,'0')}</span><h3><a href="${pageHref(guide.slug)}">${guide.title}</a></h3><p>${guide.description}</p><a class="text-link" href="${pageHref(guide.slug)}">Ler o guia ${icon('arrow')}</a></div></article>`).join('')}</div><div class="tool-callout"><div><div class="eyebrow">FERRAMENTA DE PRODUÇÃO</div><h3>Planeje antes de imprimir.</h3><p>Confira o encaixe de peças e calcule área, custos e margens com a calculadora da R&amp;N.</p></div><a class="button button-dark" href="${pageHref('calculadora')}">Abrir calculadora ${icon('arrow')}</a></div><aside class="ad-region" data-ad-position="home" aria-label="Publicidade" hidden><span>Publicidade</span></aside></section>
 <section class="wrap section faq-section" id="duvidas"><div class="faq-intro"><div class="eyebrow">PODE PERGUNTAR</div><h2>Antes de pedir,<br><em>tire suas dúvidas.</em></h2><p>Nosso atendimento ajuda você a escolher o serviço e organizar os detalhes.</p>${contactLink('Tirar uma dúvida', 'text-link')}</div><div class="faq-list"><details><summary>Como faço para pedir um orçamento? ${icon('chevron')}</summary><p>Clique no serviço desejado, informe a quantidade e preencha os detalhes. O site prepara um resumo para você enviar pelo WhatsApp. O valor e o prazo serão confirmados no atendimento.</p></details><details><summary>Posso enviar a arte pelo WhatsApp? ${icon('chevron')}</summary><p>Sim. Na conversa, você pode enviar sua arte e explicar o que deseja produzir. Se ainda não tiver a arte, informe isso no pedido para consultar as opções.</p></details><details><summary>Quantas folhas podem ter os talões de recibos? ${icon('chevron')}</summary><p>Os talões de recibos de aluguel podem ter de 50 a 100 folhas. No orçamento, informe quantos talões deseja e a quantidade de folhas por talão.</p></details><details><summary>Como funciona o apoio em agendamentos? ${icon('chevron')}</summary><p>Prestamos apoio para agendamentos no CRAS e para atendimentos relacionados à identidade e ao título de eleitor. Consulte as informações necessárias pelo WhatsApp. As vagas dependem do órgão responsável.</p></details></div></section>
 <section class="wrap contact-band" id="contato"><div><div class="eyebrow">R&N GRÁFICA RÁPIDA</div><h2>Seu próximo pedido<br>começa com <em>uma conversa.</em></h2><p>${contactText}</p></div><div class="contact-band-actions">${contactLink()}<a class="phone-link" href="${wa()}" target="_blank" rel="noopener noreferrer">(81) 99609-0928</a></div></section>
 </div><section class="wrap article-view" id="article-view" hidden aria-label="Informações da gráfica"><nav class="article-breadcrumb" aria-label="Localização"><a href="/">Início</a><span aria-hidden="true">/</span><span id="article-breadcrumb-title"></span></nav><div id="article-content" class="article-content"></div><aside class="ad-region" data-ad-position="article" aria-label="Publicidade" hidden><span>Publicidade</span></aside><div class="article-back"><a href="/#servicos" class="text-link">Voltar aos produtos e serviços ${icon('arrow')}</a></div></section></main>
-<footer class="wrap footer"><div class="footer-top"><a class="brand" href="#inicio" aria-label="Voltar ao início">${brand()}</a><p>Impressões, soluções e ideias<br>com a sua identidade.</p><nav aria-label="Navegação do rodapé"><a href="#servicos">Produtos e serviços</a><a href="#como-pedir">Como pedir</a><a href="${pageHref('sobre')}">Sobre</a><a href="${pageHref('contato')}">Contato</a><a href="${pageHref('privacidade')}">Privacidade</a></nav></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} R&N Gráfica Rápida.</span><span>Do seu jeito. Com o nosso cuidado.<span class="cmyk"><i></i><i></i><i></i><i></i></span></span></div></footer>
+<footer class="wrap footer"><div class="footer-top"><a class="brand" href="#inicio" aria-label="Voltar ao início">${brand()}</a><p>Impressões, soluções e ideias<br>com a sua identidade.</p><nav aria-label="Navegação do rodapé"><a href="#servicos">Produtos e serviços</a><a href="#como-pedir">Como pedir</a><a href="${pageHref('sobre')}">Sobre</a><a href="${pageHref('contato')}">Contato</a><a href="${pageHref('calculadora')}">Calculadora</a><a href="${pageHref('privacidade')}">Privacidade</a></nav></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} R&N Gráfica Rápida.</span><span>Do seu jeito. Com o nosso cuidado.<span class="cmyk"><i></i><i></i><i></i><i></i></span></span></div></footer>
 <aside class="floating-contact" aria-label="Atendimento pelo WhatsApp"><span>Orçamentos e dúvidas</span><a href="${wa('Olá! Quero pedir um orçamento e informar a quantidade de peças ou o serviço desejado.')}" target="_blank" rel="noopener noreferrer">${icon('chat')} WhatsApp ${icon('external')}</a></aside>
 <dialog class="quote-dialog" aria-labelledby="quote-title"><button class="dialog-close" aria-label="Fechar orçamento">${icon('close')}</button><div class="eyebrow">CONTE PARA A GENTE</div><h2 id="quote-title">Vamos preparar<br><em>seu orçamento?</em></h2><p class="dialog-intro">Informe a quantidade de peças ou o serviço desejado. O resumo será aberto no WhatsApp.</p><form id="quote-form"><label for="customer-name">Seu nome</label><input id="customer-name" name="name" autocomplete="name" required maxlength="100" placeholder="Como podemos chamar você?"><label for="quote-service">Produto ou serviço</label><select id="quote-service" name="service" required></select><div class="form-row"><div><label for="quantity" id="quantity-label">Quantidade</label><input id="quantity" name="quantity" type="number" min="1" max="1000000" step="1" value="1" required></div><div id="receipt-field" hidden><label for="receipt-pages">Folhas por talão</label><input id="receipt-pages" name="pages" type="number" min="50" max="100" step="1" value="50" disabled><span class="field-hint">Mínimo: 50. Máximo: 100.</span></div><div id="size-field"><label for="quote-size">Tamanho ou formato <span>(opcional)</span></label><input id="quote-size" name="size" maxlength="120" placeholder="Ex.: A4, medidas ou tamanhos"></div></div><label for="quote-details">Mais detalhes <span>(opcional)</span></label><textarea id="quote-details" name="details" rows="3" maxlength="2000" placeholder="Conte o que precisa. Se já tiver uma arte ou uma data em mente, informe aqui."></textarea><p class="quote-notice">Valor, disponibilidade e prazo serão confirmados no atendimento. O pedido só é enviado quando você toca em Enviar no WhatsApp.</p><button type="submit" class="button button-pink submit-quote">Preparar pedido no WhatsApp ${icon('arrow')}</button></form><section id="quote-result" hidden aria-label="Resumo do pedido"><div class="result-check">${icon('check')}</div><h3>Seu resumo está pronto.</h3><p>Confira os detalhes e toque em Enviar na conversa do WhatsApp. Se a conversa não abrir, use o botão abaixo.</p><textarea id="message-preview" rows="9" readonly aria-label="Resumo do pedido"></textarea><a id="send-whatsapp" class="button button-pink" target="_blank" rel="noopener noreferrer">${icon('chat')} Abrir WhatsApp ${icon('external')}</a><div class="result-actions"><button class="text-link" id="copy-quote">Copiar resumo</button><button class="text-link" id="edit-quote">Editar pedido</button></div><p id="copy-status" role="status" aria-live="polite"></p></section></dialog>
 `;
@@ -153,6 +154,16 @@ document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
 
 
+function prepareArticle() {
+  const view = document.querySelector('#article-view');
+  const frame = view.querySelector('iframe[data-rn-calculator]');
+  view.classList.toggle('calculator-view', Boolean(frame));
+  document.body.classList.toggle('calculator-open', Boolean(frame));
+  if (frame?.dataset.rnCalculator === 'preview') {
+    frame.src = isPreview() ? './CALCULADORA/RN-Calculadora-Publica.html' : '/calculadora.html';
+  }
+}
+
 function displayPage() {
   const page = currentPage();
   const isArticle = Boolean(page || hasNativePage || isBloggerPage());
@@ -173,7 +184,8 @@ function displayPage() {
       const articleAd = document.querySelector('[data-ad-position="article"]');
       articleAd.dataset.adEligible = 'false';
       articleAd.hidden = true;
-      loadPublishedPage(location.pathname).then(published => {
+      const pageId = document.querySelector('meta[name="rn-page-id"]')?.content;
+      loadPublishedPage(location.pathname, fetch, pageId).then(published => {
         const article = document.createElement('article');
         const header = document.createElement('header');
         header.className = 'article-header';
@@ -185,6 +197,7 @@ function displayPage() {
         body.innerHTML = published.body;
         article.append(header, body);
         content.replaceChildren(article);
+        prepareArticle();
         breadcrumb.textContent = published.title;
         document.title = `${published.title} | R&N Gráfica Rápida`;
         articleAd.dataset.adEligible = String(page?.type === 'guide');
@@ -217,6 +230,7 @@ function displayPage() {
   articleAd.dataset.adEligible = String(page?.type === 'guide' && (!isBloggerPage() || hasNativePage));
   if (page?.type !== 'guide') articleAd.hidden = true;
   closeMenu();
+  prepareArticle();
   initAds();
 }
 displayPage();

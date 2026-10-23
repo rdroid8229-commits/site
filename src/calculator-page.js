@@ -1,0 +1,7 @@
+export const calculatorPrivacy = '<h3>Calculadoras e armazenamento neste navegador</h3><p>As calculadoras processam os valores no navegador e podem salvar configurações e cadastros de produtos, materiais, custos e preços no armazenamento local deste dispositivo. Esses cadastros não são enviados automaticamente à gráfica nem sincronizados entre dispositivos. Quem usa o mesmo perfil de navegador pode acessar os dados locais. É possível exportar ou importar um arquivo JSON para transferi-los; a importação substitui os cadastros atuais após confirmação. Limpar os dados do site no navegador pode apagar essas informações. Ao abrir o WhatsApp, aplicam-se também as condições de atendimento descritas nesta política.</p>';
+
+export const calculatorPage = {
+  slug: 'calculadora', title: 'Calculadora', label: 'Calculadora', type: 'tool',
+  description: 'Planeje o encaixe de peças e calcule área, custos, preços e margens.',
+  body: '<div class="article-body rn-calculator-page"><p class="article-lead">Encaixe de peças, preço por metro quadrado e cálculo de custos e margens.</p><p>Seus cadastros ficam neste navegador. Para transferi-los, use Exportar e Importar backup na área de custos.</p><iframe data-rn-calculator="preview" title="Calculadora de produção da R&amp;N Gráfica Rápida" src="/calculadora.html" style="display:block;width:100%;height:1800px;border:0" allow="clipboard-write"></iframe></div>',
+};

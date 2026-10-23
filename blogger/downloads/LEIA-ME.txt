@@ -1,9 +1,13 @@
-R&N Gráfica Rápida — Tema 2.1.1 para Blogger
+R&N Gráfica Rápida — Tema 2.2 para Blogger
 
-ATUALIZAÇÃO DE QUEM JÁ USA O TEMA 2.1
+CALCULADORA PÚBLICA
+Leia primeiro CALCULADORA-INSTALAR.txt. Publique a página Calculadora com o conteúdo completo de PAGINAS/07-calculadora.txt no modo HTML. O endereço esperado é /p/calculadora.html. Atualize Privacidade com PAGINAS/03-privacidade.txt, que já inclui a calculadora, após revisar o texto. Se deseja manter personalizações próprias da política, insira somente CALCULADORA/PRIVACIDADE-ADICIONAL.txt. Depois faça backup do tema e instale o XML 2.2 para mostrar o acesso no menu, no rodapé e na página inicial. Preserve as demais páginas existentes que já estão corretas.
+CALCULADORA/RN-Calculadora-Publica.html abre a ferramenta completa sem login do ChatGPT. Os cadastros ficam no navegador de cada visitante; use backup JSON para transferir dados entre dispositivos ou endereços. O ZIP contém as três áreas: encaixe, preço por m² e custos/preços/lucros.
+
+REPARO OPCIONAL DE PÁGINAS ANTIGAS QUE AINDA MOSTREM CÓDIGO
 1. Abra Blogger > Páginas > Privacidade e corrija a colagem usando PAGINAS/03-privacidade.txt. Selecione o modo HTML antes de substituir o conteúdo e clique em Atualizar. Confira o texto para corresponder ao atendimento da gráfica.
 2. Faça o mesmo nas outras páginas que ainda mostram código ou trechos /p/...html -->. Os novos arquivos começam diretamente com <div class="article-body">. Preserve os endereços já publicados.
-3. Faça backup do tema atual e instale o XML 2.1.1 em Tema > Restaurar.
+3. Faça backup do tema atual e instale o XML 2.2 em Tema > Restaurar.
 4. Confira a página Privacidade e os guias. O conteúdo vem das páginas publicadas, não da cópia de demonstração. Se uma página estiver indisponível, há um link para tentar novamente e o WhatsApp permanece acessível.
 5. Se publicou uma página extra Comece aqui com uma cópia de Sobre, reverta-a para rascunho. COMECE-AQUI.txt é somente um manual.
 
@@ -11,7 +15,7 @@ O widget foi ajustado para receber explicitamente os dados da página. Se o Blog
 
 INSTALAÇÃO
 1. Extraia o ZIP, entre no Blogger e selecione seu blog.
-2. Publique as seis páginas seguindo PAGINAS/COMECE-AQUI.txt.
+2. Publique as páginas seguindo PAGINAS/COMECE-AQUI.txt, incluindo Calculadora.
 3. Abra Tema e faça backup do tema atual.
 4. No menu ao lado de Personalizar, escolha Restaurar.
 5. Envie RN-Grafica-Rapida-Blogger.xml e aguarde a confirmação.
@@ -23,7 +27,7 @@ PRÉVIA
 Abra PREVIA.html mantendo a pasta images ao lado. As seis artes estão incluídas para essa prévia. No Blogger, o tema usa as imagens publicadas no repositório rdroid8229-commits/site; não é necessário enviá-las separadamente.
 
 CONTEÚDO E PUBLICIDADE
-A pasta PAGINAS contém Sobre, Contato, Privacidade e três guias. Crie ou edite as páginas nativas em Blogger > Páginas usando os títulos e os códigos indicados. A nova navegação só terá URLs publicadas depois dessa etapa. PREVIA.html permite navegar entre essas informações sem publicar.
+A pasta PAGINAS contém Sobre, Contato, Privacidade, três guias e Calculadora. Crie ou edite as páginas nativas em Blogger > Páginas usando os títulos e os códigos indicados. A nova navegação só terá URLs publicadas depois dessa etapa. PREVIA.html permite navegar entre essas informações sem publicar, mantendo as pastas images e CALCULADORA ao lado.
 Os novos espaços manuais de publicidade ficam ocultos e desativados; não há IDs de blocos configurados. O Blogger pode inserir o código de anunciante associado à conta independentemente desses espaços. A monetização e a aprovação são administradas pelo Google, separadamente. Consulte ATIVAR-ADSENSE.txt.
 
 CATÁLOGO
