@@ -1,4 +1,4 @@
-# R&N Gráfica Rápida — tema 2.1
+# R&N Gráfica Rápida — tema 2.1.1
 
 Site responsivo em português com 20 produtos e serviços organizados em seis categorias, busca, artes exclusivas da R&N e orçamento pelo WhatsApp **(81) 99609-0928**.
 
@@ -64,7 +64,16 @@ Validação adicional:
 
 ```sh
 node --test tests/ads.test.mjs
+node --test tests/published-pages.test.mjs
 python3 tests/content.py
 ```
 
 O teste de conteúdo confere as seis páginas, navegação, orçamento nas páginas informativas, prévia e suporte ao conteúdo nativo do Blogger por uma resposta renderizada simulada. A aceitação final do tema e a publicação das páginas na conta continuam dependendo da instalação pelo usuário. As páginas de privacidade devem ser revisadas pelo responsável para corresponder ao atendimento e às ferramentas efetivamente utilizados.
+
+## Correção da integração — versão 2.1.1
+
+O backup exportado pelo Blogger confirma que Blog1 estava visível, mas o HTML público continha uma seção nativa vazia. O widget agora declara `var="this"`, acessa `data:this.posts` e mantém sua seção registrada em todas as telas. A confirmação da renderização no servidor ainda depende de instalar o XML atualizado na conta; os testes locais não executam o motor do Blogger.
+
+Se a seção vier vazia, `src/published-pages.js` consulta o feed público de páginas na própria origem, sem cookies. Título e corpo publicados passam a ser a fonte do conteúdo; o tema não usa os textos de demonstração para esconder uma página ausente ou uma falha. A demonstração permanece disponível apenas na prévia e no desenvolvimento. Nenhum arquivo de backup enviado pelo usuário é distribuído no repositório ou ZIP.
+
+Os arquivos de colagem começam diretamente com a tag `div`, sem comentários de instrução. O manual orienta corrigir as páginas antes de instalar a atualização, para evitar que código salvo como texto passe a aparecer no site. Preserve as edições próprias que desejar manter e confira a política de privacidade. Os blocos manuais de anúncios continuam desativados, independentemente do código associado à conta pelo Blogger.

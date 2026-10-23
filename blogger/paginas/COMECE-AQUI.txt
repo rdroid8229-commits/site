@@ -1,8 +1,10 @@
 PÁGINAS PARA CRIAR NO BLOGGER — R&N GRÁFICA RÁPIDA
 
-Crie ou edite as seis páginas em Blogger > Páginas. Para cada uma, use o título indicado, alterne o editor para a visualização HTML e cole o conteúdo do arquivo .txt correspondente. Publique a página. Os arquivos .html têm o mesmo conteúdo para consulta.
+Crie ou edite as seis páginas em Blogger > Páginas. Para cada uma, use o título indicado, alterne o editor para a visualização HTML e cole o conteúdo completo do arquivo .txt correspondente. Publique ou atualize a página. Os arquivos .html têm o mesmo conteúdo para consulta.
 
-Não cole estes arquivos na área Tema. Eles contêm somente o corpo de cada página. O tema é o XML da raiz do ZIP.
+Os arquivos começam com <div class="article-body"> e não contêm comentários de instrução. Não retire partes do código. Na visualização de escrita do editor, confira que aparecem parágrafos e imagens, sem tags como <p> visíveis.
+
+Não cole estes arquivos na área Tema. Eles contêm somente o corpo de cada página. O tema é o XML da raiz do ZIP. Este COMECE-AQUI.txt é um manual: não o publique como página. Se publicou Comece aqui com uma cópia de Sobre, reverta essa página extra para rascunho.
 
 Se já existir uma página com o mesmo assunto, edite-a em vez de criar uma cópia. Confira a URL final: ela precisa coincidir com o endereço indicado. Se o Blogger acrescentar um sufixo ao endereço, os links do tema precisarão ser ajustados.
 
@@ -38,4 +40,4 @@ Descrição sugerida: Conheça diferenças entre sublimação e DTF e saiba quai
 
 Antes de publicar a política de privacidade, confira se o texto corresponde ao atendimento e às ferramentas realmente usadas pela gráfica. O contato divulgado é somente o WhatsApp (81) 99609-0928. Não foram inventados endereço, e-mail ou CNPJ.
 
-Preparar conteúdo e posições de publicidade não garante aprovação do Google AdSense. Os novos blocos do tema permanecem desativados porque a conta ainda não foi aprovada e os IDs públicos não foram informados.
+Preparar conteúdo e posições de publicidade não garante aprovação do Google AdSense. Os novos blocos manuais do tema permanecem desativados porque a aprovação e os IDs dos blocos ainda não foram confirmados. O código de anunciante associado à conta pelo Blogger é independente desses blocos.

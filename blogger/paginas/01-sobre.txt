@@ -1,4 +1,3 @@
-<!-- Título da página: Sobre. URL esperada: /p/sobre.html -->
 <div class="article-body"><p class="article-lead">Impressões, soluções e ideias com a sua identidade.</p>
 <p>A R&amp;N Gráfica Rápida reúne serviços de impressão, papelaria, documentos, apoio em agendamentos e personalização. Nosso catálogo foi organizado para ajudar você a encontrar o que precisa e pedir informações de forma simples pelo WhatsApp.</p>
 <h2>O que você encontra aqui</h2>

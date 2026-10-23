@@ -1,6 +1,14 @@
-# R&N Gráfica Rápida — tema 2.1 e páginas informativas
+# R&N Gráfica Rápida — tema 2.1.1 e páginas informativas
 
-O pacote inclui o catálogo de 20 serviços, seis artes, três guias originais e os conteúdos de Sobre, Contato e Privacidade. Os novos espaços manuais de publicidade ficam desativados porque a conta AdSense ainda não foi aprovada e os IDs não foram fornecidos.
+O pacote inclui o catálogo de 20 serviços, seis artes, três guias originais e os conteúdos de Sobre, Contato e Privacidade. Os novos espaços manuais de publicidade ficam desativados porque a aprovação ainda não foi confirmada e os IDs dos blocos não foram fornecidos. O código de anunciante associado à conta pelo Blogger é independente desses espaços.
+
+## Atualização para quem já publicou as páginas
+
+Primeiro corrija a página Privacidade: em **Páginas → Privacidade**, selecione a visualização HTML, substitua o conteúdo pelo arquivo completo `PAGINAS/03-privacidade.txt`, revise o texto e atualize. Repita nas páginas com código salvo como texto ou fragmentos `/p/...html -->`. Os arquivos novos começam diretamente com `<div class="article-body">`; não há comentário inicial para copiar parcialmente. Preserve as URLs existentes e as alterações próprias que desejar manter.
+
+Depois faça backup do tema atual e instale o XML 2.1.1. O tema passa a mostrar o conteúdo publicado no Blogger. Se o widget não o entregar, consulta o feed público da própria hospedagem. Falhas ou páginas ausentes exibem uma opção de nova tentativa, sem apresentar uma cópia antiga como se fosse o conteúdo publicado. A prévia offline continua independente.
+
+Se existe uma página extra **Comece aqui** com uma cópia de Sobre, reverta-a para rascunho. O arquivo `COMECE-AQUI.txt` é somente um manual, não uma página a publicar.
 
 ## 1. Baixe e visualize
 
@@ -38,7 +46,7 @@ Revise a política de privacidade para que corresponda ao atendimento e aos serv
 3. Se a opção não estiver disponível, use **Tema → Editar HTML**, substitua o código pelo XML completo e salve.
 4. Abra **Ver blog** e atualize a página.
 
-O XML termina com `FIM DO TEMA R&N 2.1`. Ele mantém os estilos em uma tag `style`, inclui as fontes e acrescenta o suporte a páginas estáticas do Blogger. As artes permanecem hospedadas no repositório GitHub; não é necessário enviá-las separadamente.
+O XML termina com `FIM DO TEMA R&N 2.1.1`. Ele mantém os estilos em uma tag `style`, inclui as fontes e acrescenta o suporte a páginas estáticas do Blogger. As artes permanecem hospedadas no repositório GitHub; não é necessário enviá-las separadamente.
 
 ## 4. Confira
 
@@ -48,6 +56,7 @@ O XML termina com `FIM DO TEMA R&N 2.1`. Ele mantém os estilos em uma tag `styl
 - Talões: quantidade de talões separada das 50 a 100 folhas de cada talão.
 - Celular: menu, imagens, leitura e formulário sem sair das margens.
 - Páginas: conteúdo publicado no Blogger deve aparecer com seu título e texto próprios. A edição no painel tem prioridade sobre a prévia incluída no tema.
+- Integração: faça uma pequena edição real em uma página no painel e confirme que ela aparece no site. A leitura do corpo nativo e a consulta ao feed foram testadas localmente; a renderização do widget no servidor precisa ser conferida depois de instalar na conta. Se o feed estiver desativado e a seção continuar vazia, a página exibirá uma opção de nova tentativa. Use a cópia de backup para retornar ao tema anterior se necessário.
 
 ## 5. Publicidade depois da aprovação
 

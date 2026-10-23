@@ -65,10 +65,14 @@ with sync_playwright() as p:
     ns={'b':'http://www.google.com/2005/gml/b','h':'http://www.w3.org/1999/xhtml','data':'http://www.google.com/2005/gml/data'}
     assert len(xml.findall('.//b:widget[@id="Blog1"]',ns))==1
     assert xml.find('.//data:post.body',ns) is not None
+    widget=xml.find('.//b:widget[@id="Blog1"]',ns)
+    assert widget.get('visible')=='true'
+    assert widget.find('b:includable[@id="main"]',ns).get('var')=='this'
+    assert widget.find('.//b:loop',ns).get('values')=='data:this.posts'
     assert len(xml.findall('.//b:skin',ns))==1
-    # Simula a resposta renderizada do Blogger para provar que o conteúdo nativo é preservado.
+    # Simula somente o HTML entregue: não executa o motor de modelos do Blogger.
     native="<article class='native-page article-content' data-native-page='true'><header><h1>Sobre publicada no Blogger</h1></header><div class='native-page-body'><p id='native-proof'>Conteúdo efetivamente editado no painel do Blogger.</p></div></article>"
-    rendered=re.sub(r"<b:if[^>]*><b:section id='rnNativePages'[\s\S]*?</b:if>",lambda m:native,theme,count=1)
+    rendered=re.sub(r"<!-- RN:NATIVE:START -->[\s\S]*?<!-- RN:NATIVE:END -->",lambda m:native,theme,count=1)
     assert rendered != theme
     context.route('https://rn-native.invalid/**',lambda route:route.fulfill(status=200,content_type='text/html; charset=utf-8',body=rendered))
     context.route('https://raw.githubusercontent.com/rdroid8229-commits/site/main/public/images/**',lambda route:route.fulfill(status=200,content_type='image/webp',body=(root/'public/images'/route.request.url.split('/')[-1]).read_bytes()))
@@ -77,7 +81,32 @@ with sync_playwright() as p:
     expect(page.locator('#article-content h1')).to_have_text('Sobre publicada no Blogger')
     assert page.locator('[data-native-page]').count()==1
     expect(page.locator('#home-view')).not_to_be_visible()
-    checks.append('Tema suporta páginas nativas: título e corpo editados no Blogger são preservados.')
+    checks.append('HTML nativo preservado no navegador; renderização do widget no servidor ainda depende da instalação no Blogger.')
+    # Reproduz a seção vazia observada no backup, com o feed público como fonte.
+    empty=re.sub(r"<!-- RN:NATIVE:START -->[\s\S]*?<!-- RN:NATIVE:END -->",lambda m:"<div id='rnNativePages' class='rn-native-section no-items section'></div>",theme,count=1)
+    published={'feed':{'entry':[{'title':{'$t':'Privacidade editada no Blogger'},'content':{'$t':'<div class="article-body"><p id="published-proof">Texto público alterado pelo responsável.</p></div>'},'link':[{'rel':'alternate','href':'https://rn-feed.invalid/p/privacidade.html'}]}]}}
+    def feed_route(route):
+        if '/feeds/pages/default?' in route.request.url:
+            route.fulfill(status=200,content_type='application/json',body=json.dumps(published))
+        else:
+            route.fulfill(status=200,content_type='text/html; charset=utf-8',body=empty)
+    context.route('https://rn-feed.invalid/**',feed_route)
+    page.goto('https://rn-feed.invalid/p/privacidade.html',wait_until='networkidle')
+    expect(page.locator('#published-proof')).to_have_text('Texto público alterado pelo responsável.')
+    expect(page.locator('#article-content h1')).to_have_text('Privacidade editada no Blogger')
+    assert 'Política de privacidade da R&N' not in page.locator('#article-content').inner_text()
+    for width in [320,390,768,1440]:
+        page.set_viewport_size({'width':width,'height':900})
+        assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),width
+    page.goto('https://rn-feed.invalid/p/sobre.html',wait_until='networkidle')
+    expect(page.locator('#article-content h1')).to_have_text('Não foi possível abrir esta página')
+    assert 'O que você encontra aqui' not in page.locator('#article-content').inner_text()
+    expect(page.locator('#retry-page')).to_have_attribute('href','/p/sobre.html')
+    # Uma indisponibilidade do feed deve permitir nova tentativa sem mostrar cópia antiga.
+    context.route('https://rn-feed.invalid/feeds/**',lambda route:route.fulfill(status=503,body='Indisponível'))
+    page.goto('https://rn-feed.invalid/p/privacidade.html',wait_until='networkidle')
+    expect(page.locator('#article-content h1')).to_have_text('Não foi possível abrir esta página')
+    checks.append('Seção nativa vazia usa conteúdo publicado; página ausente ou feed indisponível não mostra texto de demonstração.')
     # A prévia deve funcionar sem páginas publicadas e com imagens relativas do ZIP.
     preview=(root/'blogger/previa.html').read_text()
     def preview_route(route):
@@ -103,7 +132,10 @@ with sync_playwright() as p:
 for slug in slugs:
     files=list((root/'blogger/paginas').glob('*-'+slug+'.txt'))
     assert len(files)==1
-    assert '/p/'+slug+'.html' in files[0].read_text()
+    code=files[0].read_text()
+    assert code.startswith('<div class="article-body">')
+    assert not code.lstrip().startswith('<!--')
+    assert re.search(r'/p/[^\s]+\.html\s*-->',code) is None
 report={'checks':checks,'javascript_errors':errors,'ads_activated':False}
 (output/'content-tests.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print(json.dumps(report,ensure_ascii=False,indent=2))

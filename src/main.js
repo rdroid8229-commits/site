@@ -2,7 +2,8 @@ import './fonts.css';
 import './style.css';
 import { business } from './site.config.js';
 import { categories, services, contactText } from './catalog.js';
-import { pages, guides, pageHref, currentPage, isPreview } from './pages.js';
+import { guides, pageHref, currentPage, isPreview, isBloggerPage } from './pages.js';
+import { loadPublishedPage } from './published-pages.js';
 import { initAds } from './ads.js';
 const nativePage = document.querySelector('[data-native-page]');
 const hasNativePage = Boolean(nativePage?.querySelector('h1')?.textContent.trim());
@@ -154,7 +155,7 @@ document.addEventListener('keydown', event => { if (event.key === 'Escape') clos
 
 function displayPage() {
   const page = currentPage();
-  const isArticle = Boolean(page || hasNativePage);
+  const isArticle = Boolean(page || hasNativePage || isBloggerPage());
   const home = document.querySelector('#home-view');
   const view = document.querySelector('#article-view');
   const content = document.querySelector('#article-content');
@@ -165,6 +166,35 @@ function displayPage() {
     if (hasNativePage) {
       content.replaceChildren(nativePage);
       breadcrumb.textContent = nativePage.querySelector('h1').textContent;
+    } else if (isBloggerPage()) {
+      // No blog publicado, nunca substitua uma página pela cópia de demonstração.
+      content.innerHTML = '<p class="article-lead" role="status">Carregando a página…</p>';
+      breadcrumb.textContent = page?.title || 'Informações';
+      const articleAd = document.querySelector('[data-ad-position="article"]');
+      articleAd.dataset.adEligible = 'false';
+      articleAd.hidden = true;
+      loadPublishedPage(location.pathname).then(published => {
+        const article = document.createElement('article');
+        const header = document.createElement('header');
+        header.className = 'article-header';
+        const heading = document.createElement('h1');
+        heading.textContent = published.title;
+        header.append(heading);
+        const body = document.createElement('div');
+        body.className = 'native-page-body';
+        body.innerHTML = published.body;
+        article.append(header, body);
+        content.replaceChildren(article);
+        breadcrumb.textContent = published.title;
+        document.title = `${published.title} | R&N Gráfica Rápida`;
+        articleAd.dataset.adEligible = String(page?.type === 'guide');
+        initAds();
+      }).catch(() => {
+        content.innerHTML = `<h1>Não foi possível abrir esta página</h1><p class="article-lead">Tente novamente ou fale com a gráfica pelo WhatsApp.</p><a class="text-link" id="retry-page">Tentar novamente ${icon('arrow')}</a>`;
+        content.querySelector('#retry-page').href = location.pathname;
+        breadcrumb.textContent = 'Página indisponível';
+        document.title = 'Página indisponível | R&N Gráfica Rápida';
+      });
     } else {
       content.innerHTML = `<article><header class="article-header"><div class="eyebrow">${page.type === 'guide' ? 'GUIAS R&N GRÁFICA' : 'R&N GRÁFICA RÁPIDA'}</div><h1>${page.title}</h1></header>${page.image ? `<img class="article-hero" src="${page.image}" alt="Arte ilustrativa R&N Gráfica: ${page.title}." width="1080" height="720">` : ''}<div class="article-body">${page.body}</div></article>`;
       breadcrumb.textContent = page.title;
@@ -184,7 +214,7 @@ function displayPage() {
   });
   document.querySelectorAll('.rn-native-section').forEach(section => section.remove());
   const articleAd = document.querySelector('[data-ad-position="article"]');
-  articleAd.dataset.adEligible = String(page?.type === 'guide');
+  articleAd.dataset.adEligible = String(page?.type === 'guide' && (!isBloggerPage() || hasNativePage));
   if (page?.type !== 'guide') articleAd.hidden = true;
   closeMenu();
   initAds();

@@ -27,7 +27,9 @@ const favicon = (await readFile(resolve(dist, 'favicon.svg'))).toString('base64'
 const head = `<meta charset='UTF-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><meta name='theme-color' content='#f8f7f3'/><title>R&amp;N Gráfica Rápida — Produtos e serviços</title><meta name='description' content='Impressões e xerox, plastificação, papelaria e documentos, banners, agendamentos e personalizados. Conheça os serviços da R&amp;N Gráfica Rápida e peça seu orçamento pelo WhatsApp.'/><link rel='icon' type='image/svg+xml' href='data:image/svg+xml;base64,${favicon}'/>`;
 const fallback = `<noscript><div style='max-width:750px;margin:50px auto;padding:24px;font-family:Arial,sans-serif'><h1>R&amp;N Gráfica Rápida</h1><p>Impressões e xerox em papel ofício, papel fotográfico, papel adesivo e papel-cartão. Plastificação de documentos e folhas A4 inteiras. Cartões de visita, talões de recibos de aluguel com 50 a 100 folhas, contratos de aluguel e declarações de residência. Cartazes A4, banners, apoio em agendamentos no CRAS, para identidade e para título de eleitor. Canecas, camisas, estampas personalizadas, sublimação total e DTF.</p><p>Ative o JavaScript para explorar as categorias e montar o pedido.</p><p>Peça um orçamento informando a quantidade de peças ou o serviço desejado. Tire suas dúvidas pelo nosso WhatsApp.</p><a href='https://wa.me/5581996090928' target='_blank' rel='noopener noreferrer'>WhatsApp: (81) 99609-0928</a></div></noscript>`;
 const bloggerHead = head.replace(/<meta name='description'[^>]*\/>/, match => `<b:if cond='data:blog.pageType != &quot;static_page&quot;'>${match}</b:if>`).replace(/<title>[\s\S]*?<\/title>/, `<b:if cond='data:blog.pageType == &quot;static_page&quot;'><title><data:blog.pageName/> | R&amp;N Gráfica Rápida</title><b:else/><title>R&amp;N Gráfica Rápida — Produtos e serviços</title></b:if>`);
-const nativePages = `<b:if cond='data:blog.pageType == &quot;static_page&quot;'><b:section id='rnNativePages' class='rn-native-section' maxwidgets='1' showaddelement='no'><b:widget id='Blog1' locked='true' title='Conteúdo das páginas' type='Blog' version='2'><b:includable id='main'><b:loop values='data:posts' var='post'><article class='native-page article-content' data-native-page='true'><header class='native-page-header'><h1><data:post.title/></h1></header><div class='native-page-body'><data:post.body/></div></article></b:loop></b:includable></b:widget></b:section></b:if>`;
+// A seção permanece registrada em todas as telas; apenas o conteúdo é condicional.
+// O widget v2 recebe o contexto explicitamente em "this".
+const nativePages = `<!-- RN:NATIVE:START --><b:section id='rnNativePages' class='rn-native-section' maxwidgets='1' showaddelement='no'><b:widget id='Blog1' locked='true' title='Conteúdo das páginas' type='Blog' version='2' visible='true'><b:includable id='main' var='this'><b:if cond='data:blog.pageType == &quot;static_page&quot;'><b:loop values='data:this.posts' var='post'><article class='native-page article-content' data-native-page='true'><header class='native-page-header'><h1><data:post.title/></h1></header><div class='native-page-body'><data:post.body/></div></article></b:loop></b:if></b:includable></b:widget></b:section><!-- RN:NATIVE:END -->`;
 const theme = `<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' lang='pt-BR' b:responsive='true' b:css='false'>
@@ -38,10 +40,11 @@ ${cdata(css)}
 <body><div id='app'></div>${nativePages}${fallback}<b:section id='bloggerreserved' class='bloggerreserved' showaddelement='no'/>
 <script type='text/javascript'>
 //<![CDATA[
+window.__RN_BLOGGER__=true;
 ${cdata(js)}
 //]]>
 </script></body></html>
-<!-- FIM DO TEMA R&N 2.1 -->
+<!-- FIM DO TEMA R&N 2.1.1 -->
 `;
 const previewJS = js.replaceAll(assetBase, './images/');
 const preview = `<!doctype html><html lang='pt-BR'><head>${head}<style>${css}</style></head><body><div id='app'></div>${fallback}<script>window.__RN_PREVIEW__=true;</script><script>${previewJS.replaceAll('</script', '<\\/script')}</script></body></html>`;
@@ -54,4 +57,4 @@ await writeFile(resolve(blogger, 'previa.html'), preview);
 await cp(resolve(root, 'public/images'), resolve(blogger, 'images'), { recursive: true });
 execFileSync(process.execPath, [resolve(root, 'scripts/export-pages.mjs')], { stdio: 'inherit' });
 execFileSync('python3', [resolve(root, 'scripts/package-blogger.py')], { stdio: 'inherit' });
-console.log('Tema 2.1 exportado com páginas nativas, três guias e publicidade manual desativada.');
+console.log('Tema 2.1.1 exportado com páginas publicadas como fonte do conteúdo.');

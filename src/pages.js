@@ -5,6 +5,7 @@ export const pages = createPages(business, Object.fromEntries(categories.map(c =
 export const guides = pages.filter(page => page.type === 'guide');
 export const pageBySlug = slug => pages.find(page => page.slug === slug);
 export const isPreview = () => location.protocol === 'file:' || Boolean(window.__RN_PREVIEW__);
+export const isBloggerPage = () => Boolean(window.__RN_BLOGGER__) && !isPreview() && /^\/p\/[^/]+\.html$/.test(location.pathname);
 export const pageHref = slug => isPreview() ? `#pagina/${slug}` : `/p/${slug}.html`;
 export const currentPage = () => {
   const hash = location.hash.match(/^#pagina\/([a-z0-9-]+)$/);
