@@ -1,5 +1,6 @@
 import './fonts.css';
 import './style.css';
+import './navigation.css';
 import './calculator.css';
 import { business } from './site.config.js';
 import { categories, services, contactText } from './catalog.js';
@@ -34,7 +35,24 @@ const contactLink = (label = 'Conversar no WhatsApp', className = 'button button
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 <header class="header"><div class="wrap header-inner">
   <a href="#inicio" class="brand" aria-label="R&N Gráfica Rápida — início">${brand()}</a>
-  <nav class="nav" id="main-nav" aria-label="Navegação principal"><a href="#servicos">Produtos e serviços</a><a href="#como-pedir">Como pedir</a><a href="#guias">Guias úteis</a><a href="${pageHref('calculadora')}">Calculadora</a><a href="#duvidas">Dúvidas frequentes</a></nav>
+  <nav class="nav" id="main-nav" aria-label="Navegação principal">
+  <a href="#inicio">Início</a>
+  <details class="nav-group"><summary>Serviços</summary><div class="nav-submenu">
+    <a href="#servicos">Todos os serviços</a>
+    <a href="#como-pedir">Como pedir</a>
+    <a href="#duvidas">Dúvidas frequentes</a>
+  </div></details>
+  <details class="nav-group"><summary>Ferramentas</summary><div class="nav-submenu">
+    <a href="${pageHref('calculadora')}">Calculadora gráfica</a>
+    <a href="https://rngraficarapida.blogspot.com/p/editor-de-fotos-on-line.html">Editor de fotos online</a>
+  </div></details>
+  <details class="nav-group"><summary>Informações</summary><div class="nav-submenu">
+    <a href="#guias">Guias úteis</a>
+    <a href="${pageHref('sobre')}">Sobre a gráfica</a>
+    <a href="${pageHref('contato')}">Contato</a>
+    <a href="${pageHref('privacidade')}">Privacidade</a>
+  </div></details>
+</nav>
   <button class="button button-dark header-quote" data-quote>${icon('chat')}Pedir orçamento</button>
   <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">${icon('menu')}</button>
 </div></header>
@@ -148,9 +166,10 @@ document.querySelector('#copy-quote').addEventListener('click', async () => {
   catch { field.focus(); field.select(); document.querySelector('#copy-status').textContent = 'Selecione o resumo acima e use a opção Copiar do seu dispositivo.'; }
 });
 const menu = document.querySelector('.menu-toggle');
-function closeMenu() { menu.setAttribute('aria-expanded', 'false'); menu.setAttribute('aria-label', 'Abrir menu'); menu.innerHTML = icon('menu'); document.querySelector('.nav').classList.remove('open'); }
+function closeMenu() { document.querySelectorAll('.nav-group[open]').forEach(group => { group.open = false; }); menu.setAttribute('aria-expanded', 'false'); menu.setAttribute('aria-label', 'Abrir menu'); menu.innerHTML = icon('menu'); document.querySelector('.nav').classList.remove('open'); }
 menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); menu.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu'); menu.innerHTML = icon(open ? 'close' : 'menu'); document.querySelector('.nav').classList.toggle('open', open); });
 document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click', closeMenu));
+document.querySelectorAll('.nav-group').forEach(group => group.addEventListener('toggle', () => { if (group.open) document.querySelectorAll('.nav-group').forEach(other => { if (other !== group) other.open = false; }); }));
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
 
 
