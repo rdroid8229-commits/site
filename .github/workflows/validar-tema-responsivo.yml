@@ -1,0 +1,46 @@
+name: Validar tema Blogger responsivo
+on:
+  push:
+    branches: [feature/menu-responsivo-categorias]
+  workflow_dispatch:
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build:blogger
+      - name: Validar XML e navegação
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          path=Path('blogger/downloads/RN-Grafica-Rapida-Blogger.xml')
+          assert path.is_file() and path.stat().st_size > 10000
+          xml=path.read_text(encoding='utf-8')
+          root=ET.fromstring(xml)
+          assert root.tag.endswith('html')
+          assert "xmlns:b=" in xml
+          assert "b:skin" in xml
+          assert "Blog1" in xml
+          for item in ('Serviços','Ferramentas','Informações','Editor de fotos online','Calculadora gráfica','nav-submenu'):
+              assert item in xml, f'Falta: {item}'
+          print(f'XML bem formado, {path.stat().st_size} bytes; menus presentes.')
+          PY
+      - name: Testes automatizados
+        run: |
+          node --test tests/*.test.mjs
+      - name: Guardar tema para instalação
+        uses: actions/upload-artifact@v4
+        with:
+          name: RN-Grafica-Tema-Blogger-Responsivo
+          path: |
+            blogger/downloads/RN-Grafica-Rapida-Blogger.xml
+            blogger/downloads/RN-Grafica-Rapida-Blogger.zip
+          if-no-files-found: error
