@@ -1,7 +1,7 @@
 name: Validar tema Blogger responsivo
 on:
   push:
-    branches: [feature/menu-responsivo-categorias]
+    branches: [feature/menu-responsivo-categorias, feature/descricoes-detalhadas-servicos]
   workflow_dispatch:
 jobs:
   validar:
@@ -31,6 +31,11 @@ jobs:
           assert "Blog1" in xml
           for item in ('Serviços','Ferramentas','Informações','Editor de fotos online','nav-submenu','Todos os serviços'):
               assert item in xml, f'Falta: {item}'
+          for item in ('Saiba mais', 'details-dialog', 'details-quote', 'CONHEÇA NOSSO SERVIÇO', 'O que oferecemos', 'Antes de encomendar'):
+              assert item in xml, f'Detalhamento ausente: {item}'
+          catalog=Path('src/catalog.js').read_text(encoding='utf-8')
+          assert catalog.count('details: [') == 20, 'Faltam descrições completas nos 20 serviços'
+          assert xml.count('Saiba mais') >= 1, 'Botão de detalhes ausente'
           assert 'Calculadora gráfica' not in xml
           assert 'data-rn-calculator' not in xml
           assert 'Imprima suas ideias.' not in xml

@@ -70,6 +70,7 @@ const contactLink = (label = 'Conversar no WhatsApp', className = 'button button
 <footer class="wrap footer"><div class="footer-top"><a class="brand" href="#servicos" aria-label="Voltar ao início">${brand()}</a><p>Impressões, soluções e ideias<br>com a sua identidade.</p><nav aria-label="Navegação do rodapé"><a href="#servicos">Produtos e serviços</a><a href="#como-pedir">Como pedir</a><a href="${pageHref('sobre')}">Sobre</a><a href="${pageHref('contato')}">Contato</a><a href="${pageHref('privacidade')}">Privacidade</a></nav></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} R&N Gráfica Rápida.</span><span>Do seu jeito. Com o nosso cuidado.<span class="cmyk"><i></i><i></i><i></i><i></i></span></span></div></footer>
 <aside class="floating-contact" aria-label="Atendimento pelo WhatsApp"><span>Orçamentos e dúvidas</span><a href="${wa('Olá! Quero pedir um orçamento e informar a quantidade de peças ou o serviço desejado.')}" target="_blank" rel="noopener noreferrer">${icon('chat')} WhatsApp ${icon('external')}</a></aside>
 <dialog class="quote-dialog" aria-labelledby="quote-title"><button class="dialog-close" aria-label="Fechar orçamento">${icon('close')}</button><div class="eyebrow">CONTE PARA A GENTE</div><h2 id="quote-title">Vamos preparar<br><em>seu orçamento?</em></h2><p class="dialog-intro">Informe a quantidade de peças ou o serviço desejado. O resumo será aberto no WhatsApp.</p><form id="quote-form"><label for="customer-name">Seu nome</label><input id="customer-name" name="name" autocomplete="name" required maxlength="100" placeholder="Como podemos chamar você?"><label for="quote-service">Produto ou serviço</label><select id="quote-service" name="service" required></select><div class="form-row"><div><label for="quantity" id="quantity-label">Quantidade</label><input id="quantity" name="quantity" type="number" min="1" max="1000000" step="1" value="1" required></div><div id="receipt-field" hidden><label for="receipt-pages">Folhas por talão</label><input id="receipt-pages" name="pages" type="number" min="50" max="100" step="1" value="50" disabled><span class="field-hint">Mínimo: 50. Máximo: 100.</span></div><div id="size-field"><label for="quote-size">Tamanho ou formato <span>(opcional)</span></label><input id="quote-size" name="size" maxlength="120" placeholder="Ex.: A4, medidas ou tamanhos"></div></div><label for="quote-details">Mais detalhes <span>(opcional)</span></label><textarea id="quote-details" name="details" rows="3" maxlength="2000" placeholder="Conte o que precisa. Se já tiver uma arte ou uma data em mente, informe aqui."></textarea><p class="quote-notice">Valor, disponibilidade e prazo serão confirmados no atendimento. O pedido só é enviado quando você toca em Enviar no WhatsApp.</p><button type="submit" class="button button-pink submit-quote">Preparar pedido no WhatsApp ${icon('arrow')}</button></form><section id="quote-result" hidden aria-label="Resumo do pedido"><div class="result-check">${icon('check')}</div><h3>Seu resumo está pronto.</h3><p>Confira os detalhes e toque em Enviar na conversa do WhatsApp. Se a conversa não abrir, use o botão abaixo.</p><textarea id="message-preview" rows="9" readonly aria-label="Resumo do pedido"></textarea><a id="send-whatsapp" class="button button-pink" target="_blank" rel="noopener noreferrer">${icon('chat')} Abrir WhatsApp ${icon('external')}</a><div class="result-actions"><button class="text-link" id="copy-quote">Copiar resumo</button><button class="text-link" id="edit-quote">Editar pedido</button></div><p id="copy-status" role="status" aria-live="polite"></p></section></dialog>
+<dialog class="details-dialog" aria-labelledby="details-title"><div class="details-panel"><button type="button" class="details-close" aria-label="Fechar detalhes">${icon('close')}</button><div class="eyebrow">CONHEÇA NOSSO SERVIÇO</div><h2 id="details-title"></h2><p id="details-summary"></p><div id="details-content"></div><button type="button" class="button button-pink" id="details-quote">${icon('chat')} Solicitar orçamento pelo WhatsApp</button></div></dialog>
 `;
 
 let selectedCategory = 'todos';
@@ -82,7 +83,7 @@ function renderCatalog() {
   const shownCategories = categories.filter(c => filtered.some(s => s.category === c.id));
   grid.innerHTML = shownCategories.map(c => {
     const items = filtered.filter(s => s.category === c.id);
-    return `<article class="category-card" data-category-card="${c.id}" aria-labelledby="title-${c.id}"><div class="category-photo"><img src="${c.image}" alt="${c.alt}" width="1080" height="720" loading="lazy" decoding="async"><span class="category-photo-label">${icon(c.icon)} R&N GRÁFICA</span></div><div class="category-body"><div class="category-title-row"><h3 id="title-${c.id}">${c.name}</h3><span class="category-count">${String(items.length).padStart(2, '0')}</span></div><p class="category-description">${c.description}</p><div class="service-list">${items.map(s => `<button class="service-row" data-service="${s.id}" aria-label="Pedir orçamento: ${s.name}"><span><strong>${s.name}</strong><span class="service-description">${s.description}</span></span><span class="service-arrow">${icon('external')}</span></button>`).join('')}</div>${c.note ? `<p class="category-note">${c.note}</p>` : ''}<button class="category-quote" data-category-quote="${c.id}">Solicitar orçamento nesta categoria ${icon('arrow')}</button></div></article>`;
+    return `<article class="category-card" data-category-card="${c.id}" aria-labelledby="title-${c.id}"><div class="category-photo"><img src="${c.image}" alt="${c.alt}" width="1080" height="720" loading="lazy" decoding="async"><span class="category-photo-label">${icon(c.icon)} R&N GRÁFICA</span></div><div class="category-body"><div class="category-title-row"><h3 id="title-${c.id}">${c.name}</h3><span class="category-count">${String(items.length).padStart(2, '0')}</span></div><p class="category-description">${c.description}</p><div class="service-list">${items.map(s => `<button class="service-row" data-service="${s.id}" aria-label="Pedir orçamento: ${s.name}"><span><strong>${s.name}</strong><span class="service-description">${s.description}</span></span><span class="service-arrow">${icon('external')}</span></button><button type="button" class="service-more" data-service-details="${s.id}" aria-label="Saiba mais sobre ${s.name}">Saiba mais ${icon('arrow')}</button>`).join('')}</div>${c.note ? `<p class="category-note">${c.note}</p>` : ''}<button class="category-quote" data-category-quote="${c.id}">Solicitar orçamento nesta categoria ${icon('arrow')}</button></div></article>`;
   }).join('');
   document.querySelector('#catalog-count').textContent = `${filtered.length} ${filtered.length === 1 ? 'serviço' : 'serviços'} em ${shownCategories.length} ${shownCategories.length === 1 ? 'categoria' : 'categorias'}`;
   document.querySelector('.empty-state').hidden = filtered.length !== 0;
@@ -126,6 +127,38 @@ function openQuote(serviceId = '', category = '') {
   document.querySelector('#copy-status').textContent = '';
   dialog.showModal(); document.body.classList.add('modal-open');
 }
+const detailsDialog = document.querySelector('.details-dialog');
+let detailsServiceId = '';
+function openDetails(id) {
+  const service = services.find(item => item.id === id);
+  if (!service) return;
+  detailsServiceId = id;
+  document.querySelector('#details-title').textContent = service.name;
+  document.querySelector('#details-summary').textContent = service.description;
+  const headings = ['O que oferecemos', 'Opções e informações para o pedido', 'Antes de encomendar'];
+  const content = document.querySelector('#details-content');
+  content.replaceChildren();
+  (service.details || []).forEach((paragraph, index) => {
+    const section = document.createElement('section');
+    const title = document.createElement('h3'); title.textContent = headings[index] || 'Informações';
+    const text = document.createElement('p'); text.textContent = paragraph;
+    section.append(title, text); content.append(section);
+  });
+  detailsDialog.showModal();
+  document.body.classList.add('modal-open');
+}
+document.addEventListener('click', event => {
+  const more = event.target.closest('[data-service-details]');
+  if (more) openDetails(more.dataset.serviceDetails);
+});
+document.querySelector('.details-close').addEventListener('click', () => detailsDialog.close());
+detailsDialog.addEventListener('close', () => document.body.classList.remove('modal-open'));
+detailsDialog.addEventListener('click', event => { if (event.target === detailsDialog) detailsDialog.close(); });
+document.querySelector('#details-quote').addEventListener('click', () => {
+  const id = detailsServiceId;
+  detailsDialog.close();
+  openQuote(id);
+});
 serviceSelect.addEventListener('change', updateServiceFields);
 document.addEventListener('click', event => {
   const service = event.target.closest('[data-service]');
