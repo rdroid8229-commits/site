@@ -33,7 +33,9 @@ jobs:
               assert item in xml, f'Falta: {item}'
           for item in ('Saiba mais', 'details-dialog', 'details-quote', 'CONHEÇA NOSSO SERVIÇO', 'O que oferecemos', 'Antes de encomendar'):
               assert item in xml, f'Detalhamento ausente: {item}'
-          assert xml.count('details: [') >= 20, 'Faltam descrições completas nos 20 serviços'
+          catalog=Path('src/catalog.js').read_text(encoding='utf-8')
+          assert catalog.count('details: [') == 20, 'Faltam descrições completas nos 20 serviços'
+          assert xml.count('Saiba mais') >= 1, 'Botão de detalhes ausente'
           assert 'Calculadora gráfica' not in xml
           assert 'data-rn-calculator' not in xml
           assert 'Imprima suas ideias.' not in xml
