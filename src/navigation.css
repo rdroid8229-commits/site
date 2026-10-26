@@ -17,3 +17,21 @@
  .nav-group>summary::after{margin-left:auto}
 }
 @media(max-width:360px){.nav-submenu a{font-size:13px}}
+
+/* Informações detalhadas dos serviços: modal adaptável a celulares. */
+.service-more{border:0;background:transparent;color:#81405b;cursor:pointer;font:inherit;font-weight:750;font-size:13px;padding:8px 12px 14px;display:inline-flex;gap:6px;align-items:center}
+.service-more .icon{width:15px;height:15px}
+.service-more:hover,.service-more:focus-visible{text-decoration:underline}
+.details-dialog{width:min(94vw,650px);max-height:min(88dvh,850px);padding:0;border:1px solid #e6dbe0;border-radius:16px;box-shadow:0 24px 70px #17121a55;color:#29242a}
+.details-dialog::backdrop{background:#17121a9e}
+.details-panel{padding:clamp(22px,4vw,38px);overflow:auto;max-height:88dvh}
+.details-close{float:right;border:0;background:#f4e9ee;border-radius:50%;width:40px;height:40px;cursor:pointer;display:grid;place-items:center}
+.details-close .icon{width:20px;height:20px}
+.details-panel h2{font-size:clamp(23px,4vw,32px);line-height:1.2;margin:10px 0 12px}
+.details-panel>p{line-height:1.6;color:#625761}
+#details-content{margin:22px 0}
+#details-content section{border-top:1px solid #e6dbe0;padding:14px 0}
+#details-content h3{font-size:16px;margin:0 0 7px}
+#details-content p{margin:0;line-height:1.6}
+#details-quote{width:100%;justify-content:center;text-align:center}
+@media(max-width:480px){.details-dialog{width:calc(100vw - 20px);max-height:90dvh}.details-panel{max-height:90dvh;padding:22px 18px}}
