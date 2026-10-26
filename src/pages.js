@@ -1,8 +1,7 @@
 import { business } from './site.config.js';
 import { categories } from './catalog.js';
 import { createPages } from './page-content.js';
-import { calculatorPage } from './calculator-page.js';
-export const pages = [...createPages(business, Object.fromEntries(categories.map(c => [c.id, c.image]))), calculatorPage];
+export const pages = [...createPages(business, Object.fromEntries(categories.map(c => [c.id, c.image])))];
 export const guides = pages.filter(page => page.type === 'guide');
 export const pageBySlug = slug => pages.find(page => page.slug === slug);
 export const isPreview = () => location.protocol === 'file:' || Boolean(window.__RN_PREVIEW__);
