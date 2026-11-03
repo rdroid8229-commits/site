@@ -99,7 +99,7 @@ ${calculatorPrivacy}
 <h2>Conferência final</h2><ul><li>Qual é o tamanho desejado em centímetros?</li><li>Você prefere preencher o papel ou preservar a foto inteira com margens?</li><li>O arquivo original está disponível?</li><li>Há algum rosto ou texto perto das bordas?</li><li>Quantas cópias são necessárias?</li></ul><p>Na R&amp;N Gráfica Rápida, o tipo de papel, o tamanho, a quantidade e a possibilidade de ajustes são confirmados no atendimento antes da produção.</p>${request}`,
   },
   {
-    slug: 'adesivo-papel-ou-vinil', title: 'Adesivo de papel ou de vinil: qual escolher?', label: 'Tipos de adesivos', type: 'guide', image: images.adesivos,
+    slug: 'adesivo-papel-ou-vinil', title: 'Adesivo de papel ou de vinil: qual escolher?', label: 'Tipos de adesivos', type: 'guide', image: images.impressoes,
     description: 'Compare usos, limitações e cuidados de adesivos de papel e vinil antes de encomendar etiquetas.',
     body: `<p class="article-lead">Adesivos podem servir para identificação, embalagens, brindes e divulgação. A escolha entre papel adesivo e vinil depende principalmente da superfície, do ambiente e do tempo de uso esperado.</p>
 <h2>Quando considerar o papel adesivo</h2><p>O papel adesivo costuma ser uma opção prática para etiquetas de uso interno, identificação de materiais e embalagens que permanecerão em ambientes secos. A aparência e a resistência variam conforme o tipo de papel e a impressão aplicada.</p><p>Contato frequente com água, atrito e exposição ao sol podem prejudicar etiquetas de papel. Por isso, não escolha o material apenas pelo preço: considere onde o adesivo será utilizado.</p>
