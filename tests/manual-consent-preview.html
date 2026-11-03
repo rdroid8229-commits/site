@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R&N — Teste isolado do painel de privacidade</title>
+<style>
+body{margin:0;background:#f8f7f3;color:#292725;font:16px system-ui,Arial,sans-serif}
+main{max-width:820px;margin:32px auto;padding:24px;background:#fff;border-radius:16px}
+h1{font-size:1.5rem}p{line-height:1.55}.status{padding:12px;background:#f0f6ff;border-radius:8px;white-space:pre-wrap}
+button{cursor:pointer}.rn-consent-panel{position:fixed;z-index:10000;bottom:16px;left:16px;right:16px;max-width:560px;margin:auto;background:#fff;color:#292725;border:1px solid #dedbd3;border-radius:16px;padding:18px;box-shadow:0 10px 40px #0003;font:inherit}
+.rn-consent-panel[hidden],.rn-consent-reopen[hidden],.rn-consent-settings[hidden]{display:none!important}
+.rn-consent-panel h2{font-size:1.15rem;margin:0 0 8px}.rn-consent-panel p{font-size:.9rem;line-height:1.5;margin:0 0 12px}.rn-consent-panel a{text-decoration:underline}
+.rn-consent-actions{display:flex;flex-wrap:wrap;gap:8px}.rn-consent-actions button,.rn-consent-settings button{border:1px solid #b9b3aa;background:#f8f7f3;border-radius:9px;padding:10px 14px;min-height:44px}.rn-consent-actions .rn-consent-primary{background:#292725;color:white}.rn-consent-settings{border-top:1px solid #dedbd3;margin-top:12px;padding-top:12px}.rn-consent-settings label{display:flex;align-items:center;gap:9px;margin-bottom:12px}.rn-consent-settings input{width:18px;height:18px}.rn-consent-reopen{position:fixed;bottom:8px;left:8px;z-index:9999;border:1px solid #dedbd3;border-radius:9px;background:#fff;padding:8px 12px;font-size:12px;box-shadow:0 2px 10px #0002}
+@media(max-width:480px){main{margin:8px;padding:16px}.rn-consent-panel{bottom:8px;left:8px;right:8px;padding:14px;max-height:70vh;overflow-y:auto}.rn-consent-actions button{flex:1;padding:10px 8px}}
+</style></head><body>
+<main><h1>R&N Gráfica Rápida — Teste visual isolado</h1>
+<p><strong>Esta página é somente para testes.</strong> Não está publicada no Blogger, não carrega Google Analytics, não envia dados ao Google e não modifica seu site.</p>
+<p>Experimente Aceitar, Recusar, Configurar, Salvar e depois o botão pequeno “Privacidade e cookies” para mudar a escolha.</p>
+<p><button id="reset" type="button">Reiniciar teste (apagar preferência local)</button></p>
+<h2>Registro local do teste</h2><div id="status" class="status" aria-live="polite">Nenhuma ação ainda.</div>
+</main>
+<script>
+const KEY='rn_analytics_consent_v1';
+const status=document.getElementById('status');
+window.rnUpdateAnalyticsConsent=function(accepted){status.textContent='Consentimento simulado: '+(accepted?'ACEITO':'RECUSADO')+'\nPreferência armazenada: '+(localStorage.getItem(KEY)||'nenhuma')+'\nNenhum dado foi enviado ao Analytics.'};
+function readChoice(){try{return localStorage.getItem(KEY)}catch{return null}}
+function saveChoice(value){try{localStorage.setItem(KEY,value)}catch{}}
+function initPrivacyConsent(privacyUrl){
+const panel=document.createElement('section');panel.className='rn-consent-panel';panel.setAttribute('aria-label','Preferências de privacidade');
+panel.innerHTML=`<h2>Privacidade e cookies</h2>
+<p>Podemos usar o Google Analytics para entender quais páginas são mais úteis. Se você recusar, a medição sem cookies poderá enviar sinais limitados, sem identificadores de cookies do Analytics; a autorização permite a medição com cookies. O Blogger e outros serviços podem usar tecnologias próprias. <a href="${privacyUrl}">Leia nossa Política de Privacidade</a>.</p>
+<div class="rn-consent-actions"><button type="button" data-consent="reject">Recusar</button><button type="button" data-consent="settings">Configurar</button><button type="button" data-consent="accept" class="rn-consent-primary">Aceitar</button></div>
+<div class="rn-consent-settings" hidden><p><strong>Cookies essenciais:</strong> necessários aos recursos e serviços da plataforma, conforme suas próprias regras.</p><label><input type="checkbox" data-analytics-check /> Permitir análise de visitas (Google Analytics)</label><button type="button" data-consent="save">Salvar preferências</button></div>`;
+const reopen=document.createElement('button');reopen.type='button';reopen.className='rn-consent-reopen';reopen.textContent='Privacidade e cookies';reopen.setAttribute('aria-label','Revisar preferências de privacidade e cookies');
+document.body.append(panel,reopen);const checkbox=panel.querySelector('[data-analytics-check]');const settings=panel.querySelector('.rn-consent-settings');
+function show(){checkbox.checked=readChoice()==='accepted';panel.hidden=false;reopen.hidden=true}
+function close(){panel.hidden=true;reopen.hidden=false}
+function choose(value){saveChoice(value);window.rnUpdateAnalyticsConsent(value==='accepted');close()}
+panel.addEventListener('click',event=>{const action=event.target.closest('[data-consent]')?.dataset.consent;if(action==='accept')choose('accepted');if(action==='reject')choose('rejected');if(action==='settings'){settings.hidden=!settings.hidden;checkbox.focus()}if(action==='save')choose(checkbox.checked?'accepted':'rejected')});
+reopen.addEventListener('click',show);const choice=readChoice();if(choice==='accepted'){window.rnUpdateAnalyticsConsent(true);close()}else if(choice==='rejected')close();else show();
+}
+initPrivacyConsent('#');
+document.getElementById('reset').addEventListener('click',()=>{localStorage.removeItem(KEY);location.reload()});
+</script></body></html>
