@@ -15,7 +15,7 @@ export function initPrivacyConsent(privacyUrl) {
   panel.className = 'rn-consent-panel';
   panel.setAttribute('aria-label', 'Preferências de privacidade');
   panel.innerHTML = `<h2>Privacidade e cookies</h2>
-    <p>Podemos usar o Google Analytics para entender quais páginas são mais úteis. Se você recusar, a medição sem cookies poderá enviar sinais limitados, sem identificadores de cookies do Analytics; a autorização permite a medição com cookies. O Blogger e outros serviços podem usar tecnologias próprias. <a href="${privacyUrl}">Leia nossa Política de Privacidade</a>.</p>
+    <p>Usamos o Google Analytics para medir visitas. Com sua autorização, ele usa cookies; sem ela, poderá enviar sinais limitados sem cookies. O Blogger pode utilizar tecnologias próprias. <a href="${privacyUrl}">Leia nossa Política de Privacidade</a>.</p>
     <div class="rn-consent-actions">
       <button type="button" data-consent="reject">Recusar</button>
       <button type="button" data-consent="settings">Configurar</button>
