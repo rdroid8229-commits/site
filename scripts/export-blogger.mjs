@@ -31,9 +31,9 @@ const pageIdentity = `<b:if cond='data:blog.pageType == &quot;static_page&quot;'
 // A seção permanece registrada em todas as telas; apenas o conteúdo é condicional.
 // O widget v2 recebe o contexto explicitamente em "this".
 const nativePages = `<!-- RN:NATIVE:START --><b:section id='rnNativePages' class='rn-native-section' maxwidgets='1' showaddelement='no'><b:widget id='Blog1' locked='true' title='Conteúdo das páginas' type='Blog' version='2' visible='true'><b:includable id='main' var='this'><b:if cond='data:blog.pageType == &quot;static_page&quot;'><b:loop values='data:this.posts' var='post'><article class='native-page article-content' data-native-page='true'><header class='native-page-header'><h1><data:post.title/></h1></header><div class='native-page-body'><data:post.body/></div></article></b:loop></b:if></b:includable></b:widget></b:section><!-- RN:NATIVE:END -->`;
-// Preparação do Analytics: somente carregar após consentimento explícito.
-// A integração nativa do Blogger pode inserir a mesma tag: evite duplicação.
-// Não coleta dados até uma interface de consentimento chamar window.rnEnableAnalytics().
+// Consent Mode v2 com padrões negados antes do cabeçalho nativo do Blogger.
+// O Analytics pode emitir sinais limitados sem cookies (modo avançado).
+// Se a integração nativa já carregar o gtag, não iniciar/configurar novamente.
 // Consent Mode v2: defaults BEFORE Blogger head content, tag loaded once AFTER.
 // Ads remain denied: a separate Google-certified CMP is needed for applicable ad traffic.
 const consentDefaults = `<script type='text/javascript'>
@@ -57,14 +57,19 @@ const analyticsBootstrap = `<script type='text/javascript'>
   window.rnUpdateAnalyticsConsent = function(accepted) {
     window.gtag('consent', 'update', { 'analytics_storage': accepted ? 'granted' : 'denied' });
   };
-  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=' + ID + '"]')) {
+  // Blogger pode ter carregado a tag ou colocado a configuração na fila.
+  var alreadyLoaded = !!document.querySelector('script[src*="googletagmanager.com/gtag/js"]');
+  var alreadyConfigured = (window.dataLayer || []).some(function(item) {
+    return item && item[0] === 'config' && item[1] === ID;
+  });
+  if (!alreadyLoaded && !alreadyConfigured) {
     var tag = document.createElement('script');
     tag.async = true;
     tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
     document.head.appendChild(tag);
+    window.gtag('js', new Date());
+    window.gtag('config', ID);
   }
-  window.gtag('js', new Date());
-  window.gtag('config', ID);
 })();
 //]]>
 </script>`;
