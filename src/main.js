@@ -6,6 +6,7 @@ import { categories, services, contactText } from './catalog.js';
 import { guides, pageHref, currentPage, isPreview, isBloggerPage } from './pages.js';
 import { loadPublishedPage } from './published-pages.js';
 import { initAds } from './ads.js';
+import { initPrivacyConsent } from './privacy-consent.js';
 const nativePage = document.querySelector('[data-native-page]');
 const hasNativePage = Boolean(nativePage?.querySelector('h1')?.textContent.trim());
 
@@ -243,6 +244,16 @@ function displayPage() {
         articleAd.dataset.adEligible = String(page?.type === 'guide');
         initAds();
       }).catch(() => {
+        // Guias editoriais também existem no pacote do tema: em caso de falha
+        // temporária do feed do Blogger, mostre o texto completo em vez de
+        // uma tela vazia. Páginas personalizadas continuam sem substituição.
+        if (page?.type === 'guide') {
+          content.innerHTML = `<article><header class="article-header"><div class="eyebrow">GUIAS R&N GRÁFICA</div><h1>${page.title}</h1></header>${page.image ? `<img class="article-hero" src="${page.image}" alt="Arte ilustrativa R&N Gráfica: ${page.title}." width="1080" height="720">` : ''}<div class="article-body">${page.body}</div></article>`;
+          breadcrumb.textContent = page.title;
+          document.title = `${page.title} | R&N Gráfica Rápida`;
+          prepareArticle();
+          return;
+        }
         content.innerHTML = `<h1>Não foi possível abrir esta página</h1><p class="article-lead">Tente novamente ou fale com a gráfica pelo WhatsApp.</p><a class="text-link" id="retry-page">Tentar novamente ${icon('arrow')}</a>`;
         content.querySelector('#retry-page').href = location.pathname;
         breadcrumb.textContent = 'Página indisponível';
@@ -274,6 +285,7 @@ function displayPage() {
   initAds();
 }
 displayPage();
+initPrivacyConsent(pageHref('privacidade'));
 window.addEventListener('hashchange', () => {
   if (isPreview()) {
     const targetPage = currentPage();
