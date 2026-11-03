@@ -1,5 +1,5 @@
 // Consentimento opcional para medição de audiência (GA4).
-// Não altera cookies ou scripts que o próprio Blogger/Google possa carregar.
+// Não altera cookies de terceiros ou os dados armazenados pelo Blogger.
 const KEY = 'rn_analytics_consent_v1';
 function readChoice() { try { return localStorage.getItem(KEY); } catch { return null; } }
 function saveChoice(choice) { try { localStorage.setItem(KEY, choice); } catch { /* armazenamento indisponível */ } }
@@ -10,14 +10,9 @@ function clearAccessibleAnalyticsCookies() {
     const names = document.cookie.split(';').map(item => item.trim().split('=')[0])
       .filter(name => /^_ga(?:_[A-Za-z0-9]+)?$/.test(name));
     const host = window.location?.hostname || '';
-    const domains = [''];
-    // Restringe a tentativa de limpeza ao domínio do próprio site.
-    if (host && host !== 'localhost' && !/^[0-9.]+$/.test(host)) {
-      const parts = host.split('.');
-      for (let i = 0; i < parts.length - 1; i++) {
-        if (parts.slice(i).join('.').includes('.')) domains.push(parts.slice(i).join('.'));
-      }
-    }
+    // Não tenta domínios pais compartilhados (por exemplo, blogspot.com).
+    // Só remove cookies acessíveis neste host e no domínio exato deste host.
+    const domains = host && host !== 'localhost' ? ['', host] : [''];
     for (const name of names) {
       for (const domain of domains) {
         document.cookie = name + '=; Max-Age=0; Path=/; SameSite=Lax' +
