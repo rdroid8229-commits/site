@@ -6,6 +6,7 @@ import { categories, services, contactText } from './catalog.js';
 import { guides, pageHref, currentPage, isPreview, isBloggerPage } from './pages.js';
 import { loadPublishedPage } from './published-pages.js';
 import { initAds } from './ads.js';
+import { initPrivacyConsent } from './privacy-consent.js';
 const nativePage = document.querySelector('[data-native-page]');
 const hasNativePage = Boolean(nativePage?.querySelector('h1')?.textContent.trim());
 
@@ -284,6 +285,7 @@ function displayPage() {
   initAds();
 }
 displayPage();
+initPrivacyConsent(pageHref('privacidade'));
 window.addEventListener('hashchange', () => {
   if (isPreview()) {
     const targetPage = currentPage();
