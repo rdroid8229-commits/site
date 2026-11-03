@@ -1,6 +1,8 @@
 // Consentimento opcional para medição de audiência (GA4).
 // Não altera cookies ou scripts que o próprio Blogger/Google possa carregar.
 const KEY = 'rn_analytics_consent_v1';
+function readChoice() { try { return localStorage.getItem(KEY); } catch { return null; } }
+function saveChoice(choice) { try { localStorage.setItem(KEY, choice); } catch { /* armazenamento indisponível */ } }
 function updateConsent(accepted) {
   if (typeof window.rnUpdateAnalyticsConsent === 'function') {
     window.rnUpdateAnalyticsConsent(accepted);
