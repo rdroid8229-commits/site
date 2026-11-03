@@ -6,7 +6,7 @@ export const guides = pages.filter(page => page.type === 'guide');
 export const pageBySlug = slug => pages.find(page => page.slug === slug);
 export const isPreview = () => location.protocol === 'file:' || Boolean(window.__RN_PREVIEW__);
 export const isBloggerPage = () => Boolean(window.__RN_BLOGGER__) && !isPreview() && /^\/p\/[^/]+\.html$/.test(location.pathname);
-const publishedSlugs = { 'adesivo-papel-ou-vinil': 'adesivos-de-papel-ou-em-vinil' };
+const publishedSlugs = { 'adesivo-papel-ou-vinil': 'adesivos-de-papel-ou-em-vinil', 'preparar-fotos-impressao': 'como-preparar-fotos-para-impressao', 'como-calcular-tamanho-banner': 'como-caucular-o-tamanho-do-banner' };
 export const pageHref = slug => isPreview() ? `#pagina/${slug}` : `/p/${publishedSlugs[slug] || slug}.html`;
 export const currentPage = () => {
   const hash = location.hash.match(/^#pagina\/([a-z0-9-]+)$/);
