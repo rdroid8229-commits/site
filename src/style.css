@@ -24,3 +24,40 @@
 .rn-consent-settings input{width:18px;height:18px}
 .rn-consent-reopen{position:fixed;bottom:8px;left:8px;z-index:9999;border:1px solid #dedbd3;border-radius:9px;background:#fff;padding:8px 12px;font-size:12px;box-shadow:0 2px 10px #0002}
 @media(max-width:480px){.rn-consent-panel{bottom:12px;left:auto;right:12px;width:min(350px,calc(100vw - 24px));padding:14px;max-height:65vh;overflow-y:auto}.rn-consent-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.rn-consent-actions button{min-width:0;padding:10px 3px;font-size:.85rem}}
+
+
+/* Identidade visual R&N: navegação e legibilidade (prévia, não publicada). */
+@media(min-width:701px){
+ .header{background:#142c4a;color:#fff;border-bottom-color:#244967}
+ .header .brand{color:#fff}
+ .header .nav{font-size:15px;gap:clamp(12px,2vw,28px)}
+ .header .nav-group>summary{font-size:15px;font-weight:700}
+ .header .nav-submenu{background:#fff;color:#18324e;border-color:#d2deea}
+ .header .nav-submenu a:hover,.header .nav-submenu a:focus-visible{background:#eaf2fb;color:#163d6b}
+ .header .header-quote{background:#fff;color:#142c4a;font-size:13px}
+ .header .header-quote:hover{background:#eaf2fb}
+}
+@media(max-width:700px){
+ .header{background:#142c4a;color:#fff;border-bottom-color:#244967}
+ .header .brand,.header .menu-toggle{color:#fff}
+ .header .nav{background:#142c4a;color:#fff}
+ .header .nav-submenu{background:#eaf2fb;color:#18324e}
+ .header .nav-submenu a:hover,.header .nav-submenu a:focus-visible{background:#d5e5f7;color:#142c4a}
+ .header .header-quote{background:#fff;color:#142c4a}
+}
+.catalog>.section-heading,.editorial-section>.section-heading,.faq-intro{background:#eaf2fb;border-left:5px solid #2264b2;border-radius:8px;padding:22px}
+.catalog .section-heading .eyebrow,.editorial-section .section-heading .eyebrow,.faq-intro .eyebrow{color:#20528a}
+.category-card{box-shadow:0 3px 12px #142c4a0d}
+.category-title-row{background:#edf3fa;border-radius:6px;padding:11px 13px;margin:-5px -7px 8px}
+.category-description{font-size:14px}
+.service-row strong{font-size:15px}
+.service-description{font-size:13px}
+.service-more{font-size:14px}
+.section-heading>p,.guide-card p,.article-content p,.article-content li{font-size:max(15px,1em)}
+.article-view .article-breadcrumb{background:#eaf2fb;border-left:4px solid #2264b2;padding:12px 16px;border-radius:5px}
+.article-view .article-content h2{border-left:4px solid #2264b2;background:#edf3fa;border-radius:5px;padding:12px 16px}
+@media(max-width:700px){
+ .catalog>.section-heading,.editorial-section>.section-heading,.faq-intro{padding:16px}
+ .category-description{font-size:13px}
+ .service-description{font-size:12px}
+}
