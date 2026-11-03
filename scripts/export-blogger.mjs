@@ -34,28 +34,44 @@ const nativePages = `<!-- RN:NATIVE:START --><b:section id='rnNativePages' class
 // Preparação do Analytics: somente carregar após consentimento explícito.
 // A integração nativa do Blogger pode inserir a mesma tag: evite duplicação.
 // Não coleta dados até uma interface de consentimento chamar window.rnEnableAnalytics().
+// Consent Mode v2: defaults BEFORE Blogger head content, tag loaded once AFTER.
+// Ads remain denied: a separate Google-certified CMP is needed for applicable ad traffic.
+const consentDefaults = `<script type='text/javascript'>
+//<![CDATA[
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+window.gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': 500
+});
+window.gtag('set', 'ads_data_redaction', true);
+//]]>
+</script>`;
 const analyticsBootstrap = `<script type='text/javascript'>
 //<![CDATA[
-window.rnEnableAnalytics = function () {
-  if (window.__rnAnalyticsStarted) return;
-  window.__rnAnalyticsStarted = true;
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
-  window.gtag('js', new Date());
-  window.gtag('config', 'G-95RKPEGCS9');
-  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=G-95RKPEGCS9"]')) {
+(function(){
+  var ID = 'G-95RKPEGCS9';
+  window.rnUpdateAnalyticsConsent = function(accepted) {
+    window.gtag('consent', 'update', { 'analytics_storage': accepted ? 'granted' : 'denied' });
+  };
+  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=' + ID + '"]')) {
     var tag = document.createElement('script');
     tag.async = true;
-    tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-95RKPEGCS9';
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
     document.head.appendChild(tag);
   }
-};
+  window.gtag('js', new Date());
+  window.gtag('config', ID);
+})();
 //]]>
 </script>`;
 const theme = `<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' lang='pt-BR' b:responsive='true' b:css='false'>
-<head>${bloggerHead}${pageIdentity}<b:include data='blog' name='all-head-content'/>${analyticsBootstrap}<b:skin><![CDATA[]]></b:skin>
+<head>${bloggerHead}${pageIdentity}${consentDefaults}<b:include data='blog' name='all-head-content'/>${analyticsBootstrap}<b:skin><![CDATA[]]></b:skin>
 <style type='text/css'>/*<![CDATA[*/
 ${cdata(css)}
 /*]]>*/</style></head>
