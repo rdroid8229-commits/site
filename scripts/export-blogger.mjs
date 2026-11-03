@@ -31,10 +31,31 @@ const pageIdentity = `<b:if cond='data:blog.pageType == &quot;static_page&quot;'
 // A seção permanece registrada em todas as telas; apenas o conteúdo é condicional.
 // O widget v2 recebe o contexto explicitamente em "this".
 const nativePages = `<!-- RN:NATIVE:START --><b:section id='rnNativePages' class='rn-native-section' maxwidgets='1' showaddelement='no'><b:widget id='Blog1' locked='true' title='Conteúdo das páginas' type='Blog' version='2' visible='true'><b:includable id='main' var='this'><b:if cond='data:blog.pageType == &quot;static_page&quot;'><b:loop values='data:this.posts' var='post'><article class='native-page article-content' data-native-page='true'><header class='native-page-header'><h1><data:post.title/></h1></header><div class='native-page-body'><data:post.body/></div></article></b:loop></b:if></b:includable></b:widget></b:section><!-- RN:NATIVE:END -->`;
+// Preparação do Analytics: somente carregar após consentimento explícito.
+// A integração nativa do Blogger pode inserir a mesma tag: evite duplicação.
+// Não coleta dados até uma interface de consentimento chamar window.rnEnableAnalytics().
+const analyticsBootstrap = `<script type='text/javascript'>
+//<![CDATA[
+window.rnEnableAnalytics = function () {
+  if (window.__rnAnalyticsStarted) return;
+  window.__rnAnalyticsStarted = true;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-95RKPEGCS9');
+  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=G-95RKPEGCS9"]')) {
+    var tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-95RKPEGCS9';
+    document.head.appendChild(tag);
+  }
+};
+//]]>
+</script>`;
 const theme = `<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' lang='pt-BR' b:responsive='true' b:css='false'>
-<head>${bloggerHead}${pageIdentity}<b:include data='blog' name='all-head-content'/><b:skin><![CDATA[]]></b:skin>
+<head>${bloggerHead}${pageIdentity}<b:include data='blog' name='all-head-content'/>${analyticsBootstrap}<b:skin><![CDATA[]]></b:skin>
 <style type='text/css'>/*<![CDATA[*/
 ${cdata(css)}
 /*]]>*/</style></head>
