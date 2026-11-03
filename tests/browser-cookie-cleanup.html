@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R&N — Teste local de cookies</title>
+<style>body{font:16px system-ui,sans-serif;max-width:740px;margin:24px auto;padding:16px;line-height:1.5}button{padding:12px;margin:4px;border-radius:8px}pre{white-space:pre-wrap;background:#eef2f6;padding:16px;border-radius:8px}</style></head><body>
+<h1>Teste local — limpeza de cookies</h1>
+<p><strong>Ambiente isolado:</strong> não carrega Google Analytics nem modifica o Blogger. Os cookies criados aqui são artificiais, apenas para testar o mecanismo de remoção.</p>
+<p>1. Clique em <strong>Criar cookies de teste</strong>. 2. Confira os três cookies. 3. Clique em <strong>Recusar e limpar</strong>. 4. Confira se somente o cookie de teste do Analytics foi removido.</p>
+<button id="create">Criar cookies de teste</button><button id="reject">Recusar e limpar</button><button id="inspect">Verificar cookies</button>
+<pre id="status">Aguardando teste.</pre>
+<script>
+const status = document.getElementById('status');
+function cookieNames(){return document.cookie.split(';').map(s=>s.trim().split('=')[0]).filter(Boolean)}
+function report(note){
+  const names=cookieNames();
+  const ga=names.filter(n=>/^_ga(?:_[A-Za-z0-9]+)?$/.test(n));
+  status.textContent=note+'\nCookies GA visíveis: '+(ga.join(', ')||'(nenhum)')+
+  '\nCookie não relacionado: '+(names.includes('rn_teste_preservar')?'PRESENTE':'AUSENTE')+
+  '\nCookies acessíveis: '+(names.join(', ')||'(nenhum)')+
+  '\nOrigem: '+location.origin;
+}
+function clearAccessibleAnalyticsCookies(){
+  try {
+    const names=document.cookie.split(';').map(item=>item.trim().split('=')[0])
+      .filter(name=>/^_ga(?:_[A-Za-z0-9]+)?$/.test(name));
+    const host=window.location?.hostname||'';
+    const domains=[''];
+    if(host&&host!=='localhost'&&!/^[0-9.]+$/.test(host)){
+      const parts=host.split('.');
+      for(let i=0;i<parts.length-1;i++){
+        if(parts.slice(i).join('.').includes('.'))domains.push(parts.slice(i).join('.'));
+      }
+    }
+    for(const name of names)for(const domain of domains){
+      document.cookie=name+'=; Max-Age=0; Path=/; SameSite=Lax'+(domain?'; Domain='+domain:'');
+    }
+  }catch(e){report('Acesso a cookies bloqueado: '+e.message)}
+}
+document.getElementById('create').onclick=()=>{
+  document.cookie='_ga=teste123; Path=/; SameSite=Lax';
+  document.cookie='_ga_TESTE123=teste456; Path=/; SameSite=Lax';
+  document.cookie='rn_teste_preservar=ok; Path=/; SameSite=Lax';
+  report('Cookies artificiais criados.');
+};
+document.getElementById('reject').onclick=()=>{clearAccessibleAnalyticsCookies();report('Limpeza executada. Esperado: nenhum GA; cookie de preservação presente.')};
+document.getElementById('inspect').onclick=()=>report('Estado atual:');
+report('Pronto. Se nenhum cookie puder ser criado ao abrir como arquivo, sirva esta página em localhost.');
+</script></body></html>
