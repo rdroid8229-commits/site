@@ -1,3 +1,9 @@
+// Imagens responsivas: navegador escolhe pela largura exibida e densidade da tela.
+function responsiveImageAttrs(src, sizes) {
+  const variant = (width) => src.replace(/\.webp(\?.*)?$/i, `-${width}w.webp$1`);
+  return `srcset="${variant(480)} 480w, ${variant(720)} 720w, ${src} 1080w" sizes="${sizes}"`;
+}
+
 import './fonts.css';
 import './style.css';
 import './calculator.css';
@@ -41,7 +47,7 @@ const contactLink = (label = 'Conversar no WhatsApp', className = 'button button
 <main id="conteudo"><div id="home-view">
 <section class="wrap hero" id="inicio">
  <div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> DO DIA A DIA À SUA PRÓXIMA IDEIA</div><h1>Imprima suas ideias.<br><span>Facilite seu dia.</span></h1><p class="hero-description">Impressões, documentos, agendamentos e personalizados. O que você precisa, com atenção em cada detalhe.</p><div class="hero-actions"><a class="button button-pink" href="#servicos">Explore nossos serviços ${icon('arrow')}</a>${contactLink('Falar no WhatsApp', 'hero-whatsapp')}</div><p class="contact-note">${contactText}</p><div class="hero-signature"><span class="cmyk"><i></i><i></i><i></i><i></i></span> Sua marca. Sua rotina. Nosso cuidado.</div></div>
- <div class="hero-image"><img src="${categories[0].image}" alt="${categories[0].alt}" width="1080" height="720" fetchpriority="high"><div class="hero-image-label"><span>${icon('print')} R&N GRÁFICA RÁPIDA</span><strong>Boas ideias ganham forma aqui.</strong></div></div>
+ <div class="hero-image"><img src="${categories[0].image}" ${responsiveImageAttrs(categories[0].image, "(max-width: 700px) 100vw, 55vw")} alt="${categories[0].alt}" width="1080" height="720" fetchpriority="high"><div class="hero-image-label"><span>${icon('print')} R&N GRÁFICA RÁPIDA</span><strong>Boas ideias ganham forma aqui.</strong></div></div>
 </section>
 <div class="benefits"><div class="wrap"><span>${icon('print')} Impressões e cópias</span><span>${icon('document')} Documentos e papelaria</span><span>${icon('calendar')} Apoio em agendamentos</span><span>${icon('shirt')} Peças com sua identidade</span></div></div>
 <section class="wrap catalog section" id="servicos">
@@ -72,7 +78,7 @@ function renderCatalog() {
   const shownCategories = categories.filter(c => filtered.some(s => s.category === c.id));
   grid.innerHTML = shownCategories.map(c => {
     const items = filtered.filter(s => s.category === c.id);
-    return `<article class="category-card" data-category-card="${c.id}" aria-labelledby="title-${c.id}"><div class="category-photo"><img src="${c.image}" alt="${c.alt}" width="1080" height="720" loading="lazy" decoding="async"><span class="category-photo-label">${icon(c.icon)} R&N GRÁFICA</span></div><div class="category-body"><div class="category-title-row"><h3 id="title-${c.id}">${c.name}</h3><span class="category-count">${String(items.length).padStart(2, '0')}</span></div><p class="category-description">${c.description}</p><div class="service-list">${items.map(s => `<button class="service-row" data-service="${s.id}" aria-label="Pedir orçamento: ${s.name}"><span><strong>${s.name}</strong><span class="service-description">${s.description}</span></span><span class="service-arrow">${icon('external')}</span></button>`).join('')}</div>${c.note ? `<p class="category-note">${c.note}</p>` : ''}<button class="category-quote" data-category-quote="${c.id}">Solicitar orçamento nesta categoria ${icon('arrow')}</button></div></article>`;
+    return `<article class="category-card" data-category-card="${c.id}" aria-labelledby="title-${c.id}"><div class="category-photo"><img src="${c.image}" ${responsiveImageAttrs(c.image, "(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 33vw")} alt="${c.alt}" width="1080" height="720" loading="lazy" decoding="async"><span class="category-photo-label">${icon(c.icon)} R&N GRÁFICA</span></div><div class="category-body"><div class="category-title-row"><h3 id="title-${c.id}">${c.name}</h3><span class="category-count">${String(items.length).padStart(2, '0')}</span></div><p class="category-description">${c.description}</p><div class="service-list">${items.map(s => `<button class="service-row" data-service="${s.id}" aria-label="Pedir orçamento: ${s.name}"><span><strong>${s.name}</strong><span class="service-description">${s.description}</span></span><span class="service-arrow">${icon('external')}</span></button>`).join('')}</div>${c.note ? `<p class="category-note">${c.note}</p>` : ''}<button class="category-quote" data-category-quote="${c.id}">Solicitar orçamento nesta categoria ${icon('arrow')}</button></div></article>`;
   }).join('');
   document.querySelector('#catalog-count').textContent = `${filtered.length} ${filtered.length === 1 ? 'serviço' : 'serviços'} em ${shownCategories.length} ${shownCategories.length === 1 ? 'categoria' : 'categorias'}`;
   document.querySelector('.empty-state').hidden = filtered.length !== 0;
