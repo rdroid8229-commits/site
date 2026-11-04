@@ -7,18 +7,15 @@ const request = `<div class="article-callout"><h2>Vamos conversar sobre seu proj
 return [
   {
     slug: 'sobre', title: 'Sobre', label: 'Sobre a R&N', type: 'institutional',
-    description: 'Conheça os produtos, os serviços e o atendimento da R&N Gráfica Rápida.',
-    body: `<p class="article-lead">Impressões, soluções e ideias com a sua identidade.</p>
-<p>A R&amp;N Gráfica Rápida reúne serviços de impressão, papelaria, documentos, apoio em agendamentos e personalização. Nosso catálogo foi organizado para ajudar você a encontrar o que precisa e pedir informações de forma simples pelo WhatsApp.</p>
-<h2>O que você encontra aqui</h2>
-<ul><li><strong>Impressões e cópias:</strong> impressões e xerox em papel ofício, além de impressões em papel fotográfico, papel adesivo e papel-cartão.</li><li><strong>Plastificação:</strong> documentos e folhas A4 inteiras.</li><li><strong>Papelaria e documentos:</strong> cartões de visita, talões de recibos de aluguel de 50 a 100 folhas, contratos de aluguel e declarações de residência.</li><li><strong>Comunicação visual:</strong> cartazes A4 e banners.</li><li><strong>Agendamentos:</strong> apoio para agendamento no CRAS e para atendimentos relacionados à identidade e ao título de eleitor.</li><li><strong>Personalizados e estampas:</strong> canecas, camisas, estampas personalizadas, sublimação total e estampas em DTF.</li></ul>
-<h2>Como funciona o atendimento</h2>
-<p>Você escolhe um serviço no catálogo, informa a quantidade e explica o que deseja. O formulário prepara um resumo para abrir a conversa no WhatsApp. A mensagem só é enviada à gráfica quando você confirma o envio no aplicativo.</p>
-<p>A conversa serve para alinhar os detalhes antes de qualquer produção ou atendimento. Os valores, os prazos, os materiais e a disponibilidade são confirmados nesse contato. Nos serviços de agendamento, as vagas e as exigências dependem do órgão responsável.</p>
-<h2>Uma boa impressão começa com informações claras</h2>
-<p>Informe o tamanho desejado, a quantidade de peças, folhas ou atendimentos e, se já tiver uma arte, envie o arquivo na conversa. Para talões de recibos, diga também quantos talões deseja e o número de folhas por talão: de 50 a 100.</p>
-<p>As artes do site foram criadas para ilustrar as categorias com a identidade da R&amp;N. Elas não representam um portfólio de trabalhos entregues a clientes.</p>
-<h2>Fale com a gráfica</h2><p>Nosso contato divulgado no site é ${contact}. Use esse canal para pedir um orçamento, esclarecer dúvidas ou consultar os próximos passos do seu pedido.</p>${request}`,
+    description: 'Conheça a R&N Gráfica Rápida em Pacheco, Jaboatão dos Guararapes: serviços gráficos, atendimento e contato.',
+    body: `<p class="article-lead">Transformamos suas ideias em materiais impressos e personalizados.</p>
+<figure class="rn-about-illustration"><img src="https://raw.githubusercontent.com/rdroid8229-commits/site/main/public/images/RN_Grafica_Apresentacao_Ilustrativa%20(1).png" alt="Ilustração promocional dos serviços e produtos da R&amp;N Gráfica Rápida" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:14px" /><figcaption>Imagem ilustrativa dos serviços gráficos, não uma fotografia do estabelecimento.</figcaption></figure>
+<p>Na <strong>R&amp;N Gráfica Rápida</strong>, oferecemos qualidade, praticidade e atenção em cada pedido. Trabalhamos com impressões, cópias, encadernações, banners, adesivos e produtos personalizados. Também oferecemos serviços terceirizados, guias e ferramentas online para ajudar na preparação de imagens e documentos.</p>
+<h2>Onde estamos</h2><p>Rua Professor Joaquim Amazonas, nº 18, bairro Pacheco, Jaboatão dos Guararapes – PE.</p><p><strong>Ponto de referência:</strong> em frente ao Terminal de Ônibus do Pacheco.</p>
+<h2>Retirada e entrega</h2><p>Oferecemos retirada diretamente na gráfica ou por entregadores de sua confiança, mediante autorização prévia do cliente. Para pedidos em grandes volumes, consulte preços, prazos e condições pelo WhatsApp.</p>
+<h2>Pagamentos e vantagens</h2><p>Aceitamos dinheiro, Pix e cartões de crédito e débito. Oferecemos descontos e condições especiais conforme o pedido.</p>
+<h2>Entre em contato</h2><p>${contact}. Consulte nossos serviços, solicite um orçamento e conheça nossas opções de personalização.</p>
+<p><strong>Venha nos conhecer! Será um prazer atender você.</strong></p>${request}`,
   },
   {
     slug: 'contato', title: 'Contato', label: 'Contato', type: 'institutional',
