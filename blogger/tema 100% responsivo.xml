@@ -1,0 +1,1392 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:responsive='true' lang='pt-BR' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head><meta charset='UTF-8'/><meta content='width=device-width,initial-scale=1' name='viewport'/><meta content='#f8f7f3' name='theme-color'/><b:if cond='data:blog.pageType == &quot;static_page&quot; or data:blog.pageType == &quot;item&quot;'><title><data:blog.pageName/> | R&amp;N Gráfica Rápida</title><b:else/><title>Gráfica Rápida em Jaboatão | Impressões, Xerox e Banners | R&amp;N</title></b:if><b:if cond='data:blog.pageType != &quot;static_page&quot;'><meta content='Impressões, xerox, plastificação, banners, adesivos e personalizados no Pacheco, Jaboatão dos Guararapes – PE. Solicite orçamento à R&amp;N Gráfica Rápida.' name='description'/></b:if><b:if cond='data:blog.pageType == &quot;static_page&quot; and data:blog.url contains &quot;/p/sobre&quot;'><meta content='Conheça a R&amp;N Gráfica Rápida, no Pacheco, Jaboatão dos Guararapes. Impressões, xerox, banners, adesivos e personalizados.' name='description'/></b:if><b:if cond='data:blog.pageType == &quot;static_page&quot; and data:blog.url contains &quot;/p/contato&quot;'><meta content='Entre em contato com a R&amp;N Gráfica Rápida no Pacheco, Jaboatão dos Guararapes. Consulte horários, endereço e orçamentos pelo WhatsApp.' name='description'/></b:if><b:if cond='data:blog.pageType == &quot;static_page&quot; and data:blog.url contains &quot;/p/como-escolher-o-papel&quot;'><meta content='Saiba escolher papel A4, fotográfico, adesivo e papel-cartão para documentos, fotos e convites. Guia da R&amp;N Gráfica Rápida em Jaboatão dos Guararapes.' name='description'/></b:if><b:if cond='data:blog.pageType == &quot;static_page&quot; and data:blog.url contains &quot;/p/como-preparar-sua-arte&quot;'><meta content='Aprenda a preparar artes para impressão em PDF, com resolução, sangria, margens e cores corretas. Guia da R&amp;N Gráfica Rápida em Jaboatão dos Guararapes.' name='description'/></b:if><b:if cond='data:blog.pageType == &quot;static_page&quot; and data:blog.url contains &quot;/p/sublimacao&quot;'><meta content='Entenda as diferenças entre sublimação e DTF, aplicações em camisetas e canecas e cuidados com estampas. R&amp;N Gráfica Rápida em Jaboatão dos Guararapes.' name='description'/></b:if><link href='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9IiMyOTI3MjUiLz48dGV4dCB4PSIxMiIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjQxIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZjhmN2YzIj5SPC90ZXh0PjxjaXJjbGUgY3g9IjQ5IiBjeT0iNDciIHI9IjYiIGZpbGw9IiNlYTMzNzYiLz48L3N2Zz4K' rel='icon' type='image/svg+xml'/><b:if cond='data:blog.pageType == &quot;static_page&quot;'><meta expr:content='data:blog.pageId' name='rn-page-id'/></b:if><script type='text/javascript'>
+//<![CDATA[
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+window.gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': 500
+});
+window.gtag('set', 'ads_data_redaction', true);
+//]]>
+</script><b:include data='blog' name='all-head-content'/><script type='text/javascript'>
+//<![CDATA[
+(function(){
+  var ID = 'G-95RKPEGCS9';
+  window.rnUpdateAnalyticsConsent = function(accepted) {
+    window.gtag('consent', 'update', { 'analytics_storage': accepted ? 'granted' : 'denied' });
+  };
+  // Blogger pode ter carregado a tag ou colocado a configuração na fila.
+  var alreadyLoaded = !!document.querySelector('script[src*="googletagmanager.com/gtag/js"]');
+  var alreadyConfigured = (window.dataLayer || []).some(function(item) {
+    return item && item[0] === 'config' && item[1] === ID;
+  });
+  if (!alreadyLoaded && !alreadyConfigured) {
+    var tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(tag);
+    window.gtag('js', new Date());
+    window.gtag('config', ID);
+  }
+})();
+//]]>
+</script><b:skin><![CDATA[]]></b:skin>
+
+
+<style type='text/css'>/*<![CDATA[*/
+:root{color:#292725;font-synthesis:none;--paper:#f8f7f3;--ink:#292725;--pink:#e52e73;--muted:#706b65;--line:#dedbd3;background:#f8f7f3;font-family:DM Sans Variable,Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{min-width:280px;margin:0}body.modal-open{overflow:hidden}#app{width:100%;min-width:0}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer;color:inherit}a,button{touch-action:manipulation}button{border:0}button:focus-visible,a:focus-visible,summary:focus-visible{outline-offset:4px;outline:3px solid #9762b1}input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--pink);outline-offset:2px}img{max-width:100%;display:block}svg{flex-shrink:0}.icon{width:20px;height:20px}.wrap{max-width:1224px;margin-inline:auto;padding-inline:40px}.button{border-radius:5px;justify-content:center;align-items:center;gap:12px;min-height:48px;padding:13px 21px;font-size:12px;font-weight:650;line-height:1.5;transition:background .2s,transform .2s;display:inline-flex}.button:hover{transform:translateY(-2px)}.button .icon{width:18px;height:18px}.button-pink{background:var(--pink);color:#fff}.button-pink:hover{background:#c92060}.button-dark{background:var(--ink);color:#fff}.button-dark:hover{background:#48413c}.button .icon:last-child{margin-left:4px}.text-link{text-underline-offset:4px;background:0 0;justify-content:flex-start;align-items:center;gap:8px;padding:0;font-size:12px;font-weight:650;line-height:1.6;text-decoration:underline;display:inline-flex}.text-link .icon{width:16px;height:16px}.text-link:hover{color:var(--pink)}.skip-link{z-index:100;background:var(--ink);color:#fff;padding:12px;position:fixed;top:-70px;left:20px}.skip-link:focus{top:15px}.sr-only{clip:rect(0,0,0,0);white-space:nowrap;border:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.header{border-bottom:1px solid var(--line);z-index:20;background:#f8f7f3f7;position:sticky;top:0}.header-inner{justify-content:space-between;align-items:center;gap:25px;min-height:90px;display:flex}.brand{flex-shrink:0;align-items:center;gap:10px;display:inline-flex}.brand-word{letter-spacing:-3px;font-family:Manrope Variable,Arial,sans-serif;font-size:38px;font-weight:800;line-height:1}.brand-word>span:first-child{color:var(--pink);font-size:32px}.brand-dot{color:var(--pink)}.brand-caption{letter-spacing:1.4px;font-size:8px;font-weight:600;line-height:1.6}.nav{align-items:center;gap:28px;font-size:12px;display:flex}.nav a:hover{color:var(--pink)}.header-quote{min-height:42px;padding:11px 17px;font-size:11px}.header-quote .icon{width:16px;height:16px}.menu-toggle{background:0 0;padding:10px;display:none}.hero{grid-template-columns:1fr 1fr;align-items:center;gap:45px;padding-block:61px 56px;display:grid}.eyebrow{letter-spacing:1.7px;align-items:center;gap:8px;font-size:9px;font-weight:650;line-height:1.7;display:flex}.status-dot{background:var(--pink);border-radius:50%;flex-shrink:0;width:6px;height:6px;display:inline-block}h1,h2,h3,h4,p{margin:0}h1,h2,h3{font-family:Manrope Variable,Arial,sans-serif}h1{letter-spacing:-2.8px;margin:23px 0;font-size:clamp(41px,4.4vw,59px);font-weight:800;line-height:1.13}h1>span{color:var(--pink)}h2{letter-spacing:-1.6px;font-size:37px;font-weight:700;line-height:1.22}h2 em{font-family:Georgia,serif;font-weight:400}.hero-description{color:var(--muted);max-width:410px;font-size:15px;line-height:1.9}.hero-actions{flex-wrap:wrap;align-items:center;gap:22px;margin:28px 0 16px;display:flex}.hero-whatsapp{align-items:center;gap:8px;font-size:11px;font-weight:600;display:inline-flex}.hero-whatsapp .icon{width:16px;height:16px}.hero-whatsapp:hover{color:var(--pink)}.contact-note{color:var(--muted);max-width:420px;font-size:11px;line-height:1.9}.hero-signature{color:#736c64;align-items:center;gap:10px;margin-top:27px;font-size:9px;display:flex}.cmyk{vertical-align:middle;gap:3px;display:inline-flex}.cmyk i{background:#5caabe;border-radius:50%;width:8px;height:8px;display:block}.cmyk i:nth-child(2){background:#e52e73}.cmyk i:nth-child(3){background:#d8bd50}.cmyk i:nth-child(4){background:#292725}.hero-image{background:#ede8df;border-radius:9px;align-self:stretch;min-width:0;min-height:390px;position:relative;overflow:hidden}.hero-image>img{object-fit:cover;object-position:49% 50%;width:100%;height:100%}.hero-image-label{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);background:#f8f7f3eb;border:1px solid #ffffffb0;border-radius:5px;flex-direction:column;gap:4px;padding:14px 17px;display:flex;position:absolute;bottom:18px;left:18px;right:18px}.hero-image-label>span{letter-spacing:1.2px;align-items:center;gap:6px;font-size:7px;display:flex}.hero-image-label .icon{width:13px;height:13px}.hero-image-label strong{font-size:13px;font-weight:600}.benefits{border-block:1px solid var(--line)}.benefits>.wrap{justify-content:space-between;align-items:center;gap:18px;padding-block:22px;display:flex}.benefits span{align-items:center;gap:9px;font-size:11px;font-weight:500;display:flex}.benefits .icon{width:17px;height:17px}.section{padding-top:65px;padding-bottom:65px}.section-heading{justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:27px;display:flex}.section-heading h2{margin-top:10px}.section-heading>p{color:var(--muted);max-width:280px;padding-bottom:3px;font-size:12px;line-height:1.9}.catalog-toolbar{margin-top:29px}.filters{flex-wrap:wrap;gap:7px;display:flex}.filter{background:0 0;border:1px solid #d8d4cc;border-radius:24px;align-items:center;gap:9px;padding:10px 15px;font-size:10px;line-height:1.4;transition:all .2s;display:inline-flex}.filter:hover{border-color:#7e7569}.filter.active{color:#fff;background:var(--ink);border-color:var(--ink)}.filter>span{border-left:1px solid #827970;padding-left:9px;font-size:9px}.search-box{background:#fffefa;border:1px solid #d9d4ca;border-radius:5px;align-items:center;gap:10px;width:100%;max-width:415px;margin-top:18px;padding:11px 14px;display:flex}.search-box>.icon{color:#81776d;width:17px;height:17px}.search-box input{width:100%;min-width:0;color:var(--ink);outline-offset:6px;background:0 0;border:0;padding:0;font-size:12px}.search-box input::-webkit-search-cancel-button{-webkit-appearance:none}.search-box input::placeholder{color:#9a9085}.clear-search{background:0 0;justify-content:center;align-items:center;padding:0;display:flex}.clear-search .icon{width:15px;height:15px}.catalog-status{color:#81796f;justify-content:space-between;align-items:center;gap:20px;margin-top:20px;margin-bottom:21px;font-size:10px;display:flex}.catalog-status>span{font-size:9px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:29px;display:grid}.category-card{background:#fffefb;border:1px solid #e0dbd2;border-radius:8px;min-width:0;overflow:hidden}.category-photo{aspect-ratio:1.75;background:#ebe6dd;position:relative;overflow:hidden}.category-photo>img{object-fit:cover;width:100%;height:100%;transition:transform .4s}.category-card:hover .category-photo>img{transform:scale(1.025)}.category-photo-label{letter-spacing:.8px;background:#fffdf4ed;border-radius:3px;align-items:center;gap:6px;padding:6px 8px;font-size:7px;font-weight:650;display:flex;position:absolute;bottom:13px;left:16px}.category-photo-label .icon{width:12px;height:12px}.category-body{padding:24px 26px 21px}.category-title-row{justify-content:space-between;align-items:flex-start;gap:12px;display:flex}.category-title-row h3{letter-spacing:-.7px;overflow-wrap:anywhere;font-size:21px;font-weight:750;line-height:1.35}.category-count{color:#8b7f70;border:1px solid #ddd7cd;border-radius:4px;flex-shrink:0;padding:4px 7px;font-size:10px;line-height:1.5}.category-description{color:var(--muted);min-height:45px;margin-top:8px;margin-bottom:17px;font-size:12px;line-height:1.85}.service-list{border-top:1px solid #e6e1d8}.service-row{text-align:left;width:100%;color:var(--ink);background:0 0;border-bottom:1px solid #e6e1d8;justify-content:space-between;align-items:center;gap:17px;min-height:92px;padding:16px 0;display:flex}.service-row>span:first-child{min-width:0}.service-row strong{overflow-wrap:anywhere;font-size:13px;font-weight:650;line-height:1.5;display:block}.service-description{color:var(--muted);overflow-wrap:anywhere;margin-top:4px;font-size:11px;line-height:1.8;display:block}.service-arrow{border:1px solid #ded7cd;border-radius:50%;flex-shrink:0;justify-content:center;align-items:center;width:31px;height:31px;transition:background .2s,color .2s;display:flex}.service-arrow .icon{width:15px;height:15px}.service-row:hover .service-arrow{background:var(--pink);color:#fff;border-color:var(--pink)}.service-row:hover strong{color:var(--pink)}.category-note{color:#897a6b;margin-top:13px;font-size:10px;line-height:1.8}.category-quote{width:100%;color:var(--ink);text-align:left;background:0 0;justify-content:space-between;align-items:center;gap:12px;margin-top:18px;padding:0;font-size:11px;font-weight:600;line-height:1.6;display:flex}.category-quote .icon{width:17px;height:17px}.category-quote:hover{color:var(--pink)}.catalog-bottom{color:var(--muted);text-align:center;flex-wrap:wrap;justify-content:center;align-items:center;gap:13px;padding-top:31px;font-size:12px;display:flex}.catalog-bottom .text-link{color:var(--ink)}.empty-state{text-align:center;background:#eeebe4;border-radius:7px;padding:45px 20px}.empty-state>span{background:#e4dccf;border-radius:50%;margin-bottom:15px;padding:12px;display:inline-flex}.empty-state h3{letter-spacing:-.5px;font-size:22px;line-height:1.4}.empty-state p{color:var(--muted);margin-top:12px;margin-bottom:23px;font-size:12px;line-height:1.9}.process-section{border-block:1px solid var(--line);background:#eeece5}.steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:45px;margin-top:36px;display:grid}.step-label{color:#8c8175;border-bottom:1px solid #d4cdc1;justify-content:space-between;align-items:center;margin-bottom:22px;padding-bottom:16px;font-size:11px;display:flex}.step-label .icon{color:var(--pink);width:20px;height:20px}.steps h3{letter-spacing:-.5px;font-size:16px;font-weight:700;line-height:1.5}.steps p{color:var(--muted);max-width:280px;margin-top:10px;font-size:12px;line-height:1.9}.faq-section{grid-template-columns:.9fr 1.1fr;gap:80px;display:grid}.faq-intro h2{margin:12px 0 20px}.faq-intro p{color:var(--muted);max-width:300px;font-size:13px;line-height:1.9}.faq-intro .text-link{margin-top:22px}.faq-list{border-top:1px solid var(--line)}.faq-list details{border-bottom:1px solid var(--line)}.faq-list summary{cursor:pointer;justify-content:space-between;align-items:center;gap:18px;padding:21px 0;font-size:13px;font-weight:600;line-height:1.6;list-style:none;display:flex}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary .icon{width:16px;height:16px;transition:transform .2s}.faq-list details[open] summary .icon{color:var(--pink);transform:rotate(90deg)}.faq-list details>p{color:var(--muted);padding-bottom:22px;font-size:12px;line-height:1.9}.contact-band{background:#efcfdd;border:1px solid #e5c5d1;border-radius:8px;justify-content:space-between;align-items:center;gap:40px;max-width:1144px;margin-bottom:62px;padding:42px 44px;display:flex}.contact-band h2{margin:11px 0 18px;font-size:35px}.contact-band>div:first-child>p{color:#725862;max-width:450px;font-size:12px;line-height:1.9}.contact-band-actions{flex-direction:column;flex-shrink:0;align-items:center;gap:12px;display:flex}.contact-band-actions .button{gap:9px;padding:15px 20px;font-size:11px}.contact-band-actions .button .icon{width:16px;height:16px}.phone-link{letter-spacing:.5px;font-size:12px}.phone-link:hover{text-decoration:underline}.footer-top{justify-content:space-between;align-items:center;gap:30px;padding-bottom:29px;display:flex}.footer-top>p{color:var(--muted);margin-left:20px;margin-right:auto;font-size:11px;line-height:1.8}.footer nav{gap:23px;font-size:10px;display:flex}.footer nav a:hover{color:var(--pink)}.footer-bottom{border-top:1px solid var(--line);color:#8a8074;justify-content:space-between;align-items:center;gap:18px;padding:22px 0 96px;font-size:9px;display:flex}.footer-bottom>span:last-child{align-items:center;gap:11px;display:flex}.footer-bottom .cmyk i{width:6px;height:6px}.floating-contact{z-index:15;background:var(--ink);color:#fff;border-radius:8px;flex-direction:column;align-items:center;gap:4px;padding:9px 14px 11px;display:flex;position:fixed;bottom:20px;right:22px;box-shadow:0 5px 24px #30241d26}.floating-contact>span{color:#e5dcd3;letter-spacing:.3px;font-size:8px;font-weight:400}.floating-contact>a{justify-content:center;align-items:center;gap:8px;font-size:12px;font-weight:600;display:flex}.floating-contact>a>.icon{width:19px;height:19px}.floating-contact>a>.icon:last-child{width:13px;height:13px}.floating-contact:hover{background:#493a34}.quote-dialog{background:var(--paper);color:var(--ink);border:1px solid #ddd4c8;border-radius:12px;width:calc(100% - 32px);max-width:570px;max-height:91dvh;padding:35px;overflow:auto}.quote-dialog::backdrop{-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);background:#29272599}.dialog-close{background:#e9e3d9;border-radius:50%;justify-content:center;align-items:center;width:30px;height:30px;display:flex;position:absolute;top:15px;right:15px}.dialog-close .icon{width:15px;height:15px}.quote-dialog h2{letter-spacing:-1.2px;margin-top:12px;font-size:29px}.dialog-intro{color:var(--muted);margin:13px 0 24px;font-size:12px;line-height:1.9}.quote-dialog label{margin-bottom:6px;font-size:11px;font-weight:600;line-height:1.7;display:block}.quote-dialog label>span{color:var(--muted);font-size:9px;font-weight:400}.quote-dialog input,.quote-dialog select,.quote-dialog textarea{width:100%;min-width:0;max-width:100%;color:var(--ink);background:#fffefa;border:1px solid #d6cdbf;border-radius:5px;margin-bottom:16px;padding:12px;font-size:13px;line-height:1.6;display:block}.quote-dialog textarea{resize:vertical}.quote-dialog input::placeholder,.quote-dialog textarea::placeholder{color:#978b7b}.form-row{grid-template-columns:1fr 1fr;gap:15px;display:grid}.field-hint{color:var(--muted);margin-top:-9px;margin-bottom:14px;font-size:9px;display:block}.quote-notice{color:var(--muted);margin-bottom:17px;font-size:10px;line-height:1.9}.submit-quote{width:100%;font-size:12px}.result-check{background:#dafa8c;border-radius:50%;justify-content:center;align-items:center;width:40px;height:40px;margin-top:25px;margin-bottom:16px;display:flex}#quote-result h3{letter-spacing:-.7px;font-size:22px;line-height:1.4}#quote-result>p{color:var(--muted);margin:12px 0 18px;font-size:12px;line-height:1.9}#quote-result #message-preview{font-size:12px}#send-whatsapp{width:100%;font-size:12px}.result-actions{justify-content:center;gap:25px;margin-top:18px;display:flex}.result-actions .text-link{font-size:11px}#quote-result #copy-status{color:#526337;min-height:20px;margin-bottom:0;font-size:11px}[hidden]{display:none!important}.mobile-only{display:none}.bloggerreserved,#navbar-iframe-container{display:none!important}@media (width<=1100px){.wrap{padding-inline:30px}.nav{gap:20px;font-size:11px}.hero{gap:30px}.hero-actions{gap:16px}.hero-actions .button{padding:13px 17px;font-size:11px}.hero-whatsapp{font-size:10px}.contact-band{margin-inline:30px;padding:35px}.category-body{padding:22px}.category-title-row h3{font-size:20px}.faq-section{gap:50px}.contact-band h2{font-size:33px}.footer-top>p{margin-left:0}}@media (width<=850px){.wrap{padding-inline:24px}.header-inner{gap:20px;min-height:77px}.brand-word{font-size:34px}.brand-word>span:first-child{font-size:28px}.brand-caption{font-size:7px}.header-quote{margin-left:auto}.menu-toggle{justify-content:center;align-items:center;padding:7px;display:flex}.nav{display:none}.nav.open{background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px;padding:24px;font-size:13px;display:flex;position:absolute;top:76px;left:0;right:0;box-shadow:0 10px 20px #2927250c}.hero{gap:25px;padding-block:42px}.hero .eyebrow{letter-spacing:1.3px;font-size:7px}h1{letter-spacing:-2px;font-size:42px}.hero-description{font-size:13px}.hero-actions{align-items:flex-start;gap:15px}.hero-image{min-height:380px}.hero-image-label{padding:12px;bottom:12px;left:12px;right:12px}.hero-image-label strong{font-size:11px}.hero-image-label>span{font-size:6px}.contact-note{font-size:10px}.hero-signature{gap:7px;font-size:8px}.benefits span{gap:7px;font-size:9px}.benefits .icon{width:15px;height:15px}.section{padding-block:48px}h2{font-size:31px}.section-heading>p{font-size:11px}.filter{padding:9px 12px;font-size:9px}.category-grid{gap:20px}.category-body{padding:20px}.category-title-row h3{font-size:18px}.category-description{min-height:42px;font-size:11px}.service-row{gap:12px;padding:15px 0}.service-row strong{font-size:12px}.service-description{font-size:10px}.service-arrow{width:28px;height:28px}.service-arrow .icon{width:14px;height:14px}.category-quote{font-size:10px}.steps{gap:28px}.steps h3{font-size:14px}.steps p{font-size:11px}.faq-section{gap:38px}.faq-list summary,.faq-intro p{font-size:12px}.contact-band{gap:22px;margin-inline:24px;padding:30px}.contact-band h2{font-size:29px}.contact-band>div:first-child>p{font-size:11px}.contact-band-actions .button{gap:7px;padding:13px 14px;font-size:10px}.footer-top{gap:25px}.footer-top>p{font-size:10px}.footer nav{gap:14px;font-size:9px}.floating-contact{bottom:18px;right:18px}}@media (width<=600px){html{scroll-padding-top:90px}.wrap{padding-inline:20px}.header-inner{gap:13px;min-height:74px}.brand{gap:7px}.brand-word{font-size:33px}.brand-word>span:first-child{font-size:27px}.brand-caption{letter-spacing:1.1px;font-size:6px}.header-quote{gap:6px;min-height:37px;padding:10px 12px;font-size:10px}.header-quote .icon{width:14px;height:14px}.menu-toggle{padding:5px}.menu-toggle>.icon{width:21px;height:21px}.nav.open{top:73px}.hero{grid-template-columns:1fr;gap:28px;padding-block:32px}.hero .eyebrow{letter-spacing:1.35px;font-size:8px}h1{letter-spacing:-2px;margin:19px 0;font-size:clamp(37px,10.2vw,51px);line-height:1.13}.hero-description{max-width:360px;font-size:13px;line-height:1.9}.hero-actions{align-items:center;gap:16px;margin:23px 0 14px}.hero-actions .button{gap:13px;padding:13px 16px;font-size:11px}.hero-whatsapp{gap:5px;font-size:10px}.hero-whatsapp .icon{width:15px;height:15px}.hero-whatsapp .icon:last-child{display:none}.contact-note{font-size:11px;line-height:1.9}.hero-signature{margin-top:21px;font-size:8px}.hero-image{aspect-ratio:1.28;align-self:auto;min-height:0}.hero-image>img{object-fit:cover;width:100%;height:100%}.hero-image-label{padding:11px 13px}.hero-image-label strong{font-size:12px}.hero-image-label>span{font-size:6px}.benefits>.wrap{grid-template-columns:1fr 1fr;gap:17px 10px;padding-block:21px;display:grid}.benefits span{gap:7px;font-size:9px}.section{padding-block:39px}.section-heading{margin-bottom:23px;display:block}.section-heading h2{letter-spacing:-1.4px;margin-top:11px;font-size:31px;line-height:1.22}.section-heading>p{max-width:320px;margin-top:17px;font-size:12px}.mobile-only{display:block}.desktop-only{display:none}.eyebrow{letter-spacing:1.4px;font-size:8px}.catalog-toolbar{margin-top:22px}.filters{gap:7px}.filter{max-width:100%;padding:9px 11px;font-size:10px;line-height:1.5}.filter>span{font-size:8px}.search-box{max-width:none;margin-top:18px;padding:12px 13px}.search-box input{font-size:16px}.search-box input::placeholder{font-size:11px}.catalog-status{align-items:flex-start;gap:10px;margin:20px 0 17px;font-size:10px}.catalog-status>span{text-align:right;max-width:130px;font-size:8px;line-height:1.7}.category-grid{grid-template-columns:1fr;gap:24px}.category-photo{aspect-ratio:1.65}.category-photo-label{font-size:6px;bottom:12px;left:13px}.category-body{padding:22px}.category-title-row h3{letter-spacing:-.7px;font-size:23px}.category-count{margin-top:2px;font-size:10px}.category-description{min-height:0;margin-bottom:18px;font-size:12px;line-height:1.9}.service-row{gap:16px;min-height:88px;padding:16px 0}.service-row strong{font-size:13px}.service-description{margin-top:5px;font-size:11px;line-height:1.9}.service-arrow{width:30px;height:30px}.service-arrow .icon{width:15px;height:15px}.category-quote{margin-top:19px;font-size:11px;line-height:1.7}.category-note{font-size:10px}.catalog-bottom{gap:8px;padding-top:26px;font-size:11px;line-height:1.8}.catalog-bottom .text-link{font-size:11px}.steps{grid-template-columns:1fr;gap:28px;margin-top:27px}.step-label{margin-bottom:15px;padding-bottom:12px;font-size:11px}.steps h3{font-size:16px}.steps p{max-width:none;margin-top:8px;font-size:12px}.faq-section{grid-template-columns:1fr;gap:29px}.faq-intro h2{font-size:31px}.faq-intro p{max-width:330px;font-size:12px}.faq-intro .text-link{margin-top:18px;font-size:11px}.faq-list summary{padding:20px 0;font-size:12px;line-height:1.8}.faq-list details>p{font-size:12px}.contact-band{margin:0 20px 38px;padding:28px 24px;display:block}.contact-band h2{letter-spacing:-1.4px;font-size:30px;line-height:1.25}.contact-band .eyebrow{font-size:7px}.contact-band>div:first-child>p{font-size:12px;line-height:1.95}.contact-band-actions{align-items:flex-start;gap:13px;margin-top:24px}.contact-band-actions .button{gap:9px;padding:14px 17px;font-size:11px}.phone-link{font-size:12px}.footer-top{flex-wrap:wrap;align-items:flex-start;gap:22px;padding-bottom:27px}.footer-top>.brand{width:100%}.footer-top>p{margin:0;font-size:11px;line-height:1.8}.footer nav{flex-wrap:wrap;gap:17px;width:100%;font-size:10px}.footer-bottom{flex-direction:column;align-items:flex-start;gap:13px;padding-top:20px;padding-bottom:110px;font-size:9px}.footer-bottom>span:last-child{gap:9px;font-size:8px}.floating-contact{border-radius:7px;padding:8px 12px 10px;bottom:13px;right:13px}.floating-contact>span{font-size:7px}.floating-contact>a{gap:6px;font-size:11px}.floating-contact>a>.icon{width:17px;height:17px}.floating-contact>a>.icon:last-child{width:12px;height:12px}.quote-dialog{max-height:93dvh;padding:31px 23px 24px}.quote-dialog h2{margin-top:13px;font-size:28px}.quote-dialog .eyebrow{font-size:7px}.dialog-intro{margin-top:13px;font-size:12px}.quote-dialog label{font-size:12px}.quote-dialog label>span{font-size:10px}.quote-dialog input,.quote-dialog select,.quote-dialog textarea{padding:11px;font-size:16px;line-height:1.7}.form-row{grid-template-columns:1fr;gap:0}.field-hint{font-size:10px}.quote-notice{font-size:11px}.submit-quote{padding-inline:12px;font-size:11px}.submit-quote .icon{width:16px;height:16px}#quote-result h3{font-size:21px}#quote-result #message-preview{font-size:14px}.result-actions{gap:23px}.result-actions .text-link{font-size:11px}.empty-state{padding:30px 18px}.empty-state h3{font-size:21px}}@media (width<=360px){.wrap{padding-inline:16px}.brand-word{font-size:30px}.brand-word>span:first-child{font-size:25px}.brand-caption{font-size:5px}.header-inner{gap:8px}.header-quote{padding:10px;font-size:9px}.header-quote .icon{display:none}.hero-actions{gap:13px}.hero-actions .button{padding:12px 13px;font-size:10px}.hero-whatsapp{font-size:9px}.category-body{padding:19px}.category-title-row h3{font-size:21px}.category-description{font-size:11px}.service-row strong{font-size:12px}.service-description{font-size:11px}.category-quote{font-size:10px}.contact-band{margin-inline:16px;padding:25px 21px}.contact-band h2{font-size:28px}}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,:before,:after{transition:none!important;animation:none!important}}.about-teaser{border-bottom:1px solid var(--line);grid-template-columns:1fr 1fr;align-items:center;gap:65px;margin-bottom:43px;padding-bottom:43px;display:grid}.about-teaser h2{margin-top:10px;font-size:30px;line-height:1.3}.about-teaser>div>p{color:var(--muted);font-size:12px;line-height:1.95}.about-teaser .text-link{margin-top:18px}.guide-heading{margin-bottom:27px}.guide-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:23px;display:grid}.guide-card{border:1px solid var(--line);background:#fffefb;border-radius:7px;min-width:0;overflow:hidden}.guide-image-link{aspect-ratio:1.65;background:#e9e3d9;display:block;overflow:hidden}.guide-image-link>img{object-fit:cover;width:100%;height:100%;transition:transform .3s}.guide-image-link:hover>img{transform:scale(1.025)}.guide-card-content{padding:21px}.guide-card .eyebrow{color:#8b7c6a;font-size:7px}.guide-card h3{letter-spacing:-.5px;overflow-wrap:anywhere;margin:8px 0 11px;font-size:19px;line-height:1.4}.guide-card h3 a:hover{color:var(--pink)}.guide-card p{color:var(--muted);margin-bottom:18px;font-size:11px;line-height:1.9}.guide-card .text-link{font-size:11px}.footer nav{flex-wrap:wrap;justify-content:flex-end;row-gap:12px;max-width:520px}.article-view{padding-top:37px;padding-bottom:60px}.article-breadcrumb{color:var(--muted);flex-wrap:wrap;align-items:center;gap:11px;margin-bottom:28px;font-size:10px;line-height:1.8;display:flex}.article-breadcrumb a:hover{text-decoration:underline}.article-content{overflow-wrap:anywhere;max-width:800px;margin-inline:auto}.article-content h1{letter-spacing:-1.9px;margin:14px 0 28px;font-size:44px;font-weight:750;line-height:1.2}.article-header .eyebrow{font-size:8px}.article-content .article-lead{color:#5f574d;margin-bottom:23px;font-size:17px;line-height:1.9}.article-content p{color:#665e55;margin-bottom:18px;font-size:14px;line-height:2}.article-content h2{letter-spacing:-.6px;margin:32px 0 15px;font-size:24px;line-height:1.4}.article-content h3{margin:24px 0 12px;font-size:20px;line-height:1.5}.article-content ul,.article-content ol{margin:14px 0 23px;padding-left:23px}.article-content li{color:#665e55;margin-bottom:10px;font-size:14px;line-height:1.95}.article-content strong{color:var(--ink);font-weight:650}.article-content a:not(.button){text-underline-offset:3px;color:#a81c53;text-decoration:underline}.article-content img{border-radius:7px;max-width:100%;height:auto;margin:22px 0 29px}.article-content .article-hero{aspect-ratio:1.7;object-fit:cover;width:100%}.article-content .article-update{color:#8e7e6c;font-size:11px}.article-callout{background:#eee9df;border:1px solid #e1d8ca;border-radius:7px;margin-top:36px;padding:24px 26px}.article-callout h2{margin:0 0 14px;font-size:23px}.article-callout p{margin-bottom:18px;font-size:13px}.article-callout .button{white-space:normal;text-align:center;max-width:100%;font-size:11px}.contact-page-number a{font-size:18px;font-weight:650}.article-back{border-top:1px solid var(--line);max-width:800px;margin:37px auto 0;padding-top:25px}.rn-native-section{max-width:800px;margin:auto}.article-view .rn-native-section{max-width:none}.native-page-header h1{margin-top:14px}.ad-region{border-block:1px solid var(--line);width:100%;max-width:100%;margin:44px auto;padding:23px 0}.ad-region>span{text-align:center;letter-spacing:1px;color:#918373;margin-bottom:13px;font-size:9px;font-weight:400;display:block}.ad-region .adsbygoogle{max-width:100%}.article-view>.ad-region{max-width:800px}@media (width<=1000px){.nav{gap:20px;font-size:11px}.about-teaser{gap:35px}.guide-grid{gap:17px}.guide-card-content{padding:19px}.guide-card h3{font-size:17px}.footer-top>p{display:none}.footer nav{max-width:550px}}@media (width<=700px){.about-teaser{grid-template-columns:1fr;gap:20px;margin-bottom:32px;padding-bottom:31px}.about-teaser h2{font-size:29px}.guide-grid{grid-template-columns:1fr;gap:22px}.guide-image-link{aspect-ratio:1.85}.guide-card-content{padding:22px}.guide-card h3{font-size:22px}.guide-card p,.guide-card .text-link{font-size:12px}.guide-card .eyebrow{font-size:8px}.article-view{padding-top:26px;padding-bottom:42px}.article-breadcrumb{gap:9px;margin-bottom:23px;font-size:10px}.article-content h1{letter-spacing:-1.2px;margin-bottom:23px;font-size:34px;line-height:1.25}.article-content .article-lead{font-size:15px;line-height:1.9}.article-content p,.article-content li{font-size:13px;line-height:2}.article-content h2{margin-top:29px;font-size:22px;line-height:1.45}.article-content h3{font-size:18px}.article-content .article-hero{aspect-ratio:1.4}.article-callout{margin-top:29px;padding:23px 20px}.article-callout h2{margin-top:0;font-size:22px}.article-callout p{font-size:12px}.article-callout .button{padding:13px 14px;font-size:11px}.article-back .text-link{font-size:11px}.contact-page-number a{font-size:16px}.ad-region{margin-block:33px;padding-block:20px}.footer nav{justify-content:flex-start;max-width:none}}.rn-consent-panel{z-index:10000;box-sizing:border-box;color:#292725;width:min(370px,100vw - 32px);max-width:370px;font:inherit;background:#fff;border:1px solid #dedbd3;border-radius:16px;margin:0;padding:18px;position:fixed;bottom:16px;left:auto;right:16px;box-shadow:0 10px 40px #0003}.rn-consent-panel[hidden],.rn-consent-reopen[hidden],.rn-consent-settings[hidden]{display:none!important}.rn-consent-panel h2{margin:0 0 8px;font-size:1.15rem}.rn-consent-panel p{margin:0 0 12px;font-size:.9rem;line-height:1.5}.rn-consent-panel a{text-decoration:underline}.rn-consent-actions{flex-wrap:wrap;gap:8px;display:flex}.rn-consent-actions button,.rn-consent-settings button{background:#f8f7f3;border:1px solid #b9b3aa;border-radius:9px;min-height:44px;padding:10px 14px}.rn-consent-actions .rn-consent-primary{color:#fff;background:#292725}.rn-consent-settings{border-top:1px solid #dedbd3;margin-top:12px;padding-top:12px}.rn-consent-settings label{align-items:center;gap:9px;margin-bottom:12px;display:flex}.rn-consent-settings input{width:18px;height:18px}.rn-consent-reopen{position:static!important;display:inline-flex;align-items:center;z-index:auto;background:transparent!important;color:inherit!important;border:0!important;border-radius:0;padding:4px 0;margin:8px 0;font:inherit;font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;box-shadow:none!important}.rn-consent-reopen:hover{color:#ffe600!important}.rn-consent-reopen:focus-visible{outline:2px solid #ffe600;outline-offset:3px}@media (width<=480px){.rn-consent-panel{width:min(350px,100vw - 24px);max-height:65vh;padding:14px;bottom:12px;left:auto;right:12px;overflow-y:auto}.rn-consent-actions{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;display:grid}.rn-consent-actions button{min-width:0;padding:10px 3px;font-size:.85rem}}.nav-group{min-width:0;position:relative}.nav-group>summary{cursor:pointer;white-space:nowrap;align-items:center;gap:6px;min-height:44px;list-style:none;display:flex}.nav-group>summary::-webkit-details-marker{display:none}.nav-group>summary:after{content:"▾";font-size:11px}.nav-submenu{z-index:35;border:1px solid var(--line);background:#fffefb;border-radius:9px;flex-direction:column;gap:0;min-width:225px;padding:8px;display:flex;position:absolute;top:100%;left:0;box-shadow:0 12px 28px #29272525}.nav-group:not([open])>.nav-submenu{display:none}.nav-submenu a{white-space:normal;border-radius:5px;padding:12px 14px;line-height:1.5;display:block}.nav-submenu a:hover,.nav-submenu a:focus-visible{background:#fce9f0}.nav-group summary:focus-visible{outline-offset:3px;outline:3px solid #9762b1}@media (width<=1000px) and (width>=701px){.header-inner,.nav{gap:12px}.nav-group>summary{font-size:11px}}@media (width<=700px){.nav-group{width:100%}.nav-group>summary{width:100%;min-height:48px;padding:13px 16px;font-size:14px}.nav-submenu{box-shadow:none;background:#f0ede8;border:0;border-radius:0;width:100%;min-width:0;padding:4px 10px 8px 16px;position:static}.nav-submenu a{align-items:center;min-height:44px;padding:10px 13px;font-size:14px;display:flex}.nav-group>summary:after{margin-left:auto}}@media (width<=360px){.nav-submenu a{font-size:13px}}.service-more{color:#81405b;cursor:pointer;font:inherit;background:0 0;border:0;align-items:center;gap:6px;padding:8px 12px 14px;font-size:13px;font-weight:750;display:inline-flex}.service-more .icon{width:15px;height:15px}.service-more:hover,.service-more:focus-visible{text-decoration:underline}.details-dialog{color:#29242a;border:1px solid #e6dbe0;border-radius:16px;width:min(94vw,650px);max-height:min(88dvh,850px);padding:0;box-shadow:0 24px 70px #17121a55}.details-dialog::backdrop{background:#17121a9e}.details-panel{max-height:88dvh;padding:clamp(22px,4vw,38px);overflow:auto}.details-close{float:right;cursor:pointer;background:#f4e9ee;border:0;border-radius:50%;place-items:center;width:40px;height:40px;display:grid}.details-close .icon{width:20px;height:20px}.details-panel h2{margin:10px 0 12px;font-size:clamp(23px,4vw,32px);line-height:1.2}.details-panel>p{color:#625761;line-height:1.6}#details-content{margin:22px 0}#details-content section{border-top:1px solid #e6dbe0;padding:14px 0}#details-content h3{margin:0 0 7px;font-size:16px}#details-content p{margin:0;line-height:1.6}#details-quote{text-align:center;justify-content:center;width:100%}@media (width<=480px){.details-dialog{width:calc(100vw - 20px);max-height:90dvh}.details-panel{max-height:90dvh;padding:22px 18px}}
+
+/*]]>*/.rn-about-illustration{margin:28px 0 36px;max-width:100%;overflow:hidden;border-radius:20px;background:#f2f6fc}.rn-about-illustration img{display:block;width:100%;height:auto;object-fit:contain}.rn-about-illustration figcaption{padding:10px 16px;color:#4b5563;font-size:12px;line-height:1.5;text-align:center}@media(max-width:600px){.rn-about-illustration{margin:18px 0 26px;border-radius:12px}.rn-about-illustration figcaption{font-size:11px;padding:9px 12px}}/* Ajuste exclusivo do título da vitrine dos 20 serviços */
+#home-view #servicos .section-heading h2{font-size:30px;line-height:1.3;letter-spacing:-.6px;font-weight:700;}
+#home-view #servicos .section-heading h2 em{font-size:1em;line-height:inherit;}
+@media (max-width:600px){#home-view #servicos .section-heading h2{font-size:24px;line-height:1.35;letter-spacing:-.35px;}}
+
+/* Titulos equilibrados em todo o site; conserva a hierarquia sem alterar o SEO. */
+.article-content h1,.native-page-header h1{font-size:30px;line-height:1.3;letter-spacing:-.6px;font-weight:700;}
+.article-content h1 em,.native-page-header h1 em{font-size:1em;line-height:inherit;}
+#home-view .section-heading h2{font-size:30px;line-height:1.3;letter-spacing:-.6px;font-weight:700;}
+#home-view .section-heading h2 em{font-size:1em;line-height:inherit;}
+#home-view .about-teaser h2{font-size:30px;line-height:1.3;letter-spacing:-.6px;font-weight:700;}
+#home-view .about-teaser h2 em{font-size:1em;line-height:inherit;}
+@media(max-width:600px){
+.article-content h1,.native-page-header h1{font-size:24px;line-height:1.35;letter-spacing:-.35px;}
+#home-view .section-heading h2,#home-view .about-teaser h2{font-size:24px;line-height:1.35;letter-spacing:-.35px;}
+}
+</style>
+<!-- RN TESTE 9: pesquisa 1 cm mais acima; somente reposicionamento da pesquisa flutuante na pagina inicial -->
+<style type='text/css'>
+body.rn-vitrine-home #rn-us-open.rn-us-access{position:fixed!important;top:140px!important;right:16px!important;bottom:auto!important;left:auto!important;z-index:9000!important}
+@media(max-width:600px){body.rn-vitrine-home #rn-us-open.rn-us-access{top:112px!important;right:10px!important;bottom:auto!important;max-width:145px!important;font-size:12px!important}}
+</style>
+<!-- RN TESTE 11: pesquisa no espaco entre logo e categorias; preserva busca original -->
+<style type='text/css'>
+body.rn-vitrine-home #rn-vitrine .nav #rn-us-open.rn-us-access{position:static!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;z-index:auto!important;margin:0 0 0 auto!important;flex:0 1 210px!important;min-width:120px!important;max-width:210px!important;white-space:nowrap!important;justify-content:center!important;padding:10px 12px!important;background:#161616!important;color:#fff!important;border:1px solid #666!important;border-radius:10px!important;font-size:13px!important;line-height:1.3!important;box-shadow:none!important}
+body.rn-vitrine-home #rn-vitrine .nav .links{margin-left:0!important}
+@media(max-width:1100px){body.rn-vitrine-home #rn-vitrine .nav{gap:12px!important}body.rn-vitrine-home #rn-vitrine .nav #rn-us-open.rn-us-access{flex-basis:145px!important;padding:9px 6px!important;font-size:11px!important}}
+@media(max-width:900px){body.rn-vitrine-home #rn-vitrine .nav #rn-us-open.rn-us-access{margin-left:auto!important;flex:0 0 auto!important;min-width:0!important;max-width:none!important;padding:9px 12px!important;font-size:12px!important}}
+@media(max-width:520px){body.rn-vitrine-home #rn-vitrine .nav{gap:8px!important}body.rn-vitrine-home #rn-vitrine .nav #rn-us-open.rn-us-access{font-size:0!important;padding:8px 11px!important}body.rn-vitrine-home #rn-vitrine .nav #rn-us-open.rn-us-access:before{content:&#39;🔍&#39;;font-size:24px!important;line-height:1!important;color:#ffe600!important}body.rn-vitrine-home #rn-vitrine .nav .btn{padding:10px 9px!important;font-size:11px!important}}
+</style>
+
+<!-- RN TESTE 14: prioriza renderizacao do titulo LCP sem modificar layout visual ou scripts -->
+<style type='text/css'>
+/* Aplicar apenas apos a montagem da vitrine, somente nas secoes abaixo do destaque principal.
+   O cabecalho, o titulo LCP, a arte do hero e os modais nao recebem esta regra. */
+/* TESTE NO_LCP: content-visibility desativado nas secoes da vitrine. */
+</style>
+
+<style type='text/css'>
+#home-view.rn-vitrine-ready &gt; :not(#rn-vitrine){display:none!important}
+#rn-vitrine{background:#000;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.55;min-height:100vh}
+#rn-vitrine *{box-sizing:border-box}
+#rn-vitrine .header{position:relative}
+#rn-vitrine .topline{display:none}
+#rn-vitrine .modalwrap{z-index:999999}
+#rn-vitrine{color-scheme:dark;--bg:#000;--panel:#121212;--panel2:#191919;--text:#fff;--muted:#c9c9c9;--line:#383838;--yellow:#ffe600;--pink:#ff39b4;--radius:20px}
+#rn-vitrine *{box-sizing:border-box}
+#rn-vitrine{scroll-behavior:smooth}
+#rn-vitrine{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.55}
+#rn-vitrine a{color:inherit;text-decoration:none}
+#rn-vitrine button,#rn-vitrine input,#rn-vitrine textarea,#rn-vitrine select{font:inherit}
+#rn-vitrine button{cursor:pointer}
+#rn-vitrine button:focus-visible,#rn-vitrine a:focus-visible,#rn-vitrine input:focus-visible,#rn-vitrine textarea:focus-visible,#rn-vitrine select:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+#rn-vitrine ::selection{background:var(--yellow);color:#000}
+#rn-vitrine .wrap{width:min(1160px,calc(100% - 36px));margin:auto}
+#rn-vitrine .topline{background:var(--yellow);color:#000;font-weight:800;text-align:center;padding:6px 16px;font-size:.78rem;letter-spacing:.06em}
+#rn-vitrine .header{position:sticky;top:0;z-index:20;background:#090909ed;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+#rn-vitrine .nav{display:flex;align-items:center;gap:22px;min-height:80px}
+#rn-vitrine .brand{font-weight:1000;line-height:.9;letter-spacing:-.05em;font-size:1.85rem;white-space:nowrap}
+#rn-vitrine .brand b{color:var(--yellow)}
+#rn-vitrine .brand small{display:block;font-size:.58rem;letter-spacing:.27em;color:#fff;margin-top:8px}
+#rn-vitrine .links{display:flex;align-items:center;gap:20px;margin-left:auto;font-weight:700;font-size:.9rem}
+#rn-vitrine .links a:hover,#rn-vitrine .foot a:hover{color:var(--yellow)}
+#rn-vitrine .btn{border:1px solid transparent;background:var(--yellow);color:#000;font-weight:850;border-radius:12px;padding:13px 18px;display:inline-flex;justify-content:center;align-items:center;gap:8px;transition:transform .2s,background .2s}
+#rn-vitrine .btn:hover{transform:translateY(-2px);background:#fff064}
+#rn-vitrine .btn.secondary{background:transparent;border-color:var(--pink);color:#fff}
+#rn-vitrine .btn.secondary:hover{background:#36112b}
+#rn-vitrine .btn.pink{background:var(--pink);color:#000}
+#rn-vitrine .hamb{display:none;background:transparent;border:1px solid var(--line);color:#fff;border-radius:10px;padding:9px 12px}
+#rn-vitrine .hero{position:relative;overflow:hidden;border-bottom:1px solid #252525}
+#rn-vitrine .hero:before{content:&quot;&quot;;position:absolute;right:-170px;top:-290px;width:680px;height:680px;border-radius:50%;background:radial-gradient(circle,#ff39b42e 0%,#ffe60013 30%,transparent 65%);pointer-events:none}
+#rn-vitrine .hero-inner{position:relative;padding:90px 0 100px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:42px}
+#rn-vitrine .eyebrow{font-size:.78rem;color:var(--yellow);font-weight:900;letter-spacing:.19em;text-transform:uppercase}
+#rn-vitrine .hero h1{font-size:clamp(2.7rem,6.5vw,5.35rem);line-height:1.06;letter-spacing:-.065em;margin:18px 0 24px}
+#rn-vitrine .hero h1 em{font-style:normal;color:var(--yellow)}
+#rn-vitrine .hero p{font-size:1.1rem;color:var(--muted);max-width:630px;margin-bottom:28px}
+#rn-vitrine .actions{display:flex;gap:12px;flex-wrap:wrap}
+#rn-vitrine .hero-art{min-height:380px;background:linear-gradient(140deg,#191919,#050505);border:1px solid #4a4a4a;border-radius:28px;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 60px #ff39b414}
+#rn-vitrine .hero-art .disk{position:absolute;border:3px solid var(--pink);width:270px;height:270px;transform:rotate(-18deg);border-radius:32px}
+#rn-vitrine .hero-art .disk.two{width:210px;height:210px;border-color:var(--yellow);transform:rotate(16deg)}
+#rn-vitrine .hero-art .logo{text-align:center;position:relative;background:#000b;border-radius:17px;padding:28px}
+#rn-vitrine .hero-art .logo strong{font-size:5.2rem;line-height:1;color:#fff;letter-spacing:-.1em}
+#rn-vitrine .hero-art .logo strong span{color:var(--yellow)}
+#rn-vitrine .hero-art .logo small{display:block;color:var(--pink);font-weight:900;letter-spacing:.3em}
+#rn-vitrine .section{padding:75px 0}
+#rn-vitrine .head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:27px}
+#rn-vitrine .head h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.04em;line-height:1.13;margin:10px 0}
+#rn-vitrine .head p{color:var(--muted);max-width:560px;margin:0}
+#rn-vitrine .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+#rn-vitrine .card{border:1px solid var(--line);background:var(--panel);border-radius:var(--radius);padding:25px;display:flex;flex-direction:column;min-height:220px;transition:border-color .2s,transform .2s}
+#rn-vitrine .card:hover{border-color:var(--yellow);transform:translateY(-3px)}
+#rn-vitrine .tag{font-size:.75rem;color:var(--yellow);font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+#rn-vitrine .card h3{font-size:1.32rem;line-height:1.25;margin:16px 0 10px}
+#rn-vitrine .card p{color:var(--muted);font-size:.94rem;margin:0 0 20px}
+#rn-vitrine .card .more{margin-top:auto;color:var(--yellow);font-weight:800;border:0;background:none;text-align:left;padding:0}
+#rn-vitrine .card .more:hover{text-decoration:underline}
+#rn-vitrine .iconbox{font-size:1.8rem;background:#252525;border:1px solid #444;border-radius:14px;width:57px;height:57px;display:grid;place-items:center}
+#rn-vitrine .bar{background:var(--panel2);border-block:1px solid #343434;padding:22px 0}
+#rn-vitrine .searchrow{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+#rn-vitrine .search{flex:1;min-width:220px;background:#070707;color:white;border:1px solid #707070;border-radius:13px;padding:14px 17px}
+#rn-vitrine .chips{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}
+#rn-vitrine .chip{background:#171717;border:1px solid #494949;border-radius:50px;color:#fff;padding:9px 14px;font-weight:700}
+#rn-vitrine .chip.active{background:var(--yellow);color:#000;border-color:var(--yellow)}
+#rn-vitrine .service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+#rn-vitrine .service{background:#101010;border:1px solid var(--line);padding:21px;border-radius:16px;display:flex;flex-direction:column;min-height:190px}
+#rn-vitrine .service h3{font-size:1.08rem;line-height:1.3;margin:10px 0}
+#rn-vitrine .service p{font-size:.87rem;color:var(--muted);margin:0 0 17px}
+#rn-vitrine .service .more{margin-top:auto;background:transparent;border:0;color:var(--yellow);text-align:left;padding:0;font-weight:850}
+#rn-vitrine .service .more:hover{text-decoration:underline}
+#rn-vitrine .empty{display:none;text-align:center;padding:30px;color:var(--muted)}
+#rn-vitrine .feature{background:linear-gradient(130deg,#240e20,#0a0a0a 62%);border-block:1px solid #69244e}
+#rn-vitrine .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+#rn-vitrine .feature .card{background:#0b0b0bc9;border-color:#6c3758}
+#rn-vitrine .feature .card:hover{border-color:var(--pink)}
+#rn-vitrine .feature .more{color:var(--pink)}
+#rn-vitrine .tutorial{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;background:#141414;border:1px solid #565656;border-radius:24px;padding:35px}
+#rn-vitrine .tut-visual{background:#050505;border:1px solid var(--pink);border-radius:18px;min-height:255px;display:grid;place-items:center;text-align:center;padding:25px}
+#rn-vitrine .tut-visual span{font-size:5rem}
+#rn-vitrine .tut-visual strong{color:var(--yellow);font-size:1.45rem}
+#rn-vitrine .note{font-size:.85rem;color:var(--muted)}
+#rn-vitrine .cta{border-radius:24px;border:1px solid #aa8d00;background:linear-gradient(115deg,#222000,#090909);padding:42px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+#rn-vitrine .cta h2{font-size:2rem;line-height:1.2;margin:10px 0}
+#rn-vitrine .cta p{color:var(--muted);margin:0}
+#rn-vitrine .footer{border-top:1px solid #393939;padding:35px 0 46px;color:var(--muted)}
+#rn-vitrine .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+#rn-vitrine .foot nav{display:flex;gap:18px;flex-wrap:wrap}
+#rn-vitrine .demo{color:#000;background:var(--pink);padding:4px 9px;border-radius:20px;font-size:.72rem;font-weight:900;display:inline-block;margin-left:7px;vertical-align:middle}
+#rn-vitrine .modalwrap{position:fixed;inset:0;background:#000c;z-index:50;display:none;align-items:center;justify-content:center;padding:15px}
+#rn-vitrine .modalwrap.open{display:flex}
+#rn-vitrine .modal{background:#151515;border:1px solid #777;border-radius:21px;padding:27px;width:min(510px,100%);max-height:90vh;overflow-y:auto}
+#rn-vitrine .modal h2{margin:5px 0 10px}
+#rn-vitrine .modal p{color:var(--muted)}
+#rn-vitrine .modal label{display:block;margin:15px 0 5px;font-weight:700}
+#rn-vitrine .modal input,#rn-vitrine .modal textarea{width:100%;background:#050505;color:#fff;border:1px solid #686868;border-radius:10px;padding:11px}
+#rn-vitrine .modal .actionrow{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}
+#rn-vitrine .close{background:transparent;color:white;border:1px solid #666;border-radius:10px;padding:10px 14px}
+#rn-vitrine .swatch{display:inline-block;width:13px;height:13px;border-radius:50%;margin-right:7px;vertical-align:middle}
+#rn-vitrine .accent-controls{font-size:.77rem;color:var(--muted);margin-top:26px;display:flex;gap:10px;align-items:center}
+#rn-vitrine .accent-controls button{width:28px;height:28px;border-radius:50%;border:2px solid #fff}
+#rn-vitrine .accent-controls button[aria-pressed=true]{outline:2px solid var(--yellow);outline-offset:3px}
+@media(max-width:900px){#rn-vitrine .links{display:none;position:absolute;left:0;right:0;top:80px;padding:22px;background:#080808;border-bottom:1px solid #444;flex-direction:column;align-items:flex-start}
+#rn-vitrine .links.open{display:flex}
+#rn-vitrine .nav&gt;.btn{margin-left:auto}
+#rn-vitrine .hamb{display:block}
+#rn-vitrine .hero-inner{grid-template-columns:1fr;padding:65px 0}
+#rn-vitrine .hero-art{min-height:290px}
+#rn-vitrine .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+#rn-vitrine .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#rn-vitrine .nav{gap:10px}
+#rn-vitrine .nav&gt;.btn{font-size:.78rem;padding:10px}
+#rn-vitrine .brand{font-size:1.45rem}
+#rn-vitrine .hero-inner{padding:48px 0}
+#rn-vitrine .hero h1{font-size:2.65rem}
+#rn-vitrine .hero-art{min-height:240px}
+#rn-vitrine .hero-art .disk{width:190px;height:190px}
+#rn-vitrine .hero-art .disk.two{width:150px;height:150px}
+#rn-vitrine .hero-art .logo strong{font-size:3.7rem}
+#rn-vitrine .section{padding:52px 0}
+#rn-vitrine .cards,#rn-vitrine .feature-grid,#rn-vitrine .service-grid,#rn-vitrine .tutorial{grid-template-columns:1fr}
+#rn-vitrine .head{display:block}
+#rn-vitrine .tutorial{padding:22px}
+#rn-vitrine .cta{display:block;padding:25px}
+#rn-vitrine .cta .btn{margin-top:20px}
+#rn-vitrine .card{min-height:180px}
+#rn-vitrine .foot{align-items:flex-start}}
+</style>
+<style type='text/css'>
+/* Escopo exclusivo da pagina inicial e ativado apenas apos montagem bem sucedida */
+body.rn-vitrine-home{background:#000!important;margin:0!important;overflow-x:hidden!important}
+body.rn-vitrine-home #app &gt; header,body.rn-vitrine-home #app &gt; .header,
+body.rn-vitrine-home #app header.site-header{display:none!important}
+body.rn-vitrine-home #home-view.rn-vitrine-ready{display:none!important}
+body.rn-vitrine-home #rn-vitrine{display:block!important;position:relative!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;background:#000!important;overflow:clip!important;isolation:isolate}
+body.rn-vitrine-home #rn-vitrine .topline{display:block!important;background:#ffe600!important;color:#000!important;padding:6px 16px!important;text-align:center!important;font-weight:900!important;letter-spacing:.06em!important;font-size:.78rem!important}
+body.rn-vitrine-home #rn-vitrine .wrap{width:min(1160px,calc(100% - 36px))!important;max-width:1160px!important;margin-left:auto!important;margin-right:auto!important;padding:0!important}
+body.rn-vitrine-home #rn-vitrine .header{display:block!important;position:sticky!important;top:0!important;z-index:40!important;background:#090909ed!important;border-bottom:1px solid #383838!important}
+body.rn-vitrine-home #rn-vitrine .hero-inner{display:grid!important;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)!important;align-items:center!important;gap:42px!important;padding:90px 0 100px!important}
+body.rn-vitrine-home #rn-vitrine .hero-inner &gt; div{min-width:0!important}
+body.rn-vitrine-home #rn-vitrine .hero h1{font-size:clamp(2.7rem,6.5vw,5.35rem)!important;line-height:1.06!important;letter-spacing:-.065em!important;max-width:none!important}
+body.rn-vitrine-home #rn-vitrine .hero-art{width:100%!important;min-height:380px!important}
+body.rn-vitrine-home #rn-vitrine .nav{display:flex!important;flex-direction:row!important;align-items:center!important;gap:22px!important;min-height:80px!important}
+body.rn-vitrine-home #rn-vitrine .links{margin-left:auto!important}
+@media(max-width:900px){body.rn-vitrine-home #rn-vitrine .hero-inner{grid-template-columns:1fr!important;padding:65px 0!important}body.rn-vitrine-home #rn-vitrine .hero-art{min-height:290px!important}body.rn-vitrine-home #rn-vitrine .links{display:none!important}body.rn-vitrine-home #rn-vitrine .links.open{display:flex!important}}
+@media(max-width:600px){body.rn-vitrine-home #rn-vitrine .hero-inner{padding:48px 0!important}body.rn-vitrine-home #rn-vitrine .hero h1{font-size:2.65rem!important}body.rn-vitrine-home #rn-vitrine .hero-art{min-height:240px!important}body.rn-vitrine-home #rn-vitrine .nav{gap:10px!important}}
+</style>
+<style type='text/css'>
+/* O CSS antigo define .hero como grid; no prototipo .hero é bloco.
+   Um unico filho grid com largura automatica encolhe ao tamanho minimo. */
+body.rn-vitrine-home #rn-vitrine section#inicio.hero {
+ display:block!important; width:100%!important; max-width:none!important;
+ min-width:0!important; margin:0!important; padding:0!important;
+ box-sizing:border-box!important;
+}
+body.rn-vitrine-home #rn-vitrine section#inicio.hero &gt; .wrap.hero-inner {
+ display:grid!important; width:calc(100% - 36px)!important;
+ max-width:1160px!important; min-width:0!important;
+ margin-inline:auto!important; box-sizing:border-box!important;
+ grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)!important;
+ gap:42px!important; padding:90px 0 100px!important;
+}
+body.rn-vitrine-home #rn-vitrine section#inicio.hero &gt; .wrap.hero-inner &gt; div {min-width:0!important;}
+/* As outras sections do prototipo também precisam se comportar como blocos. */
+body.rn-vitrine-home #rn-vitrine section.section,
+body.rn-vitrine-home #rn-vitrine section.bar {
+ display:block!important; width:100%!important; max-width:none!important;
+ box-sizing:border-box!important;
+}
+body.rn-vitrine-home #rn-vitrine section.section &gt; .wrap,
+body.rn-vitrine-home #rn-vitrine section.bar &gt; .wrap {
+ width:calc(100% - 36px)!important;max-width:1160px!important;
+ margin-inline:auto!important;min-width:0!important;
+}
+@media(max-width:900px){
+ body.rn-vitrine-home #rn-vitrine section#inicio.hero &gt; .wrap.hero-inner{
+  grid-template-columns:minmax(0,1fr)!important;padding:65px 0!important;
+ }
+}
+@media(max-width:600px){
+ body.rn-vitrine-home #rn-vitrine section#inicio.hero &gt; .wrap.hero-inner{padding:48px 0!important;}
+}
+</style><style type='text/css'>/*<![CDATA[*/
+
+/* RN correção: layout estável desde o primeiro HTML e páginas internas unificadas. */
+:root{--paper:#000;--ink:#fff;--pink:#ffe600;--muted:#c9c9c9;--line:#383838;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#000;color:#fff}
+body{background:#000;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+body h1,body h2,body h3{font-family:inherit}
+body.rn-vitrine-home #app > header,body.rn-vitrine-home #app > .skip-link,
+body.rn-vitrine-home #app > main,body.rn-vitrine-home #app > .floating-contact{display:none!important}
+body.rn-internal-page #app > header,body.rn-internal-page #app > .skip-link{display:none!important}
+body.rn-internal-page #rn-vitrine{min-height:0}
+body.rn-internal-page #rn-vitrine .topline{display:block}
+body.rn-internal-page #rn-vitrine .nav{padding-block:12px}
+body.rn-internal-page #rn-vitrine .wrap{padding-inline:0}
+body.rn-internal-page #rn-vitrine .links{gap:18px}
+body.rn-internal-page #rn-us-open.rn-us-access{position:static!important;inset:auto!important;transform:none!important;margin:0!important;flex:0 0 40px!important;width:40px!important;min-width:0!important;max-width:40px!important;height:40px!important;padding:8px!important;font-size:0!important;overflow:hidden;background:#161616;color:#ffe600;border:1px solid #666;border-radius:10px}
+body.rn-internal-page #rn-us-open.rn-us-access:before{content:"🔍";font-size:20px;line-height:1}
+
+body.rn-internal-page .article-view{padding-top:28px;padding-bottom:30px}
+body.rn-internal-page .article-content{max-width:1000px}
+body.rn-internal-page .article-content p,body.rn-internal-page .article-breadcrumb,
+body.rn-internal-page .article-body,body.rn-internal-page .footer{color:#c9c9c9}
+body.rn-internal-page .article-content h1,body.rn-internal-page .article-content h2,
+body.rn-internal-page .footer .brand,body.rn-internal-page .article-back{color:#fff}
+body.rn-internal-page .article-content a{color:#ffe600}
+body.rn-internal-page iframe{display:block;max-width:100%;background:#fff}
+body .footer{color:#c9c9c9;border-color:#383838}
+body .brand-dot,body .brand-word > span:first-child{color:#ffe600}
+body .button-dark,body .button-pink{background:#ffe600;color:#000}
+body .quote-dialog,body .details-dialog{background:#121212;color:#fff;border:1px solid #383838}
+body .quote-dialog input,body .quote-dialog select,body .quote-dialog textarea{background:#fff;color:#292725}
+@media(max-width:600px){
+body #rn-vitrine .nav{gap:8px!important;min-width:0;position:relative}
+body #rn-vitrine .nav .brand{font-size:1.2rem!important;letter-spacing:-.05em!important;flex-shrink:1;min-width:0}
+body #rn-vitrine .nav .brand small{font-size:.48rem!important;letter-spacing:.18em!important}
+body #rn-vitrine .nav > .btn{padding:10px 9px!important;font-size:.68rem!important;min-height:40px;flex-shrink:0;margin-left:auto}
+body #rn-vitrine #rn-us-open:before{content:"🔍";font-size:20px!important;line-height:1}
+body #rn-vitrine .nav > .hamb{width:34px;min-width:34px;padding:6px!important;font-size:20px!important;flex-shrink:0}
+body #rn-vitrine #rn-us-open{font-size:0!important;overflow:hidden;width:34px!important;min-width:34px!important;height:36px!important;margin:0!important;padding:6px!important;flex-shrink:0}
+}
+@media(max-width:900px){body.rn-internal-page #rn-vitrine .links{display:none}body.rn-internal-page #rn-vitrine .links.open{display:flex}body.rn-internal-page #rn-vitrine .hamb{display:block}}
+
+/*]]>*/</style></head>
+<body><b:class cond='data:view.isHomepage' name='rn-vitrine-home'/><b:class cond='!(data:view.isHomepage)' name='rn-internal-page'/><b:if cond='data:view.isHomepage'><div id="rn-vitrine" role="main"><div class="topline">R&amp;N GRÁFICA RÁPIDA • IMPRESSÕES, PERSONALIZADOS E MUITO MAIS</div><header class="header"><div class="wrap nav"><a class="brand" href="#inicio" aria-label="Início R&amp;N Gráfica"><b>R&amp;N.</b> GRÁFICA<small>RÁPIDA</small></a><nav class="links" id="navLinks"><a href="#categorias">Categorias</a><a href="#servicos">Serviços</a><a href="#ferramentas">Ferramentas</a><a href="#guias">Guias</a><a href="#tutoriais">Tutoriais</a></nav><button class="btn" data-rn-quote="Orçamento geral">Pedir orçamento</button><button class="hamb" id="hamb" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">☰</button></div></header>
+<section id="inicio" class="hero"><div class="wrap hero-inner"><div><div class="eyebrow">R&amp;N GRÁFICA RÁPIDA • PACHECO, JABOATÃO–PE</div><h1>Suas ideias merecem <em>destaque.</em></h1><p>Impressões, xerox, banners, personalizados e muito mais. Uma vitrine organizada para encontrar rapidamente o que você procura.</p><div class="actions"><a class="btn" href="#servicos">Explorar serviços ↗</a><a class="btn secondary" href="#guias">Ver guias úteis ↗</a></div><div class="accent-controls"><span>Cores deste teste:</span><span><i class="swatch" style="background:#000;border:1px solid #fff"></i>Preto</span><span><i class="swatch" style="background:#ffe600"></i>Amarelo</span><span><i class="swatch" style="background:#ff39b4"></i>Magenta</span></div></div><div class="hero-art" aria-label="Painel decorativo com a marca da gráfica"><div class="disk"></div><div class="disk two"></div><div class="logo"><strong>R<span>&amp;</span>N</strong><small>GRÁFICA RÁPIDA</small></div></div></div></section>
+<section class="section" id="categorias"><div class="wrap"><div class="head"><div><div class="eyebrow">Vitrine organizada</div><h2>O que você precisa hoje?</h2><p>As categorias ajudam o cliente a chegar ao produto ou serviço com poucos cliques.</p></div></div><div class="cards"><a class="card" href="#servicos" data-category-link="Impressões"><div class="iconbox">🖨️</div><h3>Impressões e cópias</h3><p>Documentos, fotos e materiais impressos.</p><span class="more">Ver opções →</span></a><a class="card" href="#servicos" data-category-link="Documentos"><div class="iconbox">📄</div><h3>Papelaria e documentos</h3><p>Cartões de visita, recibos e declarações.</p><span class="more">Ver opções →</span></a><a class="card" href="#servicos" data-category-link="Comunicação"><div class="iconbox">📢</div><h3>Comunicação visual</h3><p>Banners e cartazes para divulgar sua marca.</p><span class="more">Ver opções →</span></a><a class="card" href="#servicos" data-category-link="Personalizados"><div class="iconbox">🎁</div><h3>Personalizados e estampas</h3><p>Canecas, camisas, DTF e sublimação.</p><span class="more">Ver opções →</span></a><a class="card" href="#servicos" data-category-link="Plastificação"><div class="iconbox">🪪</div><h3>Plastificação</h3><p>Proteção para documentos e folhas A4.</p><span class="more">Ver opções →</span></a><a class="card" href="#servicos" data-category-link="Agendamentos"><div class="iconbox">📅</div><h3>Agendamentos</h3><p>Orientação para atendimentos públicos.</p><span class="more">Ver opções →</span></a></div></div></section>
+<section class="bar"><div class="wrap searchrow"><label for="searchInput" style="font-weight:800">🔎 Encontre um serviço</label><input class="search" type="search" id="searchInput" placeholder="Ex.: banner, caneca, xerox, DTF..." autocomplete="off"/><button class="btn secondary" id="clearSearch">Limpar busca</button></div></section>
+<section class="section" id="servicos"><div class="wrap"><div class="head"><div><div class="eyebrow">Catálogo</div><h2>Produtos e serviços</h2><p>Selecione uma categoria ou procure pelo nome. Nesta simulação, as opções preparam uma mensagem de orçamento.</p></div><span id="resultCount" class="note">20 serviços</span></div><div class="chips" role="group" aria-label="Filtrar serviços"><button class="chip active" data-filter="Todos">Todos</button><button class="chip" data-filter="Impressões">Impressões</button><button class="chip" data-filter="Plastificação">Plastificação</button><button class="chip" data-filter="Documentos">Documentos</button><button class="chip" data-filter="Comunicação">Comunicação visual</button><button class="chip" data-filter="Agendamentos">Agendamentos</button><button class="chip" data-filter="Personalizados">Personalizados</button></div><div id="serviceGrid" class="service-grid"></div><div id="empty" class="empty">Nenhum serviço encontrado. Experimente outra palavra ou categoria.</div></div></section>
+<section class="section feature" id="ferramentas"><div class="wrap"><div class="head"><div><div class="eyebrow">Recursos gratuitos</div><h2>Ferramentas para facilitar</h2><p>Uma área própria para ferramentas, separada dos produtos e dos artigos.</p></div></div><div class="feature-grid"><article class="card"><div class="iconbox">🖼️</div><h3>Editor de fotos on-line</h3><p>Edite e prepare imagens diretamente no navegador.</p><a class="more" href="https://rngraficarapida.blogspot.com/p/editor-de-fotos-on-line.html" target="_blank" rel="noopener">Abrir ferramenta existente ↗</a></article><article class="card"><div class="iconbox">📐</div><h3>Calculadora gráfica</h3><p>Espaço de demonstração reservado para uma futura ferramenta de medidas e materiais.</p><span class="note">Prévia de organização — sem link publicado</span></article></div></div></section>
+<section class="section" id="guias"><div class="wrap"><div class="head"><div><div class="eyebrow">Informação que ajuda</div><h2>Guias úteis</h2><p>Conteúdo explicativo separado do catálogo, para orientar o cliente antes do pedido.</p></div></div><div class="cards"><article class="card"><span class="tag">Guia 01</span><h3>Como escolher o papel</h3><p>Veja diferenças entre papéis para impressão.</p><a class="more" href="https://rngraficarapida.blogspot.com/p/como-escolher-o-papel.html" target="_blank" rel="noopener">Ler guia ↗</a></article><article class="card"><span class="tag">Guia 02</span><h3>Como preparar sua arte</h3><p>Tamanho, resolução e cuidados com a impressão.</p><a class="more" href="https://rngraficarapida.blogspot.com/p/como-preparar-sua-arte.html" target="_blank" rel="noopener">Ler guia ↗</a></article><article class="card"><span class="tag">Guia 03</span><h3>Sublimação e DTF</h3><p>Conheça os métodos e suas aplicações.</p><a class="more" href="https://rngraficarapida.blogspot.com/p/sublimacao-e-dtf.html" target="_blank" rel="noopener">Ler guia ↗</a></article><article class="card"><span class="tag">Guia 04</span><h3>Tamanho de banner</h3><p>Entenda o cálculo de medidas e área.</p><a class="more" href="https://rngraficarapida.blogspot.com/p/como-caucular-o-tamanho-do-banner.html" target="_blank" rel="noopener">Ler guia ↗</a></article><article class="card"><span class="tag">Guia 05</span><h3>Preparar fotos para impressão</h3><p>Resolução e proporções para fotografias.</p><a class="more" href="https://rngraficarapida.blogspot.com/p/como-preparar-fotos-para-impressao.html" target="_blank" rel="noopener">Ler guia ↗</a></article><article class="card"><span class="tag">Guia 06</span><h3>Adesivo de papel ou vinil?</h3><p>Compare usos e diferenças de materiais.</p><a class="more" href="https://rngraficarapida.blogspot.com/p/adesivos-de-papel-ou-em-vinil.html" target="_blank" rel="noopener">Ler guia ↗</a></article></div></div></section>
+<section class="section" id="tutoriais"><div class="wrap"><div class="head"><div><div class="eyebrow">Área reservada para o futuro</div><h2>Tutoriais passo a passo</h2><p>Uma seção independente para receber novas publicações a cada quatro dias, conforme o planejamento.</p></div></div><div class="tutorial"><div class="tut-visual"><div><span>📚</span><br/><strong>APRENDA NA PRÁTICA</strong><p class="note">Demonstração de espaço editorial</p></div></div><div><span class="tag">Próximas publicações</span><h3 style="font-size:1.7rem;line-height:1.18;margin:13px 0">Tutoriais organizados por assunto</h3><p style="color:var(--muted)">Cada tutorial poderá ter título, imagem, resumo, data e link para o conteúdo completo. Esta seção ainda não representa publicações existentes.</p><span class="btn secondary" style="cursor:default">Espaço reservado</span></div></div></div></section>
+<section class="section"><div class="wrap"><div class="cta"><div><div class="eyebrow">Atendimento personalizado</div><h2>Vamos transformar sua ideia em realidade?</h2><p>Escolha um serviço e informe o que deseja produzir.</p></div><button class="btn" data-rn-quote="Orçamento geral">Pedir orçamento →</button></div></div></section>
+<div class="modalwrap" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><span class="tag">Simulação de orçamento</span><button class="close" id="closeModal" aria-label="Fechar janela">✕</button></div><h2 id="modalTitle">Pedir orçamento</h2><p>Preencha os dados abaixo. O WhatsApp abre com uma mensagem pronta; nada é enviado automaticamente.</p><form id="quoteForm"><label for="product">Serviço</label><input id="product" required="required"/><label for="customer">Seu nome (opcional)</label><input id="customer" placeholder="Como podemos chamar você?"/><label for="quantity">Quantidade (opcional)</label><input id="quantity" placeholder="Ex.: 50 unidades, 2 folhas"/><label for="details">Detalhes (opcional)</label><textarea id="details" rows="3" placeholder="Tamanho, material, acabamento..."></textarea><div class="actionrow"><button type="button" class="close" id="cancelModal">Cancelar</button><button type="submit" class="btn">Abrir WhatsApp ↗</button></div></form></div></div>
+</div><b:else/><div id="rn-vitrine" role="banner"><div class="topline">R&amp;N GRÁFICA RÁPIDA • IMPRESSÕES, PERSONALIZADOS E MUITO MAIS</div><header class="header"><div class="wrap nav"><a class="brand" href="/#inicio" aria-label="Início R&amp;N Gráfica"><b>R&amp;N.</b> GRÁFICA<small>RÁPIDA</small></a><nav class="links" id="navLinks"><a href="/#categorias">Categorias</a><a href="/#servicos">Serviços</a><a href="/#ferramentas">Ferramentas</a><a href="/#guias">Guias</a><a href="/#tutoriais">Tutoriais</a></nav><button class="btn" data-quote="true">Pedir orçamento</button><button class="hamb" id="hamb" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">☰</button></div></header></div></b:if><div id='app'/><!-- RN:NATIVE:START --><b:section class='rn-native-section' id='rnNativePages' maxwidgets='1' showaddelement='no'>
+<b:widget id='Blog1' locked='true' title='Postagens no blog' type='Blog' version='2' visible='true'>
+  <b:widget-settings>
+    <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+    <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+    <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+    <b:widget-setting name='showAuthor'>false</b:widget-setting>
+    <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+    <b:widget-setting name='timestampLabel'/>
+    <b:widget-setting name='reactionsLabel'/>
+    <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+    <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+    <b:widget-setting name='showLabels'>true</b:widget-setting>
+    <b:widget-setting name='showLocation'>true</b:widget-setting>
+    <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+    <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+    <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+    <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+    <b:widget-setting name='showReactions'>false</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main' var='this'><b:if cond='data:blog.pageType == &quot;static_page&quot;'><b:loop values='data:this.posts' var='post'><article class='native-page article-content' data-native-page='true'><header class='native-page-header'><h1><data:post.title/></h1></header><div class='native-page-body'><data:post.body/></div></article></b:loop></b:if></b:includable>
+  <b:includable id='aboutPostAuthor'>
+  <div class='author-name'>
+    <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+      <span>
+        <data:post.author.name/>
+      </span>
+    </a>
+  </div>
+  <div>
+    <span class='author-desc'>
+      <data:post.author.aboutMe/>
+    </span>
+  </div>
+</b:includable>
+  <b:includable id='addComments'>
+  <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+    <b:message name='messages.postAComment'/>
+  </a>
+</b:includable>
+  <b:includable id='commentAuthorAvatar'>
+  <div class='avatar-image-container'>
+    <img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/>
+  </div>
+</b:includable>
+  <b:includable id='commentDeleteIcon' var='comment'>
+  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+    <b:if cond='data:showCmtPopup'>
+      <div class='goog-toggle-button'>
+        <div class='goog-inline-block comment-action-icon'/>
+      </div>
+    <b:else/>
+      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
+        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
+  <b:includable id='commentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+  <b:includable id='commentFormIframeSrc' var='post'>
+  <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+</b:includable>
+  <b:includable id='commentItem' var='comment'>
+  <div class='comment' expr:id='&quot;c&quot; + data:comment.id'>
+    <b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar'/>
+
+    <div class='comment-block'>
+      <div class='comment-author'>
+        <b:if cond='data:comment.authorUrl'>
+          <b:message name='messages.authorSaidWithLink'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+            <b:param expr:value='data:comment.authorUrl' name='authorUrl'/>
+          </b:message>
+        <b:else/>
+          <b:message name='messages.authorSaid'>
+            <b:param expr:value='data:comment.author' name='authorName'/>
+          </b:message>
+        </b:if>
+      </div>
+      <div expr:class='&quot;comment-body&quot; + (data:comment.isDeleted ? &quot; deleted&quot; : &quot;&quot;)'>
+        <data:comment.body/>
+      </div>
+      <div class='comment-footer'>
+        <span class='comment-timestamp'>
+          <a expr:href='data:comment.url' title='comment permalink'>
+            <data:comment.timestamp/>
+          </a>
+          <b:include data='comment' name='commentDeleteIcon'/>
+        </span>
+      </div>
+    </div>
+  </div>
+</b:includable>
+  <b:includable id='commentList' var='comments'>
+  <div id='comments-block'>
+    <b:loop values='data:comments' var='comment'>
+      <b:include data='comment' name='commentItem'/>
+    </b:loop>
+  </div>
+</b:includable>
+  <b:includable id='commentPicker' var='post'>
+  <b:if cond='data:post.showThreadedComments'>
+    <b:include data='post' name='threadedComments'/>
+  <b:else/>
+    <b:include data='post' name='comments'/>
+  </b:if>
+</b:includable>
+  <b:includable id='comments' var='post'>
+  <section expr:class='&quot;comments&quot; + (data:post.embedCommentForm ? &quot; embed&quot; : &quot;&quot;)' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+    <b:if cond='data:post.allowComments'>
+
+      <b:include name='commentsTitle'/>
+
+      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+        <b:include cond='data:post.comments' data='post.comments' name='commentList'/>
+      </div>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <div class='paging-control-container'>
+          <b:if cond='data:post.hasOlderLinks'>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+              <data:messages.oldest/>
+            </a>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+              <data:messages.older/>
+            </a>
+          </b:if>
+
+          <span class='comment-range-text'>
+            <data:post.commentRangeText/>
+          </span>
+
+          <b:if cond='data:post.hasNewerLinks'>
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+              <data:messages.newer/>
+            </a>
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+              <data:messages.newest/>
+            </a>
+          </b:if>
+        </div>
+      </b:if>
+
+      <div class='footer'>
+        <b:if cond='data:post.embedCommentForm'>
+          <b:if cond='data:post.allowNewComments'>
+            <b:include data='post' name='commentForm'/>
+          <b:else/>
+            <data:post.noNewCommentsText/>
+          </b:if>
+        <b:else/>
+          <b:if cond='data:post.allowComments'>
+            <b:include data='post' name='addComments'/>
+          </b:if>
+        </b:if>
+      </div>
+    </b:if>
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+</b:includable>
+  <b:includable id='commentsTitle'>
+  <h3 class='title'><data:messages.comments/></h3>
+</b:includable>
+  <b:includable id='feedLinks'>
+  <b:if cond='!data:view.isPost'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+  <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.allowComments and data:post.feedLinks'>
+          <b:include data='post.feedLinks' name='feedLinksBody'/>
+        </b:if>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+  <b:includable id='feedLinksBody' var='links'>
+  <div class='feed-links'>
+  <data:messages.subscribeTo/>
+  <b:loop values='data:links' var='f'>
+     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+  </b:loop>
+  </div>
+</b:includable>
+  <b:includable id='homePageLink'>
+  <a class='home-link' expr:href='data:blog.homepageUrl'>
+    <data:messages.home/>
+  </a>
+</b:includable>
+  <b:includable id='iframeComments' var='post'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+  <b:includable id='inlineAd' var='post'>
+  <b:if cond='!data:view.isPreview'>
+    <b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'>
+      <!-- Ad -->
+      <div class='inline-ad'>
+        <b:if cond='data:this.adCode != &quot;&quot;'>
+          <data:this.adCode/>
+        <b:else/>
+          <b:include cond='data:this.adClientId or data:blog.adsenseClientId' name='defaultAdUnit'/>
+        </b:if>
+      </div>
+    </b:if>
+  <b:else/>
+    <div class='inline-ad'>
+      <div class='inline-ad-placeholder'>
+        <span><b:message name='messages.adsGoHere'/></span>
+      </div>
+    </div>
+  </b:if>
+</b:includable>
+  <b:includable id='nextPageLink'>
+  <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:messages.olderPosts'>
+    <data:messages.olderPosts/>
+  </a>
+</b:includable>
+  <b:includable id='post' var='post'>
+  <div class='post'>
+    <b:include data='post' name='postMeta'/>
+    <b:include data='post' name='postTitle'/>
+    <b:include name='headerByline'/>
+    <b:if cond='data:view.isSingleItem'>
+      <b:include data='post' name='postBody'/>
+    <b:else/>
+      <b:include data='post' name='postBodySnippet'/>
+      <b:include data='post' name='postJumpLink'/>
+    </b:if>
+    <b:include data='post' name='postFooter'/>
+  </div>
+</b:includable>
+  <b:includable id='postBody' var='post'>
+  <!-- If metaDescription is empty, use the post body as the schema.org description too, for G+/FB snippeting. -->
+  <div class='post-body entry-content float-container' expr:id='&quot;post-body-&quot; + data:post.id'>
+    <data:post.body/>
+  </div>
+</b:includable>
+  <b:includable id='postBodySnippet' var='post'>
+  <b:include data='post' name='postBody'/>
+</b:includable>
+  <b:includable id='postCommentsAndAd' var='post'>
+  <article class='post-outer-container'>
+    <!-- Post title and body -->
+    <div class='post-outer'>
+      <b:include data='post' name='post'/>
+    </div>
+
+    <!-- Comments -->
+    <b:include cond='data:view.isSingleItem' data='post' name='commentPicker'/>
+
+    <!-- Show ad inside post container, after comments, if single item. -->
+    <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/>
+  </article>
+
+  <!-- Show ad outside post container (between posts) for feed pages. -->
+  <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/>
+</b:includable>
+  <b:includable id='postCommentsLink'>
+  <b:if cond='data:view.isMultipleItems'>
+    <span class='byline post-comment-link container'>
+      <b:include cond='data:post.commentSource != 1' name='commentsLink'/>
+    </span>
+  </b:if>
+</b:includable>
+  <b:includable id='postFooter' var='post'>
+  <div class='post-footer'>
+    <b:include name='footerBylines'/>
+    <b:include data='post' name='postFooterAuthorProfile'/>
+  </div>
+</b:includable>
+  <b:includable id='postFooterAuthorProfile' var='post'>
+  <b:if cond='data:post.author.aboutMe and data:view.isPost'>
+    <div class='author-profile'>
+      <b:if cond='data:post.author.authorPhoto.url'>
+        <img class='author-image' expr:src='data:post.author.authorPhoto.url' width='50px'/>
+        <div class='author-about'>
+          <b:include data='post' name='aboutPostAuthor'/>
+        </div>
+      <b:else/>
+        <b:include data='post' name='aboutPostAuthor'/>
+      </b:if>
+    </div>
+  </b:if>
+</b:includable>
+  <b:includable id='postHeader' var='post'>
+  <b:include name='headerByline'/>
+</b:includable>
+  <b:includable id='postMeta' var='post'>
+  <b:include data='post' name='postMetadataJSON'/>
+</b:includable>
+  <b:includable id='postPagination'>
+  <div class='blog-pager container' id='blog-pager'>
+    <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+    <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+    <b:include cond='data:view.url != data:blog.homepageUrl' name='homePageLink'/>
+  </div>
+</b:includable>
+  <b:includable id='postTitle' var='post'>
+  <a expr:name='data:post.id'/>
+  <b:if cond='data:post.title != &quot;&quot;'>
+    <h3 class='post-title entry-title'>
+      <b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
+        <a expr:href='data:post.link ?: data:post.url'><data:post.title/></a>
+      <b:else/>
+        <data:post.title/>
+      </b:if>
+    </h3>
+  </b:if>
+</b:includable>
+  <b:includable id='previousPageLink'>
+  <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:messages.newerPosts'>
+    <data:messages.newerPosts/>
+  </a>
+</b:includable>
+  <b:includable id='threadedCommentForm' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+    <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+      <p><data:this.messages.blogComment/></p>
+    </b:if>
+    <b:include data='post' name='commentFormIframeSrc'/>
+    <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+  <b:includable id='threadedCommentJs' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+  <b:template-script inline='true' name='threaded_comments'/>
+  <script type='text/javascript'>
+    blogger.widgets.blog.initThreadedComments(
+        <data:post.commentJso/>,
+        <data:post.commentMsgs/>,
+        <data:post.commentConfig/>);
+  </script>
+</b:includable>
+  <b:includable id='threadedComments' var='post'>
+  <section class='comments threaded' expr:data-embed='data:post.embedCommentForm' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+    <a name='comments'/>
+
+    <b:include name='commentsTitle'/>
+
+    <div class='comments-content'>
+      <b:if cond='data:post.embedCommentForm'>
+        <b:include data='post' name='threadedCommentJs'/>
+      </b:if>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threadedCommentForm'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+      <b:if cond='data:post.showManageComments'>
+        <b:include data='post' name='manageComments'/>
+      </b:if>
+    </p>
+
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+  </section>
+</b:includable>
+  <b:includable id='tooltipCss'>
+  <!-- LINT.IfChange -->
+  <style>
+    .post-body a.b-tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip {
+      display: block !important;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-20%, 1px);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip iframe {
+      width: 200px;
+      height: 198px;
+      max-width: none;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (hover: hover) {
+      .post-body a.b-tooltip-container:hover .b-tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  </style>
+  <!-- LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
+</b:includable>
+</b:widget>
+</b:section><!-- RN:NATIVE:END --><noscript><div style='max-width:750px;margin:50px auto;padding:24px;font-family:Arial,sans-serif'><h1>R&amp;N Gráfica Rápida</h1><p>Impressões e xerox em papel ofício, papel fotográfico, papel adesivo e papel-cartão. Plastificação de documentos e folhas A4 inteiras. Cartões de visita, talões de recibos de aluguel com 50 a 100 folhas, contratos de aluguel e declarações de residência. Cartazes A4, banners, apoio em agendamentos no CRAS, para identidade e para título de eleitor. Canecas, camisas, estampas personalizadas, sublimação total e DTF.</p><p>Ative o JavaScript para explorar as categorias e montar o pedido.</p><p>Peça um orçamento informando a quantidade de peças ou o serviço desejado. Tire suas dúvidas pelo nosso WhatsApp.</p><a href='https://wa.me/5581996090928' rel='noopener noreferrer' target='_blank'>WhatsApp: (81) 99609-0928</a></div></noscript><b:section class='bloggerreserved' id='bloggerreserved' showaddelement='no'>
+<b:widget id='Header1' locked='false' title='R&amp;amp;N Gráfica rápida (Cabeçalho)' type='Header'>
+  <b:widget-settings>
+    <b:widget-setting name='displayUrl'/>
+    <b:widget-setting name='displayHeight'>0</b:widget-setting>
+    <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+    <b:widget-setting name='useImage'>false</b:widget-setting>
+    <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+    <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+    <b:widget-setting name='displayWidth'>0</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+
+  <b:if cond='data:useImage'>
+    <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+      <!--
+      Show image as background to text. You can't really calculate the width
+      reliably in JS because margins are not taken into account by any of
+      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+      width if the user is using shrink to fit.
+      This results in a margin-width's worth of pixels being cropped. If the
+      user is not using shrink to fit then we expand the header.
+      -->
+      <b:if cond='data:mobile'>
+        <div id='header-inner'>
+          <div class='titlewrapper' style='background: transparent'>
+            <h1 class='title' style='background: transparent; border-width: 0px'>
+              <b:include name='title'/>
+            </h1>
+          </div>
+          <b:include name='description'/>
+        </div>
+      <b:else/>
+        <b:with value='data:shrinkToFit ? &quot;background-size: 100%;&quot; : &quot;&quot;' var='backgroundSizeStyle'>
+        <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                      + &quot;background-position: &quot;                      + data:backgroundPositionStyleStr + &quot;; &quot;                      + data:widthStyleStr                      + data:heightStyleStr                      + &quot;background-repeat: no-repeat; &quot;                      + data:backgroundSizeStyle' id='header-inner'>
+          <div class='titlewrapper' style='background: transparent'>
+            <h1 class='title' style='background: transparent; border-width: 0px'>
+              <b:include name='title'/>
+            </h1>
+          </div>
+          <b:include name='description'/>
+        </div>
+        </b:with>
+      </b:if>
+    <b:else/>
+      <!--Show the image only-->
+      <div id='header-inner'>
+        <a expr:href='data:blog.homepageUrl' style='display: block'>
+          <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'>
+            <b:attr cond='data:shrinkToFit' name='class' value='header-widget-img-shrink-to-fit'/>
+        </img>
+        </a>
+        <!--Show the description-->
+        <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
+          <b:include name='description'/>
+        </b:if>
+      </div>
+    </b:if>
+  <b:else/>
+    <!--No header image -->
+    <div id='header-inner'>
+      <div class='titlewrapper'>
+        <h1 class='title'>
+          <b:include name='title'/>
+        </h1>
+      </div>
+      <b:include name='description'/>
+    </div>
+  </b:if>
+  <b:include cond='data:shrinkToFit and data:imagePlacement != &quot;BEHIND&quot;' name='shrinkToFitStyle'/>
+</b:includable>
+  <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <p class='description'><span><data:description/></span></p>
+  </div>
+</b:includable>
+  <b:includable id='shrinkToFitStyle'>
+  <style type='text/css'>
+    .header-widget-img-shrink-to-fit {
+      max-width: 100%;
+      height: auto;
+      object-fit: scale-down;
+    }
+  </style>
+</b:includable>
+  <b:includable id='title'>
+  <b:tag cond='data:blog.url != data:blog.homepageUrl' expr:href='data:blog.homepageUrl' name='a'>
+    <data:title/>
+  </b:tag>
+</b:includable>
+</b:widget>
+<b:widget id='BlogSearch1' locked='false' title='Pesquisar este blog' type='BlogSearch'>
+  <b:includable id='main'>
+    <!-- only display title if it's non-empty -->
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2 class='title'><data:title/></h2>
+    </b:if>
+
+    <div class='widget-content'>
+      <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
+        <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
+          <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+          <table cellpadding='0' cellspacing='0' class='gsc-search-box'>
+            <tbody>
+              <tr>
+                <td class='gsc-input'>
+                  <input autocomplete='off' class='gsc-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
+                </td>
+                <td class='gsc-search-button'>
+                  <input class='gsc-search-button' expr:value='data:messages.search' title='search' type='submit'/>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+</b:widget>
+<b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+  <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
+<b:widget id='BlogArchive1' locked='false' title='Arquivo do blog' type='BlogArchive'>
+  <b:widget-settings>
+    <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
+    <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+    <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+    <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
+    <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+    <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+    <b:widget-setting name='chronological'>false</b:widget-setting>
+    <b:widget-setting name='showPosts'>true</b:widget-setting>
+    <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+  <div id='ArchiveList'>
+  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+    <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
+    <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
+    <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
+  </div>
+  </div>
+  <b:include name='quickedit'/>
+  </div>
+</b:includable>
+  <b:includable id='flat' var='data'>
+  <ul class='flat'>
+    <b:loop values='data:data' var='i'>
+      <li class='archivedate'>
+        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
+      </li>
+    </b:loop>
+  </ul>
+</b:includable>
+  <b:includable id='interval' var='intervalData'>
+  <b:loop values='data:intervalData' var='interval'>
+    <ul class='hierarchy'>
+      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
+        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
+        <a class='post-count-link' expr:href='data:interval.url'>
+          <data:interval.name/>
+        </a>
+        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
+        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
+        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+      </li>
+    </ul>
+  </b:loop>
+</b:includable>
+  <b:includable id='menu' var='data'>
+  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+    <option value=''><data:title/></option>
+    <b:loop values='data:data' var='i'>
+      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+    </b:loop>
+  </select>
+</b:includable>
+  <b:includable id='posts' var='posts'>
+  <ul class='posts'>
+    <b:loop values='data:posts' var='post'>
+      <li><a expr:href='data:post.url'><data:post.title/></a></li>
+    </b:loop>
+  </ul>
+</b:includable>
+  <b:includable id='toggle' var='interval'>
+  <a class='toggle' href='javascript:void(0)'>
+    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
+      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+        &#9660;&#160;
+      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
+        &#9668;&#160;
+      <b:else/>
+        &#9658;&#160;
+      </b:if>
+    </span>
+  </a>
+</b:includable>
+</b:widget>
+<b:widget id='AdSense2' locked='false' title='' type='AdSense'>
+  <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
+<b:widget id='Attribution1' locked='false' title='' type='Attribution'>
+  <b:widget-settings>
+    <b:widget-setting name='copyright'/>
+  </b:widget-settings>
+  <b:includable id='main'>
+    <div class='widget-content' style='text-align: center;'>
+      <b:if cond='data:attribution != &quot;&quot;'>
+       <data:attribution/>
+      </b:if>
+    </div>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+</b:widget>
+<b:widget id='Label1' locked='false' title='Marcadores' type='Label'>
+  <b:widget-settings>
+    <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+    <b:widget-setting name='display'>LIST</b:widget-setting>
+    <b:widget-setting name='selectedLabelsList'/>
+    <b:widget-setting name='showType'>ALL</b:widget-setting>
+    <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <b:if cond='data:blog.url == data:label.url'>
+              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+            <b:else/>
+              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+            </b:if>
+            <b:if cond='data:showFreqNumbers'>
+              <span dir='ltr'>(<data:label.count/>)</span>
+            </b:if>
+          </li>
+        </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
+<b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse'>
+  <b:includable id='main'>
+  <b:include name='reportAbuse'/>
+</b:includable>
+</b:widget>
+<b:widget cond='data:view.isSingleItem and data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='false' title='' type='PopularPosts'>
+  <b:widget-settings>
+    <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
+    <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+    <b:widget-setting name='showSnippets'>true</b:widget-setting>
+    <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+  <div class='widget-content popular-posts'>
+    <ul>
+      <b:loop values='data:posts' var='post'>
+      <li>
+        <b:if cond='!data:showThumbnails'>
+          <b:if cond='!data:showSnippets'>
+            <!-- (1) No snippet/thumbnail -->
+            <a expr:href='data:post.href'><data:post.title/></a>
+          <b:else/>
+            <!-- (2) Show only snippets -->
+            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+            <div class='item-snippet'><data:post.snippet/></div>
+          </b:if>
+        <b:else/>
+          <!-- (3) Show only thumbnails or (4) Snippets and thumbnails. -->
+          <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
+            <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
+              <div class='item-thumbnail'>
+                <a expr:href='data:post.href' target='_blank'>
+                  <b:with value='data:post.featuredImage.isResizable                                  ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)                                  : data:post.thumbnail' var='image'>
+                    <img alt='' border='0' expr:src='data:image'/>
+                  </b:with>
+                </a>
+              </div>
+            </b:if>
+            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+            <b:if cond='data:showSnippets'>
+              <div class='item-snippet'><data:post.snippet/></div>
+            </b:if>
+          </div>
+          <div style='clear: both;'/>
+        </b:if>
+      </li>
+      </b:loop>
+    </ul>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
+<b:widget id='PageList1' locked='false' title='' type='PageList'>
+  <b:widget-settings>
+    <b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"http://rngraficarapida.blogspot.com/","position":0,"title":"Home"}}]]></b:widget-setting>
+    <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+  <div class='widget-content'>
+    <b:if cond='data:mobile'>
+      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
+        <b:if cond='data:showPlaceholder'>
+          <option disabled='disabled' hidden='hidden' value=''>
+            <b:attr cond='!data:hasCurrentPage' name='selected' value='selected'/>
+            <b:message name='messages.moveToPage'/>
+          </option>
+        </b:if>
+        <b:loop values='data:links' var='link'>
+          <option expr:value='data:link.href'>
+            <b:attr cond='data:link.isCurrentPage' name='selected' value='selected'/>
+            <data:link.title/>
+          </option>
+        </b:loop>
+      </select>
+      <span class='pagelist-arrow'>&amp;#9660;</span>
+    <b:else/>
+      <ul>
+        <b:loop values='data:links' var='link'>
+          <li>
+            <b:class cond='data:link.isCurrentPage' name='selected'/>
+            <a expr:href='data:link.href'><data:link.title/></a>
+          </li>
+        </b:loop>
+      </ul>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+</b:widget>
+<b:widget id='Profile1' locked='false' title='Quem sou eu' type='Profile'>
+  <b:widget-settings>
+    <b:widget-setting name='showaboutme'>true</b:widget-setting>
+    <b:widget-setting name='showlocation'>false</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2><data:title/></h2>
+    </b:if>
+    <div class='widget-content'>
+    <b:if cond='data:team'> <!-- team blog profile -->
+      <ul>
+        <b:loop values='data:authors' var='i'>
+          <li><a class='profile-name-link g-profile' expr:href='data:i.userUrl' expr:style='&quot;background-image: url(&quot; + data:i.profileLogo + &quot;);&quot;'><data:i.display-name/></a></li>
+        </b:loop>
+      </ul>
+
+    <b:else/> <!-- normal blog profile -->
+
+      <b:if cond='data:photo.url != &quot;&quot;'>
+        <a expr:href='data:userUrl'><img class='profile-img' expr:alt='data:messages.myPhoto' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/></a>
+      </b:if>
+
+      <dl class='profile-datablock'>
+        <dt class='profile-data'>
+          <a class='profile-name-link g-profile' expr:href='data:userUrl' expr:style='&quot;background-image: url(&quot; + data:profileLogo + &quot;);&quot;' rel='author'>
+            <data:displayname/>
+          </a>
+        </dt>
+
+        <b:if cond='data:showlocation'>
+          <dd class='profile-data'><data:location/></dd>
+        </b:if>
+
+        <b:if cond='data:aboutme != &quot;&quot;'><dd class='profile-textblock'><data:aboutme/></dd></b:if>
+      </dl>
+      <a class='profile-link' expr:href='data:userUrl' rel='author'><data:viewProfileMsg/></a>
+    </b:if>
+
+     <b:include name='quickedit'/>
+    </div>
+  </b:includable>
+</b:widget>
+<b:widget id='FeaturedPost1' locked='false' title='' type='FeaturedPost'>
+  <b:widget-settings>
+    <b:widget-setting name='showSnippet'>true</b:widget-setting>
+    <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+    <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+    <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <!-- Only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <b:include name='content'/>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  <b:includable id='content'>
+  <div class='post-summary'>
+    <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
+      <h3><a expr:href='data:postUrl'><data:postTitle/></a></h3>
+    </b:if>
+    <b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
+      <p>
+        <data:postSummary/>
+      </p>
+    </b:if>
+    <b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
+      <img class='image' expr:src='data:postFirstImage'/>
+    </b:if>
+  </div>
+
+  <style type='text/css'>
+    .image {
+      width: 100%;
+    }
+  </style>
+</b:includable>
+</b:widget>
+</b:section>
+<script type='text/javascript'>
+//<![CDATA[
+window.__RN_BLOGGER__=true;
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e={name:`R&N Gráfica Rápida`,shortName:`R&N`,tagline:`Gráfica Rápida`,whatsapp:`5581996090928`},t={impressoes:`impressoes-b5514c5e5a.webp`,plastificacao:`plastificacao-41fa6223c6.webp`,documentos:`documentos-1dd1ba5a1a.webp`,comunicacao:`comunicacao-e6154ecd3a.webp`,agendamentos:`agendamentos-50a69d0bdf.webp`,personalizados:`personalizados-ff99a224f5.webp`},n=`https://raw.githubusercontent.com/rdroid8229-commits/site/main/public/images/`,r=[{id:`impressoes`,name:`Impressões e cópias`,short:`Impressões e cópias`,image:n+t.impressoes,alt:`Arte R&N Gráfica com folhas, fotografia, adesivos e papéis coloridos.`,description:`Do documento do dia a dia à impressão que pede um toque especial.`,icon:`print`},{id:`plastificacao`,name:`Plastificação`,short:`Plastificação`,image:n+t.plastificacao,alt:`Arte R&N Gráfica com plastificadora e amostras de documentos plastificados.`,description:`Proteção e acabamento para documentos e folhas inteiras.`,icon:`shield`},{id:`documentos`,name:`Papelaria e documentos`,short:`Papelaria e documentos`,image:n+t.documentos,alt:`Arte R&N Gráfica com cartões de visita, talão de recibos e documentos.`,description:`Materiais para apresentar sua marca e organizar sua rotina.`,icon:`document`},{id:`comunicacao`,name:`Comunicação visual`,short:`Comunicação visual`,image:n+t.comunicacao,alt:`Arte R&N Gráfica com banner e cartaz A4 personalizados.`,description:`Sua mensagem em destaque, na medida do seu projeto.`,icon:`banner`},{id:`agendamentos`,name:`Agendamentos`,short:`Agendamentos`,image:n+t.agendamentos,alt:`Arte R&N Gráfica com agenda, pasta e cartão de agendamento.`,description:`Apoio para agendar os atendimentos de que você precisa.`,icon:`calendar`,note:`Agendamentos sujeitos à disponibilidade do órgão responsável.`},{id:`personalizados`,name:`Personalizados e estampas`,short:`Personalizados e estampas`,image:n+t.personalizados,alt:`Arte R&N Gráfica com caneca, camisas estampadas e transferências DTF.`,description:`Sua identidade em peças para usar, presentear ou divulgar.`,icon:`shirt`}],i=[{id:`oficio`,category:`impressoes`,name:`Impressões e xerox em papel ofício`,description:`Impressões e xerox em preto e branco ou coloridas no Pacheco, Jaboatão dos Guararapes. Cópias de documentos e trabalhos em papel ofício; informe a quantidade de folhas.`,unit:`folhas`,details:[`Imprimimos arquivos e fazemos cópias de documentos, atividades, trabalhos escolares e outros materiais em papel ofício.`,`Informe se deseja preto e branco ou colorido, o número de páginas, a quantidade de cópias e se precisa de frente e verso.`,`Envie o arquivo ou informe o documento a copiar. Confirme o formato e o prazo antes da produção.`]},{id:`fotografico`,category:`impressoes`,name:`Impressões em papel fotográfico`,description:`Impressão de fotos e imagens em papel fotográfico em Jaboatão dos Guararapes. Consulte tamanhos, acabamento e quantidade.`,unit:`folhas`,details:[`Impressão de fotografias, lembranças e imagens em papel fotográfico, conforme os formatos disponíveis.`,`Informe o tamanho, a quantidade e se prefere a imagem com ou sem bordas.`,`Envie a foto em boa qualidade; imagens pequenas ou desfocadas podem limitar o resultado.`]},{id:`adesivo`,category:`impressoes`,name:`Impressões em papel adesivo`,description:`Impressão em papel adesivo para etiquetas, identificação, embalagens e lembrancinhas no Pacheco. Consulte tamanhos e quantidades.`,unit:`folhas`,details:[`Impressão em papel adesivo para etiquetas, lembrancinhas, identificação e personalização de embalagens.`,`Informe as medidas de cada adesivo, a quantidade e se precisa de recorte.`,`Envie sua arte ou explique o modelo desejado. Confirme o material e o acabamento disponíveis.`]},{id:`cartao`,category:`impressoes`,name:`Impressões em papel-cartão`,description:`Impressões em papel-cartão para convites, capas e materiais que precisam de maior firmeza. Atendimento em Jaboatão dos Guararapes.`,unit:`folhas`,details:[`Impressão em papel-cartão, indicado para peças que pedem maior firmeza do que o papel comum.`,`Informe o tamanho, a quantidade e a finalidade, como cartões, capas ou lembrancinhas.`,`Envie a arte ou solicite orientação para preparar o arquivo.`]},{id:`plastificacao-documentos`,category:`plastificacao`,name:`Plastificação de documentos`,description:`Plastificação de documentos no Pacheco, Jaboatão dos Guararapes. Consulte os formatos aceitos e a adequação do documento.`,unit:`documentos`,details:[`Plastificação para proteger documentos contra manuseio frequente e respingos.`,`Informe o tipo de documento, suas medidas e a quantidade.`,`Consulte antes de plastificar documentos oficiais ou materiais sensíveis, pois alguns não devem ser plastificados.`]},{id:`plastificacao-a4`,category:`plastificacao`,name:`Plastificação de folhas A4 inteiras`,description:`Plastificação de folhas A4 inteiras para proteger avisos, materiais escolares e impressos. Consulte quantidade e disponibilidade.`,unit:`folhas`,details:[`Plastificação de folhas inteiras no formato A4, útil para avisos, cardápios e materiais de consulta.`,`Informe quantas folhas deseja plastificar e se estão impressas ou precisam ser impressas.`,`A plastificação acrescenta uma camada protetora; confirme a espessura e o acabamento disponíveis.`]},{id:`cartoes-visita`,category:`documentos`,name:`Cartões de visita`,description:`Cartões de visita personalizados em Jaboatão dos Guararapes para profissionais e pequenos negócios. Informe quantidade e se já possui a arte.`,unit:`unidades`,details:[`Cartões de visita para divulgar seu nome, contato, profissão ou negócio.`,`Informe a quantidade, se deseja impressão em uma ou duas faces e se já possui a arte.`,`Envie logotipo, telefone e demais dados que devem aparecer no cartão.`]},{id:`recibos`,category:`documentos`,name:`Talões de recibos de aluguel`,description:`Impressão de talões de recibos de aluguel com 50 a 100 folhas por talão. Solicite orçamento no Pacheco informando a quantidade.`,unit:`talões`,receipt:!0,details:[`Talões de recibos de aluguel para registrar pagamentos e organizar comprovantes.`,`Informe quantos talões deseja e escolha entre 50 e 100 folhas por talão.`,`Confirme os campos necessários, como nome, valor, referência e data, antes de imprimir.`]},{id:`contratos`,category:`documentos`,name:`Contratos de aluguel`,description:`Impressão e preparação de contratos de aluguel a partir dos dados fornecidos pelo cliente. Consulte as informações necessárias.`,unit:`documentos`,details:[`Serviço de preparação e impressão de contratos de aluguel a partir das informações fornecidas.`,`Informe a quantidade de vias e se já possui um modelo ou arquivo.`,`Confira cuidadosamente os dados e as cláusulas. A gráfica não substitui orientação jurídica.`]},{id:`residencia`,category:`documentos`,name:`Declarações de residência`,description:`Impressão e preparação de declarações de residência conforme os dados informados pelo cliente. Consulte o atendimento.`,unit:`documentos`,details:[`Preparação e impressão de declarações de residência com os dados informados pelo solicitante.`,`Informe o nome completo, endereço e demais informações exigidas pelo destinatário.`,`Confira os dados antes da impressão; a aceitação do documento depende do órgão ou instituição.`]},{id:`cartazes`,category:`comunicacao`,name:`Cartazes A4`,description:`Impressão de cartazes A4 para avisos, promoções e divulgação de comércios em Jaboatão dos Guararapes. Consulte papel e quantidade.`,unit:`unidades`,details:[`Cartazes em tamanho A4 para divulgar avisos, eventos, promoções e informações.`,`Informe a quantidade e se deseja impressão colorida ou em preto e branco.`,`Envie o texto e as imagens ou a arte pronta. Consulte as opções de papel.`]},{id:`banners`,category:`comunicacao`,name:`Banners`,description:`Impressão de banners em lona para lojas, eventos, festas e promoções no Pacheco, Jaboatão dos Guararapes. Informe medidas e acabamento.`,unit:`unidades`,details:[`Banners para divulgação de negócios, eventos, campanhas e sinalização.`,`Informe largura, altura, quantidade e onde o banner será utilizado.`,`Envie a arte ou solicite criação. Consulte material, acabamento e forma de instalação disponíveis.`]},{id:`cras`,category:`agendamentos`,name:`Agendamento no CRAS`,description:`Apoio para consultar e solicitar agendamento no CRAS. Vagas e condições dependem do órgão responsável; consulte antes.`,unit:`atendimentos`,details:[`Auxílio para consultar e solicitar agendamento de atendimento no CRAS, conforme o sistema disponível.`,`Informe qual atendimento procura e os dados necessários ao procedimento.`,`A disponibilidade de vagas e a confirmação do atendimento dependem do órgão responsável.`]},{id:`identidade`,category:`agendamentos`,name:`Agendamento para identidade`,description:`Apoio em agendamento para emissão de identidade em Pernambuco, sujeito às regras e vagas do órgão responsável.`,unit:`atendimentos`,details:[`Apoio para consultar e solicitar agendamento para emissão de documento de identidade.`,`Informe o tipo de atendimento desejado e os dados solicitados pelo sistema oficial.`,`Documentos exigidos, taxas, vagas e confirmação são definidos pelo órgão emissor.`]},{id:`eleitor`,category:`agendamentos`,name:`Agendamento para título de eleitor`,description:`Apoio em consulta de agendamento para serviços do título de eleitor. A disponibilidade depende do órgão eleitoral.`,unit:`atendimentos`,details:[`Auxílio para acessar os canais oficiais de atendimento relacionados ao título de eleitor.`,`Informe se precisa de orientação para agendamento ou outro atendimento disponível.`,`A realização do serviço e os requisitos dependem da Justiça Eleitoral.`]},{id:`canecas`,category:`personalizados`,name:`Canecas personalizadas`,description:`Canecas personalizadas com fotos, nomes ou mensagens para presentes e lembranças em Jaboatão dos Guararapes. Informe tema e quantidade.`,unit:`peças`,details:[`Canecas personalizadas com fotos, nomes, frases, logotipos e temas especiais.`,`Informe a quantidade, o tema e os elementos que deseja incluir.`,`Envie imagens em boa qualidade e confirme o modelo de caneca disponível antes da produção.`]},{id:`camisas`,category:`personalizados`,name:`Camisas personalizadas`,description:`Camisas personalizadas para equipes, eventos e presentes no Pacheco. Informe tamanhos, quantidade e tipo de estampa.`,unit:`peças`,details:[`Camisas personalizadas para equipes, eventos, presentes e divulgação de marcas.`,`Informe quantidade, tamanhos, cores e local da estampa.`,`Envie a arte ou descreva a ideia. Consulte modelos de tecido e técnicas disponíveis.`]},{id:`estampas`,category:`personalizados`,name:`Estampas personalizadas`,description:`Estampas personalizadas para camisetas e outras peças compatíveis. Envie a arte, as medidas e a quantidade desejada.`,unit:`peças`,details:[`Criação ou aplicação de estampas personalizadas conforme o tipo de peça e o projeto.`,`Informe as medidas da estampa, as cores e o material em que será aplicada.`,`Envie a arte e consulte a técnica de impressão mais adequada para sua peça.`]},{id:`sublimacao`,category:`personalizados`,name:`Sublimação total`,description:`Sublimação total em peças compatíveis para uniformes e projetos personalizados. Consulte tecido, modelo, tamanhos e quantidade.`,unit:`peças`,details:[`Personalização com sublimação em peças e materiais compatíveis com essa técnica.`,`Informe o tipo de peça, dimensões da área de estampa e quantidade.`,`A compatibilidade depende do material. Consulte as opções e os limites de impressão antes de encomendar.`]},{id:`dtf`,category:`personalizados`,name:`Estampas em DTF`,description:`Estampas em DTF para camisetas e peças compatíveis, com detalhes e cores conforme a arte. Informe medidas e quantidade.`,unit:`unidades`,details:[`Estampas em DTF para aplicações compatíveis, conforme as opções de produção disponíveis.`,`Informe largura, altura, quantidade e características da arte.`,`Envie o arquivo em boa qualidade e confirme as orientações de aplicação e conservação.`]}],a=`Peça um orçamento informando a quantidade de peças ou o serviço desejado. Tire suas dúvidas pelo nosso WhatsApp.`,o=`<h3>Calculadoras e armazenamento neste navegador</h3><p>As calculadoras processam os valores no navegador e podem salvar configurações e cadastros de produtos, materiais, custos e preços no armazenamento local deste dispositivo. Esses cadastros não são enviados automaticamente à gráfica nem sincronizados entre dispositivos. Quem usa o mesmo perfil de navegador pode acessar os dados locais. É possível exportar ou importar um arquivo JSON para transferi-los; a importação substitui os cadastros atuais após confirmação. Limpar os dados do site no navegador pode apagar essas informações. Ao abrir o WhatsApp, aplicam-se também as condições de atendimento descritas nesta política.</p>`;function s(e,t){let n=`https://wa.me/${e.whatsapp}`,r=`<a href="${n}" target="_blank" rel="noopener noreferrer">WhatsApp: (81) 99609-0928</a>`,i=`<div class="article-callout"><h2>Vamos conversar sobre seu projeto?</h2><p>Informe o produto ou serviço, a quantidade e os detalhes que já tiver. Valor, prazo e disponibilidade serão confirmados no atendimento.</p><a class="button button-dark" href="${n}" target="_blank" rel="noopener noreferrer">Pedir informações pelo WhatsApp</a></div>`;return[{slug:`sobre`,title:`Sobre`,label:`Sobre a R&N`,type:`institutional`,description:`Conheça os produtos, os serviços e o atendimento da R&N Gráfica Rápida.`,body:`<p class="article-lead">Ideias que ganham forma em impressões e personalizados.</p>
+<p>Na R&amp;N Gráfica Rápida, ajudamos você a transformar arquivos e ideias em materiais impressos e personalizados. Trabalhamos com impressões, cópias, encadernações, banners, adesivos e outros produtos personalizados, com orientação sobre formatos, materiais e acabamentos.</p>
+<p>Também disponibilizamos guias e ferramentas online para ajudar na preparação de imagens e documentos. Alguns serviços são realizados por parceiros terceirizados; consulte a disponibilidade antes de fazer seu pedido.</p>
+<h2>Onde estamos</h2><p><strong>Rua Professor Joaquim Amazonas, nº 18, bairro Pacheco, Jaboatão dos Guararapes – PE.</strong> Ponto de referência: em frente ao Terminal de Ônibus do Pacheco.</p>
+<h2>Retirada e entrega</h2><p>Você pode retirar seu pedido na gráfica ou autorizar a retirada por um entregador de sua confiança, mediante combinação prévia. Para pedidos de grande volume, consulte pelo WhatsApp os preços, prazos e condições de retirada ou entrega.</p>
+<h2>Pagamentos e condições</h2><p>Aceitamos dinheiro, Pix e cartões de crédito e débito. Consulte os descontos e as condições disponíveis para seu pedido.</p>
+<h2>Como pedir um orçamento</h2><p>Informe o serviço desejado, quantidade, tamanho e prazo. Se já tiver a arte ou o arquivo, envie pelo WhatsApp. Valores, materiais e disponibilidade serão confirmados no atendimento.</p>
+<h2>Imagens do site</h2><p>As imagens apresentadas no site são ilustrativas e mostram exemplos de processos e produtos gráficos. Não são fotografias da loja, da equipe ou de encomendas entregues.</p>
+<h2>Venha nos conhecer</h2><p>Será um prazer atender você! Nosso contato é ${r}.</p>${i}`},{slug:`contato`,title:`Contato`,label:`Contato`,type:`institutional`,description:`Peça um orçamento ou esclareça dúvidas com a R&N Gráfica Rápida pelo WhatsApp.`,body:`<p class="article-lead">Seu próximo pedido começa com uma conversa.</p><p>Peça um orçamento informando a quantidade de peças ou o serviço desejado. Tire suas dúvidas pelo nosso WhatsApp.</p><p class="contact-page-number">${r}</p>
+<h2>O que informar no primeiro contato</h2><ul><li>O produto ou serviço que você deseja.</li><li>A quantidade de peças, folhas, documentos, talões ou atendimentos.</li><li>O tamanho ou formato, quando houver.</li><li>Se você já tem uma arte ou um modelo.</li><li>A data em que pretende usar o material, para consultar a disponibilidade.</li></ul>
+<p>Para talões de recibos de aluguel, informe quantos talões deseja e se cada um terá 50, 75, 100 ou outra quantidade inteira entre 50 e 100 folhas.</p>
+<h2>Antes de confirmar o pedido</h2><p>Valores, prazos e detalhes de produção ou atendimento são combinados na conversa. O formulário do site prepara uma mensagem; ele não realiza pagamento nem confirma uma reserva automaticamente.</p><p>Para apoio em agendamentos no CRAS, para identidade ou para título de eleitor, consulte primeiro as informações necessárias. A disponibilidade de vagas depende do órgão responsável.</p>
+<h2>Pedidos sobre privacidade</h2><p>Use o mesmo WhatsApp para perguntar sobre o tratamento de informações relacionadas ao seu atendimento ou solicitar a análise de um pedido de acesso, correção ou exclusão, conforme aplicável.</p>${i}`},{slug:`privacidade`,title:`Privacidade`,label:`Privacidade`,type:`institutional`,description:`Saiba como o formulário, o WhatsApp, o Blogger e serviços do Google podem tratar informações neste site.`,body:`<p class="article-lead">Política de privacidade da R&amp;N Gráfica Rápida.</p><p class="article-update">Texto atualizado em 23 de outubro de 2026.</p>
+<p>Esta política explica como informações podem ser tratadas durante o uso do site e do atendimento da R&amp;N Gráfica Rápida. Para dúvidas ou solicitações relacionadas a dados pessoais, entre em contato pelo ${r}.</p>
+<h2>1. Informações do orçamento</h2><p>O formulário pode receber seu nome, o serviço desejado, a quantidade, o formato e os detalhes que você escolher informar. Esses campos são usados para preparar o resumo do pedido no seu navegador. O formulário não oferece envio de arquivos nem pagamento pelo site.</p><p>Ao solicitar a abertura da conversa, o conteúdo do resumo é incluído no endereço direcionado ao WhatsApp. O envio da mensagem à gráfica depende da sua confirmação no aplicativo. O WhatsApp e os serviços usados para abrir a conversa podem tratar informações conforme suas próprias políticas.</p><p>Se você enviar documentos, imagens ou outros dados durante a conversa, essas informações passam a fazer parte do atendimento. Envie somente o necessário para o serviço e consulte a gráfica antes de encaminhar documentos pessoais.</p>
+${o}
+<h2>2. Finalidades do atendimento</h2><p>As informações recebidas pela gráfica são utilizadas para responder a dúvidas, preparar orçamentos, combinar os detalhes de um pedido, realizar o atendimento solicitado e cumprir obrigações aplicáveis. Dados necessários ao atendimento podem ser tratados em medidas anteriores a uma contratação, a seu pedido, e na execução do serviço contratado. Quando o consentimento for a base aplicável, ele deverá ser solicitado de forma adequada.</p>
+<h2>3. Hospedagem e recursos de terceiros</h2><p>O site é hospedado no Blogger, serviço do Google. A hospedagem pode tratar dados técnicos, como endereço IP, informações do navegador e registros de acesso. As ilustrações são carregadas de um repositório público no GitHub, que também recebe as requisições necessárias à entrega dessas imagens. As fontes do tema são incluídas no próprio arquivo do site.</p><p>Ao abrir links externos, você passa a utilizar serviços de terceiros. Consulte também as políticas desses serviços: <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener noreferrer">Google</a>, <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">WhatsApp</a> e <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+<h2>4. Cookies e publicidade</h2><p>O Blogger e os serviços do Google podem utilizar cookies e tecnologias semelhantes para funcionamento, segurança e, quando configurada, publicidade. Quando anúncios do Google AdSense estiverem ativos, o Google e seus parceiros poderão usar cookies, identificadores e informações de visitas a este ou a outros sites para selecionar e medir anúncios, conforme as configurações e regras aplicáveis.</p><p>A publicidade, quando ativa, é administrada por recursos do Google. As opções de privacidade relacionadas aos anúncios são geridas pelas ferramentas desses serviços e pelas configurações do navegador.</p><p>Você pode consultar <a href="https://policies.google.com/technologies/ads?hl=pt-BR" target="_blank" rel="noopener noreferrer">como o Google utiliza informações em publicidade</a> e gerenciar opções na <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Minha central de anúncios</a>. Seu navegador também permite controlar cookies; bloquear alguns deles pode afetar recursos de sites e serviços. Onde houver exigência de consentimento, os recursos publicitários precisam respeitar as escolhas apresentadas ao visitante pelas ferramentas configuradas para esse fim.</p>
+<h2>5. Compartilhamento e conservação</h2><p>O funcionamento descrito envolve o Blogger/Google, o GitHub e, quando você abre uma conversa, o WhatsApp. A gráfica utiliza as informações de atendimento para as finalidades informadas nesta política. A conservação depende da necessidade do atendimento, do serviço contratado e de obrigações legais aplicáveis. Para informações sobre um pedido específico, solicite esclarecimentos pelo WhatsApp.</p>
+<h2>6. Seus direitos e escolhas</h2><p>Conforme a legislação aplicável, você pode solicitar informações sobre o tratamento dos seus dados, acesso, correção e análise de exclusão, além de outras providências cabíveis. Quando o tratamento depender de consentimento, você também pode solicitar sua revogação. Algumas informações podem precisar ser mantidas por obrigação legal ou para exercício de direitos.</p><p>Encaminhe sua solicitação pelo ${r}, explicando a relação com o atendimento. Não publique documentos pessoais em áreas abertas do site. A gráfica poderá precisar confirmar informações para analisar o pedido de forma adequada.</p>
+<h2>7. Alterações desta política</h2><p>Esta política poderá ser atualizada para acompanhar mudanças no site, no atendimento e nos serviços utilizados. Confira a data de atualização no início desta página e entre em contato se tiver dúvidas.</p>`},{slug:`como-escolher-o-papel`,title:`Como escolher o papel`,label:`Como escolher o papel`,type:`guide`,image:t.impressoes,description:`Entenda quando considerar papel ofício, fotográfico, adesivo e papel-cartão antes de pedir sua impressão.`,body:`<p class="article-lead">O papel influencia a aparência, o uso e o acabamento do impresso. A escolha começa pela finalidade do material, não apenas pelo nome do papel.</p>
+<h2>Comece pelo que você pretende fazer</h2><p>Um documento para leitura, uma fotografia, uma etiqueta e um cartão precisam cumprir funções diferentes. Antes de pedir a impressão, pense em quem vai usar o material, se ele será manuseado com frequência e se precisa ser colado, protegido ou apresentado como parte de uma marca.</p><p>Na R&amp;N, você pode consultar impressões e xerox em papel ofício, impressões em papel fotográfico, em papel adesivo e em papel-cartão. A disponibilidade do material e sua compatibilidade com o trabalho são confirmadas no atendimento.</p>
+<h2>Papel ofício para documentos e cópias</h2><p>Para textos, formulários, declarações e materiais de consulta, o ponto de partida costuma ser um papel apropriado à leitura e à escrita. Informe a quantidade de páginas e de cópias de cada página: imprimir um documento de quatro páginas duas vezes é diferente de pedir duas folhas.</p><p>Confirme também o formato. A4 e ofício são nomes de formatos diferentes; evite supor que o arquivo será impresso no tamanho correto sem conferir as medidas. O A4 mede 210 × 297 mm. Se precisar de outro formato, informe a medida desejada e consulte as opções.</p>
+<h2>Papel fotográfico para fotos e imagens</h2><p>Quando a imagem é o foco, consulte as opções de papel fotográfico. Envie o arquivo original com a melhor qualidade disponível e explique o tamanho final. Uma imagem que parece nítida na tela do celular pode perder definição ao ser ampliada.</p><p>Observe o enquadramento: a proporção da foto e a proporção do papel podem ser diferentes. Combine se prefere cortar parte da imagem ou manter a composição com margens. O acabamento e a aparência das cores devem ser alinhados antes da produção.</p>
+<h2>Papel adesivo para identificação e personalização</h2><p>Para etiquetas e identificação, o papel adesivo reúne a impressão e a possibilidade de aplicação em uma superfície. Informe as medidas de cada etiqueta, quantas unidades deseja e onde pretende aplicá-las.</p><p>Não presuma resistência à água, ao calor ou à exposição externa sem consultar o material. A superfície, a umidade e a forma de uso podem afetar o resultado. Esses detalhes ajudam a verificar se a opção disponível atende ao seu projeto.</p>
+<h2>Papel-cartão para impressos mais encorpados</h2><p>O papel-cartão pode ser considerado quando o trabalho pede mais estrutura. A espessura, a gramatura e o acabamento influenciam o manuseio, a dobra e a apresentação. Explique a finalidade do impresso e consulte a compatibilidade do papel com a impressão desejada.</p><p>Para cartões de visita, por exemplo, o tamanho do texto e a organização das informações também fazem diferença. Um papel mais encorpado não compensa uma arte com letras pequenas ou contato difícil de localizar.</p>
+<h2>O que mandar para pedir um orçamento</h2><ul><li>Produto ou finalidade do material.</li><li>Quantidade de folhas ou unidades e número de cópias por página.</li><li>Formato ou medidas finais.</li><li>Arquivo original, se já estiver pronto.</li><li>Dúvidas sobre acabamento e modo de uso.</li></ul><p>Se ainda não souber qual papel escolher, descreva a finalidade do material pelo WhatsApp. A escolha pode ser alinhada antes de confirmar o pedido.</p>${i}`},{slug:`como-preparar-sua-arte`,title:`Como preparar sua arte`,label:`Como preparar sua arte`,type:`guide`,image:t.documentos,description:`Confira tamanho, legibilidade, qualidade de imagens e quantidades antes de enviar um arquivo para impressão.`,body:`<p class="article-lead">Conferir o arquivo antes de enviar ajuda a evitar informações incorretas, cortes indesejados e dúvidas sobre a quantidade.</p>
+<h2>Defina o produto e a medida final</h2><p>Antes de montar a arte, saiba se ela será usada em um cartaz A4, em um cartão de visita, em uma etiqueta ou em outro material. O tamanho da tela em que você está desenhando não representa necessariamente o tamanho da impressão.</p><p>Um cartaz A4 tem 210 × 297 mm. Para cartões, adesivos e banners, confirme as medidas pretendidas com a gráfica. Se o trabalho exigir corte ou outro acabamento, consulte também as orientações sobre margens e sangria antes de finalizar o arquivo.</p>
+<h2>Confira os textos em uma leitura separada</h2><p>Leia nomes, números de telefone, datas, endereços e valores sem se concentrar nas imagens. É comum reconhecer uma arte visualmente e deixar passar um dígito ou um acento. Compare os dados com a fonte original e peça uma segunda leitura quando possível.</p><p>Em cartões e anúncios pequenos, priorize as informações essenciais. Letras finas, textos muito pequenos e pouco contraste podem prejudicar a leitura. Visualize a arte no tamanho aproximado em que será utilizada, não apenas ampliada na tela.</p>
+<h2>Use imagens com qualidade suficiente</h2><p>Sempre que possível, envie a fotografia ou a ilustração original. Capturas de tela e imagens recebidas repetidamente por aplicativos podem ter menos detalhes do que o arquivo inicial. Ampliar uma imagem pequena não cria a informação que falta.</p><p>Para muitos impressos vistos de perto, uma referência comum é preparar imagens em torno de 300 pixels por polegada no tamanho final. Essa orientação depende do material e da distância de visualização. Alterar apenas o número de resolução do arquivo não recupera uma foto sem nitidez.</p>
+<h2>Envie um arquivo que preserve o layout</h2><p>Um PDF pode ajudar a preservar a disposição dos elementos e, quando exportado adequadamente, incorporar as fontes. Fotografias podem ser enviadas em um formato de imagem compatível com o atendimento. Confirme o formato recomendado para seu trabalho antes de fechar o arquivo.</p><p>Verifique se a exportação inclui todas as páginas, se imagens e logotipos aparecem corretamente e se nenhuma informação saiu da margem. Se a arte tiver frente e verso, identifique qual arquivo corresponde a cada lado.</p>
+<h2>Explique a quantidade sem ambiguidade</h2><p>Informe a quantidade de peças e, quando necessário, a quantidade de páginas de cada peça. Para talões de recibos de aluguel, separe os dois números: por exemplo, três talões de 50 folhas correspondem a 150 folhas no total. Os talões disponíveis no catálogo têm de 50 a 100 folhas por talão.</p><p>Se estiver pedindo cópias de vários documentos, explique quantas cópias deseja de cada um. Isso evita confundir o número de arquivos enviados com o número de impressos solicitados.</p>
+<h2>Faça uma última conferência</h2><ul><li>Produto, tamanho e quantidade estão definidos?</li><li>Nome, telefone, datas e demais informações foram revisados?</li><li>As imagens mantêm nitidez no tamanho final?</li><li>Todos os lados e páginas necessários estão no arquivo?</li><li>Há alguma dúvida sobre margens, acabamento ou formato?</li></ul><p>Se algum item ainda não estiver definido, explique isso na conversa. É melhor alinhar a dúvida antes da produção do que supor uma configuração que talvez não corresponda ao seu pedido.</p>${i}`},{slug:`sublimacao-e-dtf`,title:`Sublimação e DTF`,label:`Sublimação e DTF`,type:`guide`,image:t.personalizados,description:`Conheça diferenças entre sublimação e DTF e saiba quais informações ajudam a escolher a personalização.`,body:`<p class="article-lead">A arte é importante, mas o material da peça também participa da escolha da técnica. Sublimação e DTF funcionam de formas diferentes.</p>
+<h2>O que considerar primeiro</h2><p>Antes de escolher pela aparência de uma imagem, informe o tipo de peça, a composição do material, a cor, a quantidade e o uso pretendido. Uma solução adequada a uma camisa pode não ser a mesma de uma caneca.</p><p>O catálogo da R&amp;N inclui canecas e camisas personalizadas, estampas, sublimação total e estampas em DTF. As opções de aplicação, os modelos e a disponibilidade são confirmados no atendimento.</p>
+<h2>Como funciona a sublimação</h2><p>Na sublimação, a impressão é transferida com calor para um material compatível. Em tecidos, a presença de poliéster tem papel importante no resultado; em objetos, pode ser necessário um revestimento desenvolvido para essa aplicação.</p><p>Em geral, tecidos brancos ou claros favorecem a reprodução das cores pela sublimação. A cor de fundo e a composição da peça podem alterar a aparência da arte. Por isso, não basta escolher uma estampa: é preciso verificar se a peça é apropriada à técnica.</p>
+<h2>Por que a caneca precisa ser adequada</h2><p>Uma caneca destinada à sublimação normalmente possui um revestimento próprio para receber a transferência. Isso não significa que qualquer caneca disponível em casa possa ser personalizada pelo mesmo processo.</p><p>Ao pedir o orçamento, informe quantas canecas deseja, o tema, se haverá nomes diferentes e se já tem uma arte. Consulte os modelos disponíveis e as recomendações de uso e limpeza da peça escolhida.</p>
+<h2>O que significa sublimação total</h2><p>A sublimação total permite trabalhar a estampa em uma área ampla da peça, em vez de limitar a composição a um pequeno desenho central. O planejamento precisa considerar o modelo, os tamanhos e a posição dos elementos.</p><p>Costuras, recortes e montagem podem influenciar o encontro de linhas e desenhos. Para uma identidade visual mais organizada, destaque os elementos essenciais e converse sobre as possibilidades do modelo antes de finalizar a arte.</p>
+<h2>Como o DTF se diferencia</h2><p>No DTF, a estampa é preparada em um filme de transferência e aplicada com calor. A técnica pode atender a diferentes composições e cores de tecidos, conforme a compatibilidade do material e do processo utilizado.</p><p>O toque da área estampada e o comportamento da peça podem ser diferentes dos de um tecido sublimado. Informe a área e as medidas da estampa, o material da peça e a quantidade. Não trate a indicação de uma técnica como garantia de aplicação em qualquer superfície.</p>
+<h2>Como pedir um orçamento mais claro</h2><ul><li>Diga se precisa de caneca, camisa ou outro tipo de estampa.</li><li>Informe a quantidade, os tamanhos e as cores das peças.</li><li>Envie a arte original, caso já tenha.</li><li>Explique a área que deseja personalizar e o uso pretendido.</li><li>Se não souber a composição do material ou a melhor técnica, informe a dúvida.</li></ul><p>Depois de escolher a peça, siga as orientações específicas de conservação. Em roupas estampadas, consulte cuidados com lavagem, alvejantes e aplicação de calor sobre a estampa. Essas recomendações dependem do material e da técnica utilizados.</p>${i}`},{slug:`como-calcular-tamanho-banner`,title:`Como calcular o tamanho de um banner`,label:`Medidas de banners`,type:`guide`,image:t.comunicacao,description:`Aprenda a converter centímetros em metros, calcular a área em metros quadrados e preparar as informações de um banner para orçamento.`,body:`<p class="article-lead">Antes de encomendar um banner, vale conferir largura, altura, posição da arte e acabamento. Entender as medidas ajuda a evitar cortes e facilita a comparação de orçamentos.</p>
+<h2>1. Meça a largura e a altura</h2><p>Use uma fita métrica no local onde a peça ficará instalada. Anote as duas dimensões em centímetros e informe se o banner será vertical ou horizontal. Por exemplo, um banner de 80 × 150 cm tem 80 cm de largura e 150 cm de altura quando colocado na vertical.</p><p>Não confunda o espaço disponível com a medida final da impressão. Se a peça ficará dentro de uma estrutura ou perto de portas, verifique folgas e possíveis obstáculos antes de definir o tamanho.</p>
+<h2>2. Converta centímetros em metros</h2><p>Para converter centímetros em metros, divida cada medida por 100. Assim, 80 cm = 0,80 m e 150 cm = 1,50 m. Essa conversão é importante porque materiais de comunicação visual costumam ser orçados por metro quadrado.</p>
+<h2>3. Calcule a área em metros quadrados</h2><p>Multiplique a largura em metros pela altura em metros. No exemplo de 80 × 150 cm, a conta é 0,80 × 1,50 = <strong>1,20 m²</strong>. Já uma peça de 60 × 60 cm mede 0,60 × 0,60 = <strong>0,36 m²</strong>.</p><p>A área calculada não é necessariamente a área mínima cobrada. Algumas gráficas trabalham com cobrança mínima de produção, mesmo quando a peça tem menos de 1 m². Confirme a regra de orçamento antes de comparar preços.</p>
+<h2>4. Planeje a leitura a distância</h2><p>Uma arte vista de longe precisa priorizar o texto principal. Use contraste entre fundo e letras, evite colocar informações essenciais muito perto das bordas e prefira fotografias com resolução suficiente para o tamanho final. O que parece legível na tela do celular pode ficar pequeno em uma impressão grande.</p><p>Para eventos, destaque primeiro o assunto, depois data, horário e local. Para divulgação comercial, priorize nome do negócio, serviço e forma de contato. Um QR Code pode complementar o banner, mas não deve substituir informações essenciais que precisam ser lidas rapidamente.</p>
+<h2>5. Combine o acabamento antes da impressão</h2><p>Informe onde a peça será instalada: parede, grade, estrutura, balcão ou ambiente externo. Pergunte sobre opções como ilhós, reforço de borda ou acabamento para suporte, conforme a disponibilidade. O tipo de fixação pode exigir cuidados adicionais no posicionamento da arte.</p>
+<h2>Checklist antes de pedir</h2><ul><li>Medidas finais de largura e altura, com unidade em centímetros.</li><li>Orientação vertical ou horizontal.</li><li>Local de instalação e necessidade de acabamento.</li><li>Quantidade de banners.</li><li>Arquivo da arte ou informações necessárias para criá-la.</li><li>Data prevista de utilização.</li></ul><p>Na R&amp;N Gráfica Rápida, o orçamento é confirmado no atendimento conforme as características do pedido. O cálculo de área ajuda no planejamento, mas não substitui a conferência de material, acabamento e prazo.</p>${i}`},{slug:`preparar-fotos-impressao`,title:`Como preparar fotos para impressão`,label:`Impressão de fotografias`,type:`guide`,image:t.impressoes,description:`Entenda resolução, proporção, corte e cuidados para imprimir fotos sem perder detalhes importantes.`,body:`<p class="article-lead">Uma foto bonita no celular nem sempre fica igual no papel. Antes de imprimir, vale conferir o tamanho, a proporção da imagem e a qualidade do arquivo original.</p>
+<h2>Escolha o tamanho final</h2><p>Defina se deseja uma fotografia de 10 × 15 cm, uma composição em folha A4 ou outra medida. O formato escolhido influencia o enquadramento: uma imagem quadrada não ocupa automaticamente um retângulo de 10 × 15 cm sem deixar bordas ou sofrer algum corte.</p>
+<h2>Entenda a diferença entre pixels e centímetros</h2><p>Pixels são os pequenos pontos que formam a imagem digital. Centímetros indicam o tamanho físico do papel. Para estimar a resolução de impressão, divida a quantidade de pixels pela dimensão em polegadas. Uma fotografia de 1200 × 1800 pixels, por exemplo, pode atingir aproximadamente 300 pixels por polegada em 10 × 15 cm.</p><p>O número de pixels não garante sozinho uma imagem nítida. Fotos tremidas, desfocadas, muito comprimidas ou ampliadas artificialmente podem continuar com poucos detalhes mesmo após aumentar a resolução do arquivo.</p>
+<h2>Evite cortes inesperados</h2><p>Ao preencher completamente o papel, parte das bordas pode ser cortada para ajustar a proporção. Se houver pessoas, textos ou objetos importantes perto das extremidades, peça para preservar o enquadramento, mesmo que isso deixe margens. Fotografias com rostos merecem atenção especial para não cortar cabelo, queixo ou ombros.</p>
+<h2>Brilho e cores no papel</h2><p>Telas emitem luz; o papel reflete a iluminação do ambiente. Por isso, uma fotografia pode parecer mais clara e vibrante no celular do que na impressão. Evite filtros muito fortes e verifique se áreas claras ou escuras ainda preservam detalhes.</p><p>Também há diferenças entre papéis comuns e fotográficos, e entre acabamentos brilhantes e foscos. A escolha depende do uso da fotografia e da disponibilidade do material.</p>
+<h2>Envie o melhor arquivo disponível</h2><p>Prefira o arquivo original da câmera ou do celular. Capturas de tela, imagens reenviadas muitas vezes por aplicativos e fotos retiradas de miniaturas podem perder definição. Se a fotografia for antiga e precisar de restauração, informe quais marcas e detalhes devem ser preservados.</p>
+<h2>Conferência final</h2><ul><li>Qual é o tamanho desejado em centímetros?</li><li>Você prefere preencher o papel ou preservar a foto inteira com margens?</li><li>O arquivo original está disponível?</li><li>Há algum rosto ou texto perto das bordas?</li><li>Quantas cópias são necessárias?</li></ul><p>Na R&amp;N Gráfica Rápida, o tipo de papel, o tamanho, a quantidade e a possibilidade de ajustes são confirmados no atendimento antes da produção.</p>${i}`},{slug:`adesivo-papel-ou-vinil`,title:`Adesivo de papel ou de vinil: qual escolher?`,label:`Tipos de adesivos`,type:`guide`,image:t.impressoes,description:`Compare usos, limitações e cuidados de adesivos de papel e vinil antes de encomendar etiquetas.`,body:`<p class="article-lead">Adesivos podem servir para identificação, embalagens, brindes e divulgação. A escolha entre papel adesivo e vinil depende principalmente da superfície, do ambiente e do tempo de uso esperado.</p>
+<h2>Quando considerar o papel adesivo</h2><p>O papel adesivo costuma ser uma opção prática para etiquetas de uso interno, identificação de materiais e embalagens que permanecerão em ambientes secos. A aparência e a resistência variam conforme o tipo de papel e a impressão aplicada.</p><p>Contato frequente com água, atrito e exposição ao sol podem prejudicar etiquetas de papel. Por isso, não escolha o material apenas pelo preço: considere onde o adesivo será utilizado.</p>
+<h2>Quando considerar o vinil</h2><p>O vinil é um material plástico utilizado em diferentes tipos de adesivos. Dependendo da especificação, da tinta e da proteção aplicada, pode ser mais adequado a situações que exigem maior resistência à umidade e ao manuseio.</p><p>Isso não significa que todo adesivo de vinil seja automaticamente indicado para exposição prolongada ao tempo, lavagem ou calor. A durabilidade depende da combinação entre material, impressão, superfície e condições de uso.</p>
+<h2>Observe a superfície de aplicação</h2><p>Antes de encomendar, informe se o adesivo será colocado em papelão, plástico, vidro, metal ou outra superfície. Superfícies empoeiradas, oleosas, úmidas ou com textura podem dificultar a fixação. Alguns materiais também exigem adesivos específicos.</p>
+<h2>Como definir tamanho e formato</h2><p>Etiquetas retangulares podem aproveitar melhor a área da folha, mas círculos e formatos personalizados também são possíveis conforme o processo de corte. Informe as medidas em centímetros, a quantidade de unidades e se deseja bordas ou margens entre os desenhos.</p><p>Para uma etiqueta de 5 × 5 cm, por exemplo, o tamanho se refere à peça final. Se a arte tiver textos muito próximos da borda, pode ser necessário ajustar o layout para evitar perdas no corte.</p>
+<h2>Legibilidade e qualidade da arte</h2><p>Use letras com tamanho compatível com a etiqueta. Em adesivos pequenos, muitos detalhes e textos finos podem dificultar a leitura. Para logotipos, prefira arquivos originais ou vetoriais quando disponíveis; imagens pequenas retiradas da internet podem perder definição.</p>
+<h2>Antes de confirmar o pedido</h2><ul><li>Qual é o uso do adesivo?</li><li>Onde será aplicado e haverá contato com água ou sol?</li><li>Quais são largura, altura e formato desejados?</li><li>Quantas unidades serão necessárias?</li><li>A arte está pronta ou precisa de preparação?</li></ul><p>A R&amp;N Gráfica Rápida pode orientar sobre os materiais disponíveis e confirmar as características adequadas ao pedido. Sempre consulte as condições de aplicação e conservação do adesivo escolhido.</p>${i}`}]}var c=[...s(e,Object.fromEntries(r.map(e=>[e.id,e.image])))],l=c.filter(e=>e.type===`guide`),u=e=>c.find(t=>t.slug===e),d=()=>location.protocol===`file:`||!!window.__RN_PREVIEW__,f=()=>!!window.__RN_BLOGGER__&&!d()&&/^\/p\/[^/]+\.html$/.test(location.pathname),p={"adesivo-papel-ou-vinil":`adesivos-de-papel-ou-em-vinil`,"preparar-fotos-impressao":`como-preparar-fotos-para-impressao`,"como-calcular-tamanho-banner":`como-caucular-o-tamanho-do-banner`},m=e=>d()?`#pagina/${e}`:`/p/${p[e]||e}.html`,h=()=>{let e=location.hash.match(/^#pagina\/([a-z0-9-]+)$/),t=location.pathname.match(/^\/p\/([a-z0-9-]+)\.html$/),n=e?.[1]||t?.[1];return u(Object.keys(p).find(e=>p[e]===n)||n)};async function g(e,t=fetch,n=``){if(!/^\/p\/[^/]+\.html$/.test(e))throw Error(`Endereço de página inválido.`);let r=new AbortController,i=setTimeout(()=>r.abort(),1e4);try{let i=/^\d{1,30}$/.test(String(n)),a=await t(i?`/feeds/pages/default/${n}?alt=json`:`/feeds/pages/default?alt=json&max-results=150`,{credentials:`omit`,cache:`no-store`,signal:r.signal,headers:{Accept:`application/json`}});if(!a.ok)throw Error(`Não foi possível consultar as páginas públicas.`);let o=await a.json(),s=i?o.entry?[o.entry]:[]:o.feed?.entry;if(!Array.isArray(s))throw Error(`Nenhuma página pública encontrada.`);let c=s.find(t=>t.link?.some(t=>{if(t.rel!==`alternate`||!t.href)return!1;try{return new URL(t.href).pathname===e}catch{return!1}})),l=c?.title?.$t,u=c?.content?.$t;if(typeof l!=`string`||!l.trim()||typeof u!=`string`||!u.trim())throw Error(`Página sem conteúdo publicado.`);return{title:l,body:u}}finally{clearTimeout(i)}}var _={enabled:!1,client:``,slots:{home:``,article:``}};function v(e){return e.enabled===!0&&/^ca-pub-\d{16}$/.test(e.client)&&/^\d{6,20}$/.test(e.slots?.home||``)&&/^\d{6,20}$/.test(e.slots?.article||``)}function y(){if(!v(_)||location.protocol!==`https:`||window.__RN_PREVIEW__)return;let e=document.querySelector(`script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]`);if(e){let t=new URL(e.src,location.href).searchParams.get(`client`);if(t&&t!==_.client)return}let t=[...document.querySelectorAll(`[data-ad-position]`)].filter(e=>e.dataset.adEligible!==`false`&&!e.parentElement.closest(`[hidden]`));if(t.length&&(t.forEach(e=>{if(e.dataset.adInitialized)return;e.dataset.adInitialized=`true`,e.hidden=!1;let t=document.createElement(`ins`);t.className=`adsbygoogle`,t.style.display=`block`,t.dataset.adClient=_.client,t.dataset.adSlot=_.slots[e.dataset.adPosition],t.dataset.adFormat=`auto`,t.dataset.fullWidthResponsive=`true`,e.append(t);let n=new MutationObserver(()=>{t.dataset.adStatus===`unfilled`&&(e.hidden=!0,n.disconnect())});n.observe(t,{attributes:!0,attributeFilter:[`data-ad-status`]}),(window.adsbygoogle=window.adsbygoogle||[]).push({})}),!e&&!document.querySelector(`#rn-adsense-loader`))){let e=document.createElement(`script`);e.id=`rn-adsense-loader`,e.async=!0,e.crossOrigin=`anonymous`,e.src=`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(_.client)}`,document.head.append(e)}}var b=`rn_analytics_consent_v1`;function x(){try{return localStorage.getItem(b)}catch{return null}}function S(e){try{localStorage.setItem(b,e)}catch{}}function C(){try{let e=document.cookie.split(`;`).map(e=>e.trim().split(`=`)[0]).filter(e=>/^_ga(?:_[A-Za-z0-9]+)?$/.test(e)),t=window.location?.hostname||``,n=t&&t!==`localhost`?[``,t]:[``];for(let t of e)for(let e of n)document.cookie=t+`=; Max-Age=0; Path=/; SameSite=Lax`+(e?`; Domain=`+e:``)}catch{}}function w(e){typeof window.rnUpdateAnalyticsConsent==`function`?window.rnUpdateAnalyticsConsent(e):typeof window.gtag==`function`&&window.gtag(`consent`,`update`,{analytics_storage:e?`granted`:`denied`})}function T(e){let t=document.createElement(`section`);t.className=`rn-consent-panel`,t.setAttribute(`aria-label`,`Preferências de privacidade`),t.innerHTML=`<h2>Privacidade e cookies</h2>
+    <p>Usamos o Google Analytics para medir visitas. Com sua autorização, ele usa cookies; sem ela, poderá enviar sinais limitados sem cookies. O Blogger pode utilizar tecnologias próprias. <a href="${e}">Leia nossa Política de Privacidade</a>.</p>
+    <div class="rn-consent-actions">
+      <button type="button" data-consent="reject">Recusar</button>
+      <button type="button" data-consent="settings">Configurar</button>
+      <button type="button" data-consent="accept" class="rn-consent-primary">Aceitar</button>
+    </div>
+    <div class="rn-consent-settings" hidden>
+      <p><strong>Cookies essenciais:</strong> necessários aos recursos e serviços da plataforma, conforme suas próprias regras.</p>
+      <label><input type="checkbox" data-analytics-check /> Permitir análise de visitas (Google Analytics)</label>
+      <button type="button" data-consent="save">Salvar preferências</button>
+    </div>`;let n=document.createElement(`button`);n.type=`button`,n.className=`rn-consent-reopen`,n.textContent=`Preferências de cookies`,n.setAttribute(`aria-label`,`Revisar preferências de privacidade e cookies`),document.body.append(t,n);function f(){let e=document.querySelector(`#rn-vitrine footer`)||document.querySelector(`#app footer`)||document.querySelector(`footer`);if(e){e.appendChild(n);return!0}return!1}if(!f()){let e=new MutationObserver(()=>{if(f())e.disconnect()});e.observe(document.body,{childList:!0,subtree:!0})}let r=t.querySelector(`[data-analytics-check]`),i=t.querySelector(`.rn-consent-settings`);function a(){r.checked=x()===`accepted`,t.hidden=!1,n.hidden=!1}function o(){t.hidden=!0,n.hidden=!1}function s(e){S(e),w(e===`accepted`),e===`rejected`&&C(),o()}t.addEventListener(`click`,e=>{let t=e.target.closest(`[data-consent]`)?.dataset.consent;t===`accept`&&s(`accepted`),t===`reject`&&s(`rejected`),t===`settings`&&(i.hidden=!i.hidden,r.focus()),t===`save`&&s(r.checked?`accepted`:`rejected`)}),n.addEventListener(`click`,a);let c=x();c===`accepted`?(w(!0),o()):c===`rejected`?o():a()}var E=document.querySelector(`[data-native-page]`),D=!!E?.querySelector(`h1`)?.textContent.trim(),O={arrow:`<path d="M4 12h15m-6-6 6 6-6 6"/>`,external:`<path d="M6 18 18 6M6 6h12v12"/>`,chat:`<path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 9 9 0 0 1-4-.9L3 21l1.9-5.5a9 9 0 0 1-.9-4A8.5 8.5 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5Z"/><path d="M8 8c1 4 3 6 7 7l1-2-3-1-1 1M8 8l2-1 1 3-1 1"/>`,print:`<path d="M6 9V3h12v6M6 17H3V9h18v8h-3M6 14h12v7H6zM17 11h1"/>`,shield:`<path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/>`,document:`<path d="M5 3h10l4 4v14H5V3Zm9 0v5h5M8 12h8M8 16h8"/>`,banner:`<path d="M5 3h14v15H5zM8 7h8M8 11h8M12 18v3M8 21h8"/>`,calendar:`<path d="M4 5h16v16H4zM8 3v4M16 3v4M4 10h16m-12 4 3 3 5-5"/>`,shirt:`<path d="m8 3-5 4 3 5 2-1v10h8V11l2 1 3-5-5-4c-1 4-7 4-8 0Z"/>`,check:`<path d="m5 12 4 4L19 6"/>`,search:`<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>`,close:`<path d="m6 6 12 12M6 18 18 6"/>`,menu:`<path d="M4 6h16M4 12h16M4 18h16"/>`,chevron:`<path d="m9 5 7 7-7 7"/>`},k=e=>`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${O[e]||O.arrow}</svg>`,A=(t=``)=>`https://wa.me/${e.whatsapp}${t?`?text=${encodeURIComponent(t)}`:``}`,j=()=>`<span class="brand-word">R<span>&amp;</span>N<span class="brand-dot">.</span></span><span class="brand-caption">GRÁFICA<br>RÁPIDA</span>`,M=(e=`Conversar no WhatsApp`,t=`button button-dark`)=>`<a class="${t}" href="${A(`Olá! Gostaria de informações sobre os produtos e serviços da R&N Gráfica Rápida.`)}" target="_blank" rel="noopener noreferrer">${k(`chat`)}${e}${k(`external`)}</a>`;document.querySelector(`#app`).innerHTML=`
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<header class="header"><div class="wrap header-inner">
+  <a href="#servicos" class="brand" aria-label="R&N Gráfica Rápida — início">${j()}</a>
+  <nav class="nav" id="main-nav" aria-label="Navegação principal">
+  <details class="nav-group"><summary>Serviços</summary><div class="nav-submenu">
+    <a href="#servicos">Todos os serviços</a>
+    <a href="https://rngraficarapida.blogspot.com/p/produtos-e-servicos.html">Catálogo ilustrado</a>
+    <a href="#como-pedir">Como pedir</a>
+    <a href="#duvidas">Dúvidas frequentes</a>
+  </div></details>
+  <details class="nav-group"><summary>Ferramentas</summary><div class="nav-submenu">
+    <a href="https://rngraficarapida.blogspot.com/p/editor-de-fotos-on-line.html">Editor de fotos online</a>
+  </div></details>
+  <details class="nav-group"><summary>Informações</summary><div class="nav-submenu">
+    <a href="#guias">Guias úteis</a>
+    <a href="${m(`sobre`)}">Sobre a gráfica</a>
+    <a href="${m(`contato`)}">Contato</a>
+    <a href="${m(`privacidade`)}">Privacidade</a>
+  </div></details>
+</nav>
+  <button class="button button-dark header-quote" data-quote>${k(`chat`)}Pedir orçamento</button>
+  <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">${k(`menu`)}</button>
+</div></header>
+<main id="conteudo"><div id="home-view">
+<section class="wrap catalog section" id="servicos">
+ <div class="section-heading"><div><div class="eyebrow">ENCONTRE O QUE VOCÊ PRECISA</div><h2>Gráfica rápida no Pacheco, Jaboatão dos Guararapes<br class="mobile-only"> <em>Impressões, xerox e personalizados.</em></h2></div><p>A R&amp;N Gráfica Rápida oferece impressões e cópias, plastificação, banners, cartões e produtos personalizados no Pacheco, Jaboatão dos Guararapes – PE. Consulte nossos 20 serviços e solicite orçamento. Atendimento também a clientes da região de Cavaleiro.</p></div>
+ <div class="catalog-toolbar"><div class="filters" role="group" aria-label="Categorias de produtos e serviços"><button class="filter active" data-category="todos" aria-pressed="true">Todos os serviços<span>20</span></button>${r.map(e=>`<button class="filter" data-category="${e.id}" aria-pressed="false">${e.short}</button>`).join(``)}</div><div class="search-box"><label for="service-search" class="sr-only">Buscar produto ou serviço</label>${k(`search`)}<input id="service-search" type="search" placeholder="Busque por xerox, canecas, CRAS…" maxlength="100" autocomplete="off"><button class="clear-search" aria-label="Limpar busca" hidden>${k(`close`)}</button></div></div>
+ <div class="catalog-status"><p id="catalog-count" role="status" aria-live="polite"></p><span>Explore nossos serviços e encontre o que precisa.</span></div>
+ <div id="catalog-grid" class="category-grid"></div>
+ <div class="empty-state" hidden><span>${k(`search`)}</span><h3>Vamos encontrar sua solução?</h3><p>Nenhum serviço corresponde a essa busca. Tente outro termo ou fale com a gente.</p><button class="button button-dark" id="reset-filters">Ver todos os serviços ${k(`arrow`)}</button></div>
+ <div class="catalog-bottom"><p>Tem uma ideia diferente ou ainda está com dúvidas?</p>${M(`Conte para a gente`,`text-link`)}</div>
+</section>
+<section class="process-section" id="como-pedir"><div class="wrap section"><div class="section-heading"><div><div class="eyebrow">DO PEDIDO AO ATENDIMENTO</div><h2>Simples do <em>início ao fim.</em></h2></div><p>Uma boa conversa é o primeiro passo.</p></div><div class="steps"><article><div class="step-label">01 ${k(`search`)}</div><h3>Escolha o que precisa</h3><p>Explore as categorias ou busque pelo nome do produto ou serviço.</p></article><article><div class="step-label">02 ${k(`document`)}</div><h3>Informe os detalhes</h3><p>Diga a quantidade de peças, folhas ou atendimentos e conte sua ideia.</p></article><article><div class="step-label">03 ${k(`chat`)}</div><h3>Converse pelo WhatsApp</h3><p>Envie o resumo do pedido. Confirmaremos valor, prazo e próximos passos.</p></article></div></div></section>
+<section class="wrap section editorial-section" id="guias"><div class="about-teaser"><div><div class="eyebrow">SOBRE A R&N</div><h2>Soluções para sua rotina.<br><em>Cuidado com sua ideia.</em></h2></div><div><p>Da cópia de um documento à personalização de uma peça, encontre nossos serviços e converse com a gente sobre o que precisa. Quantidade, material, valor e prazo são alinhados no atendimento.</p><a class="text-link" href="${m(`sobre`)}">Conheça a gráfica ${k(`arrow`)}</a></div></div><div class="section-heading guide-heading"><div><div class="eyebrow">INFORMAÇÃO QUE AJUDA A ESCOLHER</div><h2>Antes de imprimir, <em>entenda.</em></h2></div><p>Guias práticos para preparar seu pedido<br class="desktop-only"> e esclarecer as dúvidas mais comuns.</p></div><div class="guide-grid">${[].map((e,t)=>`<article class="guide-card"><a href="${m(e.slug)}" class="guide-image-link" aria-label="Ler: ${e.title}"><img src="${e.image}" alt="Ilustração temática do guia ${e.title}." width="1080" height="720" loading="lazy"></a><div class="guide-card-content"><span class="eyebrow">GUIA ${String(t+1).padStart(2,`0`)}</span><h3><a href="${m(e.slug)}">${e.title}</a></h3><p>${e.description}</p><a class="text-link" href="${m(e.slug)}">Ler o guia ${k(`arrow`)}</a></div></article>`).join(``)}</div><aside class="ad-region" data-ad-position="home" aria-label="Publicidade" hidden><span>Publicidade</span></aside></section>
+<section class="wrap section faq-section" id="duvidas"><div class="faq-intro"><div class="eyebrow">PODE PERGUNTAR</div><h2>Antes de pedir,<br><em>tire suas dúvidas.</em></h2><p>Nosso atendimento ajuda você a escolher o serviço e organizar os detalhes.</p>${M(`Tirar uma dúvida`,`text-link`)}</div><div class="faq-list"><details><summary>Como faço para pedir um orçamento? ${k(`chevron`)}</summary><p>Clique no serviço desejado, informe a quantidade e preencha os detalhes. O site prepara um resumo para você enviar pelo WhatsApp. O valor e o prazo serão confirmados no atendimento.</p></details><details><summary>Posso enviar a arte pelo WhatsApp? ${k(`chevron`)}</summary><p>Sim. Na conversa, você pode enviar sua arte e explicar o que deseja produzir. Se ainda não tiver a arte, informe isso no pedido para consultar as opções.</p></details><details><summary>Quantas folhas podem ter os talões de recibos? ${k(`chevron`)}</summary><p>Os talões de recibos de aluguel podem ter de 50 a 100 folhas. No orçamento, informe quantos talões deseja e a quantidade de folhas por talão.</p></details><details><summary>Como funciona o apoio em agendamentos? ${k(`chevron`)}</summary><p>Prestamos apoio para agendamentos no CRAS e para atendimentos relacionados à identidade e ao título de eleitor. Consulte as informações necessárias pelo WhatsApp. As vagas dependem do órgão responsável.</p></details></div></section>
+<section class="wrap contact-band" id="contato"><div><div class="eyebrow">R&N GRÁFICA RÁPIDA</div><h2>Seu próximo pedido<br>começa com <em>uma conversa.</em></h2><p>${a}</p></div><div class="contact-band-actions">${M()}<a class="phone-link" href="${A()}" target="_blank" rel="noopener noreferrer">(81) 99609-0928</a></div></section>
+</div><section class="wrap article-view" id="article-view" hidden aria-label="Informações da gráfica"><nav class="article-breadcrumb" aria-label="Localização"><a href="/">Início</a><span aria-hidden="true">/</span><span id="article-breadcrumb-title"></span></nav><div id="article-content" class="article-content"></div><aside class="ad-region" data-ad-position="article" aria-label="Publicidade" hidden><span>Publicidade</span></aside><div class="article-back"><a href="/#servicos" class="text-link">Voltar aos produtos e serviços ${k(`arrow`)}</a></div></section></main>
+<footer class="wrap footer"><div class="footer-top"><a class="brand" href="#servicos" aria-label="Voltar ao início">${j()}</a><p>Impressões, soluções e ideias<br>com a sua identidade.</p><nav aria-label="Navegação do rodapé"><a href="#servicos">Produtos e serviços</a><a href="#como-pedir">Como pedir</a><a href="${m(`sobre`)}">Sobre</a><a href="${m(`contato`)}">Contato</a><a href="${m(`privacidade`)}">Privacidade</a></nav></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} R&N Gráfica Rápida.</span><span>Do seu jeito. Com o nosso cuidado.<span class="cmyk"><i></i><i></i><i></i><i></i></span></span></div></footer>
+<aside class="floating-contact" aria-label="Atendimento pelo WhatsApp"><span>Orçamentos e dúvidas</span><a href="${A(`Olá! Quero pedir um orçamento e informar a quantidade de peças ou o serviço desejado.`)}" target="_blank" rel="noopener noreferrer">${k(`chat`)} WhatsApp ${k(`external`)}</a></aside>
+<dialog class="quote-dialog" aria-labelledby="quote-title"><button class="dialog-close" aria-label="Fechar orçamento">${k(`close`)}</button><div class="eyebrow">CONTE PARA A GENTE</div><h2 id="quote-title">Vamos preparar<br><em>seu orçamento?</em></h2><p class="dialog-intro">Informe a quantidade de peças ou o serviço desejado. O resumo será aberto no WhatsApp.</p><form id="quote-form"><label for="customer-name">Seu nome</label><input id="customer-name" name="name" autocomplete="name" required maxlength="100" placeholder="Como podemos chamar você?"><label for="quote-service">Produto ou serviço</label><select id="quote-service" name="service" required></select><div class="form-row"><div><label for="quantity" id="quantity-label">Quantidade</label><input id="quantity" name="quantity" type="number" min="1" max="1000000" step="1" value="1" required></div><div id="receipt-field" hidden><label for="receipt-pages">Folhas por talão</label><input id="receipt-pages" name="pages" type="number" min="50" max="100" step="1" value="50" disabled><span class="field-hint">Mínimo: 50. Máximo: 100.</span></div><div id="size-field"><label for="quote-size">Tamanho ou formato <span>(opcional)</span></label><input id="quote-size" name="size" maxlength="120" placeholder="Ex.: A4, medidas ou tamanhos"></div></div><label for="quote-details">Mais detalhes <span>(opcional)</span></label><textarea id="quote-details" name="details" rows="3" maxlength="2000" placeholder="Conte o que precisa. Se já tiver uma arte ou uma data em mente, informe aqui."></textarea><p class="quote-notice">Valor, disponibilidade e prazo serão confirmados no atendimento. O pedido só é enviado quando você toca em Enviar no WhatsApp.</p><button type="submit" class="button button-pink submit-quote">Preparar pedido no WhatsApp ${k(`arrow`)}</button></form><section id="quote-result" hidden aria-label="Resumo do pedido"><div class="result-check">${k(`check`)}</div><h3>Seu resumo está pronto.</h3><p>Confira os detalhes e toque em Enviar na conversa do WhatsApp. Se a conversa não abrir, use o botão abaixo.</p><textarea id="message-preview" rows="9" readonly aria-label="Resumo do pedido"></textarea><a id="send-whatsapp" class="button button-pink" target="_blank" rel="noopener noreferrer">${k(`chat`)} Abrir WhatsApp ${k(`external`)}</a><div class="result-actions"><button class="text-link" id="copy-quote">Copiar resumo</button><button class="text-link" id="edit-quote">Editar pedido</button></div><p id="copy-status" role="status" aria-live="polite"></p></section></dialog>
+<dialog class="details-dialog" aria-labelledby="details-title"><div class="details-panel"><button type="button" class="details-close" aria-label="Fechar detalhes">${k(`close`)}</button><div class="eyebrow">CONHEÇA NOSSO SERVIÇO</div><h2 id="details-title"></h2><p id="details-summary"></p><div id="details-content"></div><button type="button" class="button button-pink" id="details-quote">${k(`chat`)} Solicitar orçamento pelo WhatsApp</button></div></dialog>
+`;var N=`todos`,P=document.querySelector(`#service-search`),ee=document.querySelector(`#catalog-grid`),F=e=>e.normalize(`NFD`).replace(/[\u0300-\u036f]/g,``).toLowerCase().trim();function I(){}function L(e){N=e,document.querySelectorAll(`[data-category]`).forEach(t=>{let n=t.dataset.category===e;t.classList.toggle(`active`,n),t.setAttribute(`aria-pressed`,String(n))}),I()}document.querySelectorAll(`[data-category]`).forEach(e=>e.addEventListener(`click`,()=>L(e.dataset.category))),P.addEventListener(`input`,I),document.querySelector(`.clear-search`).addEventListener(`click`,()=>{P.value=``,I(),P.focus()}),document.querySelector(`#reset-filters`).addEventListener(`click`,()=>{P.value=``,L(`todos`)}),I();var R=document.querySelector(`.quote-dialog`),z=document.querySelector(`#quote-form`),B=document.querySelector(`#quote-result`),V=document.querySelector(`#quote-service`),H;function U(e=``){V.innerHTML=`<option value="">Selecione um produto ou serviço</option>`+r.filter(t=>!e||t.id===e).map(e=>`<optgroup label="${e.name}">${i.filter(t=>t.category===e.id).map(e=>`<option value="${e.id}">${e.name}</option>`).join(``)}</optgroup>`).join(``)}function W(){let e=i.find(e=>e.id===V.value),t=!!e?.receipt;document.querySelector(`#quantity-label`).textContent=e?`Quantidade de ${e.unit}`:`Quantidade`,document.querySelector(`#receipt-field`).hidden=!t;let n=document.querySelector(`#receipt-pages`);n.disabled=!t,n.required=t,document.querySelector(`#size-field`).hidden=e?.category===`agendamentos`,document.querySelector(`#quote-size`).disabled=e?.category===`agendamentos`}function G(e=``,t=``){H=document.activeElement,U(t),V.value=e,W(),z.hidden=!1,B.hidden=!0,document.querySelector(`#copy-status`).textContent=``,R.showModal(),document.body.classList.add(`modal-open`)}var K=document.querySelector(`.details-dialog`),q=``;function J(e){let t=i.find(t=>t.id===e);if(!t)return;q=e,document.querySelector(`#details-title`).textContent=t.name,document.querySelector(`#details-summary`).textContent=t.description;let n=[`O que oferecemos`,`Opções e informações para o pedido`,`Antes de encomendar`],r=document.querySelector(`#details-content`);r.replaceChildren(),(t.details||[]).forEach((e,t)=>{let i=document.createElement(`section`),a=document.createElement(`h3`);a.textContent=n[t]||`Informações`;let o=document.createElement(`p`);o.textContent=e,i.append(a,o),r.append(i)}),K.showModal(),document.body.classList.add(`modal-open`)}document.addEventListener(`click`,e=>{let t=e.target.closest(`[data-service-details]`);t&&J(t.dataset.serviceDetails)}),document.querySelector(`.details-close`).addEventListener(`click`,()=>K.close()),K.addEventListener(`close`,()=>document.body.classList.remove(`modal-open`)),K.addEventListener(`click`,e=>{e.target===K&&K.close()}),document.querySelector(`#details-quote`).addEventListener(`click`,()=>{let e=q;K.close(),G(e)}),V.addEventListener(`change`,W),document.addEventListener(`click`,e=>{let t=e.target.closest(`[data-service]`),n=e.target.closest(`[data-category-quote]`);t?G(t.dataset.service):n?G(``,n.dataset.categoryQuote):e.target.closest(`[data-quote]`)&&G()}),document.querySelector(`.dialog-close`).addEventListener(`click`,()=>R.close()),R.addEventListener(`close`,()=>{document.body.classList.remove(`modal-open`),H?.focus()}),R.addEventListener(`click`,e=>{if(e.target!==R)return;let t=R.getBoundingClientRect();(e.clientX<t.left||e.clientX>t.right||e.clientY<t.top||e.clientY>t.bottom)&&R.close()});var Y=document.querySelector(`#customer-name`);Y.addEventListener(`input`,()=>Y.setCustomValidity(Y.value.trim()?``:`Informe seu nome.`)),z.addEventListener(`submit`,e=>{if(e.preventDefault(),!Y.value.trim()){Y.setCustomValidity(`Informe seu nome.`),Y.reportValidity();return}let t=new FormData(z),n=i.find(e=>e.id===t.get(`service`));if(!n||!z.reportValidity())return;let a=r.find(e=>e.id===n.category),o=`Olá, R&N Gráfica Rápida! Gostaria de um orçamento.\n\nNome: ${t.get(`name`).trim()}\nCategoria: ${a.name}\nProduto ou serviço: ${n.name}\nQuantidade: ${t.get(`quantity`)} (${n.unit})${n.receipt?`\nFolhas por talão: ${t.get(`pages`)}`:``}${t.get(`size`)?.trim()?`\nTamanho ou formato: ${t.get(`size`).trim()}`:``}${t.get(`details`)?.trim()?`\n\nDetalhes: ${t.get(`details`).trim()}`:``}`;document.querySelector(`#message-preview`).value=o;let s=document.querySelector(`#send-whatsapp`);s.href=A(o),z.hidden=!0,B.hidden=!1,s.focus(),s.click()}),document.querySelector(`#edit-quote`).addEventListener(`click`,()=>{B.hidden=!0,z.hidden=!1,V.focus()}),document.querySelector(`#copy-quote`).addEventListener(`click`,async()=>{let e=document.querySelector(`#message-preview`);try{await navigator.clipboard.writeText(e.value),document.querySelector(`#copy-status`).textContent=`Resumo copiado!`}catch{e.focus(),e.select(),document.querySelector(`#copy-status`).textContent=`Selecione o resumo acima e use a opção Copiar do seu dispositivo.`}});var X=document.querySelector(`.menu-toggle`);function Z(){document.querySelectorAll(`.nav-group[open]`).forEach(e=>{e.open=!1}),X.setAttribute(`aria-expanded`,`false`),X.setAttribute(`aria-label`,`Abrir menu`),X.innerHTML=k(`menu`),document.querySelector(`.nav`).classList.remove(`open`)}X.addEventListener(`click`,()=>{let e=X.getAttribute(`aria-expanded`)!==`true`;X.setAttribute(`aria-expanded`,String(e)),X.setAttribute(`aria-label`,e?`Fechar menu`:`Abrir menu`),X.innerHTML=k(e?`close`:`menu`),document.querySelector(`.nav`).classList.toggle(`open`,e)}),document.querySelectorAll(`.nav a`).forEach(e=>e.addEventListener(`click`,Z)),document.querySelectorAll(`.nav-group`).forEach(e=>e.addEventListener(`toggle`,()=>{e.open&&document.querySelectorAll(`.nav-group`).forEach(t=>{t!==e&&(t.open=!1)})})),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&Z()});function Q(){document.querySelector(`#article-view`).classList.remove(`calculator-view`),document.body.classList.remove(`calculator-open`)}function $(){let e=h(),t=!!(e||D||f()),n=document.querySelector(`#home-view`),r=document.querySelector(`#article-view`),i=document.querySelector(`#article-content`),a=document.querySelector(`#article-breadcrumb-title`);if(n.hidden=t,r.hidden=!t,t){if(D)i.replaceChildren(E),a.textContent=E.querySelector(`h1`).textContent;else if(f()){i.innerHTML=`<p class="article-lead" role="status">Carregando a página…</p>`,a.textContent=e?.title||`Informações`;let t=document.querySelector(`[data-ad-position="article"]`);t.dataset.adEligible=`false`,t.hidden=!0;let n=document.querySelector(`meta[name="rn-page-id"]`)?.content;g(location.pathname,fetch,n).then(n=>{let r=document.createElement(`article`),o=document.createElement(`header`);o.className=`article-header`;let s=document.createElement(`h1`);s.textContent=n.title,o.append(s);let c=document.createElement(`div`);c.className=`native-page-body`,c.innerHTML=n.body,r.append(o,c),i.replaceChildren(r),Q(),a.textContent=n.title,document.title=`${n.title} | R&N Gráfica Rápida`,t.dataset.adEligible=String(e?.type===`guide`),y()}).catch(()=>{e?.type===`guide`?(i.innerHTML=`<article><header class="article-header"><div class="eyebrow">GUIAS R&N GRÁFICA</div><h1>${e.title}</h1></header>${e.image?`<img class="article-hero" src="${e.image}" alt="Arte ilustrativa R&N Gráfica: ${e.title}." width="1080" height="720">`:``}<div class="article-body">${e.body}</div></article>`,a.textContent=e.title,document.title=`${e.title} | R&N Gráfica Rápida`,Q()):(i.innerHTML=`<h1>Não foi possível abrir esta página</h1><p class="article-lead">Tente novamente ou fale com a gráfica pelo WhatsApp.</p><a class="text-link" id="retry-page">Tentar novamente ${k(`arrow`)}</a>`,i.querySelector(`#retry-page`).href=location.pathname,a.textContent=`Página indisponível`,document.title=`Página indisponível | R&N Gráfica Rápida`)})}else i.innerHTML=`<article><header class="article-header"><div class="eyebrow">${e.type===`guide`?`GUIAS R&N GRÁFICA`:`R&N GRÁFICA RÁPIDA`}</div><h1>${e.title}</h1></header>${e.image?`<img class="article-hero" src="${e.image}" alt="Arte ilustrativa R&N Gráfica: ${e.title}." width="1080" height="720">`:``}<div class="article-body">${e.body}</div></article>`,a.textContent=e.title;document.title=`${a.textContent} | R&N Gráfica Rápida`}else i.replaceChildren(),a.textContent=``,document.title=`R&N Gráfica Rápida — Produtos e serviços`;document.querySelectorAll(`.header a[href^="#"], .footer a[href^="#"], .article-back a, .article-breadcrumb a`).forEach(e=>{let n=e.dataset.homeAnchor||e.getAttribute(`href`);e.dataset.homeAnchor=n;let r=n.includes(`#`)?n.slice(n.indexOf(`#`)):`#servicos`;e.setAttribute(`href`,d()?r:t?`/${r}`:r)}),document.querySelectorAll(`.rn-native-section`).forEach(e=>e.remove());let o=document.querySelector(`[data-ad-position="article"]`);o.dataset.adEligible=String(e?.type===`guide`&&(!f()||D)),e?.type!==`guide`&&(o.hidden=!0),Z(),Q(),y()}$(),T(m(`privacidade`)),window.addEventListener(`hashchange`,()=>{if(d()){let e=h(),t=!document.querySelector(`#article-view`).hidden;$(),e?window.scrollTo({top:0,behavior:`instant`}):t&&document.getElementById(location.hash.slice(1)||`servicos`)?.scrollIntoView({behavior:`instant`,block:`start`})}});
+//]]>
+</script><style type='text/css'>/*<![CDATA[*/
+#rn-unified-search{position:fixed;inset:0;z-index:99999;background:rgba(20,20,20,.62);padding:clamp(12px,4vw,40px);overflow:auto}#rn-unified-search[hidden]{display:none!important}.rn-us-panel{background:#fffefa;color:#292725;max-width:780px;margin:4vh auto;padding:clamp(18px,4vw,32px);border-radius:12px;box-shadow:0 12px 50px #0004}.rn-us-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.rn-us-top h2{margin:0;font-size:1.4rem}.rn-us-close,.rn-us-launch{cursor:pointer;border:1px solid #a59a8d;background:#fffefa;color:#292725;border-radius:6px;padding:10px 14px;font:inherit}.rn-us-launch{display:inline-flex;align-items:center;gap:6px}.rn-us-input{width:100%;font:inherit;font-size:16px;padding:14px;border:1px solid #81776d;border-radius:6px;margin:18px 0 10px}.rn-us-results{list-style:none;padding:0;margin:12px 0}.rn-us-results li{border-bottom:1px solid #ddd5ca;padding:12px 0}.rn-us-results a{font-weight:700;color:#292725;text-decoration:underline}.rn-us-results small{display:block;color:#6a6057;margin-top:4px}.rn-us-message{color:#625b53}.rn-us-access{position:fixed;right:16px;bottom:112px;z-index:9000;box-shadow:0 4px 18px #0003}body.rn-search-open{overflow:hidden}@media(max-width:600px){.rn-us-access{right:12px;bottom:112px}.rn-us-panel{margin:0 auto}}
+/*]]>*/</style><button aria-controls='rn-unified-search' aria-haspopup='dialog' aria-label='Abrir pesquisa geral do site' class='rn-us-launch rn-us-access' id='rn-us-open' type='button'>🔍 Pesquisar no site</button>
+<div hidden='hidden' id='rn-unified-search'><section aria-labelledby='rn-us-title' aria-modal='true' class='rn-us-panel' role='dialog'><div class='rn-us-top'><h2 id='rn-us-title'>Pesquisar no site</h2><button class='rn-us-close' id='rn-us-close' type='button'>Fechar &#10005;</button></div><label for='rn-us-query'>Encontre serviços, ferramentas, guias e artigos</label><input class='rn-us-input' id='rn-us-query' maxlength='120' placeholder='Ex.: xerox, editor de fotos, sublimação' type='search'/><p aria-live='polite' class='rn-us-message' id='rn-us-status' role='status'>Digite para pesquisar.</p><ul class='rn-us-results' id='rn-us-results'/><p><a href='/search' id='rn-us-blogger' rel='nofollow'>Ver também a pesquisa completa do Blogger</a></p></section></div>
+<script type='text/javascript'>
+//<![CDATA[
+(function(){'use strict';
+var open=document.getElementById('rn-us-open'),overlay=document.getElementById('rn-unified-search'),close=document.getElementById('rn-us-close'),input=document.getElementById('rn-us-query'),results=document.getElementById('rn-us-results'),status=document.getElementById('rn-us-status'),blogger=document.getElementById('rn-us-blogger');
+var entries=[],loaded=false,loading=null,lastFocus=null;
+function norm(v){return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim()}
+function strip(v){var el=document.createElement('div');el.innerHTML=String(v||'');return (el.textContent||'').replace(/\s+/g,' ').trim()}
+function add(title,url,category,description){if(!title||!url)return;try{var u=new URL(url,location.origin);if(u.origin!==location.origin)return;var key=u.pathname.replace(/\/$/,'')||'/';var existing=entries.find(function(e){return e.key===key});if(existing){if(category!=='Página do site'){existing.title=String(title);existing.category=category||existing.category;existing.description=strip(description).slice(0,180)}return;}entries.push({title:String(title),url:u.href,key:key,category:category||'Página',description:strip(description).slice(0,180)})}catch(e){}}
+function fromDOM(){document.querySelectorAll('a[href]').forEach(function(a){var href=a.getAttribute('href')||'',name=(a.textContent||'').trim();if(!name||name.length>120||href==='#'||href.startsWith('javascript:'))return;if(href.indexOf('/p/')!==-1||href.indexOf('/20')!==-1)add(name,a.href,'Página do site','')});document.querySelectorAll('#catalog-grid .service-row').forEach(function(card){var name=card.querySelector('strong');if(name)add(name.textContent,location.origin+'/#servicos','Serviço',card.textContent)});document.querySelectorAll('.guide-card a[href],.nav a[href]').forEach(function(a){add(a.textContent.trim()||a.getAttribute('aria-label'),a.href,'Guia ou ferramenta','')})}
+function feed(path,category){return fetch(path,{credentials:'omit'}).then(function(r){if(!r.ok)throw Error('feed indisponível');return r.json()}).then(function(j){var list=(j.feed&&j.feed.entry)||[];list.forEach(function(e){var links=e.link||[],alt=links.find(function(l){return l.rel==='alternate'&&l.href});if(alt)add(e.title&&e.title.$t,alt.href,category,e.summary&&e.summary.$t||e.content&&e.content.$t||'')})})}
+function load(){if(loaded)return Promise.resolve();if(loading)return loading;fromDOM();loading=Promise.allSettled([feed('/feeds/pages/default?alt=json&max-results=150','Página ou ferramenta'),feed('/feeds/posts/default?alt=json&max-results=150','Artigo ou guia')]).then(function(){loaded=true;loading=null;render()});return loading}
+function render(){var q=norm(input.value),terms=q.split(/\s+/).filter(Boolean);blogger.href='/search?q='+encodeURIComponent(input.value.trim());results.replaceChildren();if(!q){status.textContent='Digite uma palavra para pesquisar.';return}var found=entries.map(function(e){var title=norm(e.title),all=norm(e.title+' '+e.description+' '+e.category),ok=terms.every(function(t){return all.includes(t)}),score=terms.reduce(function(n,t){return n+(title.includes(t)?5:0)+(norm(e.category).includes(t)?2:0)},0);return {e:e,ok:ok,score:score}}).filter(function(x){return x.ok}).sort(function(a,b){return b.score-a.score}).slice(0,30);status.textContent=found.length?found.length+' resultado(s) encontrado(s)'+(found.length===30?' (mostrando os primeiros 30)':''):'Nenhum resultado no índice local. Experimente a pesquisa completa do Blogger.';found.forEach(function(x){var li=document.createElement('li'),a=document.createElement('a'),small=document.createElement('small');a.href=x.e.url;a.textContent=x.e.title;small.textContent=x.e.category+(x.e.description?' — '+x.e.description:'');li.append(a,small);results.append(li)})}
+var debounce;input.addEventListener('input',function(){clearTimeout(debounce);debounce=setTimeout(render,120)});
+function show(){lastFocus=document.activeElement;overlay.hidden=false;document.body.classList.add('rn-search-open');input.focus();status.textContent='Carregando páginas, guias e serviços…';load().then(render)}function hide(){overlay.hidden=true;document.body.classList.remove('rn-search-open');if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+open.addEventListener('click',show);close.addEventListener('click',hide);overlay.addEventListener('click',function(e){if(e.target===overlay)hide()});document.addEventListener('keydown',function(e){if(overlay.hidden)return;if(e.key==='Escape')hide();if(e.key==='Tab'){var focusable=[input,blogger,close].concat(Array.from(results.querySelectorAll('a')));var i=focusable.indexOf(document.activeElement);if(e.shiftKey&&i===0){e.preventDefault();focusable[focusable.length-1].focus()}else if(!e.shiftKey&&i===focusable.length-1){e.preventDefault();focusable[0].focus()}}});
+})();
+//]]>
+</script>
+<!-- RN VITRINE TESTE ISOLADO: original preservado -->
+
+
+<!-- RN TESTE 5: vitrine independente do contêiner do tema antigo -->
+
+
+<!-- RN TESTE 6: correção comprovada do encolhimento da grade hero -->
+
+
+<script type='text/javascript'>//<![CDATA[
+(function(){
+  if(location.pathname!=='/' && location.pathname!=='/index.html') return;
+  function mount(){
+    var home=document.getElementById('home-view');
+    var vitrine=document.getElementById('rn-vitrine');
+    if(!home || !vitrine || !document.body.classList.contains('rn-vitrine-home'))return true;
+    // Reutiliza o mesmo botao de pesquisa, sem duplicar nem alterar os eventos originais.
+    var searchButton=document.getElementById('rn-us-open');
+    var navBrand=document.querySelector('#rn-vitrine .nav .brand');
+    if(searchButton && navBrand && navBrand.parentNode){navBrand.parentNode.insertBefore(searchButton,navBrand.nextSibling);}
+
+    try{(function(){
+const items=[
+['Impressões e xerox em papel ofício','Impressões','Documentos e trabalhos em preto e branco ou coloridos.'],['Impressões em papel fotográfico','Impressões','Fotos e imagens em papel fotográfico.'],['Impressões em papel adesivo','Impressões','Etiquetas, identificação e lembrancinhas.'],['Impressões em papel-cartão','Impressões','Convites, capas e materiais mais firmes.'],['Plastificação de documentos','Plastificação','Proteção e acabamento de documentos.'],['Plastificação de folhas A4 inteiras','Plastificação','Proteção para avisos e folhas A4.'],['Cartões de visita','Documentos','Cartões para profissionais e empresas.'],['Talões de recibos de aluguel','Documentos','Recibos organizados em talões.'],['Contratos de aluguel','Documentos','Impressão e preparação a partir das informações fornecidas.'],['Declarações de residência','Documentos','Preparação e impressão de declarações.'],['Cartazes A4','Comunicação','Cartazes para avisos e divulgação.'],['Banners','Comunicação','Banners em lona para eventos e comércios.'],['Agendamento no CRAS','Agendamentos','Apoio em consultas e agendamentos sujeitos a vagas.'],['Agendamento para identidade','Agendamentos','Apoio para agendar emissão de identidade.'],['Agendamento para título de eleitor','Agendamentos','Apoio para serviços de agendamento eleitoral.'],['Canecas personalizadas','Personalizados','Canecas com fotos, nomes e mensagens.'],['Camisas personalizadas','Personalizados','Camisas para equipes, eventos e presentes.'],['Estampas personalizadas','Personalizados','Estampas para camisetas e peças compatíveis.'],['Sublimação total','Personalizados','Personalização em peças compatíveis.'],['Estampas em DTF','Personalizados','Estampas detalhadas e coloridas em DTF.']
+];
+let selected='Todos';const grid=document.getElementById('serviceGrid');const search=document.getElementById('searchInput');const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function render(){const q=norm(search.value.trim());const found=items.filter(x=>(selected==='Todos'||x[1]===selected)&&norm(x.join(' ')).includes(q));grid.replaceChildren();for(const x of found){const article=document.createElement('article');article.className='service';const tag=document.createElement('span');tag.className='tag';tag.textContent=x[1];const h=document.createElement('h3');h.textContent=x[0];const p=document.createElement('p');p.textContent=x[2];const btn=document.createElement('button');btn.className='more';btn.textContent='Pedir orçamento →';btn.addEventListener('click',()=>openQuote(x[0]));article.append(tag,h,p,btn);grid.append(article)}document.getElementById('empty').style.display=found.length?'none':'block';document.getElementById('resultCount').textContent=found.length+' de '+items.length+' serviços';document.querySelectorAll('[data-filter]').forEach(b=>{const active=b.dataset.filter===selected;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))})}
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.filter;render()}));document.querySelectorAll('[data-category-link]').forEach(a=>a.addEventListener('click',()=>{selected=a.dataset.categoryLink;search.value='';render()}));search.addEventListener('input',render);document.getElementById('clearSearch').addEventListener('click',()=>{search.value='';selected='Todos';render();search.focus()});render();
+const modal=document.getElementById('quoteModal');const first=document.getElementById('product');function openQuote(value){first.value=value||'Orçamento geral';modal.classList.add('open');document.body.style.overflow='hidden';first.focus()}function closeQuote(){modal.classList.remove('open');document.body.style.overflow=''}document.querySelectorAll('[data-rn-quote]').forEach(b=>b.addEventListener('click',()=>openQuote(b.dataset.rnQuote)));document.getElementById('closeModal').addEventListener('click',closeQuote);document.getElementById('cancelModal').addEventListener('click',closeQuote);modal.addEventListener('click',e=>{if(e.target===modal)closeQuote()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeQuote()});document.getElementById('quoteForm').addEventListener('submit',e=>{e.preventDefault();const p=first.value.trim(),n=document.getElementById('customer').value.trim(),q=document.getElementById('quantity').value.trim(),d=document.getElementById('details').value.trim();const msg=['Olá! Gostaria de solicitar um orçamento à R&N Gráfica Rápida.','Produto/serviço: '+p,n?'Nome: '+n:'',q?'Quantidade: '+q:'',d?'Detalhes: '+d:''].filter(Boolean).join('\n');window.open('https://wa.me/5581996090928?text='+encodeURIComponent(msg),'_blank','noopener');});
+const hamburger=document.getElementById('hamb');const nav=document.getElementById('navLinks');hamburger.addEventListener('click',()=>{const open=nav.classList.toggle('open');hamburger.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');hamburger.setAttribute('aria-expanded','false')}));
+
+})();}catch(e){console.error('R&N vitrine: erro na inicialização',e);}
+    return true;
+  }
+  if(!mount()){
+    var observer=new MutationObserver(function(){if(mount())observer.disconnect()});
+    observer.observe(document.documentElement,{childList:true,subtree:true});
+    document.addEventListener('DOMContentLoaded',function(){if(mount())observer.disconnect()});
+  }
+})();
+//]]></script>
+<script type='text/javascript'>//<![CDATA[
+
+(function(){
+ if(!document.body.classList.contains('rn-internal-page'))return;
+ var button=document.getElementById('hamb'),nav=document.getElementById('navLinks');
+ if(button&&nav){button.addEventListener('click',function(){var open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open));button.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){nav.classList.remove('open');button.setAttribute('aria-expanded','false')}});}
+ var search=document.getElementById('rn-us-open'),brand=document.querySelector('#rn-vitrine .nav .brand');
+ if(search&&brand)brand.parentNode.insertBefore(search,brand.nextSibling);
+})();
+
+//]]></script></body></html><!-- FIM DO TEMA R&N 2.2 -->
